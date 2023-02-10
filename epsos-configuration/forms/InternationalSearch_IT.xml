@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patientSearch>
+   <!-- min and max -1 means no length check -->
+   <!-- id format="LLLLLLNNLNNLNNNL" means 'L'etter 'N'umber -->
+   <!-- validation contains the fields which are mandatory -->
+   <!-- more then one validation means or -->
+   <!-- only one input field no validation necessary because minimum value which has to be filled out is 1 -->
+   <country code="IT">
+     <searchFields>
+         <id label="patient.search.fiscal.code" min="16" max="16" format="LLLLLLNNLNNLNNNL" domain="2.16.840.1.113883.2.9.4.3.2" friendlyName="fiscalNumber" />
+         <id label="patient.search.serial" min="5" max="5" format="NNNNN" domain="2.16.840.1.113883.2.9.4.1.4" friendlyName="cardId" />
+      </searchFields>
+      <validation>
+         <field label="patient.search.patient.fiscalcode" />
+         <field label="patient.search.serial" />
+      </validation>
+   </country>
+</patientSearch>

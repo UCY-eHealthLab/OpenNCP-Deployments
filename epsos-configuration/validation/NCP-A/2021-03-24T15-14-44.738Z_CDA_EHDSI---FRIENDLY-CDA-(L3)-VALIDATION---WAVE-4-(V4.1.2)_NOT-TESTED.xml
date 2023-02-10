@@ -1,0 +1,293 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+   <id extension="ePid.27.8.cda" root="0.2.216.1.200.2100.10.1.1.1.1.2"/>
+   <code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.extended Document"><translation code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="eDispensation"/></code>
+   <title>Medication dispensed</title>
+   <effectiveTime value="20210324161432+0100"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+   <languageCode code="hu-HU"/>
+   <recordTarget>    
+      <patientRole>      
+         <id extension="1990-12-22_8" root="2.16.17.710.860.1000.990.1"/>      
+         <addr>
+            <country>CY</country>
+            <streetAddressLine>106, Panagias ton Rodon, 0001, Nicosia</streetAddressLine>
+         </addr>      
+         <telecom use="H" value="tel:+99000000"/>      
+         <telecom use="H" value="mailto:test@test.com"/>      
+         <patient>        
+            <name>
+               <given>Patient 8</given>
+               <family>Patient 8</family>
+            </name>        
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Male"><translation code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Férfi"/></administrativeGenderCode>        
+            <birthTime value="19901222"/>        
+            <languageCommunication>          
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>          
+               <languageCode code="en-GB"/>        
+            </languageCommunication>      
+         </patient>    
+      </patientRole>  
+   </recordTarget>
+   <author typeCode="AUT">
+      <functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Pharmacists"/>
+      <time value="20210324161432+0100"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id extension="G00001" root="0.2.216.1.200.2100.10.3.2"/>
+         <addr>
+            <streetAddressLine>Kálvin tér 10.</streetAddressLine>
+            <city>Kunszentmiklós</city>
+            <state nullFlavor="NI"/>
+            <postalCode>6090</postalCode>
+            <country>HU</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <family>Fang</family>
+               <given>Simon</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id extension="urn:oid:2.216.1.200.2100.10.3.1.300001" root="0.2.216.1.200.2100.10.3.1"/>
+            <name>A2pharma Kft.</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <streetAddressLine>Kálvin tér 10.</streetAddressLine>
+               <city>Kunszentmiklós</city>
+               <state nullFlavor="NI"/>
+               <postalCode>6090</postalCode>
+               <country>HU</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian typeCode="CST">
+      <assignedCustodian classCode="ASSIGNED">
+         <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="OKFO" root="0.2.216.1.200.2100.10.3.1"/>
+            <name>OKFŐ (National Directorate General for Hospitals)</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>HU</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator contextControlCode="OP" typeCode="LA">
+      <time value="20210324151432.0139+0000"/>
+      <signatureCode code="S"/>
+      <assignedEntity classCode="ASSIGNED">
+         <id extension="OKFO" root="0.2.216.1.200.2100.10.3.1"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson>
+            <name>
+               <family>NA</family>
+               <given>NA</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="OKFO" root="0.2.216.1.200.2100.10.3.1"/>
+            <name>OKFŐ (National Directorate General for Hospitals​)</name>
+            <telecom nullFlavor="NI"/>
+            <addr use="PST">
+               <streetAddressLine>Diós Árok 3.</streetAddressLine>
+               <city>Budapest</city>
+               <postalCode>1125</postalCode>
+               <country>HU</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <inFulfillmentOf>
+      <order moodCode="RQO">
+         <id extension="Prescriptions" root="2.16.196.1.101.10.3.29.54290"/>
+      </order>
+   </inFulfillmentOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument classCode="DOCCLIN">
+         <id extension="ePid.27.8.cda" root="0.2.216.1.200.2100.10.1.1.1.1.2"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+               <id extension="0.2.216.1.200.2100.10.1.1.1.1.2^ePid.27.8.cda" root="0.2.216.1.200.2100.10.1.1.1.1.2"/>
+               <code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.brief Document"><translation code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed"/></code>
+               <title>Dispensation: 0.2.216.1.200.2100.10.1.1.1.1.2^ePid.27.8.cda</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Medicine commercial name</th>
+                           <th>Description</th>
+                           <th>Dispensed number of packages</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>LANTUS SOLOSTAR 100 EGYSÉG/ML OLDATOS INJEKCIÓ ELŐRETÖLTÖTT INJEKCIÓS TOLLBAN</td>
+                           <td>5x3ml előretöltött injekciós tollban (solostar)</td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="COMP">
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.34"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+                     <id extension="2.16.196.1.101.10.3.29.54290" root="0.2.216.1.200.2100.10.1.1.1.1.2"/>
+                     <quantity unit="1" value="1"/>
+                     <product>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="210229739" codeSystem="0.2.216.1.200.2100.10.3.3" codeSystemName="Publikus Gyógyszertörzs/Hungarian Public Pharmaceutical Register (PUPHA)" displayName="LANTUS SOLOSTAR 100 EGYSÉG/ML OLDATOS INJEKCIÓ ELŐRETÖLTÖTT INJEKCIÓS TOLLBAN"/>
+                              <name>LANTUS SOLOSTAR 100 EGYSÉG/ML OLDATOS INJEKCIÓ ELŐRETÖLTÖTT INJEKCIÓS TOLLBAN</name>
+                              <epsos:desc>5x3ml előretöltött injekciós tollban (solostar)</epsos:desc>
+                              <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"><epsos:translation code="430" codeSystem="0.2.216.1.200.2100.10.3.3.1" codeSystemName="PUPHA gyógyszer forma/Medicine formcode" displayName="oldatos injekció"/></epsos:formCode>
+                              <epsos:asContent classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"><epsos:translation code="430" codeSystem="0.2.216.1.200.2100.10.3.3.1" codeSystemName="PUPHA gyógyszer forma/Medicine formcode" displayName="oldatos injekció"/></epsos:formCode>
+                                    <epsos:capacityQuantity unit="1" value="1"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"/>
+                                    <epsos:name>insulin glargine</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"/>
+                                    <epsos:name>insulin glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                           <epsos:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                              <epsos:name>SANOFI-AVENTIS Zrt.</epsos:name>
+                           </epsos:marketingAuthorizationHolder>
+                        </manufacturedProduct>
+                     </product>
+                     <performer typeCode="PRF">
+                        <time value="20210324161432+0100"/>
+                        <assignedEntity>
+                           <id extension="urn:oid:2.216.1.200.2100.10.3.1.300001" root="0.2.216.1.200.2100.10.3.2"/>
+                           <addr>
+                              <streetAddressLine>Kálvin tér 10.</streetAddressLine>
+                              <city>Kunszentmiklós</city>
+                              <state nullFlavor="NI"/>
+                              <postalCode>6090</postalCode>
+                              <country>HU</country>
+                           </addr>
+                           <telecom nullFlavor="NI"/>
+                           <assignedPerson>
+                              <name>
+                                 <family>Fang</family>
+                                 <given>Simon</given>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id extension="urn:oid:2.216.1.200.2100.10.3.1.300001" root="0.2.216.1.200.2100.10.3.1"/>
+                              <name>A2pharma Kft.</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr>
+                                 <streetAddressLine>Kálvin tér 10.</streetAddressLine>
+                                 <city>Kunszentmiklós</city>
+                                 <state nullFlavor="NI"/>
+                                 <postalCode>6090</postalCode>
+                                 <country>HU</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedEntity>
+                     </performer>
+                     <participant contextControlCode="OP" typeCode="PRF">
+                        <participantRole classCode="LIC">
+                           <id nullFlavor="NI"/>
+                           <scopingEntity classCode="ORG">
+                              <id nullFlavor="NI"/>
+                           </scopingEntity>
+                        </participantRole>
+                     </participant>
+                     <entryRelationship typeCode="REFR">
+                        <substanceAdministration classCode="SBADM" moodCode="INT">                                                                                    
+                           <id extension="medicine.1" root="2.16.196.1.101.10.3.29.54290"/>                            
+                           <statusCode code="active"/>              
+                           <effectiveTime xsi:type="IVL_TS">                
+                              <low value="20210407"/>                
+                              <high value="20210409"/>              
+                           </effectiveTime>              
+                           <effectiveTime institutionSpecified="true" operator="A" xsi:type="PIVL_TS">                
+                              <period unit="d" value="1"/>              
+                           </effectiveTime>              
+                           <routeCode code="20066000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Subcutaneous use"><translation code="20066000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" displayName="Szubkután alkalmazás"/></routeCode>              
+                           <doseQuantity nullFlavor="UNK"/>              
+                           <consumable typeCode="CSM">                
+                              <manufacturedProduct classCode="MANU">                  
+                                 <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>                  
+                                 <manufacturedMaterial classCode="MMAT" determinerCode="KIND">                    
+                                    <code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"/>                    
+                                    <name>LANTUS SOLUTION FOR INJECTION 100 U/ML</name>                  
+                                    <epsos:desc>100 U/ML</epsos:desc>
+                                    <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="oldatos injekció"/>
+                                    <epsos:asContent classCode="CONT">
+                                       <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                          <epsos:name>LANTUS SOLUTION FOR INJECTION 100 U/ML, 100 U/ML, CARTRIDGE(S), PACK WITH 5 CARTIDGES X 3ML</epsos:name>
+                                          <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="oldatos injekció"/>
+                                          <epsos:capacityQuantity unit="1" value="3"/>
+                                       </epsos:containerPackagedMedicine>
+                                    </epsos:asContent>
+                                    <epsos:asSpecializedKind classCode="GEN">
+                                       <epsos:generalizedMedicineClass classCode="MMAT">
+                                          <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"/>
+                                          <epsos:name>insulin glargine</epsos:name>
+                                       </epsos:generalizedMedicineClass>
+                                    </epsos:asSpecializedKind>
+                                    <epsos:ingredient xmlns="urn:epsos-org:ep:medication" classCode="ACTI">
+                                       <epsos:quantity>
+                                          <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                          <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                       </epsos:quantity>
+                                       <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                          <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"/>
+                                          <epsos:name>insulin glargine</epsos:name>
+                                       </epsos:ingredient>
+                                    </epsos:ingredient>
+                                 </manufacturedMaterial>                
+                              </manufacturedProduct>              
+                           </consumable>              
+                           <entryRelationship typeCode="COMP">                
+                              <sequenceNumber value="1"/>                
+                              <supply classCode="SPLY" moodCode="RQO">                  
+                                 <independentInd value="false"/>                  
+                                 <quantity unit="1" value="5"/>                
+                              </supply>              
+                           </entryRelationship>              
+                           <entryRelationship inversionInd="true" typeCode="SUBJ">                
+                              <observation classCode="OBS" moodCode="EVN">                  
+                                 <code code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass" displayName="Substitution"/>                  
+                                 <value code="N" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" codeSystemVersion="913-20091020" displayName="nincs" xsi:type="CD"/>                
+                              </observation>              
+                           </entryRelationship>            
+                        </substanceAdministration>
+                     </entryRelationship>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

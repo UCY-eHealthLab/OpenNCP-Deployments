@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Body xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+   <ns2:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                         xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                         xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                         xmlns:ns4="urn:ihe:iti:xds-b:2007"
+                         xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                         status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+      <ns2:RegistryErrorList>
+         <ns2:RegistryError codeContext="FINNCP-0031: encountered a problem with the structured strength of an active ingredient of the dispensed product"
+                            errorCode="XDSRegistryError"
+                            location="urn:oid:1.2.246.556.12001.4.1000.990.1"
+                            severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+      </ns2:RegistryErrorList>
+   </ns2:RegistryResponse>
+</soapenv:Body>

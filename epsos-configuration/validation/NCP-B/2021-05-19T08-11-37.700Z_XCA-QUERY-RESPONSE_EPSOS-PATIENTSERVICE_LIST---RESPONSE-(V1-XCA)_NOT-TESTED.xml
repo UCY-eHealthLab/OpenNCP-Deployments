@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AdhocQueryResponse xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                        xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                        xmlns:ns5="urn:ihe:iti:xds-b:2007"
+                        xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                        xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                        status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+   <RegistryObjectList>
+      <ExtrinsicObject home="urn:oid:1.3.6.1.4.1.28284.6.2.2.1"
+                       id="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                       lid="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210519111138</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>38507220018^^^&amp;1.3.6.1.4.1.28284.6.2.2.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>et-EE</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.6.1.4.1.28284.6.2.2.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="Patient Summary"/>
+         </Name>
+         <Description>
+            <LocalizedString value="The Patient Summary document (CDA L3 / Structured body) for patient 38507220018"/>
+         </Description>
+         <VersionInfo versionName="1.1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:fd3c60c0-71b8-414a-a6ab-02bb12ee7a99"
+                         nodeRepresentation="60591-5">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Patient Summary"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:3966240f-e2d9-4015-bdf3-e8750aad78db"
+                         nodeRepresentation="60591-5">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Patient Summary"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:d19bc2b5-69d2-4c35-b2d2-0ee6b5229086"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:3ca995ad-f9a3-496a-b766-b8757f668ab0"
+                         nodeRepresentation="urn:epSOS:ps:ps:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded Patient Summary"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:a87b041b-a86a-44b6-b9bc-b978c32c7466"
+                         nodeRepresentation="EE">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Estonia"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                         id="urn:uuid:dd320916-9ecc-4057-9018-019186314c49"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:53b5f42f-46f4-4852-afaa-5b54f3d86c71"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                             value="38507220018^^^&amp;1.3.6.1.4.1.28284.6.2.2.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:05b89126-7af8-4e82-9185-45388f66affe"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"
+                             value="1.3.6.1.4.1.28284.6.2.4.75^20210519111136836.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:1.3.6.1.4.1.28284.6.2.2.1"
+                       id="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                       lid="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210519111138</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>38507220018^^^&amp;1.3.6.1.4.1.28284.6.2.2.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>et-EE</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.6.1.4.1.28284.6.2.2.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="Patient Summary"/>
+         </Name>
+         <Description>
+            <LocalizedString value="The Patient Summary document (CDA L1 / PDF body) for patient 38507220018"/>
+         </Description>
+         <VersionInfo versionName="1.1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:cab8c186-c092-44c2-9230-6f5bad2ee621"
+                         nodeRepresentation="60591-5">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Patient Summary"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:061204d8-1138-4fa2-8aac-97265e90ccbd"
+                         nodeRepresentation="60591-5">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Patient Summary"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:8b268118-685c-417b-b6b2-ff9e1a0b9343"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:1fdbb50a-c031-49ce-9924-abf4c17be773"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:e60f19e6-eff7-4496-8319-a69b85c2722a"
+                         nodeRepresentation="EE">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Estonia"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                         id="urn:uuid:b0893b22-13e7-4a20-a779-f0d0cebc753a"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:375d4665-bc1a-4b4a-9f9c-50095a4fd1eb"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                             value="38507220018^^^&amp;1.3.6.1.4.1.28284.6.2.2.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:45ec3430-0ad7-45e2-ba19-9eb9411d0dab"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                             value="1.3.6.1.4.1.28284.6.2.4.75^20210519111136836.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:8cea3f5d-8de5-47e2-b9d3-3e6367e953ff"
+                   sourceObject="urn:uuid:c7131c2d-195d-4e90-be5d-ac72d7db008a"
+                   targetObject="urn:uuid:49d81413-93e0-4ca0-af51-d1accb7a03fb"/>
+   </RegistryObjectList>
+</ns3:AdhocQueryResponse>

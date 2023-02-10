@@ -1,0 +1,319 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+<id extension="Go381SBEjLHKBusY" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.extended Document"><translation code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="eDispensation"/></code>
+<title>Medication dispensed</title>
+<effectiveTime value="20210319123344+0200"/>
+<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+<languageCode code="el-GR"/>
+<setId nullFlavor="NI"/>
+<recordTarget xmlns:ext="urn:hl7-EE-DL-Ext:v1" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:mif="urn:hl7-org:v3/mif">
+        <patientRole>
+            <id extension="123451234512345005" root="1.2.372.980010.1.2"/>
+            <addr>
+                <streetAddressLine>5 Main Street</streetAddressLine>
+                <city>Sicktown</city>
+                <postalCode>D02 H688</postalCode>
+                <state>Co Dublin</state>
+                <country>Ireland</country>
+            </addr>
+            <telecom use="WP" value="tel:0871701705"/>
+            <patient>
+                <name>
+                    <family>Piper</family>
+                    <given>Wendy</given>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Female"/>
+                <birthTime value="19800501"/>
+                <languageCommunication>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+                    <languageCode code="en-US"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+<author typeCode="AUT">
+<functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Pharmacists"/>
+<time value="20210319123344+0200"/>
+<assignedAuthor classCode="ASSIGNED">
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+
+</representedOrganization>
+</assignedAuthor>
+</author>
+<custodian typeCode="CST">
+<assignedCustodian classCode="ASSIGNED">
+<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.4"/>
+<name>Country Custodian Name</name>
+<telecom nullFlavor="NI"/>
+<addr>
+<country>CY</country>
+</addr>
+</representedCustodianOrganization>
+</assignedCustodian></custodian>
+<legalAuthenticator contextControlCode="OP" typeCode="LA">
+<time value="20210319103344"/>
+<signatureCode code="S"/>
+<assignedEntity classCode="ASSIGNED">
+<id root="2.16.17.710.860.1000.990.1.3"/>
+<addr><streetAddressLine>Famagusta Hospital</streetAddressLine><city>City</city><postalCode>N/A</postalCode><state nullFlavor="UNK"/><country>Cyprus</country></addr><telecom nullFlavor="NI"/>
+<assignedPerson>
+<name>
+<family>Organisation</family>
+<given>Firstname</given>
+</name>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.3.1"/>
+<name>Famagusta Hospital</name><telecom nullFlavor="NI"/>
+<addr use="PST">
+<streetAddressLine>N/A</streetAddressLine>
+<city>City</city>
+<postalCode>N/A</postalCode>
+<state nullFlavor="UNK"/>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<inFulfillmentOf>
+<order moodCode="RQO">
+<id extension="1122 3344 5511 205" root="2.16.17.710.813.1000.990.1.20"/>
+</order>
+</inFulfillmentOf>
+<relatedDocument typeCode="APND">
+<parentDocument classCode="DOCCLIN">
+<id extension="1122 3344 5511 205.1" root="2.16.17.710.813.1000.990.1.1"/>
+</parentDocument>
+</relatedDocument>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.8"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+<id extension="D-1122 3344 5511 205.1" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.brief Document"><translation code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed"/></code>
+<title>Dispensation: D-1122 3344 5511 205.1</title>
+<text xmlns:ext="urn:hl7-EE-DL-Ext:v1" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:mif="urn:hl7-org:v3/mif">
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <th>Onset Date of treatment</th>
+                                    <th>Instructions to patient</th>
+                                    <th>Active Ingredient (ATC)</th>
+                                    <th>Pharmaceutical Dose Form</th>
+                                    <th>Strength</th>
+                                    <th>Number of Prescribed Packages</th>
+                                    <th>Size of the package prescribed and package type</th>
+                                    <th>Number of Units per intake</th>
+                                    <th>Frequency of Intake</th>
+                                    <th>Duration of treatment</th>
+                                    <th>Route of Administration</th>
+                                    <th>Substitution</th>
+                                    <th>Advise to the dispenser</th>
+                                </tr>
+                                <tr ID="COMPL_TABLE">
+                                    <td>28-Feb-2020</td>
+                                    <td>Take one three times daily</td>
+                                    <td>diazepam</td>
+                                    <td>Tablet</td>
+                                    <td>5mg</td>
+                                    <td>1</td>
+                                    <td>30</td>
+                                    <td>-</td>
+                                    <td>Three times daily</td>
+                                    <td>10 Days (28/02/2020 - 08/03/2020)</td>
+                                    <td>Oral Use</td>
+                                    <td>-</td>
+                                    <td>Anxicalm 5 mg Tablets</td>
+                                </tr>
+                                <tr ID="PINSTRUCT">
+                                    <td>28-Feb-2020</td>
+                                    <td>Take one three times daily</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text><entry typeCode="COMP">
+<supply classCode="SPLY" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.34"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+<id extension="2.16.17.710.813.1000.990.1.20^1122 3344 5511 205" root="2.16.17.710.860.1000.990.1.7"/>
+<quantity unit="1" value="1"/><product>
+<manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <epsos:id extension="2.16.17.710.813.1000.990.1.20^1122 3344 5511 205" root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/><code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical"/>
+                                        <name>KRATIUM TABLET 5MG, PACK WITH 40 TABS IN BLISTER(S)</name>
+                                        <epsos:formCode code="10219000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Tablet"/>
+                                        <epsos:asContent classCode="CONT">
+                                            <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <epsos:formCode nullFlavor="UNK"/>
+                                                <epsos:capacityQuantity unit="1" value="40"/>
+                                            </epsos:containerPackagedMedicine>
+                                        </epsos:asContent>
+                                        <epsos:asSpecializedKind classCode="GEN">
+                                            <epsos:generalizedMedicineClass classCode="MMAT">
+                                                <epsos:code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="diazepam">
+                                       <epsos:translation code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical"/>
+                                    </epsos:code>
+                                            </epsos:generalizedMedicineClass>
+                                        </epsos:asSpecializedKind>
+                                        <epsos:ingredient classCode="ACTI">
+                                            <epsos:quantity>
+                                                <urn:numerator xmlns:urn="urn:epsos-org:ep:medication" unit="mg" value="5" xsi:type="urn:PQ"/>
+                                                <urn:denominator xmlns:urn="urn:epsos-org:ep:medication" unit="1" value="1" xsi:type="urn:PQ"/>
+                                            </epsos:quantity>
+                                            <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                                <epsos:code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="diazepam"/>
+                                            </epsos:ingredient>
+                                        </epsos:ingredient>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+</product>
+<performer typeCode="PRF">
+<time value="20210319123344+0200"/>
+<assignedEntity>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/>
+<assignedPerson>
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+<participant contextControlCode="OP" typeCode="PRF">
+<participantRole classCode="LIC">
+<id root="2.16.17.710.860.1000.990.1.5"/>
+<scopingEntity classCode="ORG">
+<id root="2.16.17.710.860.1000.990.1.5.1"/>
+</scopingEntity>
+</participantRole>
+</participant>
+<entryRelationship typeCode="REFR"><substanceAdministration xmlns:ext="urn:hl7-EE-DL-Ext:v1" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:mif="urn:hl7-org:v3/mif" classCode="SBADM" moodCode="INT">
+                            
+                            
+                            
+                            <id extension="1122 3344 5511 205" root="2.16.17.710.813.1000.990.1.20"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime xmlns:urn="urn:hl7-org:v3" xsi:type="IVL_TS">
+                                <low value="20200228"/>
+                                <high value="20200308"/>
+                            </effectiveTime>
+                            <effectiveTime xmlns:urn="urn:hl7-org:v3" institutionSpecified="false" operator="A" xsi:type="PIVL_TS">
+                                <period unit="h" value="8"/>
+                            </effectiveTime>
+                            <routeCode code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Oral use"><translation code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" displayName="Oral Use"/></routeCode>
+                            <doseQuantity unit="mg" value="5"/>
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical"/>
+                                        <name>Anxicalm 5 mg Tablets</name>
+                                        <epsos:formCode code="10219000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Tablet"/>
+                                        <epsos:asContent classCode="CONT">
+                                            <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <epsos:formCode nullFlavor="UNK"/>
+                                                <epsos:capacityQuantity unit="1" value="30"/>
+                                            </epsos:containerPackagedMedicine>
+                                        </epsos:asContent>
+                                        <epsos:asSpecializedKind classCode="GEN">
+                                            <epsos:generalizedMedicineClass classCode="MMAT">
+                                                <epsos:code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="diazepam"><epsos:translation code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical"/></epsos:code>
+                                            </epsos:generalizedMedicineClass>
+                                        </epsos:asSpecializedKind>
+                                        <epsos:ingredient classCode="ACTI">
+                                            <epsos:quantity>
+                                                <urn:numerator xmlns:urn="urn:epsos-org:ep:medication" unit="mg" value="5" xsi:type="urn:PQ"/>
+                                                <urn:denominator xmlns:urn="urn:epsos-org:ep:medication" unit="1" value="1" xsi:type="urn:PQ"/>
+                                            </epsos:quantity>
+                                            <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                                <epsos:code code="N05BA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="diazepam"/>
+                                            </epsos:ingredient>
+                                        </epsos:ingredient>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship inversionInd="false" typeCode="COMP">
+                                <supply classCode="SPLY" moodCode="RQO">
+                                    <independentInd value="false"/>
+                                    <quantity unit="1" value="1"/>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="INT">
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                                    <code xmlns:urn="urn:hl7-org:v3" code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" displayName="PINSTRUCT" xsi:type="urn:CE"/>
+                                    <text>
+                                        <reference value="#PINSTRUCT"/>
+                                    </text>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code xmlns:urn="urn:hl7-org:v3" code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass" displayName="SUBST" xsi:type="urn:CE"/>
+                                    <value xmlns:urn="urn:hl7-org:v3" code="N" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" displayName="none" xsi:type="urn:CE"/>
+                                </observation>
+                            </entryRelationship>
+                        </substanceAdministration>
+</entryRelationship><entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN">
+<code code="SUBST" codeSystem="2.16.840.1.113883.5.6"/>
+</act>
+</entryRelationship>
+</supply>
+</entry>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

@@ -1,0 +1,52 @@
+logging:
+  level:
+    com.zaxxer.hikari: warn
+    eu.europa.ec.sante.ehdsi.openncp: info
+    org.hibernate: warn
+spring:
+  mvc:
+    pathmatch:
+       matching-strategy: ant_path_matcher
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    default:
+      jndi-name: java:comp/env/jdbc/ConfMgr
+    atna:
+      jndi-name: java:comp/env/jdbc/OPEN_ATNA
+    eadc:
+      jndi-name: java:comp/env/jdbc/EADC
+    database: default
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  jackson:
+    default-property-inclusion: non_empty
+  mail:
+    host: 127.0.0.1
+    port: 25
+    username: email@ehdsi.eu
+    password: password
+    smtp:
+      auth: false
+      connectiontimeout: 5000
+      timeout: 5000
+      writetimeout: 5000
+      starttls:
+        enabled: true
+        required: false
+      ssl:
+        enable: false
+        trust: "*"
+application:
+  security:
+    jwt:
+      secret: password
+

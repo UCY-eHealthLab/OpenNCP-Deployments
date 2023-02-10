@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuditMessage>
+    <EventIdentification EventActionCode="E" EventDateTime="2021-03-24T09:44:50.033Z" EventOutcomeIndicator="0">
+        <EventID code="SMP" displayName="SMP::Query" codeSystemName="EHDSI-193"/>
+        <EventTypeCode code="EHDSI-193" displayName="SMP::Query" codeSystemName="eHDSI Transactions"/>
+        <EventTypeCode code="SMP" displayName="SMP::Query" codeSystemName="EHDSI-193"/>
+    </EventIdentification>
+    <ActiveParticipant UserID="ncp-ppt.cy.ehealth.testa.eu" UserIsRequestor="true" NetworkAccessPointID="172.18.0.6" NetworkAccessPointTypeCode="2">
+        <RoleIDCode code="ServiceConsumer" displayName="Service Consumer" codeSystem="eHealth DSI"/>
+    </ActiveParticipant>
+    <ActiveParticipant UserID="smp-test.publisher.ehealth.testa.eu" UserIsRequestor="false" NetworkAccessPointID="smp-test.publisher.ehealth.testa.eu" NetworkAccessPointTypeCode="1">
+        <RoleIDCode code="ServiceProvider" displayName="Service Provider" codeSystem="eHealth DSI"/>
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditSourceID="CY-1"/>
+    <ParticipantObjectIdentification ParticipantObjectID="aHR0cHM6Ly9uY3AtcHB0LmhyLmVoZWFsdGgudGVzdGEuZXU6ODQ0My9lcHNvcy13cy1zZXJ2ZXIvc2VydmljZXMvWENQRF9TZXJ2aWNl" ParticipantObjectTypeCode="2">
+        <ParticipantObjectIDTypeCode code="SMP" displayName="SignedServiceMetadata" codeSystemName="eHealth DSI Security"/>
+    </ParticipantObjectIdentification>
+</AuditMessage>

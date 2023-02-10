@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AdhocQueryResponse xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                        xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                        xmlns:ns5="urn:ihe:iti:xds-b:2007"
+                        xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                        xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                        status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+   <RegistryObjectList>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                       lid="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130752</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:63d9c8fb-ff43-438a-a615-79014bb193fb"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:ae373c81-6dbb-4727-9fe9-185b7f995c68"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:026cee34-e67c-4e5c-806e-6df823c6e612"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:370b7467-d023-4fe4-96d1-d4b4ef867ca6"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:0cd0969a-6da0-442f-8be3-e83935f17b85"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:b786da00-e931-475f-956c-5d5de2e85011"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:b03aac87-29dd-40cf-a1c5-d8ef85c49c9c"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:b26fcecf-7e2c-4e90-a38a-fd07b48d9453"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                         id="urn:uuid:f370b450-ebc5-47d9-be80-c562437bcd6a"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:6c1a94c8-c871-4af6-8803-42b0c4604b25"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:ece0692f-3a49-40b1-9f66-827ab83e2e9b"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099882915^21993793.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                       lid="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130752</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:205c576d-f4a2-4fa2-9a80-8e3e374728bd"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:c7e4e4ad-9f37-4972-a16f-2fca906f0e54"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:4f20fb47-cbaf-462e-8167-a8be41487c5c"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:3bf14eae-e42f-425d-b2a6-fdfd34590fce"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:fb3f5eba-1d24-4c9d-b427-5df216539659"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:64eb309d-ab44-4ae2-8b56-5860bab6daed"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:511efa42-65a5-4541-b9c2-2265efa18bb5"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:4de5675d-ac9b-4469-96ec-b9a76d51c828"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                         id="urn:uuid:08adce0a-8384-42e4-917c-50686a7d5e50"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:090c4c9f-a70b-45b7-8374-3c3d01d7454f"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:448ba6bb-a064-4da4-b838-710e734c10f2"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099882915^21993793.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:e09c4c32-599a-4cf1-abc8-d40c302e880d"
+                   sourceObject="urn:uuid:b432bbb5-901b-41c0-ab11-dacb8fd0a834"
+                   targetObject="urn:uuid:d46cb61e-9f53-4aa0-87ab-feb4bf532d77"/>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                       lid="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130714</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:5eccd5d2-0bf1-4c1c-93b7-02aa9aaefce5"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:fe3bc210-b82d-4d58-b4f9-f5fe5845ed6d"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:4896c1a7-860a-4b3d-bcee-b976db17af7b"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:387d8974-8acc-4019-8958-0254811d38dd"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:e4705865-01c2-4955-b766-ff5c486a7b67"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:2287c830-fca2-42af-8456-bee511a6a4c5"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:0debe8ba-7faa-4372-9394-2087f3593985"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:3d7a6db9-4b85-45d8-ae32-a70b0ecb4fa0"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                         id="urn:uuid:05020b69-b579-445a-a78a-802b7366c6ad"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:d96c3cd0-a4fb-4568-b97e-335c2c2733a3"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:5e5b4232-df1f-4dde-834b-0f9476aa7c2b"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099875915^21993792.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                       lid="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130714</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:cef1d0f6-d2b9-4317-9a48-91563873a2fb"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:e164fe1e-0ead-4905-a3ab-81a1854b7b23"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:8f34f774-3e25-4591-9c2b-f38b47447983"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:cdf98366-66a5-47e4-82f8-47038e5a55bd"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:0201ff05-c283-472c-9a56-5e868c6474aa"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:06049e54-c6d3-400e-9657-3d1dc540e892"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:981b0f14-d2e3-448f-96a8-d12865b20c74"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:cd8d5e54-e5d0-47b1-ba81-382ab39759b7"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                         id="urn:uuid:2ac762bb-e46b-4470-80ea-36a2934e936c"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:165edad4-4572-4cb3-bff6-e90013993038"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:467e903b-af3f-404e-a386-ef8cc9a34256"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099875915^21993792.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:399dc35e-b3e6-4262-85be-d11f8d5a9dec"
+                   sourceObject="urn:uuid:ba465110-e0a0-4a3f-8855-99bab3a1812c"
+                   targetObject="urn:uuid:f0d8e933-4e7b-4ede-b5d7-4b98a193c96b"/>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                       lid="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130549</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:5ad336c3-d2d2-47f3-a13f-bbadf0a1df38"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:cd4c3e75-0a62-4393-8e5a-eefce6e934d5"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:bd6a2542-7dca-4ca2-9519-953b5731a07c"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:39d0d85f-e07b-4117-9f08-90b7721febc1"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:ff9a6264-f56f-4ca3-96e2-e90197b98218"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:fa74158c-881e-4030-a3cd-a84cecf33971"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:26da005e-4931-4f61-9d5c-3bdd5204af9b"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:5d8fe3fb-d56b-4f6e-9077-80217832b106"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                         id="urn:uuid:bd942058-8c68-469c-973b-87177eb98723"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:6f7f0bf7-c73c-4785-aa31-52b65f5eda29"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:819d57e9-f3ab-401c-bb4b-15bc8d3de2fe"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099868915^21993791.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                       lid="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130549</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:aad43811-bf5d-4572-ac2d-7dd125c8e752"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:89d42a41-9d49-4286-91c5-1a6d6486e03e"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:86c3baad-d6e5-4ffe-b64a-427f78408b81"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:31e64ddb-9520-4008-9f64-6313b01f68a4"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:2f3b6de4-658c-4ea4-9da9-93e47f789cb8"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:ae821337-8663-43f6-95ec-06d9394f569d"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:608752f5-e105-4ec4-92f7-8500345550a5"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:5992ec45-1cca-4df7-8de0-9b8f700f0cda"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                         id="urn:uuid:fce3da5b-b7b0-4f6b-91fc-d83515423fce"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:e50c37fb-78d1-479d-a6df-bf8893229077"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:53dafd5e-dbdd-4698-8856-a78cb7c46b38"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099868915^21993791.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:983f1a80-5a65-47eb-8d91-5f5361fba0c0"
+                   sourceObject="urn:uuid:64a243ea-ae6a-49db-a324-2674eec2ee1c"
+                   targetObject="urn:uuid:9cb34f62-4b1f-4e50-a01b-03efd567ab9d"/>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                       lid="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130403</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:8bdac832-1fe5-483e-9373-0f2ed1a59e2f"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:5cdd36bb-a480-4810-8ba4-0ed1a66fa49b"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:f0cb3ae9-c880-4f43-bef8-5f80dcde1b3e"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:a891b2e6-393b-4207-8faa-db1253296cde"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:a6e6e705-4551-49e9-9faf-a6267f2cab3f"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:48fe003b-97cf-406c-8f8d-66a00d31a5a0"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:dc3fe31b-7a00-492c-8cc2-46110adabc47"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:d84bbdb8-e5d6-4092-b8ec-bfb9158e3559"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                         id="urn:uuid:e2aea947-8b9c-4ab9-bf75-9eaf14873171"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:4bfb9a76-0b4a-4e0c-aa39-8df61c3c2b12"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:dc36d9a1-bf6c-452a-ad5f-f4d563879470"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099851915^21993790.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                       lid="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130403</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:75048177-d162-48a0-8889-257bccdb107a"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:0f4b0bd5-3952-4068-9a10-520a2785d679"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:7763842d-7ec9-45b8-afdd-e080663655f1"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:ac1a3060-fd2f-488f-b9cf-ebef99cd21b5"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:2f3ba1ce-560d-49cc-a812-5ea4f85ba0c7"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:9bb7b725-d51c-4967-a74d-8ec834dd3645"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:a3bdd3b6-592f-4ac9-91c0-4c6d2a13fa14"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:0eb15b11-883c-49e7-a53b-33a4cce3e7cc"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                         id="urn:uuid:bd970ef1-8733-404f-9e89-c662e3892335"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:d358ab5b-d315-4080-bfa8-9c8cba04f106"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:fc942a0c-2045-4081-b4bd-8eb3dffdb7aa"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099851915^21993790.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:11b215ca-7749-47fd-a109-e05c5efc1a10"
+                   sourceObject="urn:uuid:6ec6a9b5-bd22-4711-b4ce-89e4742ec085"
+                   targetObject="urn:uuid:8d56c673-ad8a-4285-9044-e814006e8558"/>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                       lid="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130246</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:3a8b8780-999b-44d1-8f35-9af24bf122bd"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:1af964c3-90a6-4c32-a8cf-0f0346fe5c90"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:6acffec7-7038-44aa-8c5d-b230a83dad8d"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:f71f25d5-8514-4f7a-98f2-8d44b5332583"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:5716049f-043b-4e33-843f-699206a1c14b"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:8b276af2-227a-4ed8-8fb2-e23e40592a77"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:1946c2ae-32de-4661-99dc-9eaf28f72e27"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:d003d8bd-e6a2-4ab6-875f-cb0d72f27640"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                         id="urn:uuid:d148604a-aa0b-4b76-a786-11c76ce1331f"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:a98d0a2f-b87b-4dc1-9cca-074018718d73"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:c461e31d-c695-4d56-94f2-bccc8b7d5092"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099843915^21993789.1">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.840.1.113883.2.25.3.4.1"
+                       id="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                       lid="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210309130246</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>el-GR</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>1.3.182.2.4</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="AEROLIN AER.MD.INH 100MCG/DOSE ΣΥΣΚΕΥΗ 200 ΔΟΣΕΙΣ, Ατμοί για εισπνοή, διάλυμα, 100MCG/DOSE"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:c0a02383-696b-45d3-99c9-532380cb5c15"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:139220b9-a1b2-41a2-b5eb-9949d56e94f5"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:2a0a42ed-065c-4b77-9756-ea998b9338f5"
+                         nodeRepresentation="R03AC02">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Σαλβουταμόλη"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:efae782f-01f5-4b3c-ba6b-72b174b971bc"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:88896933-fc8a-4a73-b557-fbdbb71c835d"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:1ca19fa9-6cf7-4955-b07e-80504d3c63de"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:17283ecc-0da6-4e1b-aab2-93b897f42493"
+                         nodeRepresentation="GR">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="GREECE"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:1e15b2ba-874d-48f1-a5d4-07a4dd686e49"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                         id="urn:uuid:3c97810d-02d3-4daa-9528-7ff52a6c998e"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>YGEIAS1 YGEIAS1</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:81b5ccad-9178-4316-b22a-49807b6a06cf"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                             value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:84f04152-ba5b-4e66-b7e6-e7af3d7b59dd"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                             value="2.16.840.1.113883.2.25.3.4.1.2.1.2103099843915^21993789.2">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:11341ec6-d99e-4ffa-9021-3175be215997"
+                   sourceObject="urn:uuid:7bd79091-5934-4ccc-a5d7-3adfa2009d99"
+                   targetObject="urn:uuid:ba6e0820-a4e3-4e73-b1bd-db2c5852b4eb"/>
+   </RegistryObjectList>
+</ns3:AdhocQueryResponse>

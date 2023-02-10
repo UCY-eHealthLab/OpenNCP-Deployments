@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveDocumentSetResponse xmlns="urn:ihe:iti:xds-b:2007">
+   <RegistryResponse xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                     status="urn:ihe:iti:2007:ResponseStatusType:PartialSuccess">
+      <RegistryErrorList>
+         <RegistryError codeContext="Assertion is not valid. The assertion has been issued in the future. Current time in server is: 2021-03-16T22:00:04.323Z However, the starting time of your assertion is: 2021-03-17T09:46:45.248Z"
+                        errorCode="1001"
+                        location="urn:oid:2.16.17.710.860.1000.990.1"
+                        severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+      </RegistryErrorList>
+   </RegistryResponse>
+</RetrieveDocumentSetResponse>

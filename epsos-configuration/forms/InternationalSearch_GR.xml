@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ism:searchFields xmlns:ism="http://ec.europa.eu/sante/ehncp/ism"
+                  xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"
+                  xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <ism:country code="GR" label="label.ism.addressCountry">
+      <ism:patientSearch scope="ALL">
+         <ism:identifier type="NORMAL">
+            <ism:id contextualDescription="nationalSecurityNumber"
+                    domain="2.16.840.1.113883.2.25.3.4.1.1.2"
+                    format="\d{11}"
+                    label="label.ism.nationalSocialSecurityNumber"/>
+         </ism:identifier>
+	     </ism:patientSearch>
+   </ism:country>
+   </ism:searchFields>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="XCPD_Service" targetNamespace="urn:ihe:iti:xcpd:2009" xmlns:hl7="urn:hl7-org:v3" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:tns="urn:ihe:iti:xcpd:2009" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<wsdl:documentation>
+    IHE XCPD Responding Gateway Service (epSOS Specific)
+    </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3">
+			<!-- Include the message schema -->
+			<xsd:include schemaLocation="XCPD_Service?xsd=schema/PRPA_IN201305UV02.xsd"/>
+		</xsd:schema>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3">
+			<!-- Include the message schema -->
+			<xsd:include schemaLocation="XCPD_Service?xsd=schema/PRPA_IN201306UV02.xsd"/>
+		</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PRPA_IN201305UV02_Message">
+    <wsdl:part name="Body" element="hl7:PRPA_IN201305UV02">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PRPA_IN201306UV02_Message">
+    <wsdl:part name="Body" element="hl7:PRPA_IN201306UV02">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="RespondingGateway_PortType">
+    <wsdl:operation name="RespondingGateway_PRPA_IN201305UV02">
+      <wsdl:input message="tns:PRPA_IN201305UV02_Message" wsaw:Action="urn:hl7-org:v3:PRPA_IN201305UV02:CrossGatewayPatientDiscovery">
+    </wsdl:input>
+      <wsdl:output message="tns:PRPA_IN201306UV02_Message" wsaw:Action="urn:hl7-org:v3:PRPA_IN201306UV02:CrossGatewayPatientDiscovery">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RespondingGateway_Binding_Soap12" type="tns:RespondingGateway_PortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="RespondingGateway_PRPA_IN201305UV02">
+      <soap12:operation soapAction="urn:hl7-org:v3:PRPA_IN201305UV02:CrossGatewayPatientDiscovery"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="XCPD_Service">
+    <wsdl:port name="RespondingGateway_Port_Soap12" binding="tns:RespondingGateway_Binding_Soap12">
+      <soap12:address location="http://ncp-ppt.ee.ehealth.testa.eu:8080/openncp-ws-server/services/XCPD_Service/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

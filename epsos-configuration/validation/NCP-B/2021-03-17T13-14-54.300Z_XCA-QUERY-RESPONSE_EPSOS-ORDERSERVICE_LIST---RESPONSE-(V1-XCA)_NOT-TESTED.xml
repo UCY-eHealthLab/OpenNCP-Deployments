@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AdhocQueryResponse xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                        xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                        xmlns:ns5="urn:ihe:iti:xds-b:2007"
+                        xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                        xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                        status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+   <RegistryObjectList>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                       lid="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231126</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Lantus,roztwór do wstrzykiwań,100 j.m./ml"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:0ea4a621-db1f-4335-8592-403038162072"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:c14d384d-e201-43f9-b945-ad065752b00f"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:af6da2a0-b2a7-4d03-ab31-e1a029cc7466"
+                         nodeRepresentation="A10AE04">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Insulinum glarginum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:3fdfeef3-954f-48d9-8be1-8879b746ce98"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:0ea6d877-9c64-4567-9e69-afb311c551ec"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:f695ad86-bf4e-47a3-a9ed-d539eea19dd0"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:206d6e6a-d8db-4b4c-848b-3cb74d5aef76"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:be5fa6a9-432c-4a34-8375-0947228ebc12"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                         id="urn:uuid:684f2e3f-b64e-4905-b520-2206f2b1a980"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:4f1a644d-1ec0-41c7-90b7-a6f46019e360"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:e4f64c44-6807-4d43-bb4e-9a187c8ecb73"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:09F50E3BC19E40D296973E.1615759887000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                       lid="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231126</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Lantus,roztwór do wstrzykiwań,100 j.m./ml"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:c4c313ea-e39d-4614-9af4-4f042dc9e71d"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:3d6b3178-17d7-487c-961e-8b771314899b"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:10cd5559-fc31-42b8-a045-4dbb79f6dbcb"
+                         nodeRepresentation="A10AE04">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Insulinum glarginum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:4b56f72d-5724-47b8-9e4c-82924ba74867"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:87863297-226d-41f0-a205-65cde5e95027"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:aee3f8ba-90be-4a99-84ca-8691142ec47c"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:7baf4643-947d-4682-950f-33bad75b4865"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:7de0b836-9cd4-4f33-a427-75d4739df6ad"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                         id="urn:uuid:99c43726-d9a3-4b97-be78-840d9c91b107"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:111ff0f9-b6ca-4487-8fd7-1dea92fbb0e7"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:e99e641e-9e12-45d4-b547-a97f287d60a0"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:09F50E3BC19E40D296973E.1615759887000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:a97a740e-4f54-4bc3-aad2-a8e5a61fbf76"
+                   sourceObject="urn:uuid:09f7f14d-42a5-4986-b5f0-340f992e69de"
+                   targetObject="urn:uuid:987b84c6-f903-4a5c-957b-2fd37a1f31d3"/>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                       lid="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231132</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Orocal D3,Tabletki do żucia,500 mg + 10 mcg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:4f84cb68-2b9c-407f-b8dd-03a086ffcfd9"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:de82d0b2-0393-4a11-b0c8-45db15dbd984"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:1a190e8b-86d4-4499-bb56-1106bd37c908"
+                         nodeRepresentation="A12AX">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Calcium + Cholecalciferolum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:7fc7e7a5-8af9-4241-bbc7-f748c4f54b53"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:0ee5c4a1-db7e-4e0c-b125-72c8ee638db2"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:2a7236d9-659d-4625-abf2-41bea51aad4c"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:e1c19eb3-a05f-427e-a034-6e5472a2f4b6"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:96fb81a9-c6ec-4c16-a0e7-2ac6c1d87e97"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                         id="urn:uuid:5df73963-1274-4059-b016-67edecf87d6c"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:9828c455-9a89-43d8-abc1-bc8e5658ce3c"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:791a7cbe-9cef-4f0e-abb1-b3e87db9eb5c"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:E66B59CB274741DFB4F639.1615759894000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                       lid="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231132</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Orocal D3,Tabletki do żucia,500 mg + 10 mcg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:7a581e02-e1ca-4e9f-acab-afee23dd65db"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:f0f5570e-0a32-4137-b059-ef042bfac3ba"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:31811dd3-1a07-478a-9150-fa9aae8c801c"
+                         nodeRepresentation="A12AX">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Calcium + Cholecalciferolum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:8988af78-beea-4d6c-a125-991f8325769d"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:2c6e53b6-ce58-4cc1-b918-d95e19eb3e8e"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:2e861d6d-c991-4bee-8888-b117e9637b6d"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:1e5027fc-ffd2-4f73-9cff-b6ff718639b7"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:451e1f7b-ac33-4d53-8b58-65e3246bc2b0"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                         id="urn:uuid:b691fe49-8c10-488c-8c84-80a10ee1dc22"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:657252f3-92f7-435b-a958-0f3a33442997"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:66dc9e3a-0e0b-42d8-89ed-df2e27a587b1"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:E66B59CB274741DFB4F639.1615759894000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:8fdc48b5-fe5d-4cce-9328-3c838aae330f"
+                   sourceObject="urn:uuid:d6c1cb8c-9f7d-4f27-80f3-3b4b97f57e03"
+                   targetObject="urn:uuid:b43ddab1-3101-445b-a68f-f1d1ba84edef"/>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                       lid="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231139</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Doltard,Tabletki o przedłużonym uwalnianiu,100 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:0c674994-432b-4b17-85a6-676af5d67565"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:02c3be27-938a-4d1c-a295-1285a7a28d27"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:c9bd2d93-2b3e-46e2-9aa0-d6cfaa1336b2"
+                         nodeRepresentation="N02AA01">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Morphini sulfas"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:d8ff0d42-0e25-435c-915f-10e25748863f"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:closed">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Closed"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:937de3ba-05a3-4fd7-a18f-d849f3ce8f94"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:16133072-3c23-489a-a750-5ce80860e14e"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:a0039161-c57d-419a-b652-2fde6763c79c"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:3d8b0188-0817-456c-855a-954e0db8f561"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                         id="urn:uuid:51093c69-a88b-4255-b22f-85b8e363cf34"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:65266e2a-8934-46e0-b4e8-5237b410879a"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:8dad4922-02d3-4386-b561-331c234e34ca"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:9811AA60ACDB49BAA2AE6E.1615759900000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                       lid="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231139</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Doltard,Tabletki o przedłużonym uwalnianiu,100 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:b7e2f416-a2ff-4117-a4f7-06f048e8a2f8"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:d6c671c5-cdb4-4a8a-b36b-00eb589b1f9d"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:709978d4-2807-47bf-8618-6081a724b959"
+                         nodeRepresentation="N02AA01">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Morphini sulfas"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:0fe0a189-f86c-4b27-af7c-9f3da4a68c5e"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:closed">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Closed"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:03d06342-caf0-4caa-a7d5-d36ff8ce65fa"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:1fcf1100-a4b8-447d-807f-dad53f37c753"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:a7ebd92d-4310-4641-bcbe-ac3188b856ed"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:d2c73a6a-2a35-4c9e-b9e1-5f9989a72529"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                         id="urn:uuid:ddf461cd-17da-49d7-8c92-9a08461bdb23"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:0ad642d8-e063-4216-a65f-9d98820d4b07"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:d0de7bfe-cffc-40cf-8ee5-31f9c526abc0"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:9811AA60ACDB49BAA2AE6E.1615759900000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:fd2d8d5f-977e-4146-a7d3-6be17bb9d348"
+                   sourceObject="urn:uuid:f4486a3e-02b5-4036-9415-580aadc0fbfe"
+                   targetObject="urn:uuid:e5fb0261-b33d-408d-b93b-16aeb4c66e3b"/>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                       lid="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231158</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Aprepitant Sandoz,kapsułki twarde,80 mg/125 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:a069ed95-3efa-4c78-9ee9-682c0a206b44"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:853f5bdb-6765-4edd-89da-a7438e5b2854"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:81ae356d-e4ab-4a08-9f54-1a1a4d5f0630"
+                         nodeRepresentation="A04AD12">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Aprepitantum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:54dea425-2dff-4d96-8ee6-248ebb042f57"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:be78caa5-7dd3-4f0c-85ca-c14cc77e68e4"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:a855594f-1d90-47a8-b9b5-5c902e7672fe"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:5473fa89-eff7-49eb-bc50-df653662f4af"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:17f8aa85-a87a-4f36-8418-72d83bec7056"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                         id="urn:uuid:87bea01b-9e04-4c46-b82b-8a668f9317d8"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:8bbdd64c-fd9e-44cf-b9d0-9b93c99daf7f"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:af358562-a7bc-47f5-8f85-0c8442435c55"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:50EEBFC5BAF843FE9EF0BC.1615759919000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                       lid="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231158</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Aprepitant Sandoz,kapsułki twarde,80 mg/125 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:cdef5953-9b4f-4cb6-a0c2-405ecaa3c0de"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:b9bd28a5-fc97-4b62-8014-35c6de4cab39"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:77bf4ea6-94cd-45eb-bd17-42c3dcda1689"
+                         nodeRepresentation="A04AD12">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Aprepitantum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:8c14e4b0-08be-43d6-8b38-98f4e769f4f4"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:fce3c57e-d422-41db-9045-dc7f98376ac1"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:66229487-3667-46b3-a55d-d686e1d2ea5f"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:b008becf-9ae1-4a8b-ae74-74f00d210c92"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:185ea03a-b30a-4c2d-9518-5f98d11025e7"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                         id="urn:uuid:5ee3f082-b3df-4968-8be2-09e1a45dfc70"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:739fc029-6d14-407a-a3ee-47340a4b9450"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:a756cf24-95d4-4a16-8bcd-ccea4c744735"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:50EEBFC5BAF843FE9EF0BC.1615759919000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:b4428968-a7b7-4381-bce3-79d07f585991"
+                   sourceObject="urn:uuid:a0769531-79bf-4777-81f5-d9a9b3fc530a"
+                   targetObject="urn:uuid:ab2e0fed-9f95-4fbf-b34b-f87e851a555e"/>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                       lid="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231200</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Qlaira,Tabletki powlekane,3 mg (tabletka ciemnożółta); 2 mg + 2 mg (tabletka czerwona); 2 mg + 3 mg (tabletka jasnożółta); 1 mg (tabletka ciemnoczerwona)"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:58d8ed36-55f6-4aea-821f-46b7f4890333"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:f00a8813-dbf5-4cbb-a512-f641b3e50721"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:3cf27df5-edf8-4de6-ae61-b53661f57766"
+                         nodeRepresentation="G03AB08">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Estradioli valeras + Dienogestum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:9c127619-6028-4bee-8dac-8617d8d31235"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:3738b2c0-a590-49de-8bff-17ee5e988883"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:4dc828e0-af6e-4046-ad03-275163bb66a0"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:4d2d0a1e-3e6e-4636-b8b2-01608e219601"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:14f94647-fdbb-41c7-84ab-aec3cbc9d27e"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                         id="urn:uuid:e68a911d-87e6-470b-9635-0fa5c809ae23"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:a97ad231-b49d-4678-a035-bcc5b0584054"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:9d18251c-964e-4552-90df-0bb11ab4471e"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:2C3DB96DD92F4D24A8F321.1615759921000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                       lid="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210314231200</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Qlaira,Tabletki powlekane,3 mg (tabletka ciemnożółta); 2 mg + 2 mg (tabletka czerwona); 2 mg + 3 mg (tabletka jasnożółta); 1 mg (tabletka ciemnoczerwona)"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:ca136a6e-2265-4444-9e68-fb7aa45879d1"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:379b7644-4d76-462f-806d-6461d21061c7"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:5db4648f-aa9f-4740-8047-ab5ad16b82e8"
+                         nodeRepresentation="G03AB08">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Estradioli valeras + Dienogestum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:57791402-2116-4923-90be-be546185228a"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:f49ab746-837e-4d57-a198-6455b6942a10"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:39eaec9a-b282-4162-8d7b-266ae6736a9b"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:09c22238-b1c8-4fcc-a10c-00108b895b7f"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:7a7d6ee7-0c48-4b8b-8375-dc2dce58ae87"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                         id="urn:uuid:a2a783d5-8fe5-4073-b431-526a1ecd869b"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:d003da0f-e9d5-486a-87f4-516a3e3cab1e"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:8d814303-d99b-4205-861f-a9a2c4d387e1"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:2C3DB96DD92F4D24A8F321.1615759921000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:3c790297-9680-4dea-b0eb-01fa2e8e1d7c"
+                   sourceObject="urn:uuid:324e61e2-2b87-4767-a4cf-fcd2a4179474"
+                   targetObject="urn:uuid:fdae0995-4a2a-4dde-8951-cf5e1fb6feb7"/>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                       lid="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210315222842</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Anafranil,Tabletki powlekane,10 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:16d6c5cd-d9a5-46c8-9f33-cd1140c4b970"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:9120cc12-3f11-44c6-8469-d5ada88e36a1"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:e623c1b3-66db-4691-88a8-d49496bb13c7"
+                         nodeRepresentation="N06AA04">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Clomipramini hydrochloridum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:fe866596-ba17-4d84-83d3-9184002611a3"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:2a5a8055-5a46-484b-9181-d93509461434"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:b69aba0e-e75e-429f-a1e8-8be9e1c03aac"
+                         nodeRepresentation="urn:epSOS:ep:pre:2010">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI formatCodes</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="epSOS coded ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:aca19ef4-46f8-4278-a98e-cde65b9dcac3"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:3741cc06-ad7c-421e-96c6-bd14004edb2e"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                         id="urn:uuid:94472deb-6796-4201-be2c-b6e7e99f1bb3"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:34e94a9b-abf0-4daf-b538-3baf98ad312a"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:d3686b83-f3cc-4965-bef1-45a2654fa972"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:A9CD1FFD641E47BC985525.1615843724000.XML">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <ExtrinsicObject home="urn:oid:2.16.17.710.819.1000.990.1"
+                       id="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                       lid="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                       mimeType="text/xml"
+                       objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                       status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+         <Slot name="creationTime">
+            <ValueList>
+               <Value>20210315222842</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="sourcePatientId">
+            <ValueList>
+               <Value>79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="languageCode">
+            <ValueList>
+               <Value>pl-PL</Value>
+            </ValueList>
+         </Slot>
+         <Slot name="repositoryUniqueId">
+            <ValueList>
+               <Value>2.16.17.710.819.1000.990.1</Value>
+            </ValueList>
+         </Slot>
+         <Name>
+            <LocalizedString value="eHDSI - ePrescription"/>
+         </Name>
+         <Description>
+            <LocalizedString value="Anafranil,Tabletki powlekane,10 mg"/>
+         </Description>
+         <VersionInfo versionName="1"/>
+         <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:2c60c8db-e0b1-4547-9c15-d3cb4046ee5c"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:b2ccb97b-136e-484d-b165-fa45290474b1"
+                         nodeRepresentation="57833-6">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="eHDSI - ePrescription"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:ffe25823-0d9d-48e0-9789-892a38db4f8b"
+                         nodeRepresentation="N06AA04">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.6.73</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Clomipramini hydrochloridum"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:0947c924-8cb1-4c21-9a67-26e2f58776a7"
+                         nodeRepresentation="urn:ihe:iti:xdw:2011:eventCode:open">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.3.6.1.4.1.19376.1.2.3</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Open"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:c61ce566-4ccd-43c0-a13b-841e6456abc2"
+                         nodeRepresentation="N">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>2.16.840.1.113883.5.25</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Normal"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:c3b717ac-b2a0-4b2d-a08c-11508c6294e1"
+                         nodeRepresentation="urn:ihe:iti:xds-sd:pdf:2008">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>IHE PCC</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="PDF/A coded document"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:4a0ec4c2-4861-4541-b790-173cd0d05c56"
+                         nodeRepresentation="PL">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>1.0.3166.1</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Poland"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:fac9822b-bf34-4867-8c44-aa3fbd3a04de"
+                         nodeRepresentation="Not Used">
+            <Slot name="codingScheme">
+               <ValueList>
+                  <Value>eHDSI Practice Setting Codes-Not Used</Value>
+               </ValueList>
+            </Slot>
+            <Name>
+               <LocalizedString value="Not Used"/>
+            </Name>
+         </Classification>
+         <Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                         classifiedObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                         id="urn:uuid:1421d12c-a05c-4b9d-9715-6e9abeb6f4eb"
+                         nodeRepresentation="">
+            <Slot name="authorPerson">
+               <ValueList>
+                  <Value>Adam Nowak</Value>
+               </ValueList>
+            </Slot>
+         </Classification>
+         <ExternalIdentifier id="urn:uuid:b435c27d-e1c2-4d5a-a5d1-ee4c9d6d897d"
+                             identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                             value="79092303809^^^&amp;2.16.17.710.819.1000.990.1&amp;ISO">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.patientId"/>
+            </Name>
+         </ExternalIdentifier>
+         <ExternalIdentifier id="urn:uuid:f15b65c8-8596-44d5-89c6-cb4f593a1e4a"
+                             identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                             registryObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                             value="2.16.840.1.113883.3.4424.7.20.1^2.16.840.1.113883.3.4424.2.7.17.2.1:A9CD1FFD641E47BC985525.1615843724000.PDF">
+            <Name>
+               <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+            </Name>
+         </ExternalIdentifier>
+      </ExtrinsicObject>
+      <Association associationType="urn:ihe:iti:2007:AssociationType:XFRM"
+                   id="urn:uuid:0fa5fbd5-0152-4468-a681-60404fbb4117"
+                   sourceObject="urn:uuid:dae75479-884f-4ed5-9328-e7fff771dc84"
+                   targetObject="urn:uuid:cdce0f98-5ad6-40a3-b661-fbfec1740cbb"/>
+   </RegistryObjectList>
+</ns3:AdhocQueryResponse>

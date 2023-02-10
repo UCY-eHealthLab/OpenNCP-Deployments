@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ism:searchFields xmlns:ism="http://ec.europa.eu/sante/ehncp/ism"
+                  xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"
+                  xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <ism:country code="LU" label="label.ism.addressCountry">
+      <ism:patientSearch scope="ALL">
+         <ism:identifier type="NORMAL">
+            <ism:id contextualDescription="Matricule"
+                    domain="1.3.182.4.4"
+                    format="\d{13}"
+                    label="label.ism.nationalSocialSecurityNumber"
+                    mandatory="true"/>
+         </ism:identifier>
+      </ism:patientSearch>
+      <ism:documentSearch scope="EP">
+         <ism:prescriptionId contextualDescription="ePrescriptionId"
+                             domain="1.3.182.11.5"
+                             format="[a-zA-Z0-9]{4,}"
+                             label="label.ism.ePrescriptionId"
+                             mandatory="true"/>
+       </ism:documentSearch>
+	  </ism:country>
+</ism:searchFields>

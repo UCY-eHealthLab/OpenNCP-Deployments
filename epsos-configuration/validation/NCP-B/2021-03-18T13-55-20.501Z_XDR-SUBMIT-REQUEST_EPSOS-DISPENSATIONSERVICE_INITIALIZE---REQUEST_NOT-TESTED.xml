@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Body xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+   <xdr:ProvideAndRegisterDocumentSetRequest xmlns:xdr="urn:ihe:iti:xds-b:2007">
+      <ns3:SubmitObjectsRequest xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                                xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                                xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                                xmlns:ns4="urn:ihe:iti:xds-b:2007">
+         <RegistryObjectList>
+            <ExtrinsicObject id="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                             mimeType="text/xml"
+                             objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                             status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+               <Slot name="creationTime">
+                  <ValueList>
+                     <Value>20210318015520</Value>
+                  </ValueList>
+               </Slot>
+               <Slot name="languageCode">
+                  <ValueList>
+                     <Value>en</Value>
+                  </ValueList>
+               </Slot>
+               <Slot name="sourcePatientId">
+                  <ValueList>
+                     <Value>01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1.1.2&amp;ISO</Value>
+                  </ValueList>
+               </Slot>
+               <Slot name="sourcePatientInfo">
+                  <ValueList>
+                     <Value>PID-3|01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1.1.2&amp;ISO</Value>
+                     <Value>PID-5|ΔΙΑΣΥΝΟΡ-ΕΠΩΝ-Α^ΔΙΑΣΥΝΟΡ-ΟΝΟΜ-Α</Value>
+                     <Value>PID-7|19990501240000.000+0000</Value>
+                  </ValueList>
+               </Slot>
+               <Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:110b81e5-f3b1-4fd4-bbff-b24d5f1c9c41"
+                               nodeRepresentation="CY">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>1.0.3166.1</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="CYPRUS"/>
+                  </Name>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:5488fc69-b7c5-4e0d-9fd2-ea1740b5e134"
+                               nodeRepresentation="Not Used">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>eHDSI Practice Setting Codes-Not Used</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="Not Used"/>
+                  </Name>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:9cc3edba-9e52-468d-8089-a798df194ee4"
+                               nodeRepresentation="N">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>2.16.840.1.113883.5.25</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="Normal"/>
+                  </Name>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:f50a1938-6283-4e7c-a91c-4c02c438c953"
+                               nodeRepresentation="60593-1">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>2.16.840.1.113883.6.1</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="Medication dispensed"/>
+                  </Name>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:56f4a26c-7dd9-4e2c-b715-8442289a0d49"
+                               nodeRepresentation="urn:epSOS:ep:dis:2010">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>eHDSI formatCodes</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="eHDSI coded eDispensation"/>
+                  </Name>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                               classifiedObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                               id="urn:uuid:a3a53b4b-af58-459f-8366-6d1b57d38353"
+                               nodeRepresentation="60593-1">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>2.16.840.1.113883.6.1</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="eDispensation"/>
+                  </Name>
+               </Classification>
+               <ExternalIdentifier id="urn:uuid:2c658d42-3426-42be-8d98-95534afc488b"
+                                   identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                                   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                   registryObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                                   value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1.1.2&amp;ISO">
+                  <Name>
+                     <LocalizedString value="XDSDocumentEntry.patientId"/>
+                  </Name>
+               </ExternalIdentifier>
+               <ExternalIdentifier id="urn:uuid:f2ba1375-d330-441f-801a-ad94087952b4"
+                                   identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                                   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                   registryObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88"
+                                   value="2.16.17.710.860.1000.990.1^CCQE/9prSMSegpjh">
+                  <Name>
+                     <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                  </Name>
+               </ExternalIdentifier>
+            </ExtrinsicObject>
+            <RegistryPackage id="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                             objectType="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd">
+               <Slot name="submissionTime">
+                  <ValueList>
+                     <Value>20210318015520</Value>
+                  </ValueList>
+               </Slot>
+               <Name>
+                  <LocalizedString value="eDispensation"/>
+               </Name>
+               <Description>
+                  <LocalizedString value="Description of eDispensation"/>
+               </Description>
+               <Classification classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"
+                               classifiedObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                               id="urn:uuid:1d3281b9-b48d-434e-bb76-dd96a3f388bf"
+                               nodeRepresentation="">
+                  <Slot name="authorInstitution">
+                     <ValueList>
+                        <Value>NNGH^^^^^^^^^1</Value>
+                     </ValueList>
+                  </Slot>
+                  <Slot name="authorPerson">
+                     <ValueList>
+                        <Value>null null&amp;1&amp;ISO</Value>
+                     </ValueList>
+                  </Slot>
+               </Classification>
+               <Classification classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500"
+                               classifiedObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                               id="urn:uuid:c995df97-762d-421f-8c4c-ce90f8ba274b"
+                               nodeRepresentation="60593-1">
+                  <Slot name="codingScheme">
+                     <ValueList>
+                        <Value>2.16.840.1.113883.6.1</Value>
+                     </ValueList>
+                  </Slot>
+                  <Name>
+                     <LocalizedString value="eDispensation"/>
+                  </Name>
+               </Classification>
+               <ExternalIdentifier id="urn:uuid:dd7d69ec-3755-478f-aeae-beb666b06f94"
+                                   identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"
+                                   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                   registryObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                                   value="2.16.17.710.860.1000.990.1.428">
+                  <Name>
+                     <LocalizedString value="XDSSubmissionSet.uniqueId"/>
+                  </Name>
+               </ExternalIdentifier>
+               <ExternalIdentifier id="urn:uuid:59d610ce-c2f3-42d6-b17a-7baf54ca48a0"
+                                   identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446"
+                                   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                   registryObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                                   value="01059902062^^^&amp;2.16.840.1.113883.2.25.3.4.1.1.2&amp;ISO">
+                  <Name>
+                     <LocalizedString value="XDSSubmissionSet.patientId"/>
+                  </Name>
+               </ExternalIdentifier>
+               <ExternalIdentifier id="urn:uuid:c8480073-95a4-4892-8228-3b368ecf0b7b"
+                                   identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"
+                                   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                   registryObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                                   value="1.3.6.1.4.1.21367.2009.1.2.1">
+                  <Name>
+                     <LocalizedString value="XDSSubmissionSet.sourceId"/>
+                  </Name>
+               </ExternalIdentifier>
+            </RegistryPackage>
+            <Classification classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"
+                            classifiedObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                            id="urn:uuid:d5e27564-3e4e-4eba-86b6-78909a7d28b8"/>
+            <Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember"
+                         id="urn:uuid:9b93064d-0463-4af4-83e5-c649dcd5f842"
+                         sourceObject="urn:uuid:5aca3cf9-d2f7-4ff9-b08d-96971229c8a4"
+                         targetObject="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88">
+               <Slot name="SubmissionSetStatus">
+                  <ValueList>
+                     <Value>Original</Value>
+                  </ValueList>
+               </Slot>
+            </Association>
+         </RegistryObjectList>
+      </ns3:SubmitObjectsRequest>
+      <xdr:Document id="urn:uuid:60135f3a-4a1c-4211-bd63-f2b8b2049b88">PENsaW5pY2FsRG9jdW1lbnQgeG1sbnM9InVybjpobDctb3JnOnYzIiB4bWxuczplcHNvcz0idXJuOmVwc29zLW9yZzplcDptZWRpY2F0aW9uIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiBjbGFzc0NvZGU9IkRPQ0NMSU4iIG1vb2RDb2RlPSJFVk4iIHhzaTpzY2hlbWFMb2NhdGlvbj0idXJuOmhsNy1vcmc6djMgQ0RBLnhzZCI+CiAgPHJlYWxtQ29kZSBjb2RlPSJDWSIvPgogIDx0eXBlSWQgZXh0ZW5zaW9uPSJQT0NEX0hEMDAwMDQwIiByb290PSIyLjE2Ljg0MC4xLjExMzg4My4xLjMiLz4KICA8dGVtcGxhdGVJZCByb290PSIxLjMuNi4xLjQuMS4xMjU1OS4xMS4xMC4xLjMuMS4xLjIiLz4KICA8aWQgZXh0ZW5zaW9uPSIyLjE2Ljg0MC4xLjExMzg4My4yLjI1LjMuNC4xLjIuMS4yMTAzMDk5ODY4OTE1XjIxOTkzNzkxLjEiIHJvb3Q9IjIuMTYuMTk2LjEuMTAxLjEwLjMuMjkuNTQyOTAiLz4KICA8Y29kZSBjb2RlPSI2MDU5My0xIiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My42LjEiIGNvZGVTeXN0ZW1OYW1lPSJMT0lOQyIgY29kZVN5c3RlbVZlcnNpb249IjIuNTkiIGRpc3BsYXlOYW1lPSJNZWRpY2F0aW9uIGRpc3BlbnNlZC5leHRlbmRlZCBEb2N1bWVudCIvPgogIDx0aXRsZT5NZWRpY2F0aW9uIGRpc3BlbnNlZDwvdGl0bGU+CiAgPGVmZmVjdGl2ZVRpbWUgdmFsdWU9IjIwMjEwMzE4Ii8+CiAgPGNvbmZpZGVudGlhbGl0eUNvZGUgY29kZT0iTiIgY29kZVN5c3RlbT0iMi4xNi44NDAuMS4xMTM4ODMuNS4yNSIgY29kZVN5c3RlbU5hbWU9IkNvbmZpZGVudGlhbGl0eSIgY29kZVN5c3RlbVZlcnNpb249IjkxMy0yMDA5MTAyMCIgZGlzcGxheU5hbWU9Im5vcm1hbCIvPgogIDxsYW5ndWFnZUNvZGUgY29kZT0iZW4tR0IiLz4KICA8c2V0SWQgbnVsbEZsYXZvcj0iTkkiLz4KICA8cmVjb3JkVGFyZ2V0PgogICAgPHBhdGllbnRSb2xlPgogICAgICA8aWQgZXh0ZW5zaW9uPSIwMTA1OTkwMjA2MiIgcm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMi4yNS4zLjQuMS4xLjIiLz4KICAgICAgPGFkZHI+PGNvdW50cnk+R1I8L2NvdW50cnk+PHN0cmVldEFkZHJlc3NMaW5lPs6VzpPOnc6RzqTOmc6RzqMgMTAwPC9zdHJlZXRBZGRyZXNzTGluZT48L2FkZHI+CiAgICAgIDx0ZWxlY29tIHVzZT0iSCIgdmFsdWU9InRlbDoyMzEwNjU0MzIxIi8+CiAgICAgIDxwYXRpZW50PgogICAgICAgIDxuYW1lPjxnaXZlbj7OlM6ZzpHOo86lzp3On86hLc6fzp3On86cLc6RPC9naXZlbj48ZmFtaWx5Ps6UzpnOkc6jzqXOnc6fzqEtzpXOoM6pzp0tzpE8L2ZhbWlseT48L25hbWU+CiAgICAgICAgPGFkbWluaXN0cmF0aXZlR2VuZGVyQ29kZSBjb2RlPSJGIiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My41LjEiIGNvZGVTeXN0ZW1OYW1lPSJBZG1pbmlzdHJhdGl2ZUdlbmRlciIgY29kZVN5c3RlbVZlcnNpb249IjkxMy0yMDA5MTAyMCIgZGlzcGxheU5hbWU9IkZlbWFsZSIvPgogICAgICAgIDxiaXJ0aFRpbWUgdmFsdWU9IjE5OTkwNTAxIi8+CiAgICAgICAgPGxhbmd1YWdlQ29tbXVuaWNhdGlvbj4KICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuNS4zLjEuMi4xIi8+CiAgICAgICAgICA8bGFuZ3VhZ2VDb2RlIGNvZGU9ImVuLUdCIi8+CiAgICAgICAgPC9sYW5ndWFnZUNvbW11bmljYXRpb24+CiAgICAgIDwvcGF0aWVudD4KICAgIDwvcGF0aWVudFJvbGU+CiAgPC9yZWNvcmRUYXJnZXQ+CiAgPGF1dGhvcj4KICAgIDxmdW5jdGlvbkNvZGUgY29kZT0iMjI2MiIgY29kZVN5c3RlbT0iMi4xNi44NDAuMS4xMTM4ODMuMi45LjYuMi43IiBjb2RlU3lzdGVtTmFtZT0iSVNDTyIgY29kZVN5c3RlbVZlcnNpb249IjIwMDgiIGRpc3BsYXlOYW1lPSJQaGFybWFjaXN0cyIvPgogICAgPHRpbWUgdmFsdWU9IjIwMjEwMzE4MTU1MDIwKzAyMDAiLz4KICAgIDxhc3NpZ25lZEF1dGhvcj4KICAgICAgPGlkIGV4dGVuc2lvbj0iMS4yMzEuMjMuMTIzLjEiIHJvb3Q9IjIuMTYuNDcwLjEuMTAwLjEuMS4xMDAwLjk5MC4xIi8+CiAgICAgIDxhZGRyPjxzdHJlZXRBZGRyZXNzTGluZT4xLCB0ZXN0IHN0cmVldDwvc3RyZWV0QWRkcmVzc0xpbmU+PGNpdHk+Tmljb3NpYTwvY2l0eT48cG9zdGFsQ29kZT4xPC9wb3N0YWxDb2RlPjxjb3VudHJ5PkNZPC9jb3VudHJ5PjwvYWRkcj4KICAgICAgPHRlbGVjb20gdXNlPSJXUCIgdmFsdWU9InRlbDoyMjEyMzEyMyIvPgogICAgICA8YXNzaWduZWRQZXJzb24gY2xhc3NDb2RlPSJQU04iIGRldGVybWluZXJDb2RlPSJJTlNUQU5DRSI+CiAgICAgICAgPG5hbWU+PGdpdmVuPs6Wzq7Ovc+Jzr3Osc+CPC9naXZlbj48ZmFtaWx5Ps6Rzr3PhM+Jzr3Or86/z4U8L2ZhbWlseT48L25hbWU+CiAgICAgIDwvYXNzaWduZWRQZXJzb24+CiAgICAgIDxyZXByZXNlbnRlZE9yZ2FuaXphdGlvbj4KICAgICAgICA8aWQgZXh0ZW5zaW9uPSIxLjIzMS4yMy4xMjMuMSIgcm9vdD0iMi4xNi40NzAuMS4xMDAuMS4xLjEwMDAuOTkwLjEiLz4KICAgICAgICA8bmFtZT5TdGF0ZSBIZWFsdGggU2VydmljZXMgT3JnYW5pc2F0aW9uPC9uYW1lPgogICAgICAgIDx0ZWxlY29tIHVzZT0iV1AiIHZhbHVlPSJ0ZWw6KzIyMTIzMTIzIi8+CiAgICAgICAgPHRlbGVjb20gdXNlPSJXUCIgdmFsdWU9Im1haWx0bzp6LmFudG9uaW91QGdtYWlsLmNvbSIvPgogICAgICAgIDxhZGRyIHVzZT0iV1AiPjxzdHJlZXRBZGRyZXNzTGluZT4xLCB0ZXN0IHN0cmVldDwvc3RyZWV0QWRkcmVzc0xpbmU+PHN0YXRlPlVOSzwvc3RhdGU+PGNvdW50cnk+Q1k8L2NvdW50cnk+PC9hZGRyPgogICAgICA8L3JlcHJlc2VudGVkT3JnYW5pemF0aW9uPgogICAgPC9hc3NpZ25lZEF1dGhvcj4KICA8L2F1dGhvcj4KICA8Y3VzdG9kaWFuPgogICAgPGFzc2lnbmVkQ3VzdG9kaWFuPgogICAgICA8cmVwcmVzZW50ZWRDdXN0b2RpYW5Pcmdhbml6YXRpb24+CiAgICAgICAgPGlkIGV4dGVuc2lvbj0iZ292LmN5IiByb290PSIyLjE2LjE3LjcxMC44NjAuMTAwMC45OTAuMSIvPgogICAgICAgIDxuYW1lPk1pbmlzdHJ5IG9mIEhlYWx0aDwvbmFtZT4KICAgICAgICA8dGVsZWNvbSB1c2U9IldQIiB2YWx1ZT0idGVsOisyMjExMTExMSIvPgogICAgICAgIDxhZGRyIHVzZT0iV1AiPjxzdHJlZXRBZGRyZXNzTGluZT5Ib3NwaXRhbCBzdHJlZXQsIDEyMSwgMjIyMiwgU3Ryb3ZvbG9zPC9zdHJlZXRBZGRyZXNzTGluZT48c3RhdGU+VU5LPC9zdGF0ZT48Y291bnRyeT5DWTwvY291bnRyeT48L2FkZHI+CiAgICAgIDwvcmVwcmVzZW50ZWRDdXN0b2RpYW5Pcmdhbml6YXRpb24+CiAgICA8L2Fzc2lnbmVkQ3VzdG9kaWFuPgogIDwvY3VzdG9kaWFuPgogIDxsZWdhbEF1dGhlbnRpY2F0b3I+CiAgICA8dGltZSB2YWx1ZT0iMjAyMTAzMTgxNTUwMjErMDIwMCIvPgogICAgPHNpZ25hdHVyZUNvZGUgY29kZT0iUyIvPgogICAgPGFzc2lnbmVkRW50aXR5PgogICAgICA8aWQgZXh0ZW5zaW9uPSJnb3YuY3kiIHJvb3Q9IjIuMTYuMTcuNzEwLjg2MC4xMDAwLjk5MC4xIi8+CiAgICAgIDxhZGRyPjxzdHJlZXRBZGRyZXNzTGluZT4xLCB0ZXN0IHN0cmVldDwvc3RyZWV0QWRkcmVzc0xpbmU+PGNpdHk+Tmljb3NpYTwvY2l0eT48cG9zdGFsQ29kZT4xPC9wb3N0YWxDb2RlPjxjb3VudHJ5PkNZPC9jb3VudHJ5PjwvYWRkcj4KICAgICAgPHRlbGVjb20gbnVsbEZsYXZvcj0iTkkiLz4KICAgICAgPGFzc2lnbmVkUGVyc29uPgogICAgICAgIDxuYW1lPjxnaXZlbj7Ols6uzr3Pic69zrHPgjwvZ2l2ZW4+PGZhbWlseT7Okc69z4TPic69zq/Ov8+FPC9mYW1pbHk+PC9uYW1lPgogICAgICA8L2Fzc2lnbmVkUGVyc29uPgogICAgICA8cmVwcmVzZW50ZWRPcmdhbml6YXRpb24+CiAgICAgICAgPGlkIGV4dGVuc2lvbj0iZ292LmN5IiByb290PSIyLjE2LjE3LjcxMC44NjAuMTAwMC45OTAuMSIvPgogICAgICAgIDxuYW1lPk1pbmlzdHJ5IG9mIEhlYWx0aDwvbmFtZT4KICAgICAgICA8dGVsZWNvbSB1c2U9IldQIiB2YWx1ZT0idGVsOisyMjExMTExMSIvPgogICAgICAgIDx0ZWxlY29tIHVzZT0iV1AiIHZhbHVlPSJtYWlsdG86dGVzdEBuZ2guY29tLmN5Ii8+CiAgICAgICAgPGFkZHIgdXNlPSJXUCI+PHN0cmVldEFkZHJlc3NMaW5lPkhvc3BpdGFsIHN0cmVldCwgMTIxLCAyMjIyLCBTdHJvdm9sb3M8L3N0cmVldEFkZHJlc3NMaW5lPjxzdGF0ZT5VTks8L3N0YXRlPjxjb3VudHJ5PkNZPC9jb3VudHJ5PjwvYWRkcj4KICAgICAgPC9yZXByZXNlbnRlZE9yZ2FuaXphdGlvbj4KICAgIDwvYXNzaWduZWRFbnRpdHk+CiAgPC9sZWdhbEF1dGhlbnRpY2F0b3I+CiAgPGluRnVsZmlsbG1lbnRPZj4KICAgIDxvcmRlciBtb29kQ29kZT0iUlFPIj4KICAgICAgPGlkIGV4dGVuc2lvbj0iMjE5OTM3OTEuMSIgcm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMi4yNS4zLjQuMS4yLjEuMjEwMzA5OTg2ODkxNSIvPgogICAgPC9vcmRlcj4KICA8L2luRnVsZmlsbG1lbnRPZj4KICA8cmVsYXRlZERvY3VtZW50IHR5cGVDb2RlPSJYRlJNIj4KICAgIDxwYXJlbnREb2N1bWVudD4KICAgICAgPGlkIGV4dGVuc2lvbj0iMjE5OTM3OTEuMSIgcm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMi4yNS4zLjQuMS4yLjEuMjEwMzA5OTg2ODkxNSIvPgogICAgPC9wYXJlbnREb2N1bWVudD4KICA8L3JlbGF0ZWREb2N1bWVudD4KICA8Y29tcG9uZW50PgogICAgPHN0cnVjdHVyZWRCb2R5PgogICAgICA8Y29tcG9uZW50PgogICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMS4zLjYuMS40LjEuMTI1NTkuMTEuMTAuMS4zLjEuMi4yIi8+CiAgICAgICAgICA8dGVtcGxhdGVJZCByb290PSIyLjE2Ljg0MC4xLjExMzg4My4xMC4yMC4xLjgiLz4KICAgICAgICAgIDxpZCBleHRlbnNpb249IkQtMjE5OTM3OTEuMSIgcm9vdD0iMi4xNi4xNy43MTAuODYwLjEwMDAuOTkwLjEiLz4KICAgICAgICAgIDxjb2RlIGNvZGU9IjYwNTkwLTciIGNvZGVTeXN0ZW09IjIuMTYuODQwLjEuMTEzODgzLjYuMSIgY29kZVN5c3RlbU5hbWU9IkxPSU5DIiBjb2RlU3lzdGVtVmVyc2lvbj0iMi41OSIgZGlzcGxheU5hbWU9Ik1lZGljYXRpb24gZGlzcGVuc2VkLmJyaWVmIERvY3VtZW50Ii8+CiAgICAgICAgICA8dGl0bGU+RGlzcGVuc2VkIFByZXNjcmlwdGlvbjwvdGl0bGU+CiAgICAgICAgICA8dGV4dD48dGFibGUgd2lkdGg9IjEwMCUiPjx0aGVhZD48dHI+PHRoPkFjdGl2ZSBJbmdyZWRpZW50IChBVEMpPC90aD48dGg+QnJhbmQgTmFtZTwvdGg+PHRoPlBoYXJtYWNldXRpY2FsIERvc2UgRm9ybTwvdGg+PHRoPlN0cmVuZ3RoPC90aD48dGg+TnVtYmVyIG9mIFVuaXRzIHBlciBpbnRha2U8L3RoPjx0aD5GcmVxdWVuY3kgb2YgSW50YWtlPC90aD48dGg+RHVyYXRpb24gb2YgdHJlYXRtZW50PC90aD48dGg+TnVtYmVyIG9mIFByZXNjcmliZWQgUGFja2FnZXM8L3RoPjx0aD5TaXplIG9mIHRoZSBwYWNrYWdlIHByZXNjcmliZWQgYW5kIHBhY2thZ2UgdHlwZTwvdGg+PHRoPlJvdXRlIG9mIEFkbWluaXN0cmF0aW9uPC90aD48dGg+T25zZXQgRGF0ZSBvZiB0cmVhdG1lbnQ8L3RoPjwvdHI+PC90aGVhZD48dGJvZHk+PHRyIElEPSJtZWRpY2luZS4xIj48dGQ+c2FsYnV0YW1vbCAoQVRDOiBSMDNDQzAyKTwvdGQ+PHRkPkFFUk9MSU4gQUVSLk1ELklOSCAxMDBNQ0cvRE9TRSDOo86lzqPOms6VzqXOlyAyMDAgzpTOn86jzpXOmc6jPC90ZD48dGQ+UHJlc3N1cmlzZWQgaW5oYWxhdGlvbjwvdGQ+PHRkPiA8L3RkPjx0ZD5ObyBJbmZvcm1hdGlvbjwvdGQ+PHRkPkV2ZXJ5IDggaG91cihzKTwvdGQ+PHRkPjEzIGRheShzKTwvdGQ+PHRkPjE8L3RkPjx0ZD4xIHVuaXQocyksIFVua25vd248L3RkPjx0ZD5Vbmtub3duPC90ZD48dGQ+MjAyMTAzMDk8L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPjwvdGV4dD4KICAgICAgICAgIDxlbnRyeSB0eXBlQ29kZT0iRFJJViI+CiAgICAgICAgICAgIDxzdXBwbHkgY2xhc3NDb2RlPSJTUExZIiBtb29kQ29kZT0iRVZOIj4KICAgICAgICAgICAgICA8dGVtcGxhdGVJZCByb290PSIyLjE2Ljg0MC4xLjExMzg4My4xMC4yMC4xLjM0Ii8+CiAgICAgICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMS4zLjYuMS40LjEuMTkzNzYuMS41LjMuMS40LjcuMyIvPgogICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IiIvPgogICAgICAgICAgICAgIDxpZCBleHRlbnNpb249Im1lZGljaW5lLjEiIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjIuMjUuMy40LjEuMi4xLjIxMDMwOTk4Njg5MTUiLz4KICAgICAgICAgICAgICA8cXVhbnRpdHkgdmFsdWU9IjEuMCIvPgogICAgICAgICAgICAgIDxwcm9kdWN0PgogICAgICAgICAgICAgICAgPG1hbnVmYWN0dXJlZFByb2R1Y3QgY2xhc3NDb2RlPSJNQU5VIj4KICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMS4zLjYuMS40LjEuMTI1NTkuMTEuMTAuMS4zLjEuMy4xIi8+CiAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjEwLjIwLjEuNTMiLz4KICAgICAgICAgICAgICAgICAgPG1hbnVmYWN0dXJlZE1hdGVyaWFsIGNsYXNzQ29kZT0iTU1BVCIgZGV0ZXJtaW5lckNvZGU9IktJTkQiPgogICAgICAgICAgICAgICAgICAgIDxjb2RlIGNvZGU9IjIxMDYwIiBjb2RlU3lzdGVtPSIwLjQuMC4xMjcuMC4xNi4xLjEuMi4xIiBjb2RlU3lzdGVtTmFtZT0iRURRTSIgY29kZVN5c3RlbVZlcnNpb249IjIwMTktMTAtMjEiIGRpc3BsYXlOYW1lPSJQcmVzc3VyaXNlZCBpbmhhbGF0aW9uIi8+CiAgICAgICAgICAgICAgICAgICAgPG5hbWU+QUVST0xJTiBBRVIuTUQuSU5IIDEwME1DRy9ET1NFIM6jzqXOo86azpXOpc6XIDIwMCDOlM6fzqPOlc6ZzqM8L25hbWU+CiAgICAgICAgICAgICAgICAgIDxlcHNvczpmb3JtQ29kZSB4bWxucz0iIiBjb2RlPSIyMTA2MCIgY29kZVN5c3RlbT0iMC40LjAuMTI3LjAuMTYuMS4xLjIuMSIgY29kZVN5c3RlbU5hbWU9IkVEUU0iIGNvZGVTeXN0ZW1WZXJzaW9uPSIyMDE5LTEwLTIxIiBkaXNwbGF5TmFtZT0iUHJlc3N1cmlzZWQgaW5oYWxhdGlvbiIvPjxlcHNvczphc0NvbnRlbnQgeG1sbnM9IiIgY2xhc3NDb2RlPSJDT05UIj48ZXBzb3M6Y29udGFpbmVyUGFja2FnZWRNZWRpY2luZSBjbGFzc0NvZGU9IkNPTlQiIGRldGVybWluZXJDb2RlPSJJTlNUQU5DRSI+PGVwc29zOm5hbWU+QUVST0xJTiBBRVIuTUQuSU5IIDEwME1DRy9ET1NFIM6jzqXOo86azpXOpc6XIDIwMCDOlM6fzqPOlc6ZzqM8L2Vwc29zOm5hbWU+PGVwc29zOmZvcm1Db2RlIGNvZGU9IjIxMDYwIiBjb2RlU3lzdGVtPSIwLjQuMC4xMjcuMC4xNi4xLjEuMi4xIiBjb2RlU3lzdGVtTmFtZT0iRURRTSIgZGlzcGxheU5hbWU9IlByZXNzdXJpc2VkIGluaGFsYXRpb24iLz48ZXBzb3M6Y2FwYWNpdHlRdWFudGl0eSB1bml0PSIxIiB2YWx1ZT0iMSIvPjxlcHNvczpjYXBUeXBlQ29kZSBudWxsRmxhdm9yPSJOQSIvPjwvZXBzb3M6Y29udGFpbmVyUGFja2FnZWRNZWRpY2luZT48L2Vwc29zOmFzQ29udGVudD48ZXBzb3M6aW5ncmVkaWVudCB4bWxucz0idXJuOmVwc29zLW9yZzplcDptZWRpY2F0aW9uIiBjbGFzc0NvZGU9IkFDVEkiPjxlcHNvczpxdWFudGl0eSB4bWxucz0iIj48ZXBzb3M6bnVtZXJhdG9yIG51bGxGbGF2b3I9Ik5JIiB4c2k6dHlwZT0iZXBzb3M6UFEiLz48ZXBzb3M6ZGVub21pbmF0b3IgdW5pdD0iMSIgdmFsdWU9IjEiIHhzaTp0eXBlPSJlcHNvczpQUSIvPjwvZXBzb3M6cXVhbnRpdHk+PGVwc29zOmluZ3JlZGllbnQgeG1sbnM9IiIgY2xhc3NDb2RlPSJNTUFUIiBkZXRlcm1pbmVyQ29kZT0iS0lORCI+PGVwc29zOmNvZGUgY29kZT0iUjAzQ0MwMiIgY29kZVN5c3RlbT0iMi4xNi44NDAuMS4xMTM4ODMuNi43MyIgY29kZVN5c3RlbU5hbWU9IkFuYXRvbWljYWwgVGhlcmFwZXV0aWMgQ2hlbWljYWwiIGNvZGVTeXN0ZW1WZXJzaW9uPSIyMDIwLTAxIiBkaXNwbGF5TmFtZT0ic2FsYnV0YW1vbCIvPjxlcHNvczpuYW1lPkFFUk9MSU4gQUVSLk1ELklOSCAxMDBNQ0cvRE9TRSDOo86lzqPOms6VzqXOlyAyMDAgzpTOn86jzpXOmc6jPC9lcHNvczpuYW1lPjwvZXBzb3M6aW5ncmVkaWVudD48L2Vwc29zOmluZ3JlZGllbnQ+PC9tYW51ZmFjdHVyZWRNYXRlcmlhbD4KICAgICAgICAgICAgICAgIDwvbWFudWZhY3R1cmVkUHJvZHVjdD4KICAgICAgICAgICAgICA8L3Byb2R1Y3Q+CiAgICAgICAgICAgICAgPHBlcmZvcm1lciB0eXBlQ29kZT0iUFJGIj4KICAgICAgICAgICAgICAgIDxhc3NpZ25lZEVudGl0eT4KICAgICAgICAgICAgICAgICAgPGlkIGV4dGVuc2lvbj0iMS4yMzEuMjMuMTIzLjEiIHJvb3Q9IjIuMTYuNDcwLjEuMTAwLjEuMS4xMDAwLjk5MC4xIi8+CiAgICAgICAgICAgICAgICAgIDxhZGRyPjxzdHJlZXRBZGRyZXNzTGluZT5Ib3NwaXRhbCBzdHJlZXQsIDEyMSwgMjIyMiwgU3Ryb3ZvbG9zPC9zdHJlZXRBZGRyZXNzTGluZT48Y291bnRyeT5DWTwvY291bnRyeT48L2FkZHI+CiAgICAgICAgICAgICAgICAgIDx0ZWxlY29tIHVzZT0iV1AiIHZhbHVlPSJ0ZWw6MjIxMTExMTEiLz4KICAgICAgICAgICAgICAgICAgPGFzc2lnbmVkUGVyc29uPgogICAgICAgICAgICAgICAgICAgIDxuYW1lPjxnaXZlbj5NaW5pc3RyeSBvZiBIZWFsdGg8L2dpdmVuPjwvbmFtZT4KICAgICAgICAgICAgICAgICAgPC9hc3NpZ25lZFBlcnNvbj4KICAgICAgICAgICAgICAgIDwvYXNzaWduZWRFbnRpdHk+CiAgICAgICAgICAgICAgPC9wZXJmb3JtZXI+CiAgICAgICAgICAgICAgPGVudHJ5UmVsYXRpb25zaGlwIHR5cGVDb2RlPSJSRUZSIj4KICAgICAgICAgICAgICAgIDxzZXF1ZW5jZU51bWJlciB2YWx1ZT0iMSIvPgogICAgICAgICAgICAgICAgPHN1YnN0YW5jZUFkbWluaXN0cmF0aW9uIGNsYXNzQ29kZT0iU0JBRE0iIG1vb2RDb2RlPSJJTlQiPgogICAgICAgICAgICAgICAgICA8aWQgZXh0ZW5zaW9uPSJtZWRpY2luZS4xIiByb290PSIyLjE2Ljg0MC4xLjExMzg4My4yLjI1LjMuNC4xLjIuMS4yMTAzMDk5ODY4OTE1Ii8+CiAgICAgICAgICAgICAgICAgIDx0ZXh0PjxyZWZlcmVuY2UgdmFsdWU9IiNtZWRpY2luZS4xIi8+PC90ZXh0PgogICAgICAgICAgICAgICAgICA8ZG9zZVF1YW50aXR5IG51bGxGbGF2b3I9Ik5BIi8+CiAgICAgICAgICAgICAgICAgIDxjb25zdW1hYmxlIHR5cGVDb2RlPSJDU00iPgogICAgICAgICAgICAgICAgICAgIDxtYW51ZmFjdHVyZWRQcm9kdWN0IGNsYXNzQ29kZT0iTUFOVSI+CiAgICAgICAgICAgICAgICAgICAgICA8dGVtcGxhdGVJZCByb290PSIxLjMuNi4xLjQuMS4xMjU1OS4xMS4xMC4xLjMuMS4zLjEiLz4KICAgICAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjEwLjIwLjEuNTMiLz4KICAgICAgICAgICAgICAgICAgICAgIDxtYW51ZmFjdHVyZWRNYXRlcmlhbCBjbGFzc0NvZGU9Ik1NQVQiIGRldGVybWluZXJDb2RlPSJLSU5EIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGNvZGUgY29kZT0iMjEwNjAiIGNvZGVTeXN0ZW09IjAuNC4wLjEyNy4wLjE2LjEuMS4yLjEiIGNvZGVTeXN0ZW1OYW1lPSJFRFFNIiBjb2RlU3lzdGVtVmVyc2lvbj0iMjAxOS0xMC0yMSIgZGlzcGxheU5hbWU9IlByZXNzdXJpc2VkIGluaGFsYXRpb24iLz4KICAgICAgICAgICAgICAgICAgICAgICAgPG5hbWU+QUVST0xJTiBBRVIuTUQuSU5IIDEwME1DRy9ET1NFIM6jzqXOo86azpXOpc6XIDIwMCDOlM6fzqPOlc6ZzqM8L25hbWU+CiAgICAgICAgICAgICAgICAgICAgICA8ZXBzb3M6Zm9ybUNvZGUgeG1sbnM9IiIgY29kZT0iMjEwNjAiIGNvZGVTeXN0ZW09IjAuNC4wLjEyNy4wLjE2LjEuMS4yLjEiIGNvZGVTeXN0ZW1OYW1lPSJFRFFNIiBjb2RlU3lzdGVtVmVyc2lvbj0iMjAxOS0xMC0yMSIgZGlzcGxheU5hbWU9IlByZXNzdXJpc2VkIGluaGFsYXRpb24iLz48ZXBzb3M6YXNDb250ZW50IHhtbG5zPSIiIGNsYXNzQ29kZT0iQ09OVCI+PGVwc29zOmNvbnRhaW5lclBhY2thZ2VkTWVkaWNpbmUgY2xhc3NDb2RlPSJDT05UIiBkZXRlcm1pbmVyQ29kZT0iSU5TVEFOQ0UiPjxlcHNvczpuYW1lPkVEUU08L2Vwc29zOm5hbWU+PGVwc29zOmZvcm1Db2RlIGNvZGU9IjIxMDYwIiBjb2RlU3lzdGVtPSIwLjQuMC4xMjcuMC4xNi4xLjEuMi4xIiBjb2RlU3lzdGVtTmFtZT0iRURRTSIgZGlzcGxheU5hbWU9IlByZXNzdXJpc2VkIGluaGFsYXRpb24iLz48ZXBzb3M6Y2FwYWNpdHlRdWFudGl0eSB1bml0PSIxIiB2YWx1ZT0iMSIvPjxlcHNvczpjYXBUeXBlQ29kZSBudWxsRmxhdm9yPSJOQSIvPjwvZXBzb3M6Y29udGFpbmVyUGFja2FnZWRNZWRpY2luZT48L2Vwc29zOmFzQ29udGVudD48ZXBzb3M6aW5ncmVkaWVudCB4bWxucz0idXJuOmVwc29zLW9yZzplcDptZWRpY2F0aW9uIiBjbGFzc0NvZGU9IkFDVEkiPjxlcHNvczpxdWFudGl0eSB4bWxucz0iIj48ZXBzb3M6bnVtZXJhdG9yIG51bGxGbGF2b3I9Ik5JIiB4c2k6dHlwZT0iZXBzb3M6UFEiLz48ZXBzb3M6ZGVub21pbmF0b3IgdW5pdD0iMSIgdmFsdWU9IjEiIHhzaTp0eXBlPSJlcHNvczpQUSIvPjwvZXBzb3M6cXVhbnRpdHk+PGVwc29zOmluZ3JlZGllbnQgeG1sbnM9IiIgY2xhc3NDb2RlPSJNTUFUIiBkZXRlcm1pbmVyQ29kZT0iS0lORCI+PGVwc29zOmNvZGUgY29kZT0iUjAzQ0MwMiIgY29kZVN5c3RlbT0iMi4xNi44NDAuMS4xMTM4ODMuNi43MyIgY29kZVN5c3RlbU5hbWU9IkFuYXRvbWljYWwgVGhlcmFwZXV0aWMgQ2hlbWljYWwiIGNvZGVTeXN0ZW1WZXJzaW9uPSIyMDIwLTAxIiBkaXNwbGF5TmFtZT0ic2FsYnV0YW1vbCIvPjxlcHNvczpuYW1lPkFFUk9MSU4gQUVSLk1ELklOSCAxMDBNQ0cvRE9TRSDOo86lzqPOms6VzqXOlyAyMDAgzpTOn86jzpXOmc6jPC9lcHNvczpuYW1lPjwvZXBzb3M6aW5ncmVkaWVudD48L2Vwc29zOmluZ3JlZGllbnQ+PC9tYW51ZmFjdHVyZWRNYXRlcmlhbD4KICAgICAgICAgICAgICAgICAgICA8L21hbnVmYWN0dXJlZFByb2R1Y3Q+CiAgICAgICAgICAgICAgICAgIDwvY29uc3VtYWJsZT4KICAgICAgICAgICAgICAgICAgPGVudHJ5UmVsYXRpb25zaGlwIHR5cGVDb2RlPSJDT01QIj4KICAgICAgICAgICAgICAgICAgICA8c3VwcGx5IGNsYXNzQ29kZT0iU1BMWSIgbW9vZENvZGU9IlJRTyI+CiAgICAgICAgICAgICAgICAgICAgICA8aW5kZXBlbmRlbnRJbmQgdmFsdWU9ImZhbHNlIi8+CiAgICAgICAgICAgICAgICAgICAgICA8cXVhbnRpdHkgdmFsdWU9IjEuMCIvPgogICAgICAgICAgICAgICAgICAgIDwvc3VwcGx5PgogICAgICAgICAgICAgICAgICA8L2VudHJ5UmVsYXRpb25zaGlwPgogICAgICAgICAgICAgICAgPC9zdWJzdGFuY2VBZG1pbmlzdHJhdGlvbj4KICAgICAgICAgICAgICA8L2VudHJ5UmVsYXRpb25zaGlwPgogICAgICAgICAgICA8L3N1cHBseT4KICAgICAgICAgIDwvZW50cnk+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICA8L2NvbXBvbmVudD4KICAgIDwvc3RydWN0dXJlZEJvZHk+CiAgPC9jb21wb25lbnQ+CjwvQ2xpbmljYWxEb2N1bWVudD4=</xdr:Document>
+   </xdr:ProvideAndRegisterDocumentSetRequest>
+</soapenv:Body>

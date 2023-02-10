@@ -1,0 +1,294 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+<id extension="kW0NIHRdWo+pIdIq" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="eDispensation"/>
+<title>Medication dispensed</title>
+<effectiveTime value="20210317104426+0200"/>
+<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+<languageCode code="el-GR"/>
+<setId nullFlavor="NI"/>
+<recordTarget contextControlCode="OP" typeCode="RCT">
+        <patientRole>
+            <id extension="01018513588" root="2.16.840.1.113883.2.25.3.4.1.1.2"/>
+            <addr>
+                <streetAddressLine>ΕΓΝΑΤΙΑ 10</streetAddressLine>
+                <city>ΘΕΣΣΑΛΟΝΙΚΗΣ</city>
+                <postalCode>54632</postalCode>
+                <state>ΘΕΣΣΑΛΟΝΙΚΗΣ</state>
+                <country>GR</country>
+            </addr>
+            <telecom use="MC" value="tel:+2310999999"/>
+            <patient>
+                <name>
+                    <given>ΕΛΕΝΗ</given>
+                    <family>ΑΛΕΞΙΟΥ</family>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Female"/>
+                <birthTime value="19850101"/>
+                <languageCommunication>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+                    <languageCode code="el-GR"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+<author typeCode="AUT">
+<functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Pharmacists"/>
+<time value="20210317104426+0200"/>
+<assignedAuthor classCode="ASSIGNED">
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+
+</representedOrganization>
+</assignedAuthor>
+</author>
+<custodian typeCode="CST">
+<assignedCustodian classCode="ASSIGNED">
+<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.4"/>
+<name>Country Custodian Name</name>
+<telecom nullFlavor="NI"/>
+<addr>
+<country>CY</country>
+</addr>
+</representedCustodianOrganization>
+</assignedCustodian></custodian>
+<legalAuthenticator contextControlCode="OP" typeCode="LA">
+<time value="20210317084426"/>
+<signatureCode code="S"/>
+<assignedEntity classCode="ASSIGNED">
+<id root="2.16.17.710.860.1000.990.1.3"/>
+<addr><streetAddressLine>Famagusta Hospital</streetAddressLine><city>City</city><postalCode>N/A</postalCode><state nullFlavor="UNK"/><country>Cyprus</country></addr><telecom nullFlavor="NI"/>
+<assignedPerson>
+<name>
+<family>Organisation</family>
+<given>Firstname</given>
+</name>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.3.1"/>
+<name>Famagusta Hospital</name><telecom nullFlavor="NI"/>
+<addr use="PST">
+<streetAddressLine>N/A</streetAddressLine>
+<city>City</city>
+<postalCode>N/A</postalCode>
+<state nullFlavor="UNK"/>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<inFulfillmentOf>
+<order moodCode="RQO">
+<id extension="21993953.1" root="2.16.840.1.113883.2.25.3.4.1.2.1.2103113825116"/>
+</order>
+</inFulfillmentOf>
+<relatedDocument typeCode="APND">
+<parentDocument classCode="DOCCLIN">
+<id extension="21993953.1" root="2.16.840.1.113883.2.25.3.4.1.2.1.2103113825116"/>
+</parentDocument>
+</relatedDocument>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.8"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+<id extension="D-21993953.1" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed"/>
+<title>Dispensation: D-21993953.1</title>
+<text>
+                        <list>
+                            <item ID="med_barcode_1">2800209503016</item>
+                        </list>
+                    </text><entry typeCode="COMP">
+<supply classCode="SPLY" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.34"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+<id extension="2.16.840.1.113883.2.25.3.4.1.2.1.2103113825116^21993953.1" root="2.16.17.710.860.1000.990.1.7"/>
+<quantity unit="1" value="3"/><product>
+<manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <epsos:id extension="2.16.840.1.113883.2.25.3.4.1.2.1.2103113825116^21993953.1" root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/><code code="020950301" codeSystem="2.16.840.1.113883.2.25.3.4.1.3.2" codeSystemName="EOF" displayName="ANAFRANIL C.TAB 10MG/TAB ΒΤΧ30 (BLIST 3x10)">
+                                 <originalText>
+                                    <reference value="#med_barcode_1"/>
+                                 </originalText>
+                              </code>
+                              <name>ANAFRANIL C.TAB 10MG/TAB ΒΤΧ30 (BLIST 3x10)</name>
+                              <epsos:desc>10 mg</epsos:desc>
+                              <epsos:formCode code="10220000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Coated tablet">
+                                 <epsos:translation code="C.TAB" codeSystem="046b4237-fcf8-44a9-80a0-707e94df51d2" codeSystemName="GR_NationalDoseForm" codeSystemVersion="2021" displayName="C.TAB"/>
+                              </epsos:formCode>
+                              <epsos:asContent classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode nullFlavor="UNK"/>
+                                    <epsos:capacityQuantity unit="1" value="30"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="N06AA04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="clomipramine">
+                                       <epsos:translation code="N06AA04" codeSystem="5cd0375a-2c01-4d2f-ac0f-36269e0272a7" codeSystemName="GR_NationalActiveIngredient" codeSystemVersion="2021" displayName="CLOMIPRAMINE HYDROCHLORIDE"/>
+                                    </epsos:code>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient classCode="ACTI" nullFlavor="NI">
+                                 <epsos:quantity>
+                                    <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="NI"/>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+</product>
+<performer typeCode="PRF">
+<time value="20210317104426+0200"/>
+<assignedEntity>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/>
+<assignedPerson>
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+<participant contextControlCode="OP" typeCode="PRF">
+<participantRole classCode="LIC">
+<id root="2.16.17.710.860.1000.990.1.5"/>
+<scopingEntity classCode="ORG">
+<id root="2.16.17.710.860.1000.990.1.5.1"/>
+</scopingEntity>
+</participantRole>
+</participant>
+<entryRelationship typeCode="REFR"><substanceAdministration classCode="SBADM" moodCode="INT">
+                            
+                            
+                            
+                            <id extension="21993953.1" root="2.16.840.1.113883.2.25.3.4.1.2.1.2103113825116"/>
+                            <statusCode code="active"/>
+                            <effectiveTime xsi:type="IVL_TS">
+<low value="20210311"/>
+<high value="20210325"/>
+                            </effectiveTime>
+                            <effectiveTime operator="A" xsi:type="PIVL_TS">
+<period unit="h" value="8"/>
+                            </effectiveTime>
+                            <doseQuantity>
+<low unit="1" value="1"/>
+<high unit="1" value="1"/>
+                            </doseQuantity>
+                            <consumable typeCode="CSM">
+<manufacturedProduct classCode="MANU">
+    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+        <code code="020950301" codeSystem="2.16.840.1.113883.2.25.3.4.1.3.2" codeSystemName="EOF" displayName="ANAFRANIL C.TAB 10MG/TAB ΒΤΧ30 (BLIST 3x10)">
+            <originalText>
+                <reference value="#med_barcode_1"/>
+            </originalText>
+        </code>
+        <name>ANAFRANIL C.TAB 10MG/TAB ΒΤΧ30 (BLIST 3x10)</name>
+        <epsos:desc>10 mg</epsos:desc>
+        <epsos:formCode code="10220000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Coated tablet"><epsos:translation code="C.TAB" codeSystem="046b4237-fcf8-44a9-80a0-707e94df51d2" codeSystemName="GR_NationalDoseForm" codeSystemVersion="2021" displayName="C.TAB"/></epsos:formCode>
+        <epsos:asContent classCode="CONT">
+            <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                <epsos:formCode nullFlavor="UNK"/>
+                <epsos:capacityQuantity unit="1" value="30"/>
+            </epsos:containerPackagedMedicine>
+        </epsos:asContent>
+        <epsos:asSpecializedKind classCode="GEN">
+            <epsos:generalizedMedicineClass classCode="MMAT">
+                <epsos:code code="N06AA04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="clomipramine"><epsos:translation code="N06AA04" codeSystem="5cd0375a-2c01-4d2f-ac0f-36269e0272a7" codeSystemName="GR_NationalActiveIngredient" codeSystemVersion="2021" displayName="CLOMIPRAMINE HYDROCHLORIDE"/></epsos:code>
+            </epsos:generalizedMedicineClass>
+        </epsos:asSpecializedKind>
+        <epsos:ingredient classCode="ACTI" nullFlavor="NI">
+            <epsos:quantity>
+                <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+            </epsos:quantity>
+            <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                <epsos:code nullFlavor="NI"/>
+            </epsos:ingredient>
+        </epsos:ingredient>
+    </manufacturedMaterial>
+</manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+    <independentInd value="false"/>
+    <quantity unit="1" value="3"/>
+</supply>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR">
+<act classCode="INFRM" moodCode="EVN">
+    <code nullFlavor="NA"/>
+    <entryRelationship typeCode="RSON">
+        <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.1.28"/>
+            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+            <code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Diagnosis interpretation"/>
+            <text>Υποτροπιάζουσα καταθλιπτική διαταραχή</text>
+            <statusCode code="completed"/>
+            <value code="F33" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD10" displayName="Υποτροπιάζουσα καταθλιπτική διαταραχή" xsi:type="CD"/>
+        </observation>
+    </entryRelationship>
+</act>
+                            </entryRelationship>
+                        </substanceAdministration>
+</entryRelationship></supply>
+</entry>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

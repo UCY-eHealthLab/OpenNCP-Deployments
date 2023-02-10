@@ -1,0 +1,1141 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:ext="urn:hl7-EE-DL-Ext:v1" xmlns:hl7="urn:hl7-org:v3" xmlns:ns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="DOCCLIN" moodCode="EVN">
+   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.3"/>
+   <id extension="20210520140624405.1" root="1.3.6.1.4.1.28284.6.2.4.75"/>
+   <code code="60591-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Patient summary Document"><translation code="60591-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patsiendi haigusloo kokkuvõte"/></code>
+   <title>epSOS Patient Summary TOOMAS PIIRIÜLENE May 20,2021</title>
+   <effectiveTime value="20210520140624+0300"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+   <languageCode code="et-EE"/>
+   <recordTarget contextControlCode="OP" typeCode="RCT">
+      <patientRole classCode="PAT">
+         <id extension="38507220018" root="1.3.6.1.4.1.28284.6.2.2.1"/>
+         <addr use="PHYS">
+            <country>EE</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient>
+            <name>
+               <given>TOOMAS</given>
+               <family>PIIRIÜLENE</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Male"><translation code="M" codeSystem="1.3.6.1.4.1.28284.6.2.3.16" codeSystemName="Sugu" displayName="Mees"/></administrativeGenderCode>
+            <birthTime value="19850722"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author contextControlCode="OP" typeCode="AUT">
+      <time value="20210520140624+0300"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id assigningAuthorityName="Tervise infosüsteem" root="1.3.6.1.4.1.28284.6.2.4.32"/>
+         <addr>
+            <country>EE</country>
+            <city>Tallinn</city>
+            <postalCode>10134</postalCode>
+            <streetAddressLine>Uus-Tatari 25 / Veerenni 13</streetAddressLine>
+         </addr>
+         <telecom use="WP" value="tel:+3727943900"/>
+         <telecom use="WP" value="mailto:info@tehik.ee"/>
+         <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+            <manufacturerModelName>Tervise infosüsteem</manufacturerModelName>
+            <softwareName>Tervise infosüsteem</softwareName>
+         </assignedAuthoringDevice>
+         <representedOrganization>
+            <id extension="70009770" root="1.3.6.1.4.1.28284.6.2.4.1"/>
+            <name>Tervise ja Heaolu Infosüsteemide Keskus</name>
+            <telecom use="WP" value="tel:+3727943900"/>
+            <telecom use="WP" value="mailto:info@tehik.ee"/>
+            <addr>
+               <country>EE</country>
+               <city>Tallinn</city>
+               <postalCode>10134</postalCode>
+               <streetAddressLine>Uus-Tatari 25 / Veerenni 13</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian typeCode="CST">
+      <assignedCustodian classCode="ASSIGNED">
+         <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="70009770" root="1.3.6.1.4.1.28284.6.2.4.1"/>
+            <name>Tervise ja Heaolu Infosüsteemide Keskus</name>
+            <telecom use="WP" value="tel:+3727943900"/>
+            <addr>
+               <country>EE</country>
+               <city>Tallinn</city>
+               <postalCode>10134</postalCode>
+               <streetAddressLine>Uus-Tatari 25 / Veerenni 13</streetAddressLine>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator typeCode="LA">
+      <time value="20210520140624+0300"/>
+      <signatureCode code="S"/>
+      <assignedEntity classCode="ASSIGNED">
+         <id extension="70009770" root="1.3.6.1.4.1.28284.6.2.4.1"/>
+         <addr>
+            <country>EE</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given>Vastutav</given>
+               <family>Isik</family>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id extension="70009770" root="1.3.6.1.4.1.28284.6.2.4.1"/>
+            <name>Tervise ja Heaolu Infosüsteemide Keskus</name>
+            <telecom use="WP" value="tel:+3727943900"/>
+            <telecom use="WP" value="mailto:info@tehik.ee"/>
+            <addr>
+               <country>EE</country>
+               <city>Tallinn</city>
+               <postalCode>10134</postalCode>
+               <streetAddressLine>Uus-Tatari 25 / Veerenni 13</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <participant typeCode="IND">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+      <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+      <associatedEntity classCode="PRS">
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <associatedPerson>
+            <name>
+               <given nullFlavor="NI"/>
+               <family nullFlavor="NI"/>
+            </name>
+         </associatedPerson>
+      </associatedEntity>
+   </participant>
+   <documentationOf typeCode="DOC">
+      <serviceEvent classCode="PCPR" moodCode="EVN"><!--uuendamise kuupäev-->
+         <effectiveTime>
+            <high value="20210520140624+0300"/>
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument>
+         <id extension="20210520140624405" root="1.3.6.1.4.1.28284.6.2.4.75"/>
+      </parentDocument>
+   </relatedDocument>
+   <component typeCode="COMP">
+      <structuredBody classCode="DOCBODY" moodCode="EVN">
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="2.16.840.1.113883.10.20.1.6"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
+               <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="History of Immunization Narrative"><translation code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Teostatud immuniseerimised"/></code>
+               <title>Immunizations</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Kuupäev</th>
+                           <th>Vaktsiin</th>
+                           <th>Annus</th>
+                           <th>Preparaat</th>
+                           <th>Manustamise kordsus</th>
+                        </tr>
+                        <tr ID="imm1">
+                           <td>29.01.2021</td>
+                           <td ID="imm1_code">teetanuse toksoid</td>
+                           <td>0.5 ML</td>
+                           <td>TETAVAX</td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry contextConductionInd="true" typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <id root="4EB043D1-F698-4EBB-803D-7E9F5B4A0C4D"/>
+                     <code code="IMMUNIZ" codeSystem="1.3.5.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" displayName="IMMUNIZ"/>
+                     <text><reference value="#imm1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20210129"/>
+                     <doseQuantity unit="ML" value="0.5"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="333621002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Tetanus vaccine">
+                                 <originalText><reference value="#imm1_code"/></originalText>
+                              <translation code="333621002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="teetanuse toksoid"/></code>
+                              <name>TETAVAX</name>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dose number"/>
+                           <statusCode code="completed"/>
+                           <value value="1" xsi:type="INT"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.3"/>
+               <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="History of Medication use Narrative"><translation code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Kasutatud ravimid"/></code>
+               <title>Medication Summary</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Retsepti number</th>
+                           <th>Annus ja manustamise sagedus</th>
+                           <th>Ravimivorm</th>
+                           <th>ATC ja toimeaine</th>
+                           <th>Ravimi nimetus ja pakendi maht</th>
+                           <th>Juhend patsiendile</th>
+                           <th>Autor</th>
+                        </tr>
+                        <tr ID="med1">
+                           <td>1018855693</td>
+                           <td>1 AN 2xpäevas</td>
+                           <td>süstelahus kolbampullis</td>
+                           <td>A10AE04 100 ÜHIK</td>
+                           <td>3 ML 5 TK</td>
+                           <td ID="med1_pinstruct">Pidev: 1 AN 2 x päevas</td>
+                           <td>Rutt Lindström (D07384) tel:37256648831,mailto:rutt.lindstrom@tehik.ee Eesti Haigekassa (74000091)</td>
+                        </tr>
+                        <tr ID="med2">
+                           <td>1018855716</td>
+                           <td>1 AN 2xpäevas</td>
+                           <td>süstelahus kolbampullis</td>
+                           <td>A10AE04 100 ÜHIK</td>
+                           <td>3 ML 5 TK</td>
+                           <td ID="med2_pinstruct">Pidev: 1 AN 2 x päevas</td>
+                           <td>Rutt Lindström (D07384) tel:37256648831,mailto:rutt.lindstrom@tehik.ee Eesti Haigekassa (74000091)</td>
+                        </tr>
+                        <tr ID="med3">
+                           <td>2018855716</td>
+                           <td>1 AN 2xpäevas</td>
+                           <td>süstelahus kolbampullis</td>
+                           <td>A10AE04 100 ÜHIK</td>
+                           <td>3 ML 5 TK</td>
+                           <td ID="med3_pinstruct">Pidev: 1 AN 2 x päevas</td>
+                           <td>Rutt Lindström (D07384) tel:37256648831,mailto:rutt.lindstrom@tehik.ee Eesti Haigekassa (74000091)</td>
+                        </tr>
+                        <tr ID="med4">
+                           <td>3018855716</td>
+                           <td>1 AN 2xpäevas</td>
+                           <td>süstelahus kolbampullis</td>
+                           <td>A10AE04 100 ÜHIK</td>
+                           <td>ML 4.5 TK</td>
+                           <td ID="med4_pinstruct">Pidev: 1 AN 2 x päevas</td>
+                           <td>Rutt Lindström (D07384) tel:37256648831,mailto:rutt.lindstrom@tehik.ee Eesti Haigekassa (74000091)</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="DRIV">
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="1018855693" root="1.3.6.1.4.1.28284.6.2.4.4"/>
+                     <text><reference value="#med1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low nullFlavor="UNK"/>
+                        <high nullFlavor="UNK"/>
+                     </effectiveTime>
+                     <effectiveTime institutionSpecified="true" operator="A" xsi:type="PIVL_TS">
+                        <period unit="h" value="12"/>
+                     </effectiveTime>
+                     <doseQuantity unit="1" value="1"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="1061334" codeSystem="1.3.6.1.4.1.28284.6.2.4.44" codeSystemName="Ravimipreparaadi kood" displayName="LANTUS"/>
+                              <epsos:formCode xmlns:sch="http://www.ascc.net/xml/schematron" code="50060100" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection in cartridge"><epsos:translation code="1460" codeSystem="1.3.6.1.4.1.28284.6.2.1.12" codeSystemName="Ravimvormid" displayName="süstelahus kolbampullis"/></epsos:formCode>
+                              <epsos:asContent xmlns:sch="http://www.ascc.net/xml/schematron" classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode nullFlavor="NI"/>
+                                    <epsos:capacityQuantity unit="ML" value="15">
+                                       <epsos:translation>
+                                          <epsos:originalText>packet containing 5 TK of 3 ML</epsos:originalText>
+                                       </epsos:translation>
+                                    </epsos:capacityQuantity>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind xmlns:sch="http://www.ascc.net/xml/schematron" classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="A10AE04" codeSystem="1.3.6.1.4.1.28284.6.2.4.101" codeSystemName="Siseriiklik ATC" displayName="glargiin-insuliin"/></epsos:code>
+                                    <epsos:name>glargiin-insuliin</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient xmlns:sch="http://www.ascc.net/xml/schematron" classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator unit="1" value="100" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator unit="mL" value="1" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="UNK"/>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors"><translation code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Arst"/></functionCode>
+                        <time value="20210222"/>
+                        <assignedAuthor>
+                           <id extension="D07384" root="1.3.6.1.4.1.28284.6.2.4.9"/>
+                           <addr nullFlavor="NI"/>
+                           <telecom use="WP" value="tel:37256648831"/>
+                           <telecom use="WP" value="mailto:rutt.lindstrom@tehik.ee"/>
+                           <assignedPerson>
+                              <name>
+                                 <given>Rutt</given>
+                                 <family>Lindström</family>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id extension="74000091" root="1.3.6.1.4.1.28284.4"/>
+                              <name>Eesti Haigekassa</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr use="PST">
+                                 <country>EE</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="INT">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                           <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                           <text><reference value="#med1_pinstruct"/></text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               <entry typeCode="DRIV">
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="1018855716" root="1.3.6.1.4.1.28284.6.2.4.4"/>
+                     <text><reference value="#med2"/></text>
+                     <statusCode code="active"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low nullFlavor="UNK"/>
+                        <high nullFlavor="UNK"/>
+                     </effectiveTime>
+                     <effectiveTime institutionSpecified="true" operator="A" xsi:type="PIVL_TS">
+                        <period unit="h" value="12"/>
+                     </effectiveTime>
+                     <doseQuantity unit="1" value="1"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <epsos:formCode xmlns:sch="http://www.ascc.net/xml/schematron" code="50060100" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection in cartridge"><epsos:translation code="1460" codeSystem="1.3.6.1.4.1.28284.6.2.1.12" codeSystemName="Ravimvormid" displayName="süstelahus kolbampullis"/></epsos:formCode>
+                              <epsos:asContent xmlns:sch="http://www.ascc.net/xml/schematron" classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode nullFlavor="NI"/>
+                                    <epsos:capacityQuantity unit="ML" value="15">
+                                       <epsos:translation>
+                                          <epsos:originalText>packet containing 5 TK of 3 ML</epsos:originalText>
+                                       </epsos:translation>
+                                    </epsos:capacityQuantity>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind xmlns:sch="http://www.ascc.net/xml/schematron" classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="A10AE04" codeSystem="1.3.6.1.4.1.28284.6.2.4.101" codeSystemName="Siseriiklik ATC" displayName="glargiin-insuliin"/></epsos:code>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient xmlns:sch="http://www.ascc.net/xml/schematron" classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator unit="1" value="100" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator unit="mL" value="1" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="UNK"/>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors"><translation code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Arst"/></functionCode>
+                        <time value="20210302"/>
+                        <assignedAuthor>
+                           <id extension="D07384" root="1.3.6.1.4.1.28284.6.2.4.9"/>
+                           <addr nullFlavor="NI"/>
+                           <telecom use="WP" value="tel:37256648831"/>
+                           <telecom use="WP" value="mailto:rutt.lindstrom@tehik.ee"/>
+                           <assignedPerson>
+                              <name>
+                                 <given>Rutt</given>
+                                 <family>Lindström</family>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id extension="74000091" root="1.3.6.1.4.1.28284.4"/>
+                              <name>Eesti Haigekassa</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr use="PST">
+                                 <country>EE</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="INT">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                           <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                           <text><reference value="#med2_pinstruct"/></text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               <entry typeCode="DRIV">
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="2018855716" root="1.3.6.1.4.1.28284.6.2.4.4"/>
+                     <text><reference value="#med3"/></text>
+                     <statusCode code="active"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low nullFlavor="UNK"/>
+                        <high nullFlavor="UNK"/>
+                     </effectiveTime>
+                     <effectiveTime institutionSpecified="true" operator="A" xsi:type="PIVL_TS">
+                        <period unit="h" value="12"/>
+                     </effectiveTime>
+                     <doseQuantity unit="1" value="1"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <epsos:formCode xmlns:sch="http://www.ascc.net/xml/schematron" code="50060100" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection in cartridge"><epsos:translation code="1460" codeSystem="1.3.6.1.4.1.28284.6.2.1.12" codeSystemName="Ravimvormid" displayName="süstelahus kolbampullis"/></epsos:formCode>
+                              <epsos:asContent xmlns:sch="http://www.ascc.net/xml/schematron" classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode nullFlavor="NI"/>
+                                    <epsos:capacityQuantity unit="ML" value="15">
+                                       <epsos:translation>
+                                          <epsos:originalText>packet containing 5 TK of 3 ML</epsos:originalText>
+                                       </epsos:translation>
+                                    </epsos:capacityQuantity>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind xmlns:sch="http://www.ascc.net/xml/schematron" classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="A10AE04" codeSystem="1.3.6.1.4.1.28284.6.2.4.101" codeSystemName="Siseriiklik ATC" displayName="glargiin-insuliin"/></epsos:code>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient xmlns:sch="http://www.ascc.net/xml/schematron" classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator unit="1" value="100" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator unit="mL" value="1" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="UNK"/>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors"><translation code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Arst"/></functionCode>
+                        <time value="20210302"/>
+                        <assignedAuthor>
+                           <id extension="D07384" root="1.3.6.1.4.1.28284.6.2.4.9"/>
+                           <addr nullFlavor="NI"/>
+                           <telecom use="WP" value="tel:37256648831"/>
+                           <telecom use="WP" value="mailto:rutt.lindstrom@tehik.ee"/>
+                           <assignedPerson>
+                              <name>
+                                 <given>Rutt</given>
+                                 <family>Lindström</family>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id extension="74000091" root="1.3.6.1.4.1.28284.4"/>
+                              <name>Eesti Haigekassa</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr use="PST">
+                                 <country>EE</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="INT">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                           <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                           <text><reference value="#med3_pinstruct"/></text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               <entry typeCode="DRIV">
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="3018855716" root="1.3.6.1.4.1.28284.6.2.4.4"/>
+                     <text><reference value="#med4"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low nullFlavor="UNK"/>
+                        <high nullFlavor="UNK"/>
+                     </effectiveTime>
+                     <effectiveTime institutionSpecified="true" operator="A" xsi:type="PIVL_TS">
+                        <period unit="h" value="12"/>
+                     </effectiveTime>
+                     <doseQuantity unit="1" value="1"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="A10AE04971" codeSystem="1.3.6.1.4.1.28284.6.2.4.44" codeSystemName="Ravimipreparaadi kood" displayName="Toujeo"/>
+                              <epsos:formCode xmlns:sch="http://www.ascc.net/xml/schematron" code="50060100" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection in cartridge"><epsos:translation code="1460" codeSystem="1.3.6.1.4.1.28284.6.2.1.12" codeSystemName="Ravimvormid" displayName="süstelahus kolbampullis"/></epsos:formCode>
+                              <epsos:asContent xmlns:sch="http://www.ascc.net/xml/schematron" classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:formCode nullFlavor="NI"/>
+                                    <epsos:capacityQuantity unit="TK" value="4.5">
+                                       <epsos:translation>
+                                          <epsos:originalText>packet containing 5 TK of 3 ML</epsos:originalText>
+                                       </epsos:translation>
+                                    </epsos:capacityQuantity>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind xmlns:sch="http://www.ascc.net/xml/schematron" classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="A10AE04" codeSystem="1.3.6.1.4.1.28284.6.2.4.101" codeSystemName="Siseriiklik ATC" displayName="glargiin-insuliin"/></epsos:code>
+                                    <epsos:name>glargiin-insuliin</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient xmlns:sch="http://www.ascc.net/xml/schematron" classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator unit="1" value="100" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator unit="mL" value="1" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="UNK"/>
+                                    <epsos:name>Insulin glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors"><translation code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Arst"/></functionCode>
+                        <time value="20210302"/>
+                        <assignedAuthor>
+                           <id extension="D07384" root="1.3.6.1.4.1.28284.6.2.4.9"/>
+                           <addr nullFlavor="NI"/>
+                           <telecom use="WP" value="tel:37256648831"/>
+                           <telecom use="WP" value="mailto:rutt.lindstrom@tehik.ee"/>
+                           <assignedPerson>
+                              <name>
+                                 <given>Rutt</given>
+                                 <family>Lindström</family>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id extension="74000091" root="1.3.6.1.4.1.28284.4"/>
+                              <name>Eesti Haigekassa</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr use="PST">
+                                 <country>EE</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="INT">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                           <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                           <text><reference value="#med4_pinstruct"/></text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
+               <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Problem list - Reported"><translation code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Kaebuste loetelu"/></code>
+               <title>Active Problems</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Diagnoos</th>
+                           <th>Kuupäev</th>
+                           <th>Tüüp</th>
+                           <th>Kirjeldus</th>
+                        </tr>
+                        <tr ID="dgn1">
+                           <td>Väärtoitumussuhkurtõbi, väärtoitumussuhkurtõbi tüsistusteta</td>
+                           <td>15.02.2019</td>
+                           <td>Haigus</td>
+                           <td ID="dgn1_description">Diabeet</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                     <id root="CB804BBB-0C7C-4ABE-8047-A117D84DB181"/>
+                     <code nullFlavor="NA"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20190215"/>
+                     </effectiveTime>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="0B858EF1-A2A3-4945-AE11-853ABE6A5D67"/>
+                           <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="haigus"/></code>
+                           <text><reference value="#dgn1"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20190215"/>
+                           </effectiveTime>
+                           <value code="E12.9" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Malnutrition-related diabetes mellitus; Without complications" xsi:type="CD">
+                              <originalText><reference value="#dgn1_description"/></originalText>
+                           <translation code="E12.9" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Väärtoitumussuhkurtõbi, väärtoitumussuhkurtõbi tüsistusteta"/></value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.4"/>
+               <templateId root="2.16.840.1.113883.10.20.1.7"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.5"/>
+               <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="History of medical device use"><translation code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Meditsiiniseadmete kasutamine"/></code>
+               <title>Medical Devices Coded</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Meditsiiniseade</th>
+                           <th>Kuupäev</th>
+                        </tr>
+                        <tr ID="dev1">
+                           <td>Luu titaan-minikruvi</td>
+                           <td>28.01.2021</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.5"/>
+                     <text><reference value="#dev1"/></text>
+                     <effectiveTime value="20210128092300"/>
+                     <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                           <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                              <code code="68183006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Bone screw"><translation code="2634L" codeSystem="1.3.6.1.4.1.28284.6.2.1.6" codeSystemName="Haigekassa hinnakirjakoodid" displayName="Luu titaan-minikruvi"/></code>
+                           </playingDevice>
+                        </participantRole>
+                     </participant>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
+               <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="History of Procedures Document"><translation code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Teostatud protseduurid"/></code>
+               <title>Coded List of Surgeries</title>
+               <text>
+                  <paragraph ID="proc1">No Information</paragraph>
+               </text>
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                     <id root="3BFE69CF-5BD8-4BD5-9DA7-195C0C741A9E"/>
+                     <code code="no-procedure-info" codeSystem="2.16.840.1.113883.5.1150.1" codeSystemName="IPS Absent And Unknown Data" codeSystemVersion="0.2.0" displayName="No information about past history of procedures"><translation code="no-procedure-info" codeSystem="2.16.840.1.113883.5.1150.1" codeSystemName="IPS CodeSystem - Absent and Unknown Data" displayName="Protseduuride kohta info puudub"/></code>
+                     <text><reference value="#proc1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA" xsi:type="IVL_TS"/>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8"/>
+               <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="History of Past illness Narrative"><translation code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Põetud haigused"/></code>
+               <title>History of Past Illness</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Diagnoos</th>
+                           <th>Kuupäev</th>
+                           <th>Tüüp</th>
+                           <th>Kirjeldus</th>
+                        </tr>
+                        <tr ID="pastdgn1">
+                           <td>Köha</td>
+                           <td>10.02.2021 - 11.02.2021</td>
+                           <td>Haigus</td>
+                           <td ID="pastdg1_description">Köha</td>
+                        </tr>
+                        <tr ID="pastdgn2">
+                           <td>Sääremurd, sealhulgas peksemurd, sääreluu keha [-diafüüsi] murd, lahtine</td>
+                           <td>28.01.2021 - 29.01.2021</td>
+                           <td>Haigus</td>
+                           <td ID="pastdg2_description">Sääreluu lahtine murd</td>
+                        </tr>
+                        <tr ID="pastdgn3">
+                           <td>Uimasti-, ravimi- ja bioloogiliste ainete allergia anamneesis, penitsilliiniallergia anamneesis</td>
+                           <td>28.01.2021 - 29.01.2021</td>
+                           <td>Haigus</td>
+                           <td ID="pastdg3_description">Penitsilliiniallergia</td>
+                        </tr>
+                        <tr ID="pastdgn4">
+                           <td>Väärtoitumussuhkurtõbi, väärtoitumussuhkurtõbi tüsistusteta</td>
+                           <td>15.02.2019 - 15.02.2019</td>
+                           <td>Haigus</td>
+                           <td ID="pastdg4_description">Diabeet</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                     <id root="E1F5093B-39F2-4FDE-B4AE-D62060660BE6"/>
+                     <code nullFlavor="NA"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20210210"/>
+                        <high value="20210211"/>
+                     </effectiveTime>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="AC498BAC-C1C6-4EEB-AD1B-DD8E6859E5F1"/>
+                           <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Haigus"/></code>
+                           <text><reference value="#pastdgn1"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20210210"/>
+                              <high value="20210211"/>
+                           </effectiveTime>
+                           <value code="R05" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Cough" xsi:type="CD">
+                              <originalText><reference value="#pastdg1_description"/></originalText>
+                           <translation code="R05" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Köha"/></value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                     <id root="62666146-0AC1-493A-B691-0E25473E1819"/>
+                     <code nullFlavor="NA"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20210128"/>
+                        <high value="20210129"/>
+                     </effectiveTime>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="67F80BD0-9AA3-4267-A20D-9ACF3DDE693F"/>
+                           <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Haigus"/></code>
+                           <text><reference value="#pastdgn2"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20210128"/>
+                              <high value="20210129"/>
+                           </effectiveTime>
+                           <value code="S82.21" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Fracture of shaft of tibia: open" xsi:type="CD">
+                              <originalText><reference value="#pastdg2_description"/></originalText>
+                           <translation code="S82.21" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Sääremurd, sealhulgas peksemurd, sääreluu keha [-diafüüsi] murd, lahtine"/></value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                     <id root="477928E4-875E-46AC-B4AC-CD86346A9F9D"/>
+                     <code nullFlavor="NA"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20210128"/>
+                        <high value="20210129"/>
+                     </effectiveTime>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="EB6D3681-F75C-4104-8D81-13BC6083E9B9"/>
+                           <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Haigus"/></code>
+                           <text><reference value="#pastdgn3"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20210128"/>
+                              <high value="20210129"/>
+                           </effectiveTime>
+                           <value code="Z88.0" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Personal history of allergy to penicillin" xsi:type="CD">
+                              <originalText><reference value="#pastdg3_description"/></originalText>
+                           <translation code="Z88.0" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Uimasti-, ravimi- ja bioloogiliste ainete allergia anamneesis, penitsilliiniallergia anamneesis"/></value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                     <id root="D6B4E0D7-C125-495E-AED3-5860105FFA55"/>
+                     <code nullFlavor="NA"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20190215"/>
+                        <high value="20190215"/>
+                     </effectiveTime>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="9458A47A-8950-4971-82A3-02692E42C2F1"/>
+                           <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Haigus"/></code>
+                           <text><reference value="#pastdgn4"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20190215"/>
+                              <high value="20190215"/>
+                           </effectiveTime>
+                           <value code="E12.9" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Malnutrition-related diabetes mellitus; Without complications" xsi:type="CD">
+                              <originalText><reference value="#pastdg4_description"/></originalText>
+                           <translation code="E12.9" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Väärtoitumussuhkurtõbi, väärtoitumussuhkurtõbi tüsistusteta"/></value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="2.16.840.1.113883.10.20.1.15"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16.1"/>
+               <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Social history Narrative"><translation code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sotsiaalne taust"/></code>
+               <title>Coded Social History</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Harjumuse tüüp</th>
+                           <th>Alustamise aeg</th>
+                           <th>Tarvitamise kogus</th>
+                        </tr>
+                        <tr ID="social1">
+                           <td>alkoholi tarvitamine</td>
+                           <td/>
+                           <td>20 ühikut nädalas</td>
+                        </tr>
+                        <tr ID="social2">
+                           <td>Tobacco use and exposure</td>
+                           <td>2001</td>
+                           <td>12 ühikut nädalas</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.33"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+                     <id root="967ACC53-E7AB-4407-A492-D0D4E2A82DDC"/>
+                     <code code="160573003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Alcohol intake"><translation code="160573003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="alkoholi tarvitamine"/></code>
+                     <text><reference value="#social1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA"/>
+                     <value unit="{drink}/wk" value="20" xsi:type="PQ"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.33"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+                     <id root="D3AEF549-CD91-49C2-B945-DCDB8C8D6A54"/>
+                     <code code="229819007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Tobacco use and exposure"/>
+                     <text><reference value="#social2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="2001"/>
+                     </effectiveTime>
+                     <value unit="{pack}/d" value="12" xsi:type="PQ"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.5"/>
+               <id root="5D8C606F-32B6-40A8-98B1-DE1AABDFD4A5"/>
+               <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Relevant diagnostic tests/laboratory data Narrative"><translation code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Kodeeritud tulemused"/></code>
+               <title>Coded Results</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <th>Kuupäev</th>
+                           <th>Veregrupp</th>
+                        </tr>
+                        <tr ID="bloodGroup">
+                           <td>28.01.2010</td>
+                           <td>B veregrupp</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.6"/>
+                     <id root="A7D2B484-795D-48F0-904D-4F7A9095DC59"/>
+                     <code code="34530-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ABO and Rh group panel - Blood"/>
+                     <text><reference value="#bloodGroup"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20100128"/>
+                     <value code="112149005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Blood group B" xsi:type="CD"><translation code="112149005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="B veregrupp"/></value>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+               <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Vital signs"><translation code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Elulised näitajad"/></code>
+               <title>Elulised näitajad</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Mõõtmise aeg</th>
+                           <th>Näitaja</th>
+                           <th>Tulemus</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr ID="vital1">
+                           <td>15.02.2021</td>
+                           <td>süstoolne vererõhk</td>
+                           <td>90 mm[Hg]</td>
+                        </tr>
+                        <tr ID="vital2">
+                           <td>15.02.2021</td>
+                           <td>süstoolne vererõhk</td>
+                           <td>85 mm[Hg]</td>
+                        </tr>
+                        <tr ID="vital3">
+                           <td>15.02.2021</td>
+                           <td>diastoolne vererõhk</td>
+                           <td>135 mm[Hg]</td>
+                        </tr>
+                        <tr ID="vital4">
+                           <td>15.02.2021</td>
+                           <td>diastoolne vererõhk</td>
+                           <td>140 mm[Hg]</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <organizer classCode="CLUSTER" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                     <id root="3CC456D9-01CE-47D1-80F4-3915784B728E"/>
+                     <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20210215153115"/>
+                     <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                           <id root="5A4E204E-13AA-4ADE-8E2E-10F333EBB437"/>
+                           <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Systolic blood pressure"><translation code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="süstoolne vererõhk"/></code>
+                           <text><reference value="#vital1"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20210215153115"/>
+                           <value unit="mm[Hg]" value="90" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                     <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                           <id root="BBA078D8-DE1B-41B7-8AEB-49333CFA6897"/>
+                           <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Systolic blood pressure"><translation code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="süstoolne vererõhk"/></code>
+                           <text><reference value="#vital2"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20210215153115"/>
+                           <value unit="mm[Hg]" value="85" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                     <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                           <id root="5B3D5ADB-A985-42E0-BFE0-9F09B64FEA8A"/>
+                           <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Diastolic blood pressure"><translation code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="diastoolne vererõhk"/></code>
+                           <text><reference value="#vital3"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20210215153115"/>
+                           <value unit="mm[Hg]" value="135" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                     <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                           <id root="69C23F64-0BC2-4365-9B18-E811ED29BDB8"/>
+                           <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Diastolic blood pressure"><translation code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="diastoolne vererõhk"/></code>
+                           <text><reference value="#vital4"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20210215153115"/>
+                           <value unit="mm[Hg]" value="140" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                  </organizer>
+               </entry>
+            </section>
+         </component>
+         <component typeCode="COMP">
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.1.2"/>
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
+               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Allergies and adverse reactions Document"><translation code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergiad, soovimatud kõrvalnähud, ohud"/></code>
+               <title>Allergies and Other Adverse Reactions</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Kuupäev</th>
+                           <th>Diagnoos</th>
+                           <th>Kirjeldus</th>
+                           <th>Allergeen</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr ID="allergy1">
+                           <td>02.02.2005</td>
+                           <td ID="allergy1_problem">Uimasti-, ravimi- ja bioloogiliste ainete allergia anamneesis, penitsilliiniallergia anamneesis</td>
+                           <td ID="allergy1_description">Penitsilliiniallergia</td>
+                           <td>Penitsilliin</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="DRIV">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                     <code nullFlavor="NA"/>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.10.20.1.18"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                           <id root="A94B4E03-21C1-4D00-8B22-6D0345D3C816"/>
+                           <code nullFlavor="NI"/>
+                           <text><reference value="#allergy1"/></text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20050202"/>
+                           </effectiveTime>
+                           <value nullFlavor="NA" xsi:type="CD"/>
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <code nullFlavor="NI"/>
+                                    <name>Penitsilliin</name>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                           <entryRelationship typeCode="MFST">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                                 <id root="B142482A-AC1A-4F94-8051-DF6902A670DD"/>
+                                 <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="2019-07-31" displayName="Disease"><translation code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Haigus"/></code>
+                                 <text><reference value="#allergy1_problem"/></text>
+                                 <value code="Z88.0" codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.2" codeSystemName="ICD-10" codeSystemVersion="2016" displayName="Personal history of allergy to penicillin" xsi:type="CD">
+                                    <originalText><reference value="#allergy1_description"/></originalText>
+                                 <translation code="Z88.0" codeSystem="1.3.6.1.4.1.28284.6.2.1.13" codeSystemName="RHK-10" displayName="Uimasti-, ravimi- ja bioloogiliste ainete allergia anamneesis, penitsilliiniallergia anamneesis"/></value>
+                              </observation>
+                           </entryRelationship>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         
+         
+      </structuredBody>
+   </component>
+</ClinicalDocument>

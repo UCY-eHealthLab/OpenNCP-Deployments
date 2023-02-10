@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRPA_IN201306UV02 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0">
+   <id extension="5476727749723" root="98de7ae1-cd7e-4c9e-8ddc-f46a6aa85bd5"/>
+   <creationTime value="20210317144333.304+0000"/>
+   <versionCode code="V3PR1"/>
+   <interactionId extension="PRPA_IN201306UV02" root="2.16.840.1.113883.1.6"/>
+   <processingCode code="P"/>
+   <processingModeCode code="T"/>
+   <acceptAckCode code="NE"/>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.860.1000.990.1"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.17.710.860.1000.990.1"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.819.1000.990.1"/>
+      </device>
+   </sender>
+   <acknowledgement>
+      <typeCode code="AE"/>
+      <targetMessage>
+         <id extension="13b281a2-4d9a-48f2-abcc-64f37ea1a24b"
+             root="6180e63c-665c-451b-919d-d4c362f02a11"/>
+      </targetMessage>
+      <acknowledgementDetail>
+         <text>Invalid personal identification number format.</text>
+      </acknowledgementDetail>
+   </acknowledgement>
+   <controlActProcess classCode="CACT" moodCode="EVN">
+      <code code="PRPA_TE201306UV02"/>
+      <reasonOf typeCode="RSON">
+         <detectedIssueEvent classCode="ALRT" moodCode="EVN">
+            <code code="ActAdministrativeDetectedIssueCode"
+                  codeSystem="2.16.840.1.113883.5.4"/>
+            <mitigatedBy typeCode="MITGT">
+               <detectedIssueManagement classCode="ACT" moodCode="EVN">
+                  <code code="AnswerNotAvailable" codeSystem="1.3.6.1.4.1.19376.1.2.27.3"/>
+               </detectedIssueManagement>
+            </mitigatedBy>
+         </detectedIssueEvent>
+      </reasonOf>
+      <queryAck>
+         <queryId root="1.263507841149"/>
+         <queryResponseCode code="AE"/>
+      </queryAck>
+      <queryByParameter>
+         <queryId root="1.263507841149"/>
+         <statusCode code="new"/>
+         <parameterList>
+            <livingSubjectId>
+               <value extension="01059902062" root="2.16.840.1.113883.3.4424.1.1.616"/>
+               <semanticsText/>
+            </livingSubjectId>
+            <patientAddress>
+               <value>
+                  <country>PL</country>
+               </value>
+               <semanticsText/>
+            </patientAddress>
+         </parameterList>
+      </queryByParameter>
+   </controlActProcess>
+</PRPA_IN201306UV02>

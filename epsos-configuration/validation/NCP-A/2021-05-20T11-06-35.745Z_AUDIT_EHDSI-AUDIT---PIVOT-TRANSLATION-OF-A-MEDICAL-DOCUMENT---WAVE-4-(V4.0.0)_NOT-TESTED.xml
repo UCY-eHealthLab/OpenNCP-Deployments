@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuditMessage>
+    <EventIdentification EventActionCode="E" EventDateTime="2021-05-20T11:06:35.742Z" EventOutcomeIndicator="0">
+        <EventID code="EHDSI-94" displayName="ncpTransformationMgr::Translate" codeSystemName="IHE Transactions"/>
+        <EventTypeCode code="EHDSI-94" displayName="ncpTransformationMgr::Translate" codeSystemName="eHDSI Transactions"/>
+    </EventIdentification>
+    <ActiveParticipant UserID="ncp-ppt.cy.ehealth.testa.eu" UserIsRequestor="false" NetworkAccessPointID="172.18.0.6" NetworkAccessPointTypeCode="2">
+        <RoleIDCode code="ServiceProvider" displayName="Service Provider" codeSystem="eHealth DSI"/>
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditSourceID="CY-1"/>
+    <ParticipantObjectIdentification ParticipantObjectID="1.3.6.1.4.1.28284.6.2.4.75^20210520140624405.2" ParticipantObjectTypeCode="4" ParticipantObjectDataLifeCycle="5">
+        <ParticipantObjectIDTypeCode code="in" displayName="Input Data" codeSystemName="eHealth DSI Translation"/>
+    </ParticipantObjectIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="1.3.6.1.4.1.28284.6.2.4.75^20210520140624405.2" ParticipantObjectTypeCode="4" ParticipantObjectDataLifeCycle="5">
+        <ParticipantObjectIDTypeCode code="out" displayName="Output Data" codeSystemName="eHealth DSI Translation"/>
+    </ParticipantObjectIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="urn:uuid:e1ae1ee6-5302-4685-88e5-8990ec52651a" ParticipantObjectTypeCode="4">
+        <ParticipantObjectIDTypeCode code="req" displayName="Request Message" codeSystemName="eHealth DSI Msg"/>
+        <ParticipantObjectDetail type="securityheader" value="W05vIHNlY3VyaXR5IGhlYWRlciBwcm92aWRlZF0="/>
+    </ParticipantObjectIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="urn:uuid:e1ae1ee6-5302-4685-88e5-8990ec52651a" ParticipantObjectTypeCode="4">
+        <ParticipantObjectIDTypeCode code="rsp" displayName="Response Message" codeSystemName="eHealth DSI Msg"/>
+        <ParticipantObjectDetail type="securityheader" value="W05vIHNlY3VyaXR5IGhlYWRlciBwcm92aWRlZF0="/>
+    </ParticipantObjectIdentification>
+</AuditMessage>

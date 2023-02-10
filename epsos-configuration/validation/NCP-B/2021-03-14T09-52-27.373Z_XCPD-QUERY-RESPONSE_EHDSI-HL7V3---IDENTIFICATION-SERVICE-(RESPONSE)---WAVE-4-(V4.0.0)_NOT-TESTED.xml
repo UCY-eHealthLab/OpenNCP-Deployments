@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRPA_IN201306UV02 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0">
+   <id extension="8256297805490" root="21d70578-6643-4a73-a8a2-4a10b4a16972"/>
+   <creationTime value="20210314095227.237+0000"/>
+   <versionCode code="V3PR1"/>
+   <interactionId extension="PRPA_IN201306UV02" root="2.16.840.1.113883.1.6"/>
+   <processingCode code="P"/>
+   <processingModeCode code="T"/>
+   <acceptAckCode code="NE"/>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.860.1000.990.1"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.17.710.860.1000.990.1"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="1.3.6.1.4.1.28284.6.2.2.1"/>
+      </device>
+   </sender>
+   <acknowledgement>
+      <typeCode code="AA"/>
+      <targetMessage>
+         <id extension="56ff4bb2-078a-4b95-809b-ac25eec75efc"
+             root="0f64a5b5-2621-4c70-b4dd-54ffc3283cba"/>
+      </targetMessage>
+   </acknowledgement>
+   <controlActProcess classCode="CACT" moodCode="EVN">
+      <code code="PRPA_TE201306UV02"/>
+      <reasonOf typeCode="RSON">
+         <detectedIssueEvent classCode="ALRT" moodCode="EVN">
+            <code code="ActAdministrativeDetectedIssueCode"
+                  codeSystem="2.16.840.1.113883.5.4"/>
+            <mitigatedBy typeCode="MITGT">
+               <detectedIssueManagement classCode="ACT" moodCode="EVN">
+                  <code code="AnswerNotAvailable" codeSystem="1.3.6.1.4.1.19376.1.2.27.3"/>
+               </detectedIssueManagement>
+            </mitigatedBy>
+         </detectedIssueEvent>
+      </reasonOf>
+      <queryAck>
+         <queryId root="1.263507841149"/>
+         <queryResponseCode code="AE"/>
+      </queryAck>
+      <queryByParameter>
+         <queryId root="1.263507841149"/>
+         <statusCode code="new"/>
+         <parameterList>
+            <livingSubjectId>
+               <value extension="37910044216" root="1.3.6.1.4.1.28284.6.2.2.1"/>
+               <semanticsText/>
+            </livingSubjectId>
+            <patientAddress>
+               <value>
+                  <country>EE</country>
+               </value>
+               <semanticsText/>
+            </patientAddress>
+         </parameterList>
+      </queryByParameter>
+   </controlActProcess>
+</PRPA_IN201306UV02>

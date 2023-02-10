@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchFields xmlns="http://ec.europa.eu/sante/ehncp/ism"
+              xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <country code="ES" friendlyName="Spain" label="label.ism.addressCountry">
+      <patientSearch scope="ALL">
+         <identifier type="CHOICE">
+            <ids display="Regional Person Identifiers">
+               <id contextualDescription="Regional Person Identifier"
+                   domain="2.16.724.4.41"
+                   format="[A-Z0-9]+"
+                   label="label.ism.regionalPatientIdentifier"
+                   mandatory="true"
+                   originalContextualDescription="CIP"/>
+               <id contextualDescription="Region Identifier"
+                   domain="2.16.724.4.42"
+                   format="\d{6}"
+                   label="label.ism.regionIdentifier"
+                   mandatory="true"
+                   originalContextualDescription="CITE"/>
+				        </ids>
+            <ids display="National Person Identifier">
+               <id contextualDescription="National Person Identifier"
+                   domain="2.16.724.4.40"
+                   format="[A-Z0-9]+"
+                   label="label.ism.nationalPersonIdentifier"
+                   mandatory="true"
+                   originalContextualDescription="CIPSNS"/>
+				        </ids>
+			      </identifier>
+		    </patientSearch>
+	  </country>
+</searchFields>

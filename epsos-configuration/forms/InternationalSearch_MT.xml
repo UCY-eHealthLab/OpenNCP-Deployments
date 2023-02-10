@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ism:searchFields xmlns:ism="http://ec.europa.eu/sante/ehncp/ism"
+                  xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"
+                  xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <ism:country code="MT"
+                friendlyName="International Search Mask for Malta(PPT)"
+                label="label.ism.addressCountry">
+      <ism:patientSearch friendlyName="Patient Identity Traits" scope="ALL">
+         <ism:identifier type="NORMAL">
+            <ism:id contextualDescription="ID Card Number"
+                    domain="2.16.470.1.100.1.1.1000.990.1"
+                    format="[0-9]{7}[A-Z]"
+                    label="label.ism.nationalIdentityCardNumber"
+                    mandatory="true"
+                    originalContextualDescription="ID Card Number"/>
+         </ism:identifier>
+      </ism:patientSearch>
+   </ism:country>
+</ism:searchFields>

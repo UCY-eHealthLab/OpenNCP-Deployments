@@ -1,0 +1,243 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:ns2="urn:epsos-org:ep:medication" classCode="DOCCLIN" moodCode="EVN">
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+    <id extension="4842769918.25.2" root="2.16.17.710.807.1000.990.1"/>
+    <code code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription for medication"><translation code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ePrescription"/></code>
+    <title>Forsteo, inj-vätska, lösning, förfylld inj-penna 20 mikrog/80 mikrol Eli Lilly H05AA02</title>
+    <effectiveTime value="20210316170538+0100"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+    <languageCode code="sv-SE"/>
+    <setId extension="7c363fab-abcf-489a-8cd5-e92f0ea50a92" root="2.16.17.710.807.1000.990.1"/>
+    <versionNumber value="3"/>
+    <recordTarget contextControlCode="OP" typeCode="RCT">
+        <patientRole classCode="PAT">
+            <id extension="200002282382" root="1.2.752.129.2.1.3.1"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom nullFlavor="NI"/>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <family>Cypern</family>
+                    <given>Estelle</given>
+                </name>
+                <administrativeGenderCode nullFlavor="UNK"/>
+                <birthTime value="20000228"/>
+                <languageCommunication>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+                    <languageCode code="sv-SE"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author contextControlCode="OP" typeCode="AUT">
+        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors">
+            <translation code="LK" codeSystem="1.2.752.116.3.1.3" codeSystemName="legitimeratYrke" displayName="Läkare"/>
+        </functionCode>
+        <time value="20210315170538+0100"/>
+        <assignedAuthor>
+            <id extension="1111111" root="1.2.752.116.3.1.2"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom use="WP" value="tel:+4612121212"/>
+            <assignedPerson>
+                <name>
+                    <family>Lårsö</family>
+                    <given>Läkåre®</given>
+                </name>
+            </assignedPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id extension="2210559" root="1.2.752.29.4.19"/>
+                <name>Sjukhus1</name>
+                <telecom use="WP" value="tel:+4611123487"/>
+                <addr>
+                    <streetAddressLine>Gatan1</streetAddressLine>
+                    <postalCode>12312</postalCode>
+                    <city>Staden</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id extension="7350045511287" root="2.51.1.3"/>
+                <name>eHälsomyndigheten</name>
+                <telecom use="WP" value="tel:+46104586200"/>
+                <addr>
+                    <streetAddressLine>Box 913</streetAddressLine>
+                    <postalCode>39129</postalCode>
+                    <city>Kalmar</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <legalAuthenticator>
+        <time value="20210315170538+0100"/>
+        <signatureCode nullFlavor="NI"/>
+        <assignedEntity>
+            <id extension="7350045511287" root="2.51.1.3"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom nullFlavor="NI"/>
+            <assignedPerson>
+                <name>
+                    <family>Lårsö</family>
+                    <given>Läkåre®</given>
+                </name>
+            </assignedPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id extension="7350045511287" root="1.2.752.29.4.19"/>
+                <name>eHälsomyndigheten</name>
+                <telecom use="WP" value="tel:+46104586200"/>
+                <addr>
+                    <streetAddressLine>Box 913</streetAddressLine>
+                    <postalCode>39129</postalCode>
+                    <city>Kalmar</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedOrganization>
+        </assignedEntity>
+    </legalAuthenticator>
+    <relatedDocument typeCode="XFRM">
+        <parentDocument>
+            <id extension="4842769918.25.1" root="2.16.17.710.807.1000.990.1"/>
+        </parentDocument>
+    </relatedDocument>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.1"/>
+                    <id extension="4842769918.25.2" root="2.16.17.710.807.1000.990.1"/>
+                    <code code="57828-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription list"><translation code="57828-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prescriptions"/></code>
+                    <title>Prescriptions</title>
+                    <text ID="eP_as_text">
+                        <content ID="MEDICATION1">Forsteo®</content>
+                        <br/>ARTIKELBENÄMNING:
+                        <content ID="ORIGNAME">Forsteo, inj-vätska, lösning, förfylld inj-penna 20 mikrog/80 mikrol Eli Lilly</content>
+                        <br/>INSTRUKTION TILL FARMACEUT:
+                        <content ID="FINSTRUCT">Ändrat ändamål</content>
+                        <br/>DOSERINGSINFORMATION:
+                        <content ID="PINSTRUCT">Korrigerat dosering Korrigerat doseringstext gång 1</content>
+                    </text>
+                    <entry typeCode="COMP">
+                        <substanceAdministration classCode="SBADM" moodCode="INT">
+                            <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                            <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.2"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                            <id extension="4842769918.25.2" root="2.16.17.710.807.1000.990.1"/>
+                            <text>#MEDICATION1</text>
+                            <statusCode code="completed"/>
+                            <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                                <low value="20210315"/>
+                                <high value="20220108"/>
+                            </effectiveTime>
+                            <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK" xsi:type="PIVL_TS"/>
+                            <doseQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK" xsi:type="BXIT_IVL_PQ"/>
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code code="20030610100054" codeSystem="1.2.752.129.2.1.5.2" codeSystemName="NPL pack-id" displayName="Forsteo, inj-vätska, lösning, förfylld inj-penna 20 mikrog/80 mikrol Eli Lilly">
+                                            <originalText>
+                                                <reference value="#ORIGNAME"/>
+                                            </originalText>
+                                        </code>
+                                        <name>Forsteo®</name>
+                                        <ns2:desc>20 mikrogram/80 mikroliter</ns2:desc>
+                                        <ns2:formCode code="50060200" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection in pre-filled pen">
+                                            <ns2:translation code="SOINPP" codeSystem="1.2.752.180.1.1" codeSystemName="läkemedelsform" displayName="inj-vätska, lösning, förfylld injektionspenna"/>
+                                        </ns2:formCode>
+                                        <ns2:asContent classCode="CONT">
+                                            <ns2:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <ns2:name>Forsteo, inj-vätska, lösning, förfylld inj-penna 20 mikrog/80 mikrol Eli Lilly</ns2:name>
+                                                <ns2:formCode nullFlavor="NI"/>
+                                                <ns2:capacityQuantity unit="1" value="1.0"/>
+                                            </ns2:containerPackagedMedicine>
+                                        </ns2:asContent>
+                                        <ns2:asSpecializedKind classCode="GEN">
+                                            <ns2:generalizedMedicineClass classCode="MMAT">
+                                                <ns2:code code="H05AA02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="teriparatide"><ns2:translation code="H05AA02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Teriparatide"/></ns2:code>
+                                                <ns2:name>Teriparatide</ns2:name>
+                                            </ns2:generalizedMedicineClass>
+                                        </ns2:asSpecializedKind>
+                                        <ns2:ingredient classCode="ACTI">
+                                            <ns2:quantity>
+                                                <ns2:numerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="µg" value="250" xsi:type="ns2:PQ"/>
+                                                <ns2:denominator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="mL" value="1" xsi:type="ns2:PQ"/>
+                                            </ns2:quantity>
+                                            <ns2:ingredient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="MMAT" determinerCode="KIND" xsi:type="ns2:COCT_MT230100UV.Substance">
+                                                <ns2:code nullFlavor="NI"/>
+                                                <ns2:name>teriparatide</ns2:name>
+                                            </ns2:ingredient>
+                                        </ns2:ingredient>
+                                    </manufacturedMaterial>
+                                    <ns2:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                                        <ns2:name>Eli Lilly Sweden AB</ns2:name>
+                                    </ns2:marketingAuthorizationHolder>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship inversionInd="false" typeCode="COMP">
+                                <supply classCode="SPLY" moodCode="RQO">
+                                    <independentInd value="false"/>
+                                    <quantity unit="1" value="1"/>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                                    <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                                    <text>
+                                        <reference value="#PINSTRUCT"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                                    <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                                    <text>
+                                        <reference value="#FINSTRUCT"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass"/>
+                                    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" codeSystemVersion="913-20091020" displayName="generic" xsi:type="CE"><translation code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" displayName="Generic"/></value>
+                                </observation>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

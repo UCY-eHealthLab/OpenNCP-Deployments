@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RetrieveDocumentSetResponse xmlns="urn:ihe:iti:xds-b:2007">
+   <RegistryResponse xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                     status="urn:ihe:iti:2007:ResponseStatusType:PartialSuccess">
+      <RegistryErrorList>
+         <RegistryError codeContext="FINNCP-0007: prescriptions valid for defined time periods are outside the service, the prescription cannot be dispensed abroad"
+                        errorCode="XDSRegistryError"
+                        location="urn:oid:1.2.246.556.12001.4.1000.990.1"
+                        severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+      </RegistryErrorList>
+   </RegistryResponse>
+</RetrieveDocumentSetResponse>

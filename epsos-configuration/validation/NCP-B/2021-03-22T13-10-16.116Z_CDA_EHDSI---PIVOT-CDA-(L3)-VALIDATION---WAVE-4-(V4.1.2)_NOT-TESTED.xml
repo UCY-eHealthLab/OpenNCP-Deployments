@@ -1,0 +1,316 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+<id extension="H0YDuoBoj1pgyb3q" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.extended Document"><translation code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="eDispensation"/></code>
+<title>Medication dispensed</title>
+<effectiveTime value="20210322151014+0200"/>
+<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+<languageCode code="el-GR"/>
+<setId xmlns:ns2="urn:epsos-org:ep:medication" extension="2af7a5a3-ea67-469e-b2ff-1898968f9e54" root="2.16.17.710.807.1000.990.1"/>
+<recordTarget xmlns:ns2="urn:epsos-org:ep:medication" contextControlCode="OP" typeCode="RCT">
+        <patientRole classCode="PAT">
+            <id extension="200002282382" root="1.2.752.129.2.1.3.1"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom nullFlavor="NI"/>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <family>Cypern</family>
+                    <given>Estelle</given>
+                </name>
+                <administrativeGenderCode nullFlavor="UNK"/>
+                <birthTime value="20000228"/>
+                <languageCommunication>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+                    <languageCode code="sv-SE"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+<author typeCode="AUT">
+<functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Pharmacists"/>
+<time value="20210322151014+0200"/>
+<assignedAuthor classCode="ASSIGNED">
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+
+</representedOrganization>
+</assignedAuthor>
+</author>
+<custodian typeCode="CST">
+<assignedCustodian classCode="ASSIGNED">
+<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.4"/>
+<name>Country Custodian Name</name>
+<telecom nullFlavor="NI"/>
+<addr>
+<country>CY</country>
+</addr>
+</representedCustodianOrganization>
+</assignedCustodian></custodian>
+<legalAuthenticator contextControlCode="OP" typeCode="LA">
+<time value="20210322131014"/>
+<signatureCode code="S"/>
+<assignedEntity classCode="ASSIGNED">
+<id root="2.16.17.710.860.1000.990.1.3"/>
+<addr><streetAddressLine>Famagusta Hospital</streetAddressLine><city>City</city><postalCode>N/A</postalCode><state nullFlavor="UNK"/><country>Cyprus</country></addr><telecom nullFlavor="NI"/>
+<assignedPerson>
+<name>
+<family>Organisation</family>
+<given>Firstname</given>
+</name>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.3.1"/>
+<name>Famagusta Hospital</name><telecom nullFlavor="NI"/>
+<addr use="PST">
+<streetAddressLine>N/A</streetAddressLine>
+<city>City</city>
+<postalCode>N/A</postalCode>
+<state nullFlavor="UNK"/>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<inFulfillmentOf>
+<order moodCode="RQO">
+<id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+</order>
+</inFulfillmentOf>
+<relatedDocument typeCode="APND">
+<parentDocument classCode="DOCCLIN">
+<id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+</parentDocument>
+</relatedDocument>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.8"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+<id extension="D-4842769705.30.2" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.brief Document"><translation code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed"/></code>
+<title>Dispensation: D-4842769705.30.2</title>
+<text xmlns:ns2="urn:epsos-org:ep:medication" ID="eP_as_text">
+                        <content ID="MEDICATION1">Alvedon®</content>
+                        <br/>ARTIKELBENÄMNING:
+                        <content ID="ORIGNAME">Alvedon, filmdragerad tablett 500 mg</content>
+                        <br/>DOSERINGSINFORMATION:
+                        <content ID="PINSTRUCT">¿-1 tablett 3 gånger per dag</content>
+                    </text><entry typeCode="COMP">
+<supply classCode="SPLY" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.34"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+<id extension="2.16.17.710.807.1000.990.1^4842769705.30.2" root="2.16.17.710.860.1000.990.1.7"/>
+<quantity unit="1" value="2"/><product>
+<manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <epsos:id extension="2.16.17.710.807.1000.990.1^4842769705.30.2" root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/><code code="20100825100146" codeSystem="1.2.752.129.2.1.5.2" codeSystemName="NPL pack-id" displayName="Alvedon®">
+                                            <originalText>
+                                                <reference value="#ORIGNAME"/>
+                                            </originalText>
+                                        </code>
+                                        <name>Alvedon®</name>
+                                        <ns2:desc xmlns:ns2="urn:epsos-org:ep:medication">500 mg</ns2:desc>
+                                        <ns2:formCode xmlns:ns2="urn:epsos-org:ep:medication" code="10221000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Film-coated tablet">
+                                            <ns2:translation code="FICOTA" codeSystem="1.2.752.180.1.1" codeSystemName="läkemedelsform" displayName="filmdragerad tablett"/>
+                                        </ns2:formCode>
+                                        <ns2:asContent xmlns:ns2="urn:epsos-org:ep:medication" classCode="CONT">
+                                            <ns2:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <ns2:name>Alvedon®</ns2:name>
+                                                <ns2:formCode nullFlavor="NI"/>
+                                                <ns2:capacityQuantity unit="1" value="-100.0"/>
+                                            </ns2:containerPackagedMedicine>
+                                        </ns2:asContent>
+                                        <ns2:asSpecializedKind xmlns:ns2="urn:epsos-org:ep:medication" classCode="GEN">
+                                            <ns2:generalizedMedicineClass classCode="MMAT">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol">
+                                       <ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/>
+                                    </ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:generalizedMedicineClass>
+                                        </ns2:asSpecializedKind>
+                                        <ns2:ingredient xmlns:ns2="urn:epsos-org:ep:medication" classCode="ACTI">
+                                            <ns2:quantity>
+                                                <ns2:numerator unit="mg" value="500" xsi:type="ns2:PQ"/>
+                                                <ns2:denominator unit="1" value="1" xsi:type="ns2:PQ"/>
+                                            </ns2:quantity>
+                                            <ns2:ingredient classCode="MMAT" determinerCode="KIND" xsi:type="ns2:COCT_MT230100UV.Substance">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol">
+                                       <ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/>
+                                    </ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:ingredient>
+                                        </ns2:ingredient>
+                                    </manufacturedMaterial>
+                                    <ns2:marketingAuthorizationHolder xmlns:ns2="urn:epsos-org:ep:medication" classCode="ORG" determinerCode="INSTANCE">
+                                        <ns2:name>GlaxoSmithKline Consumer Healthcare AB</ns2:name>
+                                    </ns2:marketingAuthorizationHolder>
+                                </manufacturedProduct>
+</product>
+<performer typeCode="PRF">
+<time value="20210322151014+0200"/>
+<assignedEntity>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/>
+<assignedPerson>
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+<participant contextControlCode="OP" typeCode="PRF">
+<participantRole classCode="LIC">
+<id root="2.16.17.710.860.1000.990.1.5"/>
+<scopingEntity classCode="ORG">
+<id root="2.16.17.710.860.1000.990.1.5.1"/>
+</scopingEntity>
+</participantRole>
+</participant>
+<entryRelationship typeCode="REFR"><substanceAdministration xmlns:ns2="urn:epsos-org:ep:medication" classCode="SBADM" moodCode="INT">
+                            
+                            
+                            
+                            
+                            <id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+                            <text>#MEDICATION1</text>
+                            <statusCode code="completed"/>
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20210309"/>
+                                <high value="20220309"/>
+                            </effectiveTime>
+                            <effectiveTime nullFlavor="UNK" xsi:type="PIVL_TS"/>
+                            <doseQuantity nullFlavor="UNK" xsi:type="BXIT_IVL_PQ"/>
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code code="20100825100146" codeSystem="1.2.752.129.2.1.5.2" codeSystemName="NPL pack-id" displayName="Alvedon, filmdragerad tablett 500 mg">
+                                            <originalText>
+                                                <reference value="#ORIGNAME"/>
+                                            </originalText>
+                                        </code>
+                                        <name>Alvedon®</name>
+                                        <ns2:desc>500 mg</ns2:desc>
+                                        <ns2:formCode code="10221000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Film-coated tablet">
+                                            <ns2:translation code="FICOTA" codeSystem="1.2.752.180.1.1" codeSystemName="läkemedelsform" displayName="filmdragerad tablett"/>
+                                        </ns2:formCode>
+                                        <ns2:asContent classCode="CONT">
+                                            <ns2:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <ns2:name>Alvedon, filmdragerad tablett 500 mg</ns2:name>
+                                                <ns2:formCode nullFlavor="NI"/>
+                                                <ns2:capacityQuantity unit="1" value="100.0"/>
+                                            </ns2:containerPackagedMedicine>
+                                        </ns2:asContent>
+                                        <ns2:asSpecializedKind classCode="GEN">
+                                            <ns2:generalizedMedicineClass classCode="MMAT">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol"><ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/></ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:generalizedMedicineClass>
+                                        </ns2:asSpecializedKind>
+                                        <ns2:ingredient classCode="ACTI">
+                                            <ns2:quantity>
+                                                <ns2:numerator unit="mg" value="500" xsi:type="ns2:PQ"/>
+                                                <ns2:denominator unit="1" value="1" xsi:type="ns2:PQ"/>
+                                            </ns2:quantity>
+                                            <ns2:ingredient classCode="MMAT" determinerCode="KIND" xsi:type="ns2:COCT_MT230100UV.Substance">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol"><ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/></ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:ingredient>
+                                        </ns2:ingredient>
+                                    </manufacturedMaterial>
+                                    <ns2:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                                        <ns2:name>GlaxoSmithKline Consumer Healthcare AB</ns2:name>
+                                    </ns2:marketingAuthorizationHolder>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship inversionInd="false" typeCode="COMP">
+                                <supply classCode="SPLY" moodCode="RQO">
+                                    <independentInd value="false"/>
+                                    <quantity unit="1" value="2"/>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                                    <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                                    <text>
+                                        <reference value="#PINSTRUCT"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass"/>
+                                    <value code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" codeSystemVersion="913-20091020" displayName="generic" xsi:type="CE"><translation code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" displayName="Generic"/></value>
+                                </observation>
+                            </entryRelationship>
+                        </substanceAdministration>
+</entryRelationship><entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN">
+<code code="SUBST" codeSystem="2.16.840.1.113883.5.6"/>
+</act>
+</entryRelationship>
+</supply>
+</entry>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

@@ -1,0 +1,245 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" classCode="DOCCLIN" moodCode="EVN">
+  <realmCode code="LU"/>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.1"/>
+  <id extension="XML-7" root="7ACC94EA-ADC8-402F-9D7E-A342DAE1990E"/>
+  <code code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription for medication"><translation code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="inconnue"/></code>
+  <title>Medical Prescription</title>
+  <effectiveTime value="20210312195644+0100"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"><translation code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal"/></confidentialityCode>
+  <languageCode code="fr-LU"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+      <patientRole>
+         <id extension="3843082788" root="1.3.182.2.4.2"/>
+         <id extension="1968101545978" root="1.3.182.4.4"/>
+         <addr use="H">
+            <streetAddressLine>1133 RUE DES PRES</streetAddressLine>
+            <postalCode>9160</postalCode>
+            <city>INGELDORF</city>
+            <country>LU</country>
+         </addr>
+         <telecom use="H" value="tel:+352-691-442"/>
+         <telecom use="MC" value="tel:+352-1277-8182"/>
+         <telecom use="H" value="mailto:celestina@pt-test.lu"/>
+         <patient>
+            <name>
+               <family>DOE-CALLA</family>
+               <given>CELESTINA</given>
+            </name>
+            <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Female"><translation code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Féminin"/></administrativeGenderCode>
+            <birthTime value="19681015"/>
+         </patient>
+      </patientRole>
+  </recordTarget>
+  <author>
+      <functionCode code="22" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Health professionals"><translation code="22" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO"/></functionCode>
+      <time value="20210312195644+0100"/>
+      <assignedAuthor>
+         <id extension="2432538959" root="1.3.182.4.1"/>
+         <id extension="123456-78" root="1.3.182.4.6"/>
+         <addr use="WP">
+            <streetAddressLine>Rue des petits poissons</streetAddressLine>
+            <postalCode>1521</postalCode>
+            <city>Innsmouth</city>
+            <country>LUX</country>
+         </addr>
+         <telecom use="H" value="tel:01203112233"/>
+         <telecom use="MC" value="tel:0120112233"/>
+         <assignedPerson>
+            <name>
+               <family>ZIMMERMANN</family>
+               <given>HEIKO</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id nullFlavor="NI"/>
+            <name>Cabinet Dr. Simpson</name>
+            <telecom nullFlavor="NI"/>
+            <addr use="WP">
+               <streetAddressLine>Rue des petits poissons</streetAddressLine>
+               <postalCode>1521</postalCode>
+               <city>Innsmouth</city>
+               <country>LUX</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+  </author>
+  <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id extension="91A9D1C0-309B-4DBB-AA67-702831EB4B38" root="1.3.182.4.1"/>
+            <name>Cabinet Dr. Simpson</name>
+            <telecom nullFlavor="NI"/>
+            <addr use="WP">
+               <streetAddressLine>Rue des petits poissons</streetAddressLine>
+               <postalCode>1521</postalCode>
+               <city>Innsmouth</city>
+               <country>LUX</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+      <time value="19700101010000+0100"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+         <id extension="91A9D1C0-309B-4DBB-AA67-702831EB4B38" root="1.3.182.4.1"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson>
+            <name nullFlavor="NI"/>
+         </assignedPerson>
+         <representedOrganization>
+            <id extension="91A9D1C0-309B-4DBB-AA67-702831EB4B38" root="1.3.182.4.1"/>
+            <name>Cabinet Dr. Simpson</name>
+            <telecom nullFlavor="NI"/>
+            <addr use="WP">
+               <streetAddressLine>Rue des petits poissons</streetAddressLine>
+               <postalCode>1521</postalCode>
+               <city>Innsmouth</city>
+               <country>LUX</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+  </legalAuthenticator>
+  <relatedDocument typeCode="XFRM">
+      <parentDocument>
+         <id root="7ACC94EA-ADC8-402F-9D7E-A342DAE1990E"/>
+      </parentDocument>
+  </relatedDocument>
+  <component>
+      <structuredBody>
+         <component>
+            <section>
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.1"/>
+               <id root="7ACC94EA-ADC8-402F-9D7E-A342DAE1990E"/>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Code</th>
+                           <th>Nom commercial</th>
+                           <th>Principe actif et dosage</th>
+                           <th>Forme pharmaceutique</th>
+                           <th>Route</th>
+                           <th>Posologie</th>
+                           <th>Date de début</th>
+                           <th>Date de fin</th>
+                           <th>Notes</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr ID="medication8">
+                           <td ID="medication8-code">1644</td>
+                           <td ID="medication8-nom">LANTUS</td>
+                           <td ID="medication8-principe">insuline glargine 100.0IU/ml</td>
+                           <td ID="medication8-forme">sol inj</td>
+                           <td ID="medication8-route">sous-cutanée</td>
+                           <td ID="medication8-posologie">10 UI par Jour</td>
+                           <td ID="medication8-start">04/03/2021</td>
+                           <td ID="medication8-end"/>
+                           <td ID="medication8-notes"/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="INT">
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.2"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id extension="XML-7" root="87A410DF-5BA3-44B1-9B70-3096D7152952"/>
+                     <text><reference value="#medication8"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                        <low value="20210304"/>
+                        <high nullFlavor="UNK"/>
+                     </effectiveTime>
+                     <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" institutionSpecified="false" operator="A" xsi:type="PIVL_TS">
+                        <period unit="d" value="1"/>
+                     </effectiveTime>
+                     <doseQuantity>
+                        <low unit="[IU]" value="10"/>
+                        <high unit="[IU]" value="10"/>
+                     </doseQuantity>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="1644" codeSystem="1.3.182.5.47" codeSystemName="ESANTE DRUGS" displayName="LANTUS">
+                                 <originalText><reference value="#medication8-nom"/></originalText>
+                              </code>
+                              <name>LANTUS</name>
+                              <epsos:formCode xmlns:epsos="urn:epsos-org:ep:medication" code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"><epsos:translation code="476" codeSystem="1.3.182.5.36" codeSystemName="VIDAL FORMS" displayName="sol inj"/></epsos:formCode>
+                              <epsos:asContent xmlns:epsos="urn:epsos-org:ep:medication" classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:name>LANTUS</epsos:name>
+                                    <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"><epsos:translation code="476" codeSystem="1.3.182.5.36" codeSystemName="VIDAL FORMS" displayName="sol inj"/></epsos:formCode>
+                                    <epsos:capacityQuantity unit="[IU]" value="300"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind xmlns:epsos="urn:epsos-org:ep:medication" classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="20401" codeSystem="1.3.182.5.35" codeSystemName="VIDAL SUBSTANCES" displayName="insuline glargine"/></epsos:code>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient xmlns:epsos="urn:epsos-org:ep:medication" classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="[IU]/mL" value="100.0" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="1" value="1.0" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="20401" codeSystem="1.3.182.5.35" codeSystemName="VIDAL SUBSTANCES" displayName="insuline glargine"/></epsos:code>
+                                    <epsos:name>insuline glargine</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <functionCode code="22" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Health professionals"><translation code="22" codeSystem="2.16.840.1.113883.2.9.6.2.7"/></functionCode>
+                        <time value="20210312195644+0100"/>
+                        <assignedAuthor>
+                           <id extension="2432538959" root="1.3.182.4.1"/>
+                           <id extension="2432538959" root="1.3.182.4.6"/>
+                           <addr use="WP">
+                              <streetAddressLine>Rue des petits poissons</streetAddressLine>
+                              <postalCode>1521</postalCode>
+                              <city>Innsmouth</city>
+                              <country>LUX</country>
+                           </addr>
+                           <telecom use="H" value="tel:01203112233"/>
+                           <telecom use="MC" value="tel:0120112233"/>
+                           <assignedPerson>
+                              <name>
+                                 <family>ZIMMERMANN</family>
+                                 <given>HEIKO</given>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id root="7EC39C61-7315-4303-8521-ABC0BFE99003"/>
+                              <name>Cabinet Dr. Simpson</name>
+                              <telecom nullFlavor="NI"/>
+                              <addr use="WP">
+                                 <streetAddressLine>Rue des petits poissons</streetAddressLine>
+                                 <postalCode>1521</postalCode>
+                                 <city>Innsmouth</city>
+                                 <country>LUX</country>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship typeCode="COMP">
+                        <supply classCode="SPLY" moodCode="RQO">
+                           <independentInd value="false"/>
+                           <quantity unit="1" value="1"/>
+                        </supply>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+  </component>
+</ClinicalDocument>

@@ -1,0 +1,1 @@
+docker build --tag openncp-gateway-frontend:latest -m 6g .

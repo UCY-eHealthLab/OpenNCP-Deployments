@@ -1,0 +1,230 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:ns2="urn:epsos-org:ep:medication" classCode="DOCCLIN" moodCode="EVN">
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+    <id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+    <code code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription for medication"><translation code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ePrescription"/></code>
+    <title>Alvedon, filmdragerad tablett 500 mg N02BE01</title>
+    <effectiveTime value="20210309162948+0100"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+    <languageCode code="sv-SE"/>
+    <setId extension="2af7a5a3-ea67-469e-b2ff-1898968f9e54" root="2.16.17.710.807.1000.990.1"/>
+    <versionNumber value="2"/>
+    <recordTarget contextControlCode="OP" typeCode="RCT">
+        <patientRole classCode="PAT">
+            <id extension="200002282382" root="1.2.752.129.2.1.3.1"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom nullFlavor="NI"/>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <family>Cypern</family>
+                    <given>Estelle</given>
+                </name>
+                <administrativeGenderCode nullFlavor="UNK"/>
+                <birthTime value="20000228"/>
+                <languageCommunication>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+                    <languageCode code="sv-SE"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author contextControlCode="OP" typeCode="AUT">
+        <functionCode code="221" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Medical doctors">
+            <translation code="LK" codeSystem="1.2.752.116.3.1.3" codeSystemName="legitimeratYrke" displayName="Läkare"/>
+        </functionCode>
+        <time value="20210309162900+0100"/>
+        <assignedAuthor>
+            <id extension="9000027" root="1.2.752.116.3.1.2"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom use="WP" value="tel:+46809060906"/>
+            <assignedPerson>
+                <name>
+                    <family>Läkarsson</family>
+                    <given>Lars</given>
+                </name>
+            </assignedPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id extension="4000000000000" root="1.2.752.29.4.19"/>
+                <name>Sjukhus ett</name>
+                <telecom use="WP" value="tel:+4611123456"/>
+                <addr>
+                    <streetAddressLine>Box 123</streetAddressLine>
+                    <postalCode>12332</postalCode>
+                    <city>Uppsala</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id extension="7350045511287" root="2.51.1.3"/>
+                <name>eHälsomyndigheten</name>
+                <telecom use="WP" value="tel:+46104586200"/>
+                <addr>
+                    <streetAddressLine>Box 913</streetAddressLine>
+                    <postalCode>39129</postalCode>
+                    <city>Kalmar</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <legalAuthenticator>
+        <time value="20210309162948+0100"/>
+        <signatureCode nullFlavor="NI"/>
+        <assignedEntity>
+            <id extension="7350045511287" root="2.51.1.3"/>
+            <addr>
+                <streetAddressLine nullFlavor="NI"/>
+                <postalCode nullFlavor="NI"/>
+                <city nullFlavor="NI"/>
+                <state nullFlavor="NI"/>
+                <country>SE</country>
+            </addr>
+            <telecom nullFlavor="NI"/>
+            <assignedPerson>
+                <name>
+                    <family>Läkarsson</family>
+                    <given>Lars</given>
+                </name>
+            </assignedPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id extension="7350045511287" root="1.2.752.29.4.19"/>
+                <name>eHälsomyndigheten</name>
+                <telecom use="WP" value="tel:+46104586200"/>
+                <addr>
+                    <streetAddressLine>Box 913</streetAddressLine>
+                    <postalCode>39129</postalCode>
+                    <city>Kalmar</city>
+                    <state nullFlavor="NI"/>
+                    <country>SE</country>
+                </addr>
+            </representedOrganization>
+        </assignedEntity>
+    </legalAuthenticator>
+    <relatedDocument typeCode="XFRM">
+        <parentDocument>
+            <id extension="4842769705.30.1" root="2.16.17.710.807.1000.990.1"/>
+        </parentDocument>
+    </relatedDocument>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.1"/>
+                    <id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+                    <code code="57828-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription list"><translation code="57828-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prescriptions"/></code>
+                    <title>Prescriptions</title>
+                    <text ID="eP_as_text">
+                        <content ID="MEDICATION1">Alvedon®</content>
+                        <br/>ARTIKELBENÄMNING:
+                        <content ID="ORIGNAME">Alvedon, filmdragerad tablett 500 mg</content>
+                        <br/>DOSERINGSINFORMATION:
+                        <content ID="PINSTRUCT">¿-1 tablett 3 gånger per dag</content>
+                    </text>
+                    <entry typeCode="COMP">
+                        <substanceAdministration classCode="SBADM" moodCode="INT">
+                            <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                            <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.2"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                            <id extension="4842769705.30.2" root="2.16.17.710.807.1000.990.1"/>
+                            <text>#MEDICATION1</text>
+                            <statusCode code="completed"/>
+                            <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                                <low value="20210309"/>
+                                <high value="20220309"/>
+                            </effectiveTime>
+                            <effectiveTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK" xsi:type="PIVL_TS"/>
+                            <doseQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK" xsi:type="BXIT_IVL_PQ"/>
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code code="20100825100146" codeSystem="1.2.752.129.2.1.5.2" codeSystemName="NPL pack-id" displayName="Alvedon, filmdragerad tablett 500 mg">
+                                            <originalText>
+                                                <reference value="#ORIGNAME"/>
+                                            </originalText>
+                                        </code>
+                                        <name>Alvedon®</name>
+                                        <ns2:desc>500 mg</ns2:desc>
+                                        <ns2:formCode code="10221000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Film-coated tablet">
+                                            <ns2:translation code="FICOTA" codeSystem="1.2.752.180.1.1" codeSystemName="läkemedelsform" displayName="filmdragerad tablett"/>
+                                        </ns2:formCode>
+                                        <ns2:asContent classCode="CONT">
+                                            <ns2:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                                <ns2:name>Alvedon, filmdragerad tablett 500 mg</ns2:name>
+                                                <ns2:formCode nullFlavor="NI"/>
+                                                <ns2:capacityQuantity unit="1" value="100.0"/>
+                                            </ns2:containerPackagedMedicine>
+                                        </ns2:asContent>
+                                        <ns2:asSpecializedKind classCode="GEN">
+                                            <ns2:generalizedMedicineClass classCode="MMAT">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol"><ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/></ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:generalizedMedicineClass>
+                                        </ns2:asSpecializedKind>
+                                        <ns2:ingredient classCode="ACTI">
+                                            <ns2:quantity>
+                                                <ns2:numerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="mg" value="500" xsi:type="ns2:PQ"/>
+                                                <ns2:denominator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" unit="1" value="1" xsi:type="ns2:PQ"/>
+                                            </ns2:quantity>
+                                            <ns2:ingredient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="MMAT" determinerCode="KIND" xsi:type="ns2:COCT_MT230100UV.Substance">
+                                                <ns2:code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="paracetamol"><ns2:translation code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Paracetamol"/></ns2:code>
+                                                <ns2:name>Paracetamol</ns2:name>
+                                            </ns2:ingredient>
+                                        </ns2:ingredient>
+                                    </manufacturedMaterial>
+                                    <ns2:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                                        <ns2:name>GlaxoSmithKline Consumer Healthcare AB</ns2:name>
+                                    </ns2:marketingAuthorizationHolder>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship inversionInd="false" typeCode="COMP">
+                                <supply classCode="SPLY" moodCode="RQO">
+                                    <independentInd value="false"/>
+                                    <quantity unit="1" value="2"/>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                                    <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+                                    <text>
+                                        <reference value="#PINSTRUCT"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship inversionInd="true" typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass"/>
+                                    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" codeSystemVersion="913-20091020" displayName="generic" xsi:type="CE"><translation code="G" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" displayName="Generic"/></value>
+                                </observation>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

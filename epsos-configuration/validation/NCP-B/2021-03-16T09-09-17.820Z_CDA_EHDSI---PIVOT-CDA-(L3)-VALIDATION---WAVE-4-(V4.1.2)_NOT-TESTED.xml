@@ -1,0 +1,318 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+<id extension="4ggJ9zJQEsAR6w92" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.extended Document"><translation code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="eDispensation"/></code>
+<title>Medication dispensed</title>
+<effectiveTime value="20210316110916+0200"/>
+<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+<languageCode code="el-GR"/>
+<setId extension="2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML" root="2.16.840.1.113883.3.4424.7.20.2"/>
+<recordTarget contextControlCode="OP" typeCode="RCT">
+      <patientRole classCode="PAT">
+         <id extension="79092303809" root="2.16.840.1.113883.3.4424.1.1.616"/>
+         <addr>
+            <country>PL</country>
+            <postalCode>03-134</postalCode>
+            <city>Warszawa</city>
+            <streetAddressLine>Modlińska 24/12</streetAddressLine>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given>Anna</given>
+               <family>Cypr</family>
+            </name>
+            <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Female"/>
+            <birthTime value="19790923"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+<author typeCode="AUT">
+<functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Pharmacists"/>
+<time value="20210316110916+0200"/>
+<assignedAuthor classCode="ASSIGNED">
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.2.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+
+</representedOrganization>
+</assignedAuthor>
+</author>
+<custodian typeCode="CST">
+<assignedCustodian classCode="ASSIGNED">
+<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.4"/>
+<name>Country Custodian Name</name>
+<telecom nullFlavor="NI"/>
+<addr>
+<country>CY</country>
+</addr>
+</representedCustodianOrganization>
+</assignedCustodian></custodian>
+<legalAuthenticator contextControlCode="OP" typeCode="LA">
+<time value="20210316090916"/>
+<signatureCode code="S"/>
+<assignedEntity classCode="ASSIGNED">
+<id root="2.16.17.710.860.1000.990.1.3"/>
+<addr><streetAddressLine>Famagusta Hospital</streetAddressLine><city>City</city><postalCode>N/A</postalCode><state nullFlavor="UNK"/><country>Cyprus</country></addr><telecom nullFlavor="NI"/>
+<assignedPerson>
+<name>
+<family>Organisation</family>
+<given>Firstname</given>
+</name>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<id root="2.16.17.710.860.1000.990.1.3.1"/>
+<name>Famagusta Hospital</name><telecom nullFlavor="NI"/>
+<addr use="PST">
+<streetAddressLine>N/A</streetAddressLine>
+<city>City</city>
+<postalCode>N/A</postalCode>
+<state nullFlavor="UNK"/>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<inFulfillmentOf>
+<order moodCode="RQO">
+<id extension="2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML" root="2.16.840.1.113883.3.4424.7.20.1"/>
+</order>
+</inFulfillmentOf>
+<relatedDocument typeCode="APND">
+<parentDocument classCode="DOCCLIN">
+<id extension="2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML" root="2.16.840.1.113883.3.4424.7.20.1"/>
+</parentDocument>
+</relatedDocument>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.8"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+<id extension="D-2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML" root="2.16.17.710.860.1000.990.1.1"/>
+<code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.brief Document"><translation code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed"/></code>
+<title>Dispensation: D-2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML</title>
+<text>
+                  <paragraph ID="SBADM_1">
+                     <content ID="p1_nazwaLeku" styleCode="xPLbig">Toujeo</content>
+                     <content ID="p1_mocSkladnikowLeku">100 j/ml</content>
+                     <content ID="p1_edytuj_mocLeku"/>
+                     <content ID="p1_postacLeku">roztwór do wstrzykiwań</content>
+                     <content ID="p1_edytuj_postacLeku"/>
+                     <content ID="p1_nieZamieniac" styleCode="xPLbig">NZ</content>
+                  </paragraph>
+                  <paragraph>
+                     <content ID="p1_iloscLeku">5</content>
+                     <content ID="p1_krotnosc_opis">op. po</content>
+                     <content ID="p1_wielkoscOpakowania">10 ml</content>
+                  </paragraph>
+                  <paragraph ID="DS_1">
+                     <content ID="p1_stosowanie_opis_1">D.S.</content>
+                     <content ID="p1_edytuj_stosowanie_wartosc_1" styleCode="Bold">W razie potrzeby</content>
+                  </paragraph>
+                  <paragraph ID="ACT_2">
+                     <content ID="p1_odplatnosc_opis">Odpłatność</content>
+                     <content ID="p1_odplatnosc_wartosc" styleCode="Bold">50%</content>
+                  </paragraph>
+               </text><entry typeCode="COMP">
+<supply classCode="SPLY" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.34"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+<templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+<id extension="2.16.840.1.113883.3.4424.7.20.3^2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML-1" root="2.16.17.710.860.1000.990.1.7"/>
+<quantity unit="1" value="1"/><product>
+<manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <epsos:id extension="2.16.840.1.113883.3.4424.7.20.3^2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML-1" root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/><code code="100130509" codeSystem="2.16.840.1.113883.3.4424.6.1" displayName="LANTUS SOLUTION FOR INJECTION 100IU/ML, PACK WITH 5 CARTIDGES X 3ML">
+                                 <originalText>
+                                    <reference value="#p1_nazwaLeku"/>
+                                 </originalText>
+                              </code>
+                              <name>LANTUS SOLUTION FOR INJECTION 100IU/ML, PACK WITH 5 CARTIDGES X 3ML</name>
+                              <epsos:desc>100 j/ml</epsos:desc>
+                              <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"/>
+                              <epsos:asContent classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:name>LANTUS SOLUTION FOR INJECTION 100IU/ML, PACK WITH 5 CARTIDGES X 3ML</epsos:name>
+                                    <epsos:formCode code="30069000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Vial"/>
+                                    <epsos:capacityQuantity unit="mL" value="3"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine">
+                                       <epsos:translation code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Insulinum glarginum"/>
+                                    </epsos:code>
+                                    <epsos:name>Insulinum glarginum</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="NI"/>
+                                    <epsos:name>Insulinum glarginum</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                           <epsos:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                              <epsos:name>Sanofi-Aventis Deutschland GmbH</epsos:name>
+                           </epsos:marketingAuthorizationHolder>
+                        </manufacturedProduct>
+</product>
+<performer typeCode="PRF">
+<time value="20210316110916+0200"/>
+<assignedEntity>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6"/>
+<addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/>
+<assignedPerson>
+<name>
+<family>pharmacist</family>
+<given>pharmacist</given>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id extension="urn:oid:2.16.17.710.860.1000.990.1" root="2.16.17.710.860.1000.990.1.6.1"/>
+<name>State Health Services Organisation</name>
+<telecom use="WP" value="tel:+22603000"/><telecom use="WP" value="mailto:admin@ncp.eu"/><addr>
+<streetAddressLine>215, Old road Nicosia Limassol steet</streetAddressLine>
+<city>Nicosia, Strovolos</city>
+<state nullFlavor="NI"/>
+<postalCode>2029</postalCode>
+<country>CY</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+<participant contextControlCode="OP" typeCode="PRF">
+<participantRole classCode="LIC">
+<id root="2.16.17.710.860.1000.990.1.5"/>
+<scopingEntity classCode="ORG">
+<id root="2.16.17.710.860.1000.990.1.5.1"/>
+</scopingEntity>
+</participantRole>
+</participant>
+<entryRelationship typeCode="REFR"><substanceAdministration classCode="SBADM" moodCode="INT">
+                     
+                     
+                     
+                     <id extension="2.16.840.1.113883.3.4424.2.7.17.2.1:3CEB590BDDA94FF3BB54C2.1615759885000.XML-1" root="2.16.840.1.113883.3.4424.7.20.3"/>
+                     <text>
+                        <reference value="#SBADM_1"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="UNK" xsi:type="IVL_TS"/>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <doseQuantity nullFlavor="UNK"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="100130509" codeSystem="2.16.840.1.113883.3.4424.6.1" displayName="Toujeo">
+                                 <originalText>
+                                    <reference value="#p1_nazwaLeku"/>
+                                 </originalText>
+                              </code>
+                              <name>Toujeo</name>
+                              <epsos:desc>100 j/ml</epsos:desc>
+                              <epsos:formCode code="11201000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Solution for injection"/>
+                              <epsos:asContent classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:name>Toujeo, solution for injection, 100 j/ml, 1 vial, 10 ml</epsos:name>
+                                    <epsos:formCode code="30069000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Vial"/>
+                                    <epsos:capacityQuantity unit="mL" value="10"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="insulin glargine"><epsos:translation code="A10AE04" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Insulinum glarginum"/></epsos:code>
+                                    <epsos:name>Insulinum glarginum</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="NI"/>
+                                    <epsos:name>Insulinum glarginum</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                           <epsos:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                              <epsos:name>Sanofi-Aventis Deutschland GmbH</epsos:name>
+                           </epsos:marketingAuthorizationHolder>
+                        </manufacturedProduct>
+                     </consumable>
+                     <entryRelationship typeCode="COMP">
+                        <supply classCode="SPLY" moodCode="RQO">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.6"/>
+                           <independentInd value="false"/>
+                           <quantity unit="1" value="5"/>
+                        </supply>
+                     </entryRelationship>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <code code="SUBST" codeSystem="2.16.840.1.113883.5.6" codeSystemName="ActClass" displayName="Substitution"/>
+                           <value code="N" codeSystem="2.16.840.1.113883.5.1070" codeSystemName="SubstanceAdminSubstitution" displayName="none" xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="INT">
+                           <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                           <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" displayName="Patient Medication Instructions"/>
+                           <text>
+                              <reference value="#DS_1"/>
+                           </text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </substanceAdministration>
+</entryRelationship><entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN">
+<code code="SUBST" codeSystem="2.16.840.1.113883.5.6"/>
+</act>
+</entryRelationship>
+</supply>
+</entry>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRPA_IN201306UV02 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0">
+   <id extension="7147833912060" root="3cb3ab4a-31ec-4c44-9e5e-f777358a38fa"/>
+   <creationTime value="20210326134535.098+0000"/>
+   <versionCode code="V3PR1"/>
+   <interactionId extension="PRPA_IN201306UV02" root="2.16.840.1.113883.1.6"/>
+   <processingCode code="P"/>
+   <processingModeCode code="T"/>
+   <acceptAckCode code="NE"/>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.860.1000.990.1"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.17.710.860.1000.990.1"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="1.3.182.2.12.10000734.6.1"/>
+      </device>
+   </sender>
+   <acknowledgement>
+      <typeCode code="AE"/>
+      <targetMessage>
+         <id extension="a5393b85-dcef-426d-a9ad-28c4d5946d79"
+             root="8fbc3669-44a9-41ae-a00b-211e41174633"/>
+      </targetMessage>
+      <acknowledgementDetail>
+         <text>Error while trying to retrieve patient demogrphic data.</text>
+      </acknowledgementDetail>
+   </acknowledgement>
+   <controlActProcess classCode="CACT" moodCode="EVN">
+      <code code="PRPA_TE201306UV02"/>
+      <reasonOf typeCode="RSON">
+         <detectedIssueEvent classCode="ALRT" moodCode="EVN">
+            <code code="ActAdministrativeDetectedIssueCode"
+                  codeSystem="2.16.840.1.113883.5.4"/>
+            <mitigatedBy typeCode="MITGT">
+               <detectedIssueManagement classCode="ACT" moodCode="EVN">
+                  <code code="AnswerNotAvailable" codeSystem="1.3.6.1.4.1.19376.1.2.27.3"/>
+               </detectedIssueManagement>
+            </mitigatedBy>
+         </detectedIssueEvent>
+      </reasonOf>
+      <queryAck>
+         <queryId root="1.263507841149"/>
+         <queryResponseCode code="AE"/>
+      </queryAck>
+      <queryByParameter>
+         <queryId root="1.263507841149"/>
+         <statusCode code="new"/>
+         <parameterList>
+            <livingSubjectId>
+               <value extension="3843082788" root="1.3.182.4.4"/>
+               <semanticsText/>
+            </livingSubjectId>
+            <patientAddress>
+               <value>
+                  <country>LU</country>
+               </value>
+               <semanticsText/>
+            </patientAddress>
+         </parameterList>
+      </queryByParameter>
+   </controlActProcess>
+</PRPA_IN201306UV02>

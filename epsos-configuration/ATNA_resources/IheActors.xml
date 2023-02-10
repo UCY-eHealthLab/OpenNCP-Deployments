@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Note: This file is the starting point of All the Actor configuration;
+	all other config files should be linked from here. -->
+
+<!--Each configuration file has a root Configuration tag-->
+<Configuration>
+
+    <!--Defines the configuration of Audit Repository Server-->
+    <ConnectionFile file="ArrConnections.xml"/>
+
+    <!--The ARR actor configuration-->
+    <Actor name="arr" type="SecureNode">
+        <Description>Audit Record Repository</Description>
+        <Tcp connection="arr-tls"/>
+        <Udp connection="arr-udp"/>
+        <!--
+        Max number of threads to use for dispatching messages for processing.
+        Default = 5
+        -->
+        <!--
+        <ExecutionThreads>5</ExecutionThreads>
+        -->
+        <nio>true</nio>
+    </Actor>
+</Configuration>

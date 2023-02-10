@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchFields:searchFields xmlns:searchFields="http://ec.europa.eu/sante/ehncp/ism"
+                           xmlns="http://ec.europa.eu/sante/ehncp/ism"
+                           xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <country code="FI" friendlyName="Finland" label="label.ism.addressCountry">
+      <patientSearch friendlyName="Data to identify a patient" scope="EP">
+         <identifier type="NORMAL">
+            <id contextualDescription="Patient Identifier"
+                domain="1.2.246.21"
+                format="\d{6}[-+A]\d{3}[\d|A-Z]"
+                label="label.ism.nationalSocialSecurityNumber"
+                mandatory="true"/>
+			      </identifier>
+		    </patientSearch>
+	  </country>
+</searchFields:searchFields>

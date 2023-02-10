@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:AdhocQueryRequest xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                       xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                       xmlns:ns5="urn:ihe:iti:xds-b:2007"
+                       xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                       xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0">
+   <ns3:ResponseOption returnComposedObjects="true" returnType="LeafClass"/>
+   <AdhocQuery id="urn:uuid:14d4debf-8f97-4251-9a74-a90016b0af0d">
+      <Slot name="$XDSDocumentEntryPatientId">
+         <ValueList>
+            <Value>'113058312^^^&amp;2.16.840.1.113883.2.7.2.2&amp;ISO'</Value>
+         </ValueList>
+      </Slot>
+      <Slot name="$XDSDocumentEntryStatus">
+         <ValueList>
+            <Value>('urn:oasis:names:tc:ebxml-regrep:StatusType:Approved')</Value>
+         </ValueList>
+      </Slot>
+      <Slot name="$XDSDocumentEntryClassCode">
+         <ValueList>
+            <Value>('57833-6^^2.16.840.1.113883.6.1')</Value>
+         </ValueList>
+      </Slot>
+   </AdhocQuery>
+</ns3:AdhocQueryRequest>

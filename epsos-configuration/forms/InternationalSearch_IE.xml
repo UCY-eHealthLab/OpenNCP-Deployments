@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ism:searchFields xmlns:ism="http://ec.europa.eu/sante/ehncp/ism"
+                  xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"
+                  xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <ism:country code="IE" label="label.ism.addressCountry">
+      <ism:patientSearch scope="ALL">
+         <ism:identifier type="NORMAL">
+            <ism:id contextualDescription="PPSN"
+                    domain="1.2.372.980010.1.2"
+                    format="\d{18}"
+                    label="label.ism.nationalPersonIdentifier"
+                    mandatory="true"/>
+            </ism:identifier>
+
+
+
+
+
+
+        </ism:patientSearch>
+    </ism:country>
+</ism:searchFields>

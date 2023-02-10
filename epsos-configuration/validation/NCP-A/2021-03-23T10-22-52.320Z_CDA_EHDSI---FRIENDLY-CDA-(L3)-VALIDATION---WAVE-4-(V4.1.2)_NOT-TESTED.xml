@@ -1,0 +1,295 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:epsos="urn:epsos-org:ep:medication" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.2"/>
+   <id extension="2.16.840.1.113883.3.4424.2.7.19.5.1:ACBE638F79414DC8869706" root="2.16.840.1.113883.3.4424.7.21.1"/>
+   <code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.extended Document"/>
+   <title>eHDSI eDispensation Patient 8 Patient 8</title>
+   <effectiveTime value="20210323112140+0100"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"/>
+   <languageCode code="pl-PL"/>
+   <setId extension="2.16.840.1.113883.3.4424.2.7.19.5.1:ACBE638F79414DC8869706" root="2.16.840.1.113883.3.4424.7.21.2"/>
+   <versionNumber value="1"/>
+   <recordTarget contextControlCode="OP" typeCode="RCT">
+      <patientRole classCode="PAT">
+         <id extension="1990-12-22_8" root="2.16.17.710.860.1000.990.1"/>
+         <addr>
+            <country>CY</country>
+            <streetAddressLine>106, Panagias ton Rodon, 0001, Nicosia</streetAddressLine>
+         </addr>
+         <telecom use="H" value="tel:+99000000"/>
+         <telecom use="H" value="mailto:test@test.com"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given>Patient 8</given>
+               <family>Patient 8</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Male"/>
+            <birthTime value="19901222"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author contextControlCode="OP" typeCode="AUT">
+      <functionCode code="2262" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Pharmacists"/>
+      <time value="20210323112140+0100"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id extension="10000716" root="2.16.840.1.113883.3.4424.1.6.1"/>
+         <addr>
+            <streetAddressLine nullFlavor="NI"/>
+            <city nullFlavor="NI"/>
+            <postalCode nullFlavor="NI"/>
+            <country>PL</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson classCode="PSN">
+            <name>
+               <family>Testowy</family>
+               <given>Farmaceuta</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="1230011" root="2.16.840.1.113883.3.4424.2.6"/>
+            <name>Apteka porcelanowa</name>
+            <telecom use="WP" value="tel:+4832123456"/>
+            <addr>
+               <country>PL</country>
+               <postalCode>77-330</postalCode>
+               <city>Kraków</city>
+               <streetAddressLine>Wolności 7</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian typeCode="CST">
+      <assignedCustodian classCode="ASSIGNED">
+         <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.3.4424"/>
+            <name>Centrum e-Zdrowia</name>
+            <telecom use="WP" value="mailto:biuro@cez.gov.pl"/>
+            <addr>
+               <streetAddressLine>ul. Stanisława Dubois 5A</streetAddressLine>
+               <city>Warszawa</city>
+               <postalCode>00-184</postalCode>
+               <state>mazowieckie</state>
+               <country>PL</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator contextControlCode="OP" typeCode="LA">
+      <time value="20210323112140+0100"/>
+      <signatureCode code="S"/>
+      <assignedEntity classCode="ASSIGNED">
+         <id extension="10000716" root="2.16.840.1.113883.3.4424.1.6.1"/>
+         <addr>
+            <streetAddressLine nullFlavor="NI"/>
+            <city nullFlavor="NI"/>
+            <postalCode nullFlavor="NI"/>
+            <country>PL</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <assignedPerson>
+            <name>
+               <family>Testowy</family>
+               <given>Farmaceuta</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id extension="1230011" root="2.16.840.1.113883.3.4424.2.6"/>
+            <name>Apteka porcelanowa</name>
+            <telecom use="WP" value="tel:+4832123456"/>
+            <addr>
+               <country>PL</country>
+               <postalCode>77-330</postalCode>
+               <city>Kraków</city>
+               <streetAddressLine>Wolności 7</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <inFulfillmentOf typeCode="FLFS">
+      <order classCode="ACT" moodCode="RQO">
+         <id extension="Prescriptions" root="2.16.196.1.101.10.3.29.54290"/>
+      </order>
+   </inFulfillmentOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument classCode="DOCCLIN" moodCode="EVN">
+         <id extension="ACBE638F79414DC8869706" root="2.16.840.1.113883.3.4424.2.7.19.5.1"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody classCode="DOCBODY">
+         <component typeCode="COMP">
+            <section classCode="DOCSECT" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.2"/>
+               <id extension="2.16.840.1.113883.3.4424.2.7.19.5.3:ACBE638F79414DC8869706" root="2.16.840.1.113883.3.4424.7.21.3"/>
+               <code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Medication dispensed.brief Document"/>
+               <title>Dispensation</title>
+               <text>
+                  <paragraph>
+                     <content>DANE RECEPTY ELEKTRONICZNEJ</content>
+                     <br/>
+                     <content>Pozycja recepty:</content>
+                     <content>2.16.196.1.101.10.3.29.54290:medicine.1-1</content>
+                     <br/>
+                     <content>NPWZ ID:</content>
+                     <content styleCode="Bold">5</content>
+                  </paragraph>
+                  <paragraph ID="SPLY_1">
+                     <content>WYDANO LEK GOTOWY</content>
+                     <br/>
+                     <content>Data realizacji:</content>
+                     <content styleCode="Bold">2021.03.23 11:21:40</content>
+                     <br/>
+                     <content>Numer leku nadany przez aptekę:</content>
+                     <content styleCode="Bold">100089356</content>
+                     <br/>
+                     <content>Kategoria dostępności:</content>
+                     <content styleCode="Bold">Rp</content>
+                     <br/>
+                     <br/>
+                     <br/>
+                     <content>Nazwa</content>
+                     <content styleCode="Bold">Ventolin</content>
+                     <br/>
+                     <content>Postać:</content>
+                     <content styleCode="Bold">Aerozol wziewny, zawiesina</content>
+                     <br/>
+                     <content>Dawka:</content>
+                     <content styleCode="Bold">100 mcg/dawkę inh.</content>
+                     <br/>
+                     <content>Opakowanie:</content>
+                     <content styleCode="Bold">1 poj. 200 dawek</content>
+                     <br/>
+                     <content>Nr serii:</content>
+                     <content styleCode="Bold">XYZ123</content>
+                     <content>Data ważności:</content>
+                     <content styleCode="Bold">2022.03.23</content>
+                     <br/>
+                     <content>Identyfikator produktu:</content>
+                     <content>05909990442010 (GS1/EAN)</content>
+                     <br/>
+                     <content>Ilość:</content>
+                     <content styleCode="Bold">1</content>
+                  </paragraph>
+                  <paragraph ID="ACT_2">
+                     <content styleCode="Bold">TAKSACJA</content>
+                     <br/>
+                     <content>Zapłacono:</content>
+                     <content styleCode="Bold">15,98 zł</content>
+                  </paragraph>
+               </text>
+               <entry typeCode="COMP">
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.10.20.1.34"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.3"/>
+                     <id extension="2.16.840.1.113883.3.4424.2.7.19.5.3:ACBE638F79414DC8869706-1" root="2.16.840.1.113883.3.4424.7.21.3"/>
+                     <quantity unit="1" value="1"/>
+                     <product typeCode="PRD">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="100089356" codeSystem="2.16.840.1.113883.3.4424.6.1" codeSystemName="Identyfikatory leków z bazy produktów leczniczych URPL" displayName="Ventolin"/>
+                              <name>Ventolin</name>
+                              <epsos:desc>100 mcg/dawkę inh.</epsos:desc>
+                              <epsos:formCode code="11107000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Pressurised inhalation, suspension"/>
+                              <epsos:asContent classCode="CONT">
+                                 <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                    <epsos:name>Ventolin, pressurised inhalation, suspension, 100 mcg/dawkę inh., 1 container, 200 pcs. / Salbutamolum, R03AC02</epsos:name>
+                                    <epsos:formCode code="30015500" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Container"/>
+                                    <epsos:capacityQuantity unit="1" value="200"/>
+                                 </epsos:containerPackagedMedicine>
+                              </epsos:asContent>
+                              <epsos:asSpecializedKind classCode="GEN">
+                                 <epsos:generalizedMedicineClass classCode="MMAT">
+                                    <epsos:code code="R03AC02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="salbutamol"><epsos:translation code="R03AC02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="Salbutamolum"/></epsos:code>
+                                    <epsos:name>Salbutamolum</epsos:name>
+                                 </epsos:generalizedMedicineClass>
+                              </epsos:asSpecializedKind>
+                              <epsos:ingredient classCode="ACTI">
+                                 <epsos:quantity>
+                                    <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                    <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                 </epsos:quantity>
+                                 <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <epsos:code nullFlavor="NI"/>
+                                    <epsos:name>Salbutamoli sulfas</epsos:name>
+                                 </epsos:ingredient>
+                              </epsos:ingredient>
+                           </manufacturedMaterial>
+                           <epsos:marketingAuthorizationHolder classCode="ORG" determinerCode="INSTANCE">
+                              <epsos:name>GlaxoSmithKline (Ireland) Limited</epsos:name>
+                           </epsos:marketingAuthorizationHolder>
+                        </manufacturedProduct>
+                     </product>
+                     <performer typeCode="PRF">
+                        <time value="20210323112140+0100"/>
+                        <assignedEntity>
+                           <id extension="10000716" root="2.16.840.1.113883.3.4424.1.6.1"/>
+                           <addr nullFlavor="NI"/>
+                           <telecom nullFlavor="NI"/>
+                           <assignedPerson>
+                              <name>
+                                 <family>Testowy</family>
+                                 <given>Farmaceuta</given>
+                              </name>
+                           </assignedPerson>
+                           <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                              <id extension="1230011" root="2.16.840.1.113883.3.4424.2.6"/>
+                              <name>Apteka porcelanowa</name>
+                              <telecom use="WP" value="tel:+4832123456"/>
+                              <addr>
+                                 <country>PL</country>
+                                 <postalCode>77-330</postalCode>
+                                 <city>Kraków</city>
+                                 <streetAddressLine>Wolności 7</streetAddressLine>
+                              </addr>
+                           </representedOrganization>
+                        </assignedEntity>
+                     </performer>
+                     <entryRelationship typeCode="REFR">
+                        <substanceAdministration classCode="SBADM" moodCode="INT">
+                           <id extension="medicine.1" root="2.16.196.1.101.10.3.29.54290"/>
+                           <consumable typeCode="CSM">
+                              <manufacturedProduct classCode="MANU">
+                                 <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                                 <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                    <code code="R03AC02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="salbutamol"/>
+                                    <name>VENTOLIN EVOHALER INHALER 100MCG/DOSE</name>
+                                    <epsos:formCode code="21060" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Aerozol inhalacyjny"/>
+                                    <epsos:asContent classCode="CONT">
+                                       <epsos:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                                          <epsos:name>VENTOLIN EVOHALER INHALER 100MCG/DOSE, 100MCG/DOSE, DOSE(S), PACK WITH 1 INHALER X 200 DOSE(S)</epsos:name>
+                                          <epsos:formCode code="21060" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Aerozol inhalacyjny"/>
+                                          <epsos:capacityQuantity unit="1" value="1"/>
+                                       </epsos:containerPackagedMedicine>
+                                    </epsos:asContent>
+                                    <epsos:asSpecializedKind classCode="GEN">
+                                       <epsos:generalizedMedicineClass classCode="MMAT">
+                                          <epsos:code code="R03AC02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="salbutamol"/>
+                                          <epsos:name>salbutamol</epsos:name>
+                                       </epsos:generalizedMedicineClass>
+                                    </epsos:asSpecializedKind>
+                                    <epsos:ingredient classCode="ACTI">
+                                       <epsos:quantity>
+                                          <epsos:numerator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                          <epsos:denominator nullFlavor="NI" xsi:type="epsos:PQ"/>
+                                       </epsos:quantity>
+                                       <epsos:ingredient classCode="MMAT" determinerCode="KIND">
+                                          <epsos:code code="R03AC02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="salbutamol"/>
+                                          <epsos:name>salbutamol</epsos:name>
+                                       </epsos:ingredient>
+                                    </epsos:ingredient>
+                                 </manufacturedMaterial>
+                              </manufacturedProduct>
+                           </consumable>
+                        </substanceAdministration>
+                     </entryRelationship>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

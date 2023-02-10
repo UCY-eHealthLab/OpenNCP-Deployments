@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ism:searchFields xmlns:ism="http://ec.europa.eu/sante/ehncp/ism"
+                  xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"
+                  xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+   <ism:country code="CY" label="label.ism.addressCountry">
+      <ism:patientSearch friendlyName="Patient Identity Trait" scope="ALL">
+         <ism:identifier type="NORMAL">
+            <ism:id contextualDescription="nationalIdentityCardNumber"
+                    domain="2.16.840.1.113883.3.9143.1.1"
+                    format="[0-9]+"
+                    label="label.ism.nationalIdentityCardNumber"
+                    mandatory="true"/>		
+         </ism:identifier>
+         <ism:birthDate contextualDescription="birthdate"
+                        format="[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])"
+                        label="label.ism.birthDate"
+                        mandatory="true"/>
+	     </ism:patientSearch>
+   </ism:country>
+</ism:searchFields>

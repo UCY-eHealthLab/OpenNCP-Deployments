@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRPA_IN201306UV02 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0">
+   <id extension="0153949317706" root="b80df46b-a3cf-4e26-a9cd-c8e6b053d9ef"/>
+   <creationTime value="20210323151339.383+0100"/>
+   <versionCode code="V3PR1"/>
+   <interactionId extension="PRPA_IN201306UV02" root="2.16.840.1.113883.1.6"/>
+   <processingCode code="P"/>
+   <processingModeCode code="T"/>
+   <acceptAckCode code="NE"/>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.860.1000.990.1"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.17.710.860.1000.990.1"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.17.710.840.1000.990.1"/>
+      </device>
+   </sender>
+   <acknowledgement>
+      <typeCode code="AA"/>
+      <targetMessage>
+         <id extension="bf9141ae-48b3-415f-af43-438eeb2e9e93"
+             root="11589b55-0fa0-4bf7-8c40-82d8755131e4"/>
+      </targetMessage>
+   </acknowledgement>
+   <controlActProcess classCode="CACT" moodCode="EVN">
+      <code code="PRPA_TE201306UV02"/>
+      <subject typeCode="SUBJ">
+         <registrationEvent classCode="REG" moodCode="EVN">
+            <id nullFlavor="NA"/>
+            <statusCode code="active"/>
+            <subject1 typeCode="SBJ">
+               <patient classCode="PAT">
+                  <id extension="990000339" root="2.16.840.1.113883.2.7.2.2"/>
+                  <statusCode code="active"/>
+                  <patientPerson classCode="PSN" determinerCode="INSTANCE">
+                     <name>
+                        <family>MAVROVIĆ</family>
+                        <given>MARINO</given>
+                     </name>
+                     <administrativeGenderCode code="M"/>
+                     <birthTime value="19711001"/>
+                     <addr>
+                        <country>HR</country>
+                        <city>SLAVONSKI BROD</city>
+                        <postalCode>35000</postalCode>
+                        <streetName>OSJEČKA 316</streetName>
+                     </addr>
+                  </patientPerson>
+                  <subjectOf1>
+                     <queryMatchObservation classCode="OBS" moodCode="EVN">
+                        <code code="IHE_PDQ" codeSystem="2.16.840.1.113883.1.11.19914"/>
+                        <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               value="100"
+                               xsi:type="INT"/>
+                     </queryMatchObservation>
+                  </subjectOf1>
+               </patient>
+            </subject1>
+            <custodian typeCode="CST">
+               <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.17.710.840.1000.990.1"/>
+                  <code code="NotHealthDataLocator" codeSystem="1.3.6.1.4.1.19376.1.2.27.2"/>
+               </assignedEntity>
+            </custodian>
+         </registrationEvent>
+      </subject>
+      <queryAck>
+         <queryId root="1.263507841149"/>
+         <queryResponseCode code="OK"/>
+      </queryAck>
+      <queryByParameter>
+         <queryId root="1.263507841149"/>
+         <statusCode code="new"/>
+         <parameterList>
+            <livingSubjectId>
+               <value extension="990000339" root="2.16.840.1.113883.2.7.2.2"/>
+               <semanticsText/>
+            </livingSubjectId>
+            <patientAddress>
+               <value>
+                  <country>HR</country>
+               </value>
+               <semanticsText/>
+            </patientAddress>
+         </parameterList>
+      </queryByParameter>
+   </controlActProcess>
+</PRPA_IN201306UV02>

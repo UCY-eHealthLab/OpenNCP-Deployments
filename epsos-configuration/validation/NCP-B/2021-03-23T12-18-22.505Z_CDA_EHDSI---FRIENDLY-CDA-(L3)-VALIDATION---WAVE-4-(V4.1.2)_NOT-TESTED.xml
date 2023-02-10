@@ -1,0 +1,185 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" moodCode="EVN">
+  <realmCode code="CZ"/>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.1"/>
+  <id extension="28ce4ba6-4347-4720-87a1-677538bc810a.1" root="1.2.203.24341.1.20.7.1"/>
+  <code code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription for medication"><translation code="57833-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Recept"/></code>
+  <title>ePresription document</title>
+  <effectiveTime value="20201022000000+0200"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" codeSystemVersion="913-20091020" displayName="normal"><translation code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normální"/></confidentialityCode>
+  <languageCode code="cs-CZ"/>
+  <recordTarget contextControlCode="OP" typeCode="RCT">
+    <templateId root="2.16.840.1.113883.3.1937.777.11.10.100"/>
+    <patientRole classCode="PAT">
+      <id extension="222333069" root="2.16.17.710.804.1000.990.1"/>
+      <addr>
+        <streetName>Trmalova</streetName>
+        <houseNumber>64</houseNumber>
+        <streetAddressLine>Jažlovice</streetAddressLine>
+        <city>Říčany</city>
+        <postalCode>25101</postalCode>
+        <country>CZ</country>
+      </addr>
+      <telecom use="MC" value="tel:+420777906083"/>
+      <telecom use="H" value="mailto:novaknovak@fasdferw.cz"/>
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>MRAČENA</given>
+          <family>MRAKOMOROVÁ</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" codeSystemVersion="913-20091020" displayName="Female"><translation code="F" codeSystem="1.2.203.24341.11.2.3" codeSystemName="administrativní pohlaví" displayName="Žena"/></administrativeGenderCode>
+        <birthTime value="19711126"/>
+        <languageCommunication>
+          <languageCode code="cs-CZ"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author contextControlCode="OP" typeCode="AUT">
+    <functionCode code="2212" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" codeSystemVersion="2008" displayName="Specialist medical practitioners"><translation code="2212" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO" displayName="Lékaři specialisté"/></functionCode>
+    <time value="20201022000000+0200"/>
+    <assignedAuthor classCode="ASSIGNED">
+      <id extension="C3222712-F427-4549-9600-7C9035A3C50F" root="1.2.203.24341.11.5.4.1"/>
+      <addr nullFlavor="NI"/>
+      <telecom value="tel:+420777906083"/>
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>Evžénie</family>
+          <given>Trautenberková</given>
+        </name>
+      </assignedPerson>
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id extension="12345678" root="1.2.203.24341.11.5.4.2"/>
+        <name>Test subjekt</name>
+        <telecom nullFlavor="NI"/>
+        <addr>
+          <country>CZ</country>
+          <postalCode>19000</postalCode>
+          <streetName>Rubeška</streetName>
+          <houseNumber>215</houseNumber>
+          <city>Praha 9</city>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id extension="00023817" root="1.3.154"/>
+        <name>Státní ústav pro kontrolu léčiv</name>
+        <telecom use="WP" value="mailto:posta@sukl.cz"/>
+        <addr>
+          <country>CZ</country>
+          <postalCode>10041</postalCode>
+          <streetAddressLine>Šrobárova 48</streetAddressLine>
+          <city>Praha</city>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator contextControlCode="OP" typeCode="LA">
+    <time value="20201022000000+0200"/>
+    <signatureCode code="S"/>
+    <assignedEntity classCode="ASSIGNED">
+      <id extension="C3222712-F427-4549-9600-7C9035A3C50F" root="1.2.203.24341.11.5.4.1"/>
+      <addr nullFlavor="NI"/>
+      <telecom nullFlavor="NI"/>
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>Trautenberková</family>
+          <given>Evžénie</given>
+        </name>
+      </assignedPerson>
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="1.2.203.24341.11.5.4.2"/>
+        <name>Test subjekt</name>
+        <telecom nullFlavor="NI"/>
+        <addr nullFlavor="NI"/>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <relatedDocument typeCode="XFRM">
+    <parentDocument moodCode="EVN">
+      <id extension="PHEKVPIPAG27" root="1.2.203.24341.1.20.7"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.1"/>
+          <id extension="28ce4ba6-4347-4720-87a1-677538bc810a.1" root="1.2.203.24341.1.20.7.1"/>
+          <code code="57828-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" codeSystemVersion="2.59" displayName="Prescription list"/>
+          <title xsi:type="ADXP">Prescriptions</title>
+          <text ID="medikace_textem">
+            <content>1x TAFLOTAN 15MCG/ML OPH GTT SOL MDC 90X0,3ML</content>
+            <content ID="Instruction-26bb76cb-c797-44e1-a8af-4a914224eab6">1 kapka každý večer do levého oka.</content>
+          </text>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.2"/>
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <id extension="28ce4ba6-4347-4720-87a1-677538bc810a.1" root="1.2.203.24341.1.20.7.1"/>
+              <text>
+                <reference value="#medikace_textem"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime nullFlavor="NI" xsi:type="IVL_TS"/>
+              <routeCode code="20051000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Ocular use"><translation code="20051000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" displayName="Oční podání"/></routeCode>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.1"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="0136003" codeSystem="1.2.203.24341.11.2.7.1" codeSystemName="Databáze léčivých přípravků" displayName="1x TAFLOTAN 15MCG/ML OPH GTT SOL MDC 90X0,3ML"/>
+                    <name>TAFLOTAN</name>
+                    <desc xmlns="urn:epsos-org:ep:medication">15MCG/ML</desc>
+                    <formCode xmlns="urn:epsos-org:ep:medication" code="50023000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Eye drops, solution in single-dose container"><translation code="50023000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" displayName="Oční kapky, roztok v jednodávkovém obalu"/></formCode>
+                    <asContent xmlns="urn:epsos-org:ep:medication" classCode="CONT">
+                      <containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                        <name>TAFLOTAN</name>
+                        <formCode code="30057000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" codeSystemVersion="2019-10-21" displayName="Single-dose container"><translation code="30057000" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM" displayName="Jednodávkový obal"/></formCode>
+                        <capacityQuantity unit="mL" value="0.3"/>
+                      </containerPackagedMedicine>
+                    </asContent>
+                    <asSpecializedKind xmlns="urn:epsos-org:ep:medication" classCode="GEN">
+                      <generalizedMedicineClass classCode="MMAT" determinerCode="KIND">
+                        <code code="S01EE05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="tafluprost"><translation code="S01EE05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" displayName="TAFLUPROST"/></code>
+                      </generalizedMedicineClass>
+                    </asSpecializedKind>
+                    <ingredient xmlns="urn:epsos-org:ep:medication" classCode="ACTI">
+                      <quantity>
+                        <numerator nullFlavor="UNK" unit="1" xsi:type="PQ"/>
+                        <denominator nullFlavor="UNK" unit="1" xsi:type="PQ"/>
+                      </quantity>
+                      <ingredient classCode="MMAT" determinerCode="KIND">
+                        <code code="S01EE05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical" codeSystemVersion="2020-01" displayName="tafluprost"><translation code="S01EE05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="Anatomical Therapeutic Chemical"/></code>
+                      </ingredient>
+                    </ingredient>
+                  </manufacturedMaterial>
+                  <subjectOf5 xmlns="urn:epsos-org:ep:medication" xsi:nil="true"/>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="COMP">
+                <supply classCode="SPLY" moodCode="RQO">
+                  <independentInd value="false"/>
+                  <quantity unit="1" value="1"/>
+                </supply>
+              </entryRelationship>
+              <entryRelationship inversionInd="true" typeCode="SUBJ">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"/>
+                  <text>
+                    <reference value="#Instruction-26bb76cb-c797-44e1-a8af-4a914224eab6"/>
+                  </text>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

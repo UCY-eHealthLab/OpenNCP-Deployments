@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SignedServiceMetadata xmlns="http://docs.oasis-open.org/bdxr/ns/SMP/2016/05"><ServiceMetadata xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"><ServiceInformation><ParticipantIdentifier scheme="ehealth-participantid-qns">urn:ehealth:ee:ncp-idp</ParticipantIdentifier><DocumentIdentifier scheme="ehealth-resid-qns">urn:ehealth:ISM::InternationalSearchMask##ehealth-107</DocumentIdentifier><ProcessList><Process><ProcessIdentifier scheme="ehealth-procid-qns">urn:ehealth:ncp:ee:ism</ProcessIdentifier><ServiceEndpointList><Endpoint transportProfile="urn:ehealth:transport:none"><EndpointURI/><ServiceActivationDate>2018-09-26T14:55:00.000+03:00</ServiceActivationDate><ServiceExpirationDate>2021-04-07T02:55:00.000+03:00</ServiceExpirationDate><Certificate/><ServiceDescription>International Search Mask</ServiceDescription><TechnicalContactUrl>support@openncp.eu</TechnicalContactUrl><TechnicalInformationUrl>http://www.openncp.eu</TechnicalInformationUrl><Extension><patientSearch:patientSearch xmlns="http://ec.europa.eu/sante/ehncp/ism" xmlns:patientSearch="http://ec.europa.eu/sante/ehncp/ism">
+   <country code="EE">
+      <searchFields>
+         <id domain="2.16.17.710.815.1000.990.1" label="patient.data.unique.identifier" max="-1" min="-1"/>
+      </searchFields>
+   </country>
+</patientSearch:patientSearch></Extension></Endpoint></ServiceEndpointList></Process></ProcessList><Extension><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>OOXO9hBxpnjc4J28p1PczifG+sTKjCv8EMJGClcMVOo=</DigestValue></Reference></SignedInfo><SignatureValue>b5g/PDmZoLE3bbcfsqJC9h2C8ByU8IhmdI2IcedPxvQlMB/zn6dCmime1KTMCJ3zDuxE/GxQWa+o
+E6+f/RHDj296Z6TwopsErorLczL67rHQYkutoNZzdPd+UNrz5DbWrS8JFV4viI9Rn9ohGl5lhtKO
+ufHH6vMnJNsis40o8la0labhM01RMRCZrOmt378Av/66gBlFhp5fbseH+AbOodNJBVsqi/e1cRTV
+eG2XrbeDwM7z6vFmGxgRGieE5PkCy0rWzLJ1bpRXHlzirw+0zPVcO9iKlIjA+oL0mFrU+iKQRJAr
+uiHGhUizp5Umaq5dEGUgkpKuhlCzDJbGBlT8Hw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>2.5.4.5=#130131,1.2.840.113549.1.9.1=#16224345462d4544454c49564552592d535550504f52544065632e6575726f70612e6575,CN=\ GRP:EHEALTH_NCP_PPT_EE_01,OU=NCP_PPT-GTC_OID-1.3.130.0.2018.996911,OU=eHealth,OU=CEF_eDelivery.testa.eu,O=Health and Welfare Information Systems Centre,C=EE</X509SubjectName><X509Certificate>MIIGxDCCBaygAwIBAgIIFgbfqJwDsWwwDQYJKoZIhvcNAQELBQAwgdgxCzAJBgNVBAYTAkRFMSUw
+IwYDVQQKExxULVN5c3RlbXMgSW50ZXJuYXRpb25hbCBHbWJIMR8wHQYDVQQLExZULVN5c3RlbXMg
+VHJ1c3QgQ2VudGVyMRwwGgYDVQQIExNOb3JkcmhlaW4gV2VzdGZhbGVuMQ4wDAYDVQQREwU1NzI1
+MDEQMA4GA1UEBxMHTmV0cGhlbjEgMB4GA1UECRMXVW50ZXJlIEluZHVzdHJpZXN0ci4gMjAxHzAd
+BgNVBAMTFkludGVybmFsIEJ1c2luZXNzIENBIDIwHhcNMTgwNDExMTU1MjI4WhcNMjEwNDExMjM1
+OTU5WjCCAQwxCzAJBgNVBAYTAkVFMTYwNAYDVQQKEy1IZWFsdGggYW5kIFdlbGZhcmUgSW5mb3Jt
+YXRpb24gU3lzdGVtcyBDZW50cmUxHzAdBgNVBAsMFkNFRl9lRGVsaXZlcnkudGVzdGEuZXUxEDAO
+BgNVBAsTB2VIZWFsdGgxLjAsBgNVBAsMJU5DUF9QUFQtR1RDX09JRC0xLjMuMTMwLjAuMjAxOC45
+OTY5MTExIzAhBgNVBAMMGiBHUlA6RUhFQUxUSF9OQ1BfUFBUX0VFXzAxMTEwLwYJKoZIhvcNAQkB
+FiJDRUYtRURFTElWRVJZLVNVUFBPUlRAZWMuZXVyb3BhLmV1MQowCAYDVQQFEwExMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsPOXyLT3S1V0GHrRU4ksgRSH/y9XH6I8kVmzNISDwfSd
+bryDcD0Q9sAOLNbimv4hVWH14HBXgb4tJdf0iCt8m0q1H0sAy3yEH3zxuI665x5h7qU6ZjUFh+fa
+UhUfjX5WbdwIJ4ImPvwiESfAEEeG+0MrYHNiSWgWG9gAoMtUvkRpkX2bXeUqNjI63KC2JPwt1+eB
+3er+5PMIjExnIXxi25XyELqB/w02raln6hSkxP7/Ubtt+lObQS1cOiPw0JROCPC23fsqBFqcVvTs
+sKd+wuF/5sLgByxK+4xBQYDjY7UJXlmQwiRqjEz0WqNpixfe+5iW/mU3pZilVgROefSr3wIDAQAB
+o4ICWTCCAlUwHwYDVR0jBBgwFoAU1IAlwL6WRqpQhgEnZrl04bLg+j8wHQYDVR0OBBYEFKL6YByA
+kYn6nR8PJA3wy9CS3xgCMA4GA1UdDwEB/wQEAwIFoDBNBgNVHSAERjBEMEIGCSsGAQQBvUcNGTA1
+MDMGCCsGAQUFBwIBFidodHRwOi8vc2JjYS50ZWxlc2VjLmRlL2Rvd25sb2FkL2Nwcy5wZGYwCQYD
+VR0TBAIwADCB8gYDVR0fBIHqMIHnMD6gPKA6hjhodHRwOi8vY3JsLnNiY2EudGVsZXNlYy5kZS9y
+bC9JbnRlcm5hbF9CdXNpbmVzc19DQV8yLmNybDCBpKCBoaCBnoaBm2xkYXA6Ly9sZGFwLnNiY2Eu
+dGVsZXNlYy5kZS9DTj1JbnRlcm5hbCUyMEJ1c2luZXNzJTIwQ0ElMjAyLE9VPVQtU3lzdGVtcyUy
+MFRydXN0JTIwQ2VudGVyLE89VC1TeXN0ZW1zJTIwSW50ZXJuYXRpb25hbCUyMEdtYkgsQz1ERT9D
+ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0MIGEBggrBgEFBQcBAQR4MHYwLQYIKwYBBQUHMAGGIWh0
+dHA6Ly9vY3NwLnNiY2EudGVsZXNlYy5kZS9vY3NwcjBFBggrBgEFBQcwAoY5aHR0cDovL2NydC5z
+YmNhLnRlbGVzZWMuZGUvY3J0L0ludGVybmFsX0J1c2luZXNzX0NBXzIuY3J0MC0GA1UdEQQmMCSB
+IkNFRi1FREVMSVZFUlktU1VQUE9SVEBlYy5ldXJvcGEuZXUwDQYJKoZIhvcNAQELBQADggEBALbq
+T0zoH7ifyoU/Ni4Iert/bL5il+2hBoRCeuklXkgVc3K72PuAOmMm8DkjpJNqzBJm62v86b44jmrK
+s7K7riqdLNTk6IIuirvFOZve8Z+uNZobwlD4Sxtm1DKtyvyFGJJWP79dsa+cmeGOHQ2+PycweVQv
+yWnZyM/FxmQXPBKqxrnjIwuBXvMxpPeRIrxtmuFfBpXK4Y0wE6pT8gVF+jq6z0QQtqX3e2odOvDT
+A/3CAInlqn697GXPJNgr2+H5WlO7/0j21lJhm4y3PNCDgP6OpfvjzME6BVQWUvmHRZ0lz5jWv+6V
+2ONo8EnXaG+wxaJEcY6Rers8CYFZoJMUw3s=</X509Certificate></X509Data></KeyInfo></Signature></Extension></ServiceInformation></ServiceMetadata><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>h3ydnqxFzKag9W4NMBtkdS6uYWNXkRcLgwaYj717fws=</DigestValue></Reference></SignedInfo><SignatureValue>Vf8UHWmXEZ/dRZ9XFNWkU+o89KdfXgWd/pmmgPjTxe1CYtWZRmWy266b648FFiIMQNAgKtb6Nkyb
+hQ1FunwxWtPxwnyp6sTc6nkIsAPITAXEeGSLJIWpB5SsEdjQ0x1estI/LrDenXY4Ush5vas5bWMV
+O7wa4hNBShP/U/yn7nrnG1QzkbgS9rOGY5psZrSsOPTSwXxc1TXE0npfWubfO3qmnRcEAJ4VNeae
+lgPmudv4ki3DBxdMo1MWBSLZxhN3UsrqPKe7k2QG1tTFed/obDLpocV8r2KkryyQ9Cv/Q5cAdFBk
+UsumnlKD5JUgNkQK6BFC4llTtEDPEp0SOK/fzdEDbiQcoBaXPqrTUBKfclF5J9tDHXzfOuJPuqP4
+4KeYlMnjCL/hklJCVf/VyUJTQ73hnzXXq+thRmhtvNoISYEKqZycAWfmyj+qzhpnywUsRmk8LP/v
+HUHTSQ/z7s/L7QeNwn9oD2VIAt4VSYpaNwh485NOCMYq98BXj1z9OEQspMN7OJPd+5X/8N9jSTu4
+bLndWe2r5Pq3+YblMGU7gNOLIrMbBJ93L7WgSBioAgwY+oyBaqTOdMUXC6mbFOlSoh1CJ53BKHUO
+XsO3FSmTf/TvEed6/9tTJ3L03BAcvwpJ6aZKMPNUWzp5z1ohFgYDfXfGlfrof47k2b/hKewi7zA=</SignatureValue><KeyInfo><X509Data><X509SubjectName>2.5.4.5=#130131,1.2.840.113549.1.9.1=#16224345462d4544454c49564552592d535550504f52544065632e6575726f70612e6575,CN=GRP:EHEALTH_SMP_ACC_BE_001,OU=SMP_ACC-GTC_OID-1.3.130.0.2018.996911,OU=eHealth,OU=CEF_eDelivery.testa.eu,O=European Commission,C=BE</X509SubjectName><X509Certificate>MIIHqTCCBpGgAwIBAgIIZskQDQAE8bwwDQYJKoZIhvcNAQELBQAwgdgxCzAJBgNVBAYTAkRFMSUw
+IwYDVQQKExxULVN5c3RlbXMgSW50ZXJuYXRpb25hbCBHbWJIMR8wHQYDVQQLExZULVN5c3RlbXMg
+VHJ1c3QgQ2VudGVyMRwwGgYDVQQIExNOb3JkcmhlaW4gV2VzdGZhbGVuMQ4wDAYDVQQREwU1NzI1
+MDEQMA4GA1UEBxMHTmV0cGhlbjEgMB4GA1UECRMXVW50ZXJlIEluZHVzdHJpZXN0ci4gMjAxHzAd
+BgNVBAMTFkludGVybmFsIEJ1c2luZXNzIENBIDIwHhcNMTgwNTE4MTI1MzI0WhcNMjEwNTE4MjM1
+OTU5WjCB8jELMAkGA1UEBhMCQkUxHDAaBgNVBAoTE0V1cm9wZWFuIENvbW1pc3Npb24xHzAdBgNV
+BAsMFkNFRl9lRGVsaXZlcnkudGVzdGEuZXUxEDAOBgNVBAsTB2VIZWFsdGgxLjAsBgNVBAsMJVNN
+UF9BQ0MtR1RDX09JRC0xLjMuMTMwLjAuMjAxOC45OTY5MTExIzAhBgNVBAMMGkdSUDpFSEVBTFRI
+X1NNUF9BQ0NfQkVfMDAxMTEwLwYJKoZIhvcNAQkBFiJDRUYtRURFTElWRVJZLVNVUFBPUlRAZWMu
+ZXVyb3BhLmV1MQowCAYDVQQFEwExMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvMxl
+tB9lbH9zgCgpsGL4BoRVhZRjJKYrJNxTA2di7wdw7xewzln+f+T3RAt8eY3emoj638UWr2XL4lsn
+XsNJrpNg8sSncUiwf/CMInoaRiwOVnWIPLXys//RX6Sys3Mr26VvVddy6M8YI/bYFM3oJ9vIvPgC
+AaG27Y05diveqXiWbdGjf2T9YcRU//T0YKX7RMi3XMNzJJcXfcC4X2Yy6AzEbmnuZwK3nFybH7St
+GcwUE8W9UDrrPEtuRuVcRRcuNbfeiOhshRlbv6c1NkC+jArUolHItQbuAkMloYM615TBKdk8ZbRi
+UxGSsOyUP0o18+3WsTgmUmlEg4yPRb+67ds/TALIyrb1IRqDE3SOEv/5msvaSDOSLu/z37oJkkzR
+dYHcSDY87SPq+4nSAVcDJX7ztsiJgeYrVWqvVy1I+erX7LdBTE/wIo3IUPLvPQOe5v3miAYP+cxm
+k/aeFoUhC36b/1hYvF9JZobqGqCQDEDPreD0Il0RnT1U+M7VDpRyI6iKQYH4uJaMASiqo+aoI05F
+kaC1/ZfYP94OSU6yLrINUPDhrrvkMCFzaNsAWjpyVoAiEJnaWdjIitU4PVBM6S+HryG9jYtKgpNM
+RyNgWTM62rjGxrrqMNFk/48fJ1UqEaFiXxH4F+zbPvusJbzMavzvsnlLFuiT0G9i6i70I0MCAwEA
+AaOCAlkwggJVMB8GA1UdIwQYMBaAFNSAJcC+lkaqUIYBJ2a5dOGy4Po/MB0GA1UdDgQWBBScn9yk
+RbBaP4yEMt4gfRsMellp+zAOBgNVHQ8BAf8EBAMCBaAwTQYDVR0gBEYwRDBCBgkrBgEEAb1HDRkw
+NTAzBggrBgEFBQcCARYnaHR0cDovL3NiY2EudGVsZXNlYy5kZS9kb3dubG9hZC9jcHMucGRmMAkG
+A1UdEwQCMAAwgfIGA1UdHwSB6jCB5zA+oDygOoY4aHR0cDovL2NybC5zYmNhLnRlbGVzZWMuZGUv
+cmwvSW50ZXJuYWxfQnVzaW5lc3NfQ0FfMi5jcmwwgaSggaGggZ6GgZtsZGFwOi8vbGRhcC5zYmNh
+LnRlbGVzZWMuZGUvQ049SW50ZXJuYWwlMjBCdXNpbmVzcyUyMENBJTIwMixPVT1ULVN5c3RlbXMl
+MjBUcnVzdCUyMENlbnRlcixPPVQtU3lzdGVtcyUyMEludGVybmF0aW9uYWwlMjBHbWJILEM9REU/
+Q2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdDCBhAYIKwYBBQUHAQEEeDB2MC0GCCsGAQUFBzABhiFo
+dHRwOi8vb2NzcC5zYmNhLnRlbGVzZWMuZGUvb2NzcHIwRQYIKwYBBQUHMAKGOWh0dHA6Ly9jcnQu
+c2JjYS50ZWxlc2VjLmRlL2NydC9JbnRlcm5hbF9CdXNpbmVzc19DQV8yLmNydDAtBgNVHREEJjAk
+gSJDRUYtRURFTElWRVJZLVNVUFBPUlRAZWMuZXVyb3BhLmV1MA0GCSqGSIb3DQEBCwUAA4IBAQCs
+XAkaRRRrVdRAW6qUh74ef6iuScWkek+EfDCMSgAs5UjGZTYrMk0CyZXDEWKBi3PSyTs6j5ycmKUr
+o7EysuY7Ha0Lqi3EUqaHCwGo+WJTkeKbXA2XSvARXmcJI66mXr53brsaI9/Nqc2QM6V6qN+pBYgQ
+6S9EBO+u/w+cUyVl/r6y+LMmquMwt2irePMX7WoxGst5NKpa1LI1i2C+/iXovlnXM4MGDxSwLTK/
+i0YgRPtCoqE/k07DjZLkF4uqos2HKs7qD7d3TCmOIoTpb/8qRDdQMfIBmK3syLwBE0kYUjm4zCV1
+kLxCD1BURss/Dkhl/CFTsqv0HVsbOY5zDyBk</X509Certificate></X509Data></KeyInfo></Signature></SignedServiceMetadata>
