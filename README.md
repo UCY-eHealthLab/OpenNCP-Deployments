@@ -7,6 +7,7 @@ Navigate to each of these folders
 - openncp-server
 - openncp-gateway-backend
 - openncp-gateway-frontend
+
 and run the `docker-build.bat` file for each
 
 # Deployment
