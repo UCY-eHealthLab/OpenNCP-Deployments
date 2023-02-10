@@ -1,6 +1,13 @@
 # OpenNCP-Deployments
 OpenNCP containerization and deployment scripts
 
+# Configuration
+Rename `example.env` to `.env`
+Open the .env file and set your required parameters
+
+# Epsos-Configuration
+TBD
+
 # Build Instructions
 Navigate to each of these folders
 - openncp-client
