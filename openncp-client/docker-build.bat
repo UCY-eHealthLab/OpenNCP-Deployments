@@ -1,1 +1,1 @@
-docker build -t openncp-client:5.2.4 .
+docker build -t openncp-client:5.2.5 .

@@ -1,13 +1,14 @@
 version: "3.9"
 services:
+
   mysql:
     container_name: db
     image: mysql:5.7
     ports:
       - "3306:3306"
     environment:
-        MYSQL_ROOT_USER: root
-        MYSQL_ROOT_PASSWORD: rootpassword
+        MYSQL_ROOT_USER: ${MYSQL_ROOT_USER}
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
         MYSQL_USER: ${MYSQL_USERNAME}
         MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
@@ -17,7 +18,7 @@ services:
       - ./logs/mysql:/var/log/mysql
     restart: on-failure
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      test: ["CMD", 'mysqladmin', 'ping', '-h', 'localhost', '-u', '${MYSQL_ROOT_USER}', '-p${MYSQL_ROOT_PASSWORD}']
       timeout: 20s
       retries: 10
     networks:
@@ -25,7 +26,7 @@ services:
 
   openncp-client:
     container_name: openncp-client
-    image: openncp-client:5.2.4
+    image: openncp-client:5.2.5
     ports:
       - "8080:8080"
       - "9090:9090"
@@ -54,7 +55,7 @@ services:
 
   openncp-server:
     container_name: openncp-server
-    image: openncp-server:5.2.4
+    image: openncp-server:5.2.5
     ports:
       - "8081:8080"
       - "8444:8443"
@@ -75,10 +76,9 @@ services:
     networks:
       - openncp
       
-      
   openncp-gateway-backend:
     container_name: openncp-gateway-backend
-    image: openncp-gateway-backend:5.2.4
+    image: openncp-gateway-backend:5.2.5
     ports:
       - "8082:8080"
       - "8445:8443"
@@ -110,6 +110,7 @@ services:
       - openncp-gateway-backend
     networks:
       - openncp
+
 volumes:
   persistent:
   mysql-data:
