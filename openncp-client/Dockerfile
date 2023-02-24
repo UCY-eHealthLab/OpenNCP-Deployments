@@ -4,7 +4,7 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
-ARG OPENNCP_VERSION=5.2.4
+ARG OPENNCP_VERSION=5.2.5
 ARG MYSQL_HOST
 ARG MYSQL_PORT
 ARG MYSQL_USERNAME

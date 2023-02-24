@@ -47,22 +47,22 @@
 			  
 	<Resource name="jdbc/ConfMgr" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
-                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/epsosproperties?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
+                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_properties?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
  
     <Resource name="jdbc/OPEN_ATNA" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
-                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/openatna?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
+                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_atna?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
  
     <Resource name="jdbc/TSAM" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
-                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/openncp_ltrdb?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
+                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_ltrdb?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
  
     <Resource name="jdbc/EADC" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
-                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/eadc?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
+                dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_eadc?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
 
   </GlobalNamingResources>
