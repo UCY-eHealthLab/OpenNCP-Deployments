@@ -1,6 +1,17 @@
 # OpenNCP-Deployments
 OpenNCP containerization and deployment scripts
 
+
+# Certificates and Trust stores
+## TLS Client Certificate
+TBD
+
+## TLS Client Keystore
+TBD
+
+## Trust Store
+TBD
+
 # Configuration
 Rename `example.env` to `.env`
 Open the .env file and set your required parameters
