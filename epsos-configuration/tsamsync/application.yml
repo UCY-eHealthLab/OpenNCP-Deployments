@@ -1,0 +1,21 @@
+debug: false
+tsam-sync:
+  database:
+    backup: false
+  proxy:
+    host:
+    port:
+    username:
+    password:
+  cts:
+    url: https://webgate.training.ec.europa.eu/ehealth-term-server
+    username: enter_cts_user_here
+    password: enter_cts_password_here
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/ehealth_ltrdb?useSSL=false
+    username: openncpUser
+    password: openncpPass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: mysql
