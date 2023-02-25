@@ -13,6 +13,24 @@
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ACV">
         <designation lang="en-GB">before dinner (from lat. ante cibus vespertinus)</designation>
     </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT">
+        <designation lang="en-GB">Afternoon</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT.early">
+        <designation lang="en-GB">Early Afternoon</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT.late">
+        <designation lang="en-GB">Late Afternoon</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE">
+        <designation lang="en-GB">Evening</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE.early">
+        <designation lang="en-GB">Early Evening</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE.late">
+        <designation lang="en-GB">Late Evening</designation>
+    </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="HS">
         <designation lang="en-GB">Prior to beginning a regular period of extended sleep (this would exclude naps).  Note that this might occur at different times of day depending on a person&apos;s regular sleep schedule.</designation>
     </concept>
@@ -28,6 +46,21 @@
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ICV">
         <designation lang="en-GB">between dinner and the hour of sleep</designation>
     </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN">
+        <designation lang="en-GB">Morning</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN.early">
+        <designation lang="en-GB">Early Morning</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN.late">
+        <designation lang="en-GB">Late Morning</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="NIGHT">
+        <designation lang="en-GB">Night</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="NOON">
+        <designation lang="en-GB">Noon</designation>
+    </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PC">
         <designation lang="en-GB">after meal (from lat. post cibus)</designation>
     </concept>
@@ -39,5 +72,8 @@
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PCV">
         <designation lang="en-GB">after dinner (from lat. post cibus vespertinus)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="PHS">
+        <designation lang="en-GB">After Sleep</designation>
     </concept>
 </ValueSet>
