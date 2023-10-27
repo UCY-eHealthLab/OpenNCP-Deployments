@@ -3,9 +3,10 @@ services:
 
   mysql:
     container_name: db
+    env_file: .env
     image: mysql:5.7
     ports:
-      - "3306:3306"
+      - "${MYSQL_EXPOSED_PORT}:${MYSQL_PORT}"
     environment:
         MYSQL_ROOT_USER: ${MYSQL_ROOT_USER}
         MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -21,6 +22,26 @@ services:
       test: ["CMD", 'mysqladmin', 'ping', '-h', 'localhost', '-u', '${MYSQL_ROOT_USER}', '-p${MYSQL_ROOT_PASSWORD}']
       timeout: 20s
       retries: 10
+    networks:
+      - openncp
+
+  # OpenNCP Configuration Utility (Must run once to initialize the configurations)
+  openncp-configuration-utility:
+    env_file: .env
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    build:
+      context: ./openncp-configuration-utility
+      dockerfile: Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./openncp-configuration-utility:/usr/local/openncp-configuration-utility
+    restart: "no"
     networks:
       - openncp
 
@@ -69,13 +90,13 @@ services:
       #https://stackoverflow.com/questions/13956651/externalizing-tomcat-webapp-config-from-war-file
       #
       LOGGING_LEVEL_ROOT: DEBUG
-      
+
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
       - ./logs/openncp-server:/usr/local/tomcat/logs
     networks:
       - openncp
-      
+
   openncp-gateway-backend:
     container_name: openncp-gateway-backend
     image: openncp-gateway-backend:5.2.5
@@ -99,7 +120,7 @@ services:
       - ./tomcat-configuration/openncp-gateway-backend/opt/openncp-gateway-backend-config:/opt/tomcat-configuration
     networks:
       - openncp
-      
+
   openncp-gateway-frontend:
     container_name: openncp-gateway-frontend
     image: docker.io/library/openncp-gateway-frontend:latest
