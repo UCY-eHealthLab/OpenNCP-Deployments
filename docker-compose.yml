@@ -26,6 +26,7 @@ services:
       - openncp
 
   # OpenNCP Configuration Utility (Must run once to initialize the configurations)
+  # In case it was already run, you can comment it out (it does not change anything after the first run)
   openncp-configuration-utility:
     env_file: .env
     environment:
@@ -42,6 +43,43 @@ services:
     volumes:
       - ./openncp-configuration-utility:/usr/local/openncp-configuration-utility
     restart: "no"
+    networks:
+      - openncp
+
+  # OpenNCP Server (Node A)
+  openncp-server:
+    container_name: openncp-server
+    build:
+      context: ./openncp-server
+      dockerfile: Dockerfile
+    # image: openncp-server:6.4.0
+    ports:
+      - "6080:6080"
+      - "6443:6443"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
+      CATALINA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8"
+      JAVA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8
+        -Dmysql_host=${MYSQL_HOST}
+        -Dmysql_port=${MYSQL_PORT}
+        -Dmysql_username=${MYSQL_USERNAME}
+        -Dmysql_password=${MYSQL_PASSWORD}
+        -Dtls_key_alias=${TLS_KEY_ALIAS}
+        -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}"
+      LOGGING_LEVEL_ROOT: DEBUG
+
+    volumes:
+      - ./epsos-configuration:/opt/epsos-configuration
+      - ./logs/openncp-server:/usr/local/tomcat/logs
+      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -71,29 +109,6 @@ services:
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
       - ./logs/openncp-client:/usr/local/tomcat/logs
-    networks:
-      - openncp
-
-  openncp-server:
-    container_name: openncp-server
-    image: openncp-server:5.2.5
-    ports:
-      - "8081:8080"
-      - "8444:8443"
-    depends_on:
-      mysql:
-        condition: service_healthy
-    environment:
-      EPSOS_PROPS_PATH: "/opt/epsos-configuration/"
-      CATALINA_OPTS: "$CATALINA_OPTS -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8"
-      JAVA_OPTS: "-DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8 -Dmysql_host=${MYSQL_HOST} -Dmysql_port=${MYSQL_PORT} -Dmysql_username=${MYSQL_USERNAME} -Dmysql_password=${MYSQL_PASSWORD}"
-      #https://stackoverflow.com/questions/13956651/externalizing-tomcat-webapp-config-from-war-file
-      #
-      LOGGING_LEVEL_ROOT: DEBUG
-
-    volumes:
-      - ./epsos-configuration:/opt/epsos-configuration
-      - ./logs/openncp-server:/usr/local/tomcat/logs
     networks:
       - openncp
 
