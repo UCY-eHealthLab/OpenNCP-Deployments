@@ -1,3 +1,5 @@
+![version](https://img.shields.io/badge/version-6.5.0--SNAPSHOT-blue)
+
 # OpenNCP-Deployments
 OpenNCP containerization and deployment scripts
 
