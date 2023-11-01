@@ -1,0 +1,69 @@
+# Stage 1: Build backend (maven)
+FROM maven:3.9.5-eclipse-temurin-11 AS build-backend
+
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Copy maven-settings.xml file (comment out maven-default-http-blocker mirror)
+COPY configs/maven-settings.xml /usr/share/maven/conf/settings.xml
+
+# Define ARGS
+ARG PORTAL_VERSION
+ARG PORTAL_SOURCE_REPO
+ARG PORTAL_SOURCE_BRANCH
+
+WORKDIR /usr/src
+
+# Clone the OpenNCP source code
+RUN git clone --branch ${PORTAL_SOURCE_BRANCH} ${PORTAL_SOURCE_REPO} portal
+
+# Build the OpenNCP source code (with external dynamic-discovery-client-1.11.jar)
+# There is an issue with the dynamic-discovery-client-1.11.jar file in the maven repository
+COPY libs/dynamic-discovery-client-1.11.jar .
+RUN mvn install:install-file -Dfile=dynamic-discovery-client-1.11.jar -DgroupId=eu.europa.ec.dynamic-discovery -DartifactId=dynamic-discovery-client -Dversion=1.11 -Dpackaging=jar
+RUN cd portal && mvn clean package -DskipTests
+
+# Move the war file to the working directory
+RUN mv portal/ehealth-portal-backend/target/ehealth-portal-backend-${PORTAL_VERSION}.war portal-backend.war
+
+# Delete the source code
+RUN rm -rf portal
+
+# Stage 2: Build frontend (node)
+FROM node:16.20.0-buster AS build-frontend
+
+RUN apt-get update && apt-get install -y git
+
+# Define ARGS
+ARG PORTAL_SOURCE_REPO
+ARG PORTAL_SOURCE_BRANCH
+
+WORKDIR /usr/src
+
+# Clone the portal source code
+RUN git clone --branch ${PORTAL_SOURCE_BRANCH} ${PORTAL_SOURCE_REPO} portal
+
+# Copy .env file
+COPY configs/portal.env portal/ehealth-portal-frontend/.env.production
+
+# Build the portal source code
+RUN cd portal/ehealth-portal-frontend && npm install && npm run build
+
+# Move the portal build to the working directory
+RUN mv portal/ehealth-portal-frontend/build portal-build
+
+# Delete the source code
+RUN rm -rf portal
+
+# Stage 3: Combine Maven and Node artifacts
+FROM ubuntu:22.04 AS merge-portal-artifacts
+
+WORKDIR /usr/src
+
+# Copy the backend war file
+COPY --from=build-backend /usr/src/portal-backend.war .
+
+# Copy the frontend build
+COPY --from=build-frontend /usr/src/portal-build ./portal
+
+CMD ["bash"]
