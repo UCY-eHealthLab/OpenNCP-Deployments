@@ -1,1 +1,1 @@
-docker build -t openncp-server:6.4.0 .
+docker build -t openncp-server:6.5.0-SNAPSHOT .

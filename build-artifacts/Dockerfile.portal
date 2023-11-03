@@ -24,7 +24,7 @@ RUN mvn install:install-file -Dfile=dynamic-discovery-client-1.11.jar -DgroupId=
 RUN cd portal && mvn clean package -DskipTests
 
 # Move the war file to the working directory
-RUN mv portal/ehealth-portal-backend/target/ehealth-portal-backend-${PORTAL_VERSION}.war portal-backend.war
+RUN mv portal/ehealth-portal-backend/target/ehealth-portal-backend-${PORTAL_VERSION}.war ehealth-portal-backend.war
 
 # Delete the source code
 RUN rm -rf portal
@@ -50,7 +50,7 @@ COPY configs/portal.env portal/ehealth-portal-frontend/.env.production
 RUN cd portal/ehealth-portal-frontend && npm install && npm run build
 
 # Move the portal build to the working directory
-RUN mv portal/ehealth-portal-frontend/build portal-build
+RUN mv portal/ehealth-portal-frontend/build ehealth-portal-build
 
 # Delete the source code
 RUN rm -rf portal
@@ -61,9 +61,9 @@ FROM ubuntu:22.04 AS merge-portal-artifacts
 WORKDIR /usr/src
 
 # Copy the backend war file
-COPY --from=build-backend /usr/src/portal-backend.war .
+COPY --from=build-backend /usr/src/ehealth-portal-backend.war .
 
 # Copy the frontend build
-COPY --from=build-frontend /usr/src/portal-build ./portal
+COPY --from=build-frontend /usr/src/ehealth-portal-build ./ehealth-portal
 
 CMD ["bash"]

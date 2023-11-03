@@ -52,7 +52,7 @@ services:
     build:
       context: ./openncp-server
       dockerfile: Dockerfile
-    # image: openncp-server:6.4.0
+    # image: openncp-server:6.5.0-SNAPSHOT
     ports:
       - "6080:6080"
       - "6443:6443"
@@ -73,7 +73,9 @@ services:
         -Dmysql_password=${MYSQL_PASSWORD}
         -Dtls_key_alias=${TLS_KEY_ALIAS}
         -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
-        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}"
+        -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
 
     volumes:
@@ -83,69 +85,150 @@ services:
     networks:
       - openncp
 
+  # OpenNCP Server (Node B)
+  # Client connector
   openncp-client:
     container_name: openncp-client
-    image: openncp-client:5.2.5
+    build:
+      context: ./openncp-client
+      dockerfile: Dockerfile
+    # image: openncp-client:${OPENNCP_VERSION}
+    ports:
+      - "7080:7080"
+      - "7443:7443"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
+      CATALINA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8"
+      JAVA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8
+        -Dmysql_host=${MYSQL_HOST}
+        -Dmysql_port=${MYSQL_PORT}
+        -Dmysql_username=${MYSQL_USERNAME}
+        -Dmysql_password=${MYSQL_PASSWORD}
+        -Dtls_key_alias=${TLS_KEY_ALIAS}
+        -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
+      LOGGING_LEVEL_ROOT: DEBUG
+    volumes:
+      - ./epsos-configuration:/opt/epsos-configuration
+      - ./logs/openncp-client:/usr/local/tomcat/logs
+      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
+    networks:
+      - openncp
+
+  # OpenNCP Backend Portal (Node B)
+  # Portal Backend
+  ehealth-portal-backend:
+    container_name: ehealth-portal-backend
+    build:
+      context: ./ehealth-portal-backend
+      dockerfile: Dockerfile
+    # image: ehealth-portal-backend:${OPENNCP_VERSION}
     ports:
       - "8080:8080"
-      - "9090:9090"
       - "8443:8443"
     depends_on:
       mysql:
         condition: service_healthy
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
-      CATALINA_OPTS: "$CATALINA_OPTS -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8"
-      JAVA_OPTS: "-DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8 -Dmysql_host=${MYSQL_HOST} -Dmysql_port=${MYSQL_PORT} -Dmysql_username=${MYSQL_USERNAME} -Dmysql_password=${MYSQL_PASSWORD}"
-      #https://stackoverflow.com/questions/13956651/externalizing-tomcat-webapp-config-from-war-file
-      #
+      CATALINA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8"
+      JAVA_OPTS: "
+        -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        -Dfile.encoding=UTF-8
+        -Dmysql_host=${MYSQL_HOST}
+        -Dmysql_port=${MYSQL_PORT}
+        -Dmysql_username=${MYSQL_USERNAME}
+        -Dmysql_password=${MYSQL_PASSWORD}
+        -Dtls_key_alias=${TLS_KEY_ALIAS}
+        -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
-      GTW_TLS_CLIENT_CERT_ALIAS: ${GTW_TLS_CLIENT_CERT_ALIAS}
-      GTW_TLS_CLIENT_CERT_PWD: ${GTW_TLS_CLIENT_CERT_PWD}
-      GTW_TLS_CLIENT_KEYSTORE_PATH: ${GTW_TLS_CLIENT_KEYSTORE_PATH}
-      GTW_TLS_CLIENT_KEYSTORE_PWD: ${GTW_TLS_CLIENT_KEYSTORE_PWD}
-      GTW_TRUSTSTORE_PATH: ${GTW_TRUSTSTORE_PATH}
-      GTW_TRUSTSTORE_PWD: ${GTW_TRUSTSTORE_PWD}
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
-      - ./logs/openncp-client:/usr/local/tomcat/logs
+      - ./logs/ehealth-portal-backend:/usr/local/tomcat/logs
+      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
-  openncp-gateway-backend:
-    container_name: openncp-gateway-backend
-    image: openncp-gateway-backend:5.2.5
+  # # OpenNCP Frontend Portal (Node B)
+  # # Portal Frontend
+  ehealth-portal-frontend:
+    container_name: ehealth-portal-frontend
+    build:
+      context: ./ehealth-portal-frontend
+      dockerfile: Dockerfile
+    # image: ehealth-portal-frontend:${OPENNCP_VERSION}
     ports:
-      - "8082:8080"
-      - "8445:8443"
+      - "9080:9080"
+      - "9443:9443"
     depends_on:
-      mysql:
-        condition: service_healthy
+      - ehealth-portal-backend
     environment:
-      EPSOS_PROPS_PATH: "/opt/epsos-configuration/"
-      CATALINA_OPTS: "$CATALINA_OPTS -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8"
-      JAVA_OPTS: "-DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8 -Dmysql_host=${MYSQL_HOST} -Dmysql_port=${MYSQL_PORT} -Dmysql_username=${MYSQL_USERNAME} -Dmysql_password=${MYSQL_PASSWORD}"
-      #https://stackoverflow.com/questions/13956651/externalizing-tomcat-webapp-config-from-war-file
-      #
+      JAVA_OPTS: "
+        -Dtls_key_alias=${TLS_KEY_ALIAS}
+        -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
-      - ./epsos-configuration:/opt/epsos-configuration
-      - ./logs/openncp-gateway-backend:/usr/local/tomcat/logs
-      - ./tomcat-configuration/openncp-gateway-backend/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
-      - ./tomcat-configuration/openncp-gateway-backend/opt/openncp-gateway-backend-config:/opt/tomcat-configuration
+      - ./logs/ehealth-portal-frontend:/usr/local/tomcat/logs
+      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
-  openncp-gateway-frontend:
-    container_name: openncp-gateway-frontend
-    image: docker.io/library/openncp-gateway-frontend:latest
-    ports:
-      - "8083:80"
-      - "8446:443"
-    depends_on:
-      - openncp-gateway-backend
-    networks:
-      - openncp
+  # # OpenNCP Backend Gateway (Officer)
+  # openncp-gateway-backend:
+  #   container_name: openncp-gateway-backend
+  #   image: openncp-gateway-backend:5.2.5
+  #   ports:
+  #     - "8082:8080"
+  #     - "8445:8443"
+  #   depends_on:
+  #     mysql:
+  #       condition: service_healthy
+  #   environment:
+  #     EPSOS_PROPS_PATH: "/opt/epsos-configuration/"
+  #     CATALINA_OPTS: "$CATALINA_OPTS -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8"
+  #     JAVA_OPTS: "-DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties -Dfile.encoding=UTF-8 -Dmysql_host=${MYSQL_HOST} -Dmysql_port=${MYSQL_PORT} -Dmysql_username=${MYSQL_USERNAME} -Dmysql_password=${MYSQL_PASSWORD}"
+  #     #https://stackoverflow.com/questions/13956651/externalizing-tomcat-webapp-config-from-war-file
+  #     #
+  #     LOGGING_LEVEL_ROOT: DEBUG
+  #   volumes:
+  #     - ./epsos-configuration:/opt/epsos-configuration
+  #     - ./logs/openncp-gateway-backend:/usr/local/tomcat/logs
+  #     - ./tomcat-configuration/openncp-gateway-backend/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
+  #     - ./tomcat-configuration/openncp-gateway-backend/opt/openncp-gateway-backend-config:/opt/tomcat-configuration
+  #   networks:
+  #     - openncp
+
+  # openncp-gateway-frontend:
+  #   container_name: openncp-gateway-frontend
+  #   image: docker.io/library/openncp-gateway-frontend:latest
+  #   ports:
+  #     - "8083:80"
+  #     - "8446:443"
+  #   depends_on:
+  #     - openncp-gateway-backend
+  #   networks:
+  #     - openncp
+
+  # # OpenNCP TRC-STS (Officer)
+
+  # # OpenNCP OpenATNA (Officer)
 
 volumes:
   persistent:
