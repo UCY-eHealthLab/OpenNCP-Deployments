@@ -35,3 +35,34 @@ if exist build-artifacts\artifacts\ehealth-portal (
 ) else (
     echo "ehealth-portal does not exist, check build-artifacts/docker-build-portal.bat"
 )
+
+if exist build-artifacts\artifacts\openncp-trc-sts.war (
+    echo "openncp-trc-sts.war exists"
+    if not exist openncp-trc-sts\webapps mkdir openncp-trc-sts\webapps
+        xcopy /Y build-artifacts\artifacts\openncp-trc-sts.war openncp-trc-sts\webapps
+) else (
+    echo "openncp-trc-sts.war does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
+if exist build-artifacts\artifacts\openncp-gateway-backend.war (
+    echo "openncp-gateway-backend.war exists"
+    if not exist openncp-gateway-backend\webapps mkdir openncp-gateway-backend\webapps
+        xcopy /Y build-artifacts\artifacts\openncp-gateway-backend.war openncp-gateway-backend\webapps
+) else (
+    echo "openncp-gateway-backend.war does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
+if exist build-artifacts\artifacts\openncp-gateway (
+    echo "openncp-gateway folder exists"
+    xcopy /Y /E build-artifacts\artifacts\openncp-gateway openncp-gateway-frontend\openncp-gateway\
+) else (
+    echo "openncp-gateway does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
+if exist build-artifacts\artifacts\openatna-web.war (
+    echo "openatna-web.war exists"
+    if not exist openncp-openatna\webapps mkdir openncp-openatna\webapps
+        xcopy /Y build-artifacts\artifacts\openatna-web.war openncp-openatna\webapps
+) else (
+    echo "openatna-web.war does not exist, check build-artifacts/docker-build-openncp.bat"
+)

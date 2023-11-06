@@ -1,14 +1,22 @@
-FROM node:16.13.1-buster as builder
-WORKDIR /usr/src/app
-COPY package.json ./
-RUN npm install --legacy-peer-deps
-COPY . .
-RUN npm run build 
+FROM tomcat:9.0.82-jre11-temurin-jammy
 
-FROM nginx:stable-alpine as production-stage
-COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+RUN  apt-get update \
+  && apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/*
 
+ARG PORTAL_VERSION=1.1.0
+ARG MYSQL_HOST
+ARG MYSQL_PORT
+ARG MYSQL_USERNAME
+ARG MYSQL_PASSWORD
+ARG JAVA_OPTS
+ARG EPSOS_PROPS_PATH
+ARG CATALINA_OPTS
+WORKDIR /usr/local/tomcat/webapps
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY lib/* /usr/local/tomcat/lib/
+COPY server.xml /usr/local/tomcat/conf/server.xml
+
+COPY openncp-gateway /usr/local/tomcat/webapps/openncp-gateway
+
+CMD ${CATALINA_HOME}/bin/catalina.sh run
