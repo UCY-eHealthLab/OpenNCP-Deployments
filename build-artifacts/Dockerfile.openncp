@@ -1,0 +1,83 @@
+# Stage 1: Build Maven artifacts
+FROM maven:3.9.5-eclipse-temurin-11 AS build-openncp-maven
+
+RUN apt-get update && apt-get install -y git
+
+# Copy maven-settings.xml file (comment out maven-default-http-blocker mirror)
+COPY configs/maven-settings.xml /usr/share/maven/conf/settings.xml
+
+ARG OPENNCP_VERSION
+ARG OPENNCP_SOURCE_REPO
+ARG OPENNCP_SOURCE_BRANCH
+
+WORKDIR /usr/src
+
+# Clone the OpenNCP source code
+RUN git clone --branch ${OPENNCP_SOURCE_BRANCH} ${OPENNCP_SOURCE_REPO} openncp
+
+# Build the OpenNCP source code
+RUN cd openncp && mvn clean package install -DskipTests `-Dmaven.wagon.http.ssl.insecure=true `-Dmaven.wagon.http.ssl.allowall=true
+
+# openncp-ws-server
+RUN mv openncp/protocol-terminators/epsos-ncp-server/epsos-ws-server/target/openncp-ws-server-${OPENNCP_VERSION}.war openncp-ws-server.war
+
+# openncp-client-connector
+RUN mv openncp/protocol-terminators/epsos-ncp-client/epsos-client-connector/target/openncp-client-connector-${OPENNCP_VERSION}.war openncp-client-connector.war
+
+# openncp-trc-sts
+RUN mv openncp/trc-sts/target/openncp-trc-sts-${OPENNCP_VERSION}.war openncp-trc-sts.war
+
+# openatna-web
+RUN mv openncp/openatna/web/target/openatna-web-${OPENNCP_VERSION}.war openatna-web.war
+
+# openncp-gateway-backend
+RUN mv openncp/openncp-gateway/openncp-gateway-backend/target/openncp-gateway-backend-${OPENNCP_VERSION}.war openncp-gateway-backend.war
+
+# openncp-configuration-utility
+RUN mv openncp/openncp-common-components/openncp-configuration-utility/target/openncp-configuration-utility-${OPENNCP_VERSION}.jar openncp-configuration-utility.jar
+
+# Delete the source code
+RUN rm -rf openncp
+
+# Stage 2: Build Node artifacts
+FROM node:16.20.0-buster AS build-openncp-node
+
+RUN apt-get update && apt-get install -y git
+
+ARG OPENNCP_SOURCE_REPO
+ARG OPENNCP_SOURCE_BRANCH
+
+WORKDIR /usr/src
+
+# Clone the OpenNCP source code
+RUN git clone --branch ${OPENNCP_SOURCE_BRANCH} ${OPENNCP_SOURCE_REPO} openncp
+
+# Copy .env file
+COPY configs/gateway.env openncp/openncp-gateway/openncp-gateway-frontend/.env.production
+
+# Build the gateway frontend
+RUN cd /usr/src/openncp/openncp-gateway/openncp-gateway-frontend && npm install --legacy-peer-deps && npm run build
+
+# Move the gateway frontend build to the working directory
+RUN mv /usr/src/openncp/openncp-gateway/openncp-gateway-frontend/dist openncp-gateway
+
+# Delete the source code
+RUN rm -rf openncp
+
+# Stage 3: Combine Maven and Node artifacts
+FROM ubuntu:22.04 AS merge-openncp-artifacts
+
+WORKDIR /usr/src
+
+# Copy Maven artifacts
+COPY --from=build-openncp-maven /usr/src/openncp-ws-server.war openncp-ws-server.war
+COPY --from=build-openncp-maven /usr/src/openncp-client-connector.war openncp-client-connector.war
+COPY --from=build-openncp-maven /usr/src/openncp-trc-sts.war openncp-trc-sts.war
+COPY --from=build-openncp-maven /usr/src/openatna-web.war openatna-web.war
+COPY --from=build-openncp-maven /usr/src/openncp-gateway-backend.war openncp-gateway-backend.war
+COPY --from=build-openncp-maven /usr/src/openncp-configuration-utility.jar openncp-configuration-utility.jar
+
+# Copy Node artifacts
+COPY --from=build-openncp-node /usr/src/openncp-gateway openncp-gateway
+
+CMD ["bash"]

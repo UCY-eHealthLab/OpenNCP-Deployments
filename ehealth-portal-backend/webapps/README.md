@@ -1,0 +1,1 @@
+Placeholder for the webapps folder (ehealth-portal-backend)
