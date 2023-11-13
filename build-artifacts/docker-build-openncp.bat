@@ -1,7 +1,7 @@
 @REM --- Variables ---
-set OPENNCP_VERSION=6.5.0-SNAPSHOT
+set OPENNCP_VERSION=6.5.0
 set OPENNCP_SOURCE_REPO=https://code.europa.eu/ehdsi/ehealth
-set OPENNCP_SOURCE_BRANCH=release/6.5.0
+set OPENNCP_SOURCE_BRANCH=support/6.x.x
 
 @REM --- Build OpenNCP ---
 docker build -f Dockerfile.openncp ^
