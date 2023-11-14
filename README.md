@@ -5,7 +5,7 @@ OpenNCP containerization and deployment scripts
 
 | Project | Version |
 | ------- | ------- |
-| OpenNCP | ![OpenNCP version](https://img.shields.io/badge/version-6.5.0--SNAPSHOT-blue) |
+| OpenNCP | ![OpenNCP version](https://img.shields.io/badge/version-6.5.0-blue) |
 | Portal  | ![Portal version](https://img.shields.io/badge/version-1.1.0-green) |
 
 

@@ -52,7 +52,7 @@ services:
     build:
       context: ./openncp-server
       dockerfile: Dockerfile
-    # image: openncp-server:6.5.0-SNAPSHOT
+    # image: openncp-server:${OPENNCP_VERSION}
     ports:
       - "6080:6080"
       - "6443:6443"
