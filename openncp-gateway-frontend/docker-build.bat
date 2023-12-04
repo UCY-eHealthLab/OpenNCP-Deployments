@@ -1,1 +1,1 @@
-docker build --tag openncp-gateway-frontend:latest -m 6g .
+docker build -t openncp-gateway:6.5.0 .

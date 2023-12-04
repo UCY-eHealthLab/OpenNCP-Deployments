@@ -43,23 +43,22 @@
               description="User database that can be updated and saved"
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
-			  
-			  
+
 	<Resource name="jdbc/ConfMgr" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
                 dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_properties?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
- 
+
     <Resource name="jdbc/OPEN_ATNA" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
                 dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_atna?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
- 
+
     <Resource name="jdbc/TSAM" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
                 dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_ltrdb?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
                 dataSource.user="${mysql_username}" dataSource.password="${mysql_password}"/>
- 
+
     <Resource name="jdbc/EADC" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" singleton="true"
                 minimumIdle="2" maximumPoolSize="5" connectionTimeout="300000" dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"
                 dataSource.url="jdbc:mysql://${mysql_host}:${mysql_port}/ehealth_eadc?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;serverTimezone=Europe/Brussels"
@@ -88,11 +87,28 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="8080" protocol="HTTP/1.1"
+          <Connector port="6080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="8443" />
-    <!-- A "Connector" using the shared thread pool-->
-    <!--
+               redirectPort="6443" />
+
+          <Connector
+               port="6443"
+               SSLEnabled="true"
+               scheme="https"
+               secure="true"
+               clientAuth="true"
+               sslProtocol="TLS"
+               maxThreads="150"
+               keyAlias="${tls_key_alias}"
+               keystoreFile="${tls_keystore_path}"
+               keystorePass="${tls_keystore_pwd}"
+               truststoreFile="${tls_truststore_path}"
+               truststorePass="${tls_truststore_pwd}"
+               ciphers="TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,SHA512WITHRSA"
+               protocol="org.apache.coyote.http11.Http11NioProtocol"
+          />
+     <!-- A "Connector" using the shared thread pool-->
+     <!--
     <Connector executor="tomcatThreadPool"
                port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"

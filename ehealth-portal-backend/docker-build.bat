@@ -1,0 +1,1 @@
+docker build -t ehealth-portal-backend:1.1.0 .
