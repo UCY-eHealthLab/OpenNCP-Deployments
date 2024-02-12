@@ -1,5 +1,5 @@
 @REM --- Variables ---
-set OPENNCP_VERSION=6.5.0
+set OPENNCP_VERSION=6.5.1
 set OPENNCP_SOURCE_REPO=https://code.europa.eu/ehdsi/ehealth
 set OPENNCP_SOURCE_BRANCH=support/6.x.x
 
