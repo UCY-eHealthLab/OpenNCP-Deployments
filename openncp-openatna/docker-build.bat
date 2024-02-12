@@ -1,1 +1,1 @@
-docker build -t openncp-openatna:6.5.0 .
+docker build -t openncp-openatna:7.1.0 .
