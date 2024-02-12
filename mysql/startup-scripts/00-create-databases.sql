@@ -12,9 +12,9 @@ CREATE DATABASE IF NOT EXISTS ehealth_ltrdb CHARACTER SET utf8 COLLATE utf8_gene
 CREATE DATABASE IF NOT EXISTS ehealth_eadc CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS ehealth_logs CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS ehealth_portal CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS openncp_users CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 #not used in this deployment
 #CREATE DATABASE IF NOT EXISTS openncp_portal CHARACTER SET utf8 COLLATE utf8_general_ci;
 #CREATE DATABASE IF NOT EXISTS loganalyzer CHARACTER SET utf8 COLLATE utf8_general_ci;
 #CREATE DATABASE IF NOT EXISTS statping CHARACTER SET utf8 COLLATE utf8_general_ci;
-
