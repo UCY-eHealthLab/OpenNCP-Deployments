@@ -4,7 +4,7 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
-ARG OPENNCP_VERSION=6.5.0
+ARG OPENNCP_VERSION=7.1.0
 ARG MYSQL_HOST
 ARG MYSQL_PORT
 ARG MYSQL_USERNAME
