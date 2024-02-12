@@ -1,1 +1,1 @@
-docker build -t openncp-gateway:6.5.0 .
+docker build -t openncp-gateway:7.1.0 .
