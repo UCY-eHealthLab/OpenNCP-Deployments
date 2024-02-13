@@ -75,3 +75,12 @@ Write configuration to database using `openncp-configuration-utility/openncp-con
     This will build the following artifacts:
     - openncp-portal-backend.war
     - openncp-portal _(frontend folder)_
+
+3. Once the artifacts are built, navigate to the root of the project and run the `move-artifacts.bat` file
+   * This will move the artifacts to the respective folders where the docker-compose file will be able to pick them up
+
+4. Once the artifacts are moved, run the `docker-compose up -d --build` command to build the images and start the containers
+
+   - Note 01: The `--build` flag is used to ensure that the images are built from the latest artifacts
+
+   - Note 02: The configuration utility will run once only when the database is empty. If you need to re-run the configuration utility, you will need to clear the database and run the `docker-compose up -d --build` command again.
