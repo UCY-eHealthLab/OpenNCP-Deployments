@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+  namespace: openncp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:5.7
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        envFrom:
+        - secretRef:
+            name: mysql-secret
+        ports:
+        - containerPort: 3306
+        # volumeMounts:
+        # - name: mysql-data
+        #   mountPath: /var/lib/mysql
+        # - name: init-scripts
+        #   mountPath: /docker-entrypoint-initdb.d
+        #   readOnly: true
+        # - name: custom-config
+        #   mountPath: /etc/mysql/conf.d
+        #   readOnly: true
+        # - name: mysql-logs
+        #   mountPath: /var/log/mysql
+      volumes:
+      - name: mysql-data
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+      # Adjust volume sources according to your environment
+      # - name: init-scripts
+      #   configMap:
+      #     name: init-scripts-configmap
+      # - name: custom-config
+      #   configMap:
+      #     name: custom-config-configmap
+      # - name: mysql-logs
+      #   emptyDir: {}
