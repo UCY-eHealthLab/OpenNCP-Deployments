@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ehealth-portal-backend
+  namespace: openncp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ehealth-portal-backend
+  template:
+    metadata:
+      labels:
+        app: ehealth-portal-backend
+    spec:
+      containers:
+      - name: ehealth-portal-backend
+        image: docker.io/3ahealth/ehealth-portal-backend:7.1.0
+        ports:
+        - containerPort: 8080
+        - containerPort: 8443
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        env:
+        # - name: EPSOS_PROPS_PATH
+        #   value: "${EPSOS_PROPS_PATH}"
+        - name: CATALINA_OPTS
+          value: "
+            -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+            -Dfile.encoding=UTF-8"
+        # - name: JAVA_OPTS
+        #   value: "
+        #     -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+        #     -Dfile.encoding=UTF-8
+        #     -Dmysql_host=${MYSQL_HOST}
+        #     -Dmysql_port=${MYSQL_PORT}
+        #     -Dmysql_username=${MYSQL_USERNAME}
+        #     -Dmysql_password=${MYSQL_PASSWORD}
+        #     -Dtls_key_alias=${TLS_KEY_ALIAS}
+        #     -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        #     -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        #     -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        #     -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
+        - name: LOGGING_LEVEL_ROOT
+          value: "DEBUG"
+        # volumeMounts:
+        # - name: epsos-configuration
+        #   mountPath: /opt/epsos-configuration
+        # - name: ehealth-portal-backend-logs
+        #   mountPath: /usr/local/tomcat/logs
+        # - name: openncp-certs
+        #   mountPath: /usr/local/tomcat/opt/openncp-configuration/certs
+      # volumes:
+      # - name: epsos-configuration
+      #   hostPath:
+      #     path: /path/to/your/epsos-configuration
+      # - name: ehealth-portal-backend-logs
+      #   emptyDir: {}
+      # - name: openncp-certs
+      #   hostPath:
+      #     path: /path/to/your/openncp-configuration/certs

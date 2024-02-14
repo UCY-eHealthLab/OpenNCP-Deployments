@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: openncp-gateway-backend-service
+  namespace: openncp
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 11080
+    targetPort: 11080
+    nodePort: 33080
+  - name: https
+    port: 11443
+    targetPort: 11443
+    nodePort: 33443
+  selector:
+    app: openncp-gateway-backend

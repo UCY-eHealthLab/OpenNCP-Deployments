@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ehealth-portal-frontend-service
+  namespace: openncp
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 9080
+    targetPort: 9080
+    nodePort: 37080
+  - name: https
+    port: 9443
+    targetPort: 9443
+    nodePort: 37443
+  selector:
+    app: ehealth-portal-frontend

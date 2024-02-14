@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openncp-gateway-frontend
+  namespace: openncp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: openncp-gateway-frontend
+  template:
+    metadata:
+      labels:
+        app: openncp-gateway-frontend
+    spec:
+      containers:
+      - name: openncp-gateway-frontend
+        image: docker.io/3ahealth/openncp-gateway-frontend:7.1.0
+        ports:
+        - containerPort: 12080
+        - containerPort: 12443
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        env:
+        # - name: JAVA_OPTS
+        #   value: "
+        #     -Dtls_key_alias=${TLS_KEY_ALIAS}
+        #     -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+        #     -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+        #     -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+        #     -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
+        - name: LOGGING_LEVEL_ROOT
+          value: "DEBUG"
+        # volumeMounts:
+        # - name: openncp-gateway-frontend-logs
+        #   mountPath: /usr/local/tomcat/logs
+        # - name: openncp-certs
+        #   mountPath: /usr/local/tomcat/opt/openncp-configuration/certs
+      # volumes:
+      # - name: openncp-gateway-frontend-logs
+      #   emptyDir: {}
+      # - name: openncp-certs
+      #   hostPath:
+      #     path: /path/to/your/openncp-configuration/certs

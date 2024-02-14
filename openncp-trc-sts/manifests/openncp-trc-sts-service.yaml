@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: openncp-trc-sts-service
+  namespace: openncp
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 10080
+    targetPort: 10080
+    nodePort: 32080
+  - name: https
+    port: 10443
+    targetPort: 10443
+    nodePort: 32443
+  selector:
+    app: openncp-trc-sts

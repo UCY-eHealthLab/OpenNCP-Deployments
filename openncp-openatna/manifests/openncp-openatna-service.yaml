@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: openncp-openatna-service
+  namespace: openncp
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 13080
+    targetPort: 13080
+    nodePort: 35080
+  - name: https
+    port: 13443
+    targetPort: 13443
+    nodePort: 35443
+  selector:
+    app: openncp-openatna
