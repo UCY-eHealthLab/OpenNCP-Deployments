@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 6080
     targetPort: 6080
-    nodePort: 30080
+    nodePort: 30000
   - name: https
     port: 6443
     targetPort: 6443
-    nodePort: 30443
+    nodePort: 30001
   selector:
     app: openncp-server

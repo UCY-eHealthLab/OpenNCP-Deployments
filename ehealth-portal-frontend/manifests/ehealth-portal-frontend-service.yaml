@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 9080
     targetPort: 9080
-    nodePort: 37080
+    nodePort: 30006
   - name: https
     port: 9443
     targetPort: 9443
-    nodePort: 37443
+    nodePort: 30007
   selector:
     app: ehealth-portal-frontend

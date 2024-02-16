@@ -1,5 +1,4 @@
-@REM Set local context
-
+echo off
 SETLOCAL
 
 set OPENNCP_VERSION=7.1.0
@@ -66,3 +65,6 @@ cd openncp-openatna
 docker build -t %REGISTRY%/openncp-openatna:%OPENNCP_VERSION% .
 docker push %REGISTRY%/openncp-openatna:%OPENNCP_VERSION%
 cd ..
+
+ENDLOCAL
+echo on

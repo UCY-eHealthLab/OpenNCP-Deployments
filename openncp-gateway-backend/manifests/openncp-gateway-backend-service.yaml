@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 11080
     targetPort: 11080
-    nodePort: 33080
+    nodePort: 30008
   - name: https
     port: 11443
     targetPort: 11443
-    nodePort: 33443
+    nodePort: 30009
   selector:
     app: openncp-gateway-backend

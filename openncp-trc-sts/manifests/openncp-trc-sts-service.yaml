@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 10080
     targetPort: 10080
-    nodePort: 32080
+    nodePort: 30012
   - name: https
     port: 10443
     targetPort: 10443
-    nodePort: 32443
+    nodePort: 30013
   selector:
     app: openncp-trc-sts

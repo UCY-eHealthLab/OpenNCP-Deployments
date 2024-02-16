@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 12080
     targetPort: 12080
-    nodePort: 34080
+    nodePort: 30010
   - name: https
     port: 12443
     targetPort: 12443
-    nodePort: 34443
+    nodePort: 30011
   selector:
     app: openncp-gateway-frontend

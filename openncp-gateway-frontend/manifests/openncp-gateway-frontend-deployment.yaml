@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ehealth-portal-frontend
+  name: openncp-gateway-frontend
   namespace: openncp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ehealth-portal-frontend
+      app: openncp-gateway-frontend
   template:
     metadata:
       labels:
-        app: ehealth-portal-frontend
+        app: openncp-gateway-frontend
     spec:
       containers:
-      - name: ehealth-portal-frontend
-        image: docker.io/3ahealth/ehealth-portal-frontend:7.1.0
+      - name: openncp-gateway-frontend
+        image: docker.io/3ahealth/openncp-gateway-frontend:7.1.0
         ports:
-        - containerPort: 9080
-        - containerPort: 9443
+        - containerPort: 12080
+        - containerPort: 12443
         resources:
           requests:
             memory: "128Mi"
@@ -58,11 +58,11 @@ spec:
         volumeMounts:
         - name: epsos-configuration-volume
           mountPath: /opt/epsos-configuration
-        # - name: openncp-server-logs
+        # - name: openncp-gateway-frontend-logs
         #   mountPath: /usr/local/tomcat/logs
       volumes:
       - name: epsos-configuration-volume
         persistentVolumeClaim:
           claimName: epsos-configuration-pvc
-      # - name: openncp-server-logs
+      # - name: openncp-gateway-frontend-logs
       #   emptyDir: {}

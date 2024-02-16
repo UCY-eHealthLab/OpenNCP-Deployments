@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 8080
     targetPort: 8080
-    nodePort: 36080
+    nodePort: 30004
   - name: https
     port: 8443
     targetPort: 8443
-    nodePort: 36443
+    nodePort: 30005
   selector:
     app: ehealth-portal-backend

@@ -21,46 +21,74 @@ spec:
         - containerPort: 13443
         resources:
           requests:
-            memory: "128Mi"
-            cpu: "250m"
-          limits:
-            memory: "256Mi"
+            memory: "512Mi"
             cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
         env:
-        # - name: EPSOS_PROPS_PATH
-        #   value: "${EPSOS_PROPS_PATH}"
+        - name: EPSOS_PROPS_PATH
+          value: "/opt/epsos-configuration/"
         - name: CATALINA_OPTS
           value: "
             -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
             -Dfile.encoding=UTF-8"
-        # - name: JAVA_OPTS
-        #   value: "
-        #     -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
-        #     -Dfile.encoding=UTF-8
-        #     -Dmysql_host=${MYSQL_HOST}
-        #     -Dmysql_port=${MYSQL_PORT}
-        #     -Dmysql_username=${MYSQL_USERNAME}
-        #     -Dmysql_password=${MYSQL_PASSWORD}
-        #     -Dtls_key_alias=${TLS_KEY_ALIAS}
-        #     -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
-        #     -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
-        #     -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
-        #     -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
+        - name: MYSQL_HOST
+          value: "mysql-service"
+        - name: MYSQL_PORT
+          value: "3306"
+        - name: MYSQL_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
+        - name: TLS_KEYSTORE_PATH
+          value: "/opt/epsos-configuration/certs/cy_tls.jks"
+        - name: TLS_TRUSTSTORE_PATH
+          value: "/opt/epsos-configuration/certs/truststore.jks"
+        - name: TLS_KEY_ALIAS
+          valueFrom:
+            secretKeyRef:
+              name: openncp-secret
+              key: TLS_KEY_ALIAS
+        - name: TLS_KEYSTORE_PWD
+          valueFrom:
+            secretKeyRef:
+              name: openncp-secret
+              key: TLS_KEYSTORE_PWD
+        - name: TLS_TRUSTSTORE_PWD
+          valueFrom:
+            secretKeyRef:
+              name: openncp-secret
+              key: TLS_TRUSTSTORE_PWD
+        - name: JAVA_OPTS
+          value: "
+            -DopenATNA.properties.path=file:/opt/epsos-configuration/ATNA_resources/openatna.properties
+            -Dfile.encoding=UTF-8
+            -Dmysql_host=${MYSQL_HOST}
+            -Dmysql_port=${MYSQL_PORT}
+            -Dmysql_username=${MYSQL_USERNAME}
+            -Dmysql_password=${MYSQL_PASSWORD}
+            -Dtls_key_alias=${TLS_KEY_ALIAS}
+            -Dtls_keystore_pwd=${TLS_KEYSTORE_PWD}
+            -Dtls_keystore_path=${TLS_KEYSTORE_PATH}
+            -Dtls_truststore_pwd=${TLS_TRUSTSTORE_PWD}
+            -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
         - name: LOGGING_LEVEL_ROOT
           value: "DEBUG"
-        # volumeMounts:
-        # - name: epsos-configuration
-        #   mountPath: /opt/epsos-configuration
+        volumeMounts:
+        - name: epsos-configuration-volume
+          mountPath: /opt/epsos-configuration
         # - name: openncp-openatna-logs
         #   mountPath: /usr/local/tomcat/logs
-        # - name: openncp-certs
-        #   mountPath: /usr/local/tomcat/opt/epsos-configuration/certs
-      # volumes:
-      # - name: epsos-configuration
-      #   hostPath:
-      #     path: /path/to/your/epsos-configuration  # Replace with actual path or use ConfigMap
+      volumes:
+      - name: epsos-configuration-volume
+        persistentVolumeClaim:
+          claimName: epsos-configuration-pvc
       # - name: openncp-openatna-logs
       #   emptyDir: {}
-      # - name: openncp-certs
-      #   hostPath:
-      #     path: /path/to/your/epsos-configuration/certs  # Replace with actual path or use Secret/ConfigMap
