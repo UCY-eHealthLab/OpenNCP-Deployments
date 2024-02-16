@@ -54,7 +54,7 @@ spec:
         # - name: openncp-trc-sts-logs
         #   mountPath: /usr/local/tomcat/logs
         # - name: openncp-certs
-        #   mountPath: /usr/local/tomcat/opt/openncp-configuration/certs
+        #   mountPath: /usr/local/tomcat/opt/epsos-configuration/certs
       # volumes:
       # - name: epsos-configuration
       #   hostPath:
@@ -63,4 +63,4 @@ spec:
       #   emptyDir: {}
       # - name: openncp-certs
       #   hostPath:
-      #     path: /path/to/your/openncp-configuration/certs  # Replace with actual path or use Secret/ConfigMap
+      #     path: /path/to/your/epsos-configuration/certs  # Replace with actual path or use Secret/ConfigMap

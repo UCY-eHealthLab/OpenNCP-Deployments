@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: copy-epsos-configuration
+  namespace: openncp
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: copy-epsos-config
+        image: docker.io/3ahealth/openncp-epsos-configuration:7.1.0
+        command: ['/bin/sh', '-c', 'cp -a /epsos-configuration/. /epsos-pvc/']
+        volumeMounts:
+        - name: epsos-pvc
+          mountPath: /epsos-pvc
+      containers:
+      - name: placeholder
+        image: alpine
+        command: ['sh', '-c', 'sleep 3600']
+      restartPolicy: Never
+      volumes:
+      - name: epsos-pvc
+        persistentVolumeClaim:
+          claimName: epsos-configuration-pvc

@@ -28,6 +28,22 @@ cd ../..
 
 @REM ###### Create the OpenNCP applications ######
 
+cd kubernetes
+kubectl apply -f openncp-secrets.yaml
+kubectl apply -f epsos-configuration-pvc.yaml
+
+ECHO Copying the EPSOS configuration files to the shared volume...
+kubectl apply -f copy-epsos-configuration-job.yaml
+
+SET TIMEOUT=10
+FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
+    ECHO Waiting for %%A seconds...
+    TIMEOUT /T 1 /NOBREAK >NUL
+)
+
+kubectl delete -f copy-epsos-configuration-job.yaml
+cd ..
+
 @REM -------- Run the OpenNCP configuration utility --------
 kubectl create configmap config-utility-properties --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
 
@@ -36,7 +52,10 @@ kubectl apply -f openncp-configuration-utility-job.yaml
 cd ../..
 
 @REM -------- Deploy the OpenNCP server (Node A) --------
-
+cd openncp-server/manifests
+kubectl apply -f openncp-server-deployment.yaml
+kubectl apply -f openncp-server-service.yaml
+cd ../..
 
 ENDLOCAL
 echo on

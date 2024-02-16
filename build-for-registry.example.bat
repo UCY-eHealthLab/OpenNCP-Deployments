@@ -22,6 +22,11 @@ docker build -t %REGISTRY%/openncp-configuration-utility:%OPENNCP_VERSION% .
 docker push %REGISTRY%/openncp-configuration-utility:%OPENNCP_VERSION%
 cd ..
 
+cd epsos-configuration
+docker build -t %REGISTRY%/openncp-epsos-configuration:%OPENNCP_VERSION% .
+docker push %REGISTRY%/openncp-epsos-configuration:%OPENNCP_VERSION%
+cd ..
+
 cd openncp-server
 docker build -t %REGISTRY%/openncp-server:%OPENNCP_VERSION% .
 docker push %REGISTRY%/openncp-server:%OPENNCP_VERSION%

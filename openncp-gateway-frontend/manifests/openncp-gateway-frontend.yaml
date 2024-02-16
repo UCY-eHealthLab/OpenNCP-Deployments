@@ -40,10 +40,10 @@ spec:
         # - name: openncp-gateway-frontend-logs
         #   mountPath: /usr/local/tomcat/logs
         # - name: openncp-certs
-        #   mountPath: /usr/local/tomcat/opt/openncp-configuration/certs
+        #   mountPath: /usr/local/tomcat/opt/epsos-configuration/certs
       # volumes:
       # - name: openncp-gateway-frontend-logs
       #   emptyDir: {}
       # - name: openncp-certs
       #   hostPath:
-      #     path: /path/to/your/openncp-configuration/certs
+      #     path: /path/to/your/epsos-configuration/certs
