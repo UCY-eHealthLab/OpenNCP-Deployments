@@ -16,6 +16,11 @@ kubectl delete configmap mysql-healthcheck-configmap --namespace=openncp
 
 @REM ###### Remove the OpenNCP applications ######
 @REM -------- Remove the OpenNCP configuration utility --------
+cd openncp-configuration-utility/manifest
+kubectl delete -f openncp-configuration-utility-job.yaml
+
+cd ../..
+kubectl delete configmap config-utility-properties --namespace=openncp
 
 @REM -------- Clear all replicasets --------
 kubectl delete rs --all --namespace=openncp

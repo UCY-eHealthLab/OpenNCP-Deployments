@@ -41,7 +41,7 @@ services:
       mysql:
         condition: service_healthy
     volumes:
-      - ./openncp-configuration-utility:/usr/local/openncp-configuration-utility
+      - ./openncp-configuration-utility/application.yml:/usr/local/openncp-configuration-utility/application.yml
     restart: "no"
     networks:
       - openncp

@@ -17,7 +17,6 @@ kubectl apply -f mysql-pvc.yaml
 
 SET TIMEOUT=10
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
-    cls
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL
 )
@@ -28,10 +27,15 @@ kubectl apply -f mysql-service.yaml
 cd ../..
 
 @REM ###### Create the OpenNCP applications ######
+
 @REM -------- Run the OpenNCP configuration utility --------
+kubectl create configmap config-utility-properties --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
 
 cd openncp-configuration-utility/manifest
+kubectl apply -f openncp-configuration-utility-job.yaml
+cd ../..
 
+@REM -------- Deploy the OpenNCP server (Node A) --------
 
 
 ENDLOCAL
