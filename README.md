@@ -115,7 +115,7 @@ Follow the instructions in the [Cluser Dashboard Deployment](#cluser-dashboard-d
    * This will deploy the Kubernetes dashboard to the cluster, will open a new browser window with the dashboard url and will start a proxy to the dashboard
    * The proxy will allow you to access the dashboard from your local machine
 2. In order to access the dashboard, you will need to export the token using the `export-token.bat` file
-   * This will export the token to the terminal and will copy it to the clipboard
+   * This will export the token to the terminal and will also copy it to the clipboard
 
 # Linux Support
 We are currently working on adding support for Linux. Please check back soon for updates. Currently most of the scripts are both available for Windows and Linux.

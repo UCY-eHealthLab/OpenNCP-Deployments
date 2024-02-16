@@ -8,6 +8,11 @@ spec:
   selector:
     matchLabels:
       app: mysql
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   template:
     metadata:
       labels:
@@ -28,27 +33,42 @@ spec:
             name: mysql-secret
         ports:
         - containerPort: 3306
-        # volumeMounts:
-        # - name: mysql-data
-        #   mountPath: /var/lib/mysql
-        # - name: init-scripts
-        #   mountPath: /docker-entrypoint-initdb.d
-        #   readOnly: true
-        # - name: custom-config
-        #   mountPath: /etc/mysql/conf.d
-        #   readOnly: true
-        # - name: mysql-logs
-        #   mountPath: /var/log/mysql
+        readinessProbe:
+          exec:
+            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        livenessProbe:
+          exec:
+            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+          initialDelaySeconds: 60
+          periodSeconds: 120
+          timeoutSeconds: 5
+          failureThreshold: 3
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /var/lib/mysql
+        - name: custom-config
+          mountPath: /etc/mysql/conf.d
+          readOnly: true
+        - name: init-scripts
+          mountPath: /docker-entrypoint-initdb.d
+          readOnly: true
+        - name: healhcheck
+          mountPath: /etc/mysql/healthcheck
+          readOnly: true
       volumes:
       - name: mysql-data
         persistentVolumeClaim:
           claimName: mysql-pvc
-      # Adjust volume sources according to your environment
-      # - name: init-scripts
-      #   configMap:
-      #     name: init-scripts-configmap
-      # - name: custom-config
-      #   configMap:
-      #     name: custom-config-configmap
-      # - name: mysql-logs
-      #   emptyDir: {}
+      - name: init-scripts
+        configMap:
+          name: init-scripts-configmap
+      - name: custom-config
+        configMap:
+          name: custom-config-configmap
+      - name: healhcheck
+        configMap:
+          name: mysql-healthcheck-configmap
