@@ -16,6 +16,8 @@ IF /I "%IS_CORRECT%" NEQ "Y" (
     EXIT /B 1
 )
 
+cd ..
+
 cd openncp-configuration-utility
 docker build -t %REGISTRY%/openncp-configuration-utility:%OPENNCP_VERSION% .
 docker push %REGISTRY%/openncp-configuration-utility:%OPENNCP_VERSION%

@@ -4,6 +4,8 @@ CALL build-for-registry.example.bat
 echo off
 SETLOCAL
 
+cd ..
+
 @REM -------- Create the OpenNCP namespace --------
 cd kubernetes
 kubectl apply -f namespace.yaml

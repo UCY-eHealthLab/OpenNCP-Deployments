@@ -4,7 +4,7 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
-ARG PORTAL_VERSION=1.1.0
+ARG PORTAL_VERSION
 ARG MYSQL_HOST
 ARG MYSQL_PORT
 ARG MYSQL_USERNAME
