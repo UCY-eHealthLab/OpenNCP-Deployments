@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+  namespace: openncp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:5.7
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        envFrom:
+        - secretRef:
+            name: mysql-secret
+        readinessProbe:
+          exec:
+            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        livenessProbe:
+          exec:
+            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+          initialDelaySeconds: 60
+          periodSeconds: 120
+          timeoutSeconds: 5
+          failureThreshold: 3
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /var/lib/mysql
+        - name: custom-config
+          mountPath: /etc/mysql/conf.d
+          readOnly: true
+        - name: init-scripts
+          mountPath: /docker-entrypoint-initdb.d
+          readOnly: true
+        - name: healhcheck
+          mountPath: /etc/mysql/healthcheck
+          readOnly: true
+      volumes:
+      - name: mysql-data
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+      - name: init-scripts
+        configMap:
+          name: init-scripts-configmap
+      - name: custom-config
+        configMap:
+          name: custom-config-configmap
+      - name: healhcheck
+        configMap:
+          name: mysql-healthcheck-configmap

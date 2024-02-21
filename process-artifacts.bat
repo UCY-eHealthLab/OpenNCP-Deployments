@@ -1,3 +1,11 @@
+echo off
+SETLOCAL
+
+cd build-artifacts
+CALL docker-build-openncp.bat
+CALL docker-build-portal.bat
+cd ..
+
 if exist build-artifacts\artifacts\openncp-ws-server.war (
     echo "openncp-ws-server.war exists"
     if not exist openncp-server\webapps mkdir openncp-server\webapps
@@ -66,3 +74,6 @@ if exist build-artifacts\artifacts\openatna-web.war (
 ) else (
     echo "openatna-web.war does not exist, check build-artifacts/docker-build-openncp.bat"
 )
+
+ENDLOCAL
+echo on

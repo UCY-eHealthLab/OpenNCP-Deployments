@@ -1,0 +1,66 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: openncp-configuration-utility
+  namespace: openncp
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: wait-for-mysql
+        image: busybox
+        command: ['sh', '-c', 'until nc -z $MYSQL_HOST $MYSQL_PORT; do echo waiting for mysql; sleep 2; done;']
+        env:
+        - name: MYSQL_HOST
+          value: mysql-service
+        - name: MYSQL_PORT
+          value: "3306"
+      containers:
+      - name: openncp-configuration-utility
+        image: ghcr.io/ucy-ehealthlab/openncp-configuration-utility:7.1.0
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:mysql://mysql-service:3306/ehealth_properties?useSSL=false"
+        - name: SPRING_DATASOURCE_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
+        - name: SPRING_JPA_SHOW_SQL
+          value: "false"
+        - name: SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL
+          value: "false"
+        - name: SPRING_JPA_GENERATE_DDL
+          value: "true"
+        - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+          value: "none"
+        - name: SPRING_JPA_HIBERNATE_NAMING_PHYSICAL_STRATEGY
+          value: "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl"
+        - name: OPENNCP_PROPERTY_FILE_PATH
+          value: "/usr/local/openncp-configuration-utility/openncp-configuration.properties"
+        - name: SPRING_PROFILES_ACTIVE
+          value: "mysql"
+        - name: DEBUG
+          value: "false"
+        - name: LOGGING_LEVEL_ORG_HIBERNATE
+          value: "ERROR"
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB_CLIENT
+          value: "DEBUG"
+
+        volumeMounts:
+          - name: "openncp-configuration-utility"
+            mountPath: "/usr/local/openncp-configuration-utility/openncp-configuration.properties"
+            subPath: "openncp-configuration.properties"
+      restartPolicy: Never
+
+      volumes:
+      - name: openncp-configuration-utility
+        projected:
+          sources:
+          - configMap:
+              name: openncp-configuration-utility-cm
