@@ -42,6 +42,7 @@ services:
         condition: service_healthy
     volumes:
       - ./openncp-configuration-utility/application.yml:/usr/local/openncp-configuration-utility/application.yml
+      - ./openncp-configuration-utility/openncp-configuration.properties:/usr/local/openncp-configuration-utility/openncp-configuration.properties
     restart: "no"
     networks:
       - openncp
@@ -79,6 +80,7 @@ services:
 
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-server:/usr/local/tomcat/logs
     networks:
       - openncp
@@ -116,6 +118,7 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-client:/usr/local/tomcat/logs
       # - ./tomcat-configuration/openncp-server/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
       # - ./tomcat-configuration/openncp-server/opt/openncp-server-config:/opt/tomcat-configuration
@@ -155,6 +158,7 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/ehealth-portal-backend:/usr/local/tomcat/logs
     networks:
       - openncp
@@ -180,6 +184,7 @@ services:
         -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/ehealth-portal-frontend:/usr/local/tomcat/logs
     networks:
       - openncp
@@ -216,6 +221,7 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-trc-sts:/usr/local/tomcat/logs
     networks:
       - openncp
@@ -252,6 +258,7 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-gateway-backend:/usr/local/tomcat/logs
       # - ./tomcat-configuration/openncp-gateway-backend/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
       # - ./tomcat-configuration/openncp-gateway-backend/opt/openncp-gateway-backend-config:/opt/tomcat-configuration
@@ -278,6 +285,7 @@ services:
         -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-gateway-frontend:/usr/local/tomcat/logs
     networks:
       - openncp
@@ -314,6 +322,7 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-openatna:/usr/local/tomcat/logs
     networks:
       - openncp

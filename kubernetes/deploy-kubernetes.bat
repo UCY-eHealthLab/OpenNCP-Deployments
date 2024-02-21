@@ -15,6 +15,7 @@ cd ..
 kubectl create configmap custom-config-configmap --from-file=./mysql/custom.cnf --namespace=openncp
 kubectl create configmap init-scripts-configmap --from-file=./mysql/startup-scripts --namespace=openncp
 kubectl create configmap mysql-healthcheck-configmap --from-file=./mysql/liveness-probe.sh --namespace=openncp
+kubectl create configmap openncp-configuration-utility-cm --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
 
 cd mysql/manifests
 kubectl apply -f mysql-secret.yaml
@@ -50,8 +51,6 @@ kubectl delete -f copy-epsos-configuration-job.yaml
 cd ..
 
 @REM -------- Run the OpenNCP configuration utility --------
-kubectl create configmap config-utility-properties --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
-
 cd openncp-configuration-utility/manifest
 kubectl apply -f openncp-configuration-utility-job.yaml
 cd ../..

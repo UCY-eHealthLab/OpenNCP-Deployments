@@ -51,4 +51,16 @@ spec:
           value: "ERROR"
         - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB_CLIENT
           value: "DEBUG"
+
+        volumeMounts:
+          - name: "openncp-configuration-utility"
+            mountPath: "/usr/local/openncp-configuration-utility/openncp-configuration.properties"
+            subPath: "openncp-configuration.properties"
       restartPolicy: Never
+
+      volumes:
+      - name: openncp-configuration-utility
+        projected:
+          sources:
+          - configMap:
+              name: openncp-configuration-utility-cm
