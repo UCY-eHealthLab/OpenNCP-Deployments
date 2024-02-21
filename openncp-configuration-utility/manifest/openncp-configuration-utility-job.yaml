@@ -17,7 +17,7 @@ spec:
           value: "3306"
       containers:
       - name: openncp-configuration-utility
-        image: docker.io/3ahealth/openncp-configuration-utility:7.1.0
+        image: ghcr.io/ucy-ehealthlab/openncp-configuration-utility:7.1.0
         env:
         - name: SPRING_DATASOURCE_URL
           value: "jdbc:mysql://mysql-service:3306/ehealth_properties?useSSL=false"

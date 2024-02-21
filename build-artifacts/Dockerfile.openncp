@@ -17,7 +17,8 @@ WORKDIR /usr/src
 RUN git clone --branch ${OPENNCP_SOURCE_TAG} ${OPENNCP_SOURCE_REPO} openncp
 
 # Build the OpenNCP source code
-RUN cd openncp && mvn clean package install -DskipTests `-Dmaven.wagon.http.ssl.insecure=true `-Dmaven.wagon.http.ssl.allowall=true
+RUN cd openncp && mvn clean package install -DskipTests
+# `-Dmaven.wagon.http.ssl.insecure=true `-Dmaven.wagon.http.ssl.allowall=true
 
 # openncp-ws-server
 RUN mv openncp/protocol-terminators/epsos-ncp-server/epsos-ws-server/target/openncp-ws-server-${OPENNCP_VERSION}.war openncp-ws-server.war

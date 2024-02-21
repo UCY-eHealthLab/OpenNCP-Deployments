@@ -8,7 +8,7 @@ spec:
     spec:
       initContainers:
       - name: copy-epsos-config
-        image: docker.io/3ahealth/openncp-epsos-configuration:7.1.0
+        image: ghcr.io/ucy-ehealthlab/openncp-epsos-configuration:7.1.0
         command: ['/bin/sh', '-c', 'cp -a /epsos-configuration/. /epsos-pvc/']
         volumeMounts:
         - name: epsos-pvc

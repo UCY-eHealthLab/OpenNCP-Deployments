@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: openncp-openatna
-        image: docker.io/3ahealth/openncp-openatna:7.1.0
+        image: ghcr.io/ucy-ehealthlab/openncp-openatna:7.1.0
         ports:
         - containerPort: 13080
         - containerPort: 13443

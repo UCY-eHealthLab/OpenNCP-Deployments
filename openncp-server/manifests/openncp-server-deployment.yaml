@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: openncp-server
-        image: docker.io/3ahealth/openncp-server:7.1.0
+        image: ghcr.io/ucy-ehealthlab/openncp-server:7.1.0
         ports:
         - containerPort: 6080
         - containerPort: 6443

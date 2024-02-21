@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ehealth-portal-frontend
-        image: docker.io/3ahealth/ehealth-portal-frontend:7.1.0
+        image: ghcr.io/ucy-ehealthlab/ehealth-portal-frontend:7.1.0
         ports:
         - containerPort: 9080
         - containerPort: 9443

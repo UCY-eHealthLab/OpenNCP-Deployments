@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: openncp-gateway-frontend
-        image: docker.io/3ahealth/openncp-gateway-frontend:7.1.0
+        image: ghcr.io/ucy-ehealthlab/openncp-gateway-frontend:7.1.0
         ports:
         - containerPort: 12080
         - containerPort: 12443

@@ -106,7 +106,7 @@ Follow the instructions in the [Cluser Dashboard Deployment](#cluser-dashboard-d
 - Permissions to deploy to the cluster
 - Registry with the OpenNCP and Portal docker images
   - There is a script called `build-for-registry.example.bat` in the root of the project that can be used to build the images and push them to a registry of your choice.
-  - Make sure that you update all the manifest files with the correct image paths. The default registry used in the manifest files is `docker.io/3ahealth` which is a private registry and will not work for you.
+  - Make sure that you update all the manifest files with the correct image paths. The default registry used in the manifest files is `ghcr.io/ucy-ehealthlab`.
 
 ## Deployment Instructions
 ### OpenNCP Namespace

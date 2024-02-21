@@ -10,7 +10,7 @@ kubectl apply -f dashboard-service-account-secret.yaml
 
 del kubernetes-dashboard-recommended.yaml
 
-start http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+start http://localhost:8081/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
 kubectl proxy --port=8081
 

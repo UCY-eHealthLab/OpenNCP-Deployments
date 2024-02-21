@@ -2,6 +2,7 @@ echo off
 SETLOCAL
 
 set OPENNCP_VERSION=7.1.0
+set PORTAL_VERSION=1.1.0
 
 @REM Ask user for the docker registry to be used
 SET /P REGISTRY="Enter the docker registry to be used: "
@@ -39,13 +40,13 @@ docker push %REGISTRY%/openncp-client:%OPENNCP_VERSION%
 cd ..
 
 cd ehealth-portal-backend
-docker build -t %REGISTRY%/ehealth-portal-backend:%OPENNCP_VERSION% .
-docker push %REGISTRY%/ehealth-portal-backend:%OPENNCP_VERSION%
+docker build -t %REGISTRY%/ehealth-portal-backend:%PORTAL_VERSION% .
+docker push %REGISTRY%/ehealth-portal-backend:%PORTAL_VERSION%
 cd ..
 
 cd ehealth-portal-frontend
-docker build -t %REGISTRY%/ehealth-portal-frontend:%OPENNCP_VERSION% .
-docker push %REGISTRY%/ehealth-portal-frontend:%OPENNCP_VERSION%
+docker build -t %REGISTRY%/ehealth-portal-frontend:%PORTAL_VERSION% .
+docker push %REGISTRY%/ehealth-portal-frontend:%PORTAL_VERSION%
 cd ..
 
 cd openncp-trc-sts
