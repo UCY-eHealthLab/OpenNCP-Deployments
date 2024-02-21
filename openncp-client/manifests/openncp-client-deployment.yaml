@@ -18,11 +18,11 @@ spec:
         image: ghcr.io/ucy-ehealthlab/openncp-client:7.1.0
         resources:
           requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
             memory: "512Mi"
             cpu: "500m"
-          limits:
-            memory: "1Gi"
-            cpu: "1"
         env:
         - name: EPSOS_PROPS_PATH
           value: "/opt/epsos-configuration/"
