@@ -1,5 +1,5 @@
 @REM -------- Build images and push to registry --------
-CALL build-for-registry.example.bat
+@REM CALL build-for-registry.example.bat
 
 echo off
 SETLOCAL

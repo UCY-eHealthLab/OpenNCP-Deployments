@@ -16,9 +16,6 @@ spec:
       containers:
       - name: openncp-client
         image: ghcr.io/ucy-ehealthlab/openncp-client:7.1.0
-        ports:
-        - containerPort: 7080
-        - containerPort: 7443
         resources:
           requests:
             memory: "512Mi"

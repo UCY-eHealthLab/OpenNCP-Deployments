@@ -16,9 +16,6 @@ spec:
       containers:
       - name: openncp-openatna
         image: ghcr.io/ucy-ehealthlab/openncp-openatna:7.1.0
-        ports:
-        - containerPort: 13080
-        - containerPort: 13443
         resources:
           requests:
             memory: "512Mi"

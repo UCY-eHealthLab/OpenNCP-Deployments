@@ -31,8 +31,6 @@ spec:
         envFrom:
         - secretRef:
             name: mysql-secret
-        ports:
-        - containerPort: 3306
         readinessProbe:
           exec:
             command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]

@@ -16,9 +16,6 @@ spec:
       containers:
       - name: openncp-trc-sts
         image: ghcr.io/ucy-ehealthlab/openncp-trc-sts:7.1.0
-        ports:
-        - containerPort: 10080
-        - containerPort: 10443
         resources:
           requests:
             memory: "512Mi"

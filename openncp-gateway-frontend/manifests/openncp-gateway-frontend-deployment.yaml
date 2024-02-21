@@ -16,9 +16,6 @@ spec:
       containers:
       - name: openncp-gateway-frontend
         image: ghcr.io/ucy-ehealthlab/openncp-gateway-frontend:7.1.0
-        ports:
-        - containerPort: 12080
-        - containerPort: 12443
         resources:
           requests:
             memory: "128Mi"

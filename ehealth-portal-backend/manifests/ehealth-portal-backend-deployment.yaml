@@ -15,10 +15,7 @@ spec:
     spec:
       containers:
       - name: ehealth-portal-backend
-        image: ghcr.io/ucy-ehealthlab/ehealth-portal-backend:7.1.0
-        ports:
-        - containerPort: 8080
-        - containerPort: 8443
+        image: ghcr.io/ucy-ehealthlab/ehealth-portal-backend:1.1.0
         resources:
           requests:
             memory: "512Mi"
