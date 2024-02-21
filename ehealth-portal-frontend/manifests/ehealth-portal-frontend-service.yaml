@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 9080
     targetPort: 9080
-    nodePort: 30006
+    # nodePort: 30006 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   - name: https
     port: 9443
     targetPort: 9443
-    nodePort: 30007
+    # nodePort: 30007 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   selector:
     app: ehealth-portal-frontend

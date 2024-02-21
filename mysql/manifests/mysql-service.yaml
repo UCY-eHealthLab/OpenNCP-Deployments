@@ -8,6 +8,6 @@ spec:
   ports:
   - port: 3306
     targetPort: 3306
-    nodePort: 30250 # Expose the service on a static port
+    # nodePort: 30250 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   selector:
     app: mysql

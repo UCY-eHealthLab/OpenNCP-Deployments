@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 12080
     targetPort: 12080
-    nodePort: 30010
+    # nodePort: 30010 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   - name: https
     port: 12443
     targetPort: 12443
-    nodePort: 30011
+    # nodePort: 30011 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   selector:
     app: openncp-gateway-frontend

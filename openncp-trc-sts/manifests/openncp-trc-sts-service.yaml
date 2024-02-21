@@ -9,10 +9,10 @@ spec:
   - name: http
     port: 10080
     targetPort: 10080
-    nodePort: 30012
+    # nodePort: 30012 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   - name: https
     port: 10443
     targetPort: 10443
-    nodePort: 30013
+    # nodePort: 30013 # This is the port that will be exposed to the outside world (Adjust this to your needs)
   selector:
     app: openncp-trc-sts
