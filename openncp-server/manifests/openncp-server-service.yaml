@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: openncp-server-service
+  namespace: openncp
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 6080
+    targetPort: 6080
+    # nodePort: 30000 # This is the port that will be exposed to the outside world (Adjust this to your needs)
+  - name: https
+    port: 6443
+    targetPort: 6443
+    # nodePort: 30001 # This is the port that will be exposed to the outside world (Adjust this to your needs)
+  selector:
+    app: openncp-server

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cd /build-artifacts
+./docker-build-openncp.sh
+./docker-build-portal.sh
+
 # Check for openncp-ws-server.war
 if [ -f build-artifacts/artifacts/openncp-ws-server.war ]; then
     echo "openncp-ws-server.war exists"

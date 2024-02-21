@@ -41,7 +41,8 @@ services:
       mysql:
         condition: service_healthy
     volumes:
-      - ./openncp-configuration-utility:/usr/local/openncp-configuration-utility
+      - ./openncp-configuration-utility/application.yml:/usr/local/openncp-configuration-utility/application.yml
+      - ./openncp-configuration-utility/openncp-configuration.properties:/usr/local/openncp-configuration-utility/openncp-configuration.properties
     restart: "no"
     networks:
       - openncp
@@ -52,7 +53,6 @@ services:
     build:
       context: ./openncp-server
       dockerfile: Dockerfile
-    # image: openncp-server:${OPENNCP_VERSION}
     ports:
       - "6080:6080"
       - "6443:6443"
@@ -80,8 +80,8 @@ services:
 
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-server:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -92,7 +92,6 @@ services:
     build:
       context: ./openncp-client
       dockerfile: Dockerfile
-    # image: openncp-client:${OPENNCP_VERSION}
     ports:
       - "7080:7080"
       - "7443:7443"
@@ -119,8 +118,8 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-client:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
       # - ./tomcat-configuration/openncp-server/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
       # - ./tomcat-configuration/openncp-server/opt/openncp-server-config:/opt/tomcat-configuration
     networks:
@@ -133,7 +132,6 @@ services:
     build:
       context: ./ehealth-portal-backend
       dockerfile: Dockerfile
-    # image: ehealth-portal-backend:${OPENNCP_VERSION}
     ports:
       - "8080:8080"
       - "8443:8443"
@@ -160,8 +158,8 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/ehealth-portal-backend:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -172,7 +170,6 @@ services:
     build:
       context: ./ehealth-portal-frontend
       dockerfile: Dockerfile
-    # image: ehealth-portal-frontend:${OPENNCP_VERSION}
     ports:
       - "9080:9080"
       - "9443:9443"
@@ -187,8 +184,8 @@ services:
         -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/ehealth-portal-frontend:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -198,7 +195,6 @@ services:
     build:
       context: ./openncp-trc-sts
       dockerfile: Dockerfile
-    # image: openncp-trc-sts:${OPENNCP_VERSION}
     ports:
       - "10080:10080"
       - "10443:10443"
@@ -225,8 +221,8 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-trc-sts:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -236,7 +232,6 @@ services:
     build:
       context: ./openncp-gateway-backend
       dockerfile: Dockerfile
-    # image: openncp-gateway-backend:${OPENNCP_VERSION}
     ports:
       - "11080:11080"
       - "11443:11443"
@@ -263,8 +258,8 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-gateway-backend:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
       # - ./tomcat-configuration/openncp-gateway-backend/tomcat-config:/usr/local/tomcat/conf/Catalina/localhost
       # - ./tomcat-configuration/openncp-gateway-backend/opt/openncp-gateway-backend-config:/opt/tomcat-configuration
     networks:
@@ -276,7 +271,6 @@ services:
     build:
       context: ./openncp-gateway-frontend
       dockerfile: Dockerfile
-    # image: openncp-gateway-frontend:${OPENNCP_VERSION}
     ports:
       - "12080:12080"
       - "12443:12443"
@@ -291,8 +285,8 @@ services:
         -Dtls_truststore_path=${TLS_TRUSTSTORE_PATH}"
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-gateway-frontend:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
@@ -302,7 +296,6 @@ services:
     build:
       context: ./openncp-openatna
       dockerfile: Dockerfile
-    # image: openncp-openatna:${OPENNCP_VERSION}
     ports:
       - "13080:13080"
       - "13443:13443"
@@ -329,8 +322,8 @@ services:
       LOGGING_LEVEL_ROOT: DEBUG
     volumes:
       - ./epsos-configuration:/opt/epsos-configuration
+      - ./epsos-configuration/certs:/usr/local/tomcat/opt/epsos-configuration/certs
       - ./logs/openncp-openatna:/usr/local/tomcat/logs
-      - ./openncp-configuration/certs:/usr/local/tomcat/opt/openncp-configuration/certs
     networks:
       - openncp
 
