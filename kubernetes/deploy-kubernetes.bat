@@ -14,7 +14,6 @@ cd ..
 @REM -------- Create the mysql database --------
 kubectl create configmap custom-config-configmap --from-file=./mysql/custom.cnf --namespace=openncp
 kubectl create configmap init-scripts-configmap --from-file=./mysql/startup-scripts --namespace=openncp
-kubectl create configmap mysql-healthcheck-configmap --from-file=./mysql/liveness-probe.sh --namespace=openncp
 kubectl create configmap openncp-configuration-utility-cm --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
 
 cd mysql/manifests
