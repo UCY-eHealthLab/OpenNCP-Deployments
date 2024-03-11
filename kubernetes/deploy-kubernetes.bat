@@ -60,6 +60,30 @@ FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     TIMEOUT /T 1 /NOBREAK >NUL
 )
 
+@REM -------- Run the OpenNCP tsam sync job --------
+cd openncp-tsam-sync/manifest
+kubectl apply -f openncp-tsam-sync-cm.yaml
+kubectl apply -f openncp-tsam-sync-job.yaml
+cd ../..
+
+SET TIMEOUT=900
+FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
+    ECHO Waiting for %%A seconds...
+    TIMEOUT /T 1 /NOBREAK >NUL
+)
+
+@REM -------- Run the OpenNCP tsam exporter job --------
+cd openncp-tsam-exporter/manifest
+kubectl apply -f openncp-tsam-exporter-cm.yaml
+kubectl apply -f openncp-tsam-exporter-job.yaml
+cd ../..
+
+SET TIMEOUT=60
+FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
+    ECHO Waiting for %%A seconds...
+    TIMEOUT /T 1 /NOBREAK >NUL
+)
+
 @REM -------- Deploy the OpenNCP server (Node A) --------
 cd openncp-server/manifests
 kubectl apply -f openncp-server-deployment.yaml
