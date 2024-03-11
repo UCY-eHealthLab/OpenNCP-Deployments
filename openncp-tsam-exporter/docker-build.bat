@@ -1,0 +1,1 @@
+docker build -t openncp-tsam-exporter:7.1.0 .

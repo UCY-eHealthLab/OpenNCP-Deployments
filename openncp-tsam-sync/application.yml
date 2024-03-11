@@ -1,0 +1,38 @@
+debug: false
+tsam-sync:
+  database:
+    backup: false
+  datasource:
+    host: ${MYSQL_HOST}
+    port: ${MYSQL_PORT}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    database: ehealth_ltrdb
+    dialect: org.hibernate.dialect.MySQL8Dialect
+    driver: com.mysql.cj.jdbc.Driver
+    timezone: Europe/Nicosia
+  datasource-ehealth-properties:
+    host: ${MYSQL_HOST}
+    port: ${MYSQL_PORT}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    database: ehealth_properties
+    dialect: org.hibernate.dialect.MySQL8Dialect
+    driver: com.mysql.cj.jdbc.Driver
+    timezone: Europe/Nicosia
+  proxy:
+    host:
+    port:
+    username:
+    password:
+  cts:
+    url: ${TSAM_SYNC_URL}
+    username: ${TSAM_SYNC_USERNAME}
+    password: ${TSAM_SYNC_PASSWORD}
+spring:
+  jpa:
+    show_sql: false
+  main:
+    allow-circular-references: true
+  profiles:
+    active: mysql

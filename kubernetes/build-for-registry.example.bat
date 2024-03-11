@@ -69,5 +69,15 @@ docker build -t %REGISTRY%/openncp-openatna:%OPENNCP_VERSION% .
 docker push %REGISTRY%/openncp-openatna:%OPENNCP_VERSION%
 cd ..
 
+cd openncp-tsam-sync
+docker build -t %REGISTRY%/openncp-tsam-sync:%OPENNCP_VERSION% .
+docker push %REGISTRY%/openncp-tsam-sync:%OPENNCP_VERSION%
+cd ..
+
+cd openncp-tsam-exporter
+docker build -t %REGISTRY%/openncp-tsam-exporter:%OPENNCP_VERSION% .
+docker push %REGISTRY%/openncp-tsam-exporter:%OPENNCP_VERSION%
+cd ..
+
 ENDLOCAL
 echo on
