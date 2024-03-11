@@ -251,8 +251,6 @@ services:
         condition: service_completed_successfully
       openncp-tsam-exporter:
         condition: service_completed_successfully
-      ehealth-portal-backend:
-        condition: service_healthy
     environment:
       JAVA_OPTS: "
         -Dtls_key_alias=${TLS_KEY_ALIAS}
@@ -361,8 +359,6 @@ services:
         condition: service_healthy
       openncp-configuration-utility:
         condition: service_completed_successfully
-      openncp-gateway-backend:
-        condition: service_healthy
     environment:
       JAVA_OPTS: "
         -Dtls_key_alias=${TLS_KEY_ALIAS}
