@@ -75,5 +75,29 @@ if exist build-artifacts\artifacts\openatna-web.war (
     echo "openatna-web.war does not exist, check build-artifacts/docker-build-openncp.bat"
 )
 
+if exist build-artifacts\artifacts\openncp-tsam-sync.jar (
+    echo "openncp-tsam-sync.jar exists"
+    if not exist openncp-tsam-sync mkdir oopenncp-tsam-sync
+        xcopy /Y build-artifacts\artifacts\openncp-tsam-sync.jar openncp-tsam-sync
+) else (
+    echo "openncp-tsam-sync.jar does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
+if exist build-artifacts\artifacts\openncp-tsam-exporter.jar (
+    echo "openncp-tsam-exporter.jar exists"
+    if not exist openncp-tsam-exporter mkdir openncp-tsam-exporter
+        xcopy /Y build-artifacts\artifacts\openncp-tsam-exporter.jar openncp-tsam-exporter
+) else (
+    echo "openncp-tsam-exporter.jar does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
+if exist build-artifacts\artifacts\translations-and-mappings-ws.war (
+    echo "translations-and-mappings-ws.war exists"
+    if not exist openncp-client\webapps mkdir openncp-client\webapps
+        xcopy /Y build-artifacts\artifacts\translations-and-mappings-ws.war openncp-client\webapps
+) else (
+    echo "translations-and-mappings-ws.war does not exist, check build-artifacts/docker-build-openncp.bat"
+)
+
 ENDLOCAL
 echo on

@@ -2,78 +2,216 @@
 
 <ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.41" name="eHDSITimingEvent">
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="AC">
+        <designation lang="cs-CZ">před jídlem (lat. ante cibus)</designation>
         <designation lang="en-GB">before meal (from lat. ante cibus)</designation>
+        <designation lang="hu-HU">étkezés előtt</designation>
+        <designation lang="fr-BE">EU_before meal (from lat. ante cibus)</designation>
+        <designation lang="es-ES">antes de las comidas</designation>
+        <designation lang="pt-PT">antes da refeição</designation>
+        <designation lang="sl-SI">pred obrokom</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ACD">
+        <designation lang="cs-CZ">před obědem (ante cibus diurnus)</designation>
         <designation lang="en-GB">before lunch (from lat. ante cibus diurnus)</designation>
+        <designation lang="hu-HU">ebéd előtt</designation>
+        <designation lang="fr-BE">EU_before lunch (from lat. ante cibus diurnus)</designation>
+        <designation lang="es-ES">antes del almuerzo</designation>
+        <designation lang="pt-PT">antes do almoço</designation>
+        <designation lang="sl-SI">pred kosilom</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ACM">
+        <designation lang="cs-CZ">před snídaní (lat. ante cibus matutinus)</designation>
         <designation lang="en-GB">before breakfast (from lat. ante cibus matutinus)</designation>
+        <designation lang="hu-HU">reggeli előtt</designation>
+        <designation lang="fr-BE">EU_before breakfast (from lat. ante cibus matutinus)</designation>
+        <designation lang="es-ES">antes del desayuno</designation>
+        <designation lang="pt-PT">antes do pequeno almoço</designation>
+        <designation lang="sl-SI">pred zajtrkom</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ACV">
+        <designation lang="cs-CZ">před večeří (lat. ante cibus vespertinus)</designation>
         <designation lang="en-GB">before dinner (from lat. ante cibus vespertinus)</designation>
+        <designation lang="hu-HU">vacsora előtt</designation>
+        <designation lang="fr-BE">EU_before dinner (from lat. ante cibus vespertinus)</designation>
+        <designation lang="es-ES">antes de la cena</designation>
+        <designation lang="pt-PT">antes do jantar</designation>
+        <designation lang="sl-SI">pred večerjo</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT">
+        <designation lang="cs-CZ">odpoledne</designation>
         <designation lang="en-GB">Afternoon</designation>
+        <designation lang="hu-HU">Délután</designation>
+        <designation lang="fr-BE">EU_Afternoon</designation>
+        <designation lang="pt-PT">Tarde</designation>
+        <designation lang="sl-SI">popoldne</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT.early">
+        <designation lang="cs-CZ">brzké odpoledne</designation>
         <designation lang="en-GB">Early Afternoon</designation>
+        <designation lang="hu-HU">Koradéltán</designation>
+        <designation lang="fr-BE">EU_Early Afternoon</designation>
+        <designation lang="pt-PT">Início da tarde</designation>
+        <designation lang="sl-SI">zgodaj popoldne</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="AFT.late">
+        <designation lang="cs-CZ">pozdní odpoledne</designation>
         <designation lang="en-GB">Late Afternoon</designation>
+        <designation lang="hu-HU">Késődélután</designation>
+        <designation lang="fr-BE">EU_Late Afternoon</designation>
+        <designation lang="pt-PT">Final da tarde</designation>
+        <designation lang="sl-SI">pozno popoldne</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE">
+        <designation lang="cs-CZ">večer</designation>
         <designation lang="en-GB">Evening</designation>
+        <designation lang="hu-HU">Este</designation>
+        <designation lang="fr-BE">EU_Evening</designation>
+        <designation lang="pt-PT">Noite</designation>
+        <designation lang="sl-SI">zvečer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE.early">
+        <designation lang="cs-CZ">v podvečer</designation>
         <designation lang="en-GB">Early Evening</designation>
+        <designation lang="hu-HU">Koraeste</designation>
+        <designation lang="fr-BE">EU_Early Evening</designation>
+        <designation lang="pt-PT">Início da noite</designation>
+        <designation lang="sl-SI">zgodaj zvečer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="EVE.late">
+        <designation lang="cs-CZ">pozdní večer</designation>
         <designation lang="en-GB">Late Evening</designation>
+        <designation lang="hu-HU">Késő este</designation>
+        <designation lang="fr-BE">EU_Late Evening</designation>
+        <designation lang="pt-PT">Noite tardia</designation>
+        <designation lang="sl-SI">pozno zvečer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="HS">
+        <designation lang="cs-CZ">Před pravidleným spánkem (bez ohledu na denní dobu, nezahrnuje zdřímnutí)</designation>
         <designation lang="en-GB">Prior to beginning a regular period of extended sleep (this would exclude naps).  Note that this might occur at different times of day depending on a person&apos;s regular sleep schedule.</designation>
+        <designation lang="hu-HU">Hosszabb alvási időszak előtt (ebbe nem értendők bele a rövid pihenők). Megjegyzendő, hogy ez eltérő időkben történhet, a páciens alvásrendjétől függően.</designation>
+        <designation lang="fr-BE">EU_Prior to beginning a regular period of extended sleep (this would exclude naps).  Note that this might occur at different times of day depending on a person&apos;s regular sleep schedule.</designation>
+        <designation lang="es-ES">Antes de iniciar un periodo regular de sueño prolongado (se excluye la siesta). Observe que puede ocurrir a diferentes horas del día dependiendo del hábito de sueño regular de cada persona.</designation>
+        <designation lang="pt-PT">Antes de iniciar um período de sono prolongado (pode diferir de pessoa para pessoa, de acordo com hábitos)</designation>
+        <designation lang="sl-SI">pred spanjem</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="IC">
+        <designation lang="cs-CZ">mezi jidly (lat. inter cibus)</designation>
         <designation lang="en-GB">between meals (from lat. inter cibus)</designation>
+        <designation lang="hu-HU">Étkezések között</designation>
+        <designation lang="fr-BE">EU_between meals (from lat. inter cibus)</designation>
+        <designation lang="es-ES">entre las comidas</designation>
+        <designation lang="pt-PT">entre as refeições</designation>
+        <designation lang="sl-SI">med obroki</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ICD">
+        <designation lang="cs-CZ">mezi obědem a večeří</designation>
         <designation lang="en-GB">between lunch and dinner</designation>
+        <designation lang="hu-HU">Ebéd és vacsora között</designation>
+        <designation lang="fr-BE">EU_between lunch and dinner</designation>
+        <designation lang="es-ES">entre el almuerzo y la cena</designation>
+        <designation lang="pt-PT">entre o almoço e o jantar</designation>
+        <designation lang="sl-SI">med kosilom in večerjo</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ICM">
+        <designation lang="cs-CZ">mezi snídaní a obědem</designation>
         <designation lang="en-GB">between breakfast and lunch</designation>
+        <designation lang="hu-HU">Reggeli és ebéd között</designation>
+        <designation lang="fr-BE">EU_between breakfast and lunch</designation>
+        <designation lang="es-ES">entre el desayuno y el almuerzo</designation>
+        <designation lang="pt-PT">entre o pequeno almoço e o almoço</designation>
+        <designation lang="sl-SI">med zajtrkom in kosilom</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="ICV">
+        <designation lang="cs-CZ">mezi večeří a spánkem</designation>
         <designation lang="en-GB">between dinner and the hour of sleep</designation>
+        <designation lang="hu-HU">Vacsora és a lefekvés ideje között</designation>
+        <designation lang="fr-BE">EU_between dinner and the hour of sleep</designation>
+        <designation lang="es-ES">entre la cena y la hora de acostarse</designation>
+        <designation lang="pt-PT">entre o jantar e a hora de deitar</designation>
+        <designation lang="sl-SI">med večerjo in spanjem</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN">
+        <designation lang="cs-CZ">ráno</designation>
         <designation lang="en-GB">Morning</designation>
+        <designation lang="hu-HU">Reggel</designation>
+        <designation lang="fr-BE">EU_Morning</designation>
+        <designation lang="pt-PT">Manhã</designation>
+        <designation lang="sl-SI">zjutraj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN.early">
+        <designation lang="cs-CZ">brzy ráno</designation>
         <designation lang="en-GB">Early Morning</designation>
+        <designation lang="hu-HU">Kora reggel</designation>
+        <designation lang="fr-BE">EU_Early Morning</designation>
+        <designation lang="pt-PT">Início da manhã</designation>
+        <designation lang="sl-SI">zgodaj zjutraj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="MORN.late">
+        <designation lang="cs-CZ">pozdní ráno</designation>
         <designation lang="en-GB">Late Morning</designation>
+        <designation lang="hu-HU">Késődélelőtt</designation>
+        <designation lang="fr-BE">EU_Late Morning</designation>
+        <designation lang="pt-PT">Manhã tardia</designation>
+        <designation lang="sl-SI">pozno zjutraj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="NIGHT">
+        <designation lang="cs-CZ">v noci</designation>
         <designation lang="en-GB">Night</designation>
+        <designation lang="hu-HU">Éjszaka</designation>
+        <designation lang="fr-BE">EU_Night</designation>
+        <designation lang="pt-PT">Noite</designation>
+        <designation lang="sl-SI">ponoči</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="NOON">
+        <designation lang="cs-CZ">v poledne</designation>
         <designation lang="en-GB">Noon</designation>
+        <designation lang="hu-HU">Délben</designation>
+        <designation lang="fr-BE">EU_Noon</designation>
+        <designation lang="pt-PT">Meio-dia</designation>
+        <designation lang="sl-SI">opoldne</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PC">
+        <designation lang="cs-CZ">po jídle (lat. post cibus)</designation>
         <designation lang="en-GB">after meal (from lat. post cibus)</designation>
+        <designation lang="hu-HU">Étkezés után</designation>
+        <designation lang="fr-BE">EU_after meal (from lat. post cibus)</designation>
+        <designation lang="es-ES">después de las comidas</designation>
+        <designation lang="pt-PT">após a refeição</designation>
+        <designation lang="sl-SI">po obroku</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PCD">
+        <designation lang="cs-CZ">po obědě (lat. post cibus diurnus)</designation>
         <designation lang="en-GB">after lunch (from lat. post cibus diurnus)</designation>
+        <designation lang="hu-HU">Ebéd után</designation>
+        <designation lang="fr-BE">EU_after lunch (from lat. post cibus diurnus)</designation>
+        <designation lang="es-ES">después del almuerzo</designation>
+        <designation lang="pt-PT">depois do almoço</designation>
+        <designation lang="sl-SI">po kosilu</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PCM">
+        <designation lang="cs-CZ">po snídani (lat. post cibus matutinus)</designation>
         <designation lang="en-GB">after breakfast (from lat. post cibus matutinus)</designation>
+        <designation lang="hu-HU">Reggeli után</designation>
+        <designation lang="fr-BE">EU_after breakfast (from lat. post cibus matutinus)</designation>
+        <designation lang="es-ES">después del desayuno</designation>
+        <designation lang="pt-PT">depois do pequeno almoço</designation>
+        <designation lang="sl-SI">po zajtrku</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.139" codeSystemName="TimingEvent" code="PCV">
+        <designation lang="cs-CZ">po večeři (lat. post cibus vespertinus)</designation>
         <designation lang="en-GB">after dinner (from lat. post cibus vespertinus)</designation>
+        <designation lang="hu-HU">Vacsora után</designation>
+        <designation lang="fr-BE">EU_after dinner (from lat. post cibus vespertinus)</designation>
+        <designation lang="es-ES">después de la cena</designation>
+        <designation lang="pt-PT">depois do jantar</designation>
+        <designation lang="sl-SI">po večerji</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.4.642.4.76" codeSystemName="FHIR EventTiming" code="PHS">
+        <designation lang="cs-CZ">po probuzení</designation>
         <designation lang="en-GB">After Sleep</designation>
+        <designation lang="hu-HU">Ébredéskor</designation>
+        <designation lang="fr-BE">EU_After Sleep</designation>
+        <designation lang="pt-PT">Depois do sono</designation>
+        <designation lang="sl-SI">po spancu</designation>
     </concept>
 </ValueSet>

@@ -1,559 +1,1156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.19" name="eHDSIAllergenNoDrugs">
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.19" name="eHDSIAllergenNoDrug">
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1003736004">
         <designation lang="en-GB">Mammalian milk based food</designation>
+        <designation lang="hu-HU">Emlőstej alapú élelmiszer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="102259006">
         <designation lang="en-GB">Citrus fruit</designation>
+        <designation lang="hu-HU">Citrusfélék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="102261002">
         <designation lang="en-GB">Strawberry</designation>
+        <designation lang="hu-HU">Eper</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="102262009">
         <designation lang="en-GB">Chocolate</designation>
+        <designation lang="hu-HU">Csokoládé</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="102263004">
         <designation lang="en-GB">Eggs (edible)</designation>
+        <designation lang="hu-HU">Tojás (ehető)</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="102264005">
         <designation lang="en-GB">Cheese</designation>
+        <designation lang="hu-HU">Sajt</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="105590001">
         <designation lang="en-GB">Substance</designation>
+        <designation lang="hu-HU">Anyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="111088007">
         <designation lang="en-GB">Latex</designation>
+        <designation lang="hu-HU">Latex</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="111095003">
         <designation lang="en-GB">Formaldehyde</designation>
+        <designation lang="hu-HU">Formaldehid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11526002">
         <designation lang="en-GB">Aspartame</designation>
+        <designation lang="hu-HU">Aszpartám</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115589000">
         <designation lang="en-GB">Ethanolamine</designation>
+        <designation lang="hu-HU">Etanolamin</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="116274004">
+        <designation lang="en-GB">Artificial sweetener</designation>
+        <designation lang="hu-HU">Mesterséges édesítő</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="116549003">
         <designation lang="en-GB">Organochlorine pesticide</designation>
+        <designation lang="hu-HU">Szerves klórtartalmú peszticid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="116637007">
-        <designation lang="en-GB">Fungal antigen</designation>
+        <designation lang="en-GB">Fungus Antigen</designation>
+        <designation lang="hu-HU">Gomba antigén</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11894001">
         <designation lang="en-GB">Clostridium botulinum toxin</designation>
+        <designation lang="hu-HU">Clostridium botulinum toxin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="119417004">
         <designation lang="en-GB">Organophosphate insecticide</designation>
+        <designation lang="hu-HU">Organofoszfát rovarölő szer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12503006">
         <designation lang="en-GB">Aluminum</designation>
+        <designation lang="hu-HU">Alumínium</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12510000">
         <designation lang="en-GB">Eucalyptus oil</designation>
+        <designation lang="hu-HU">Eukaliptusz olaj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128488006">
         <designation lang="en-GB">House dust</designation>
+        <designation lang="hu-HU">Házi por</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128489003">
         <designation lang="en-GB">Sand</designation>
+        <designation lang="hu-HU">Homok</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13577000">
         <designation lang="en-GB">Nut</designation>
+        <designation lang="hu-HU">Dió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13652007">
         <designation lang="en-GB">Silicone</designation>
+        <designation lang="hu-HU">Szilikon</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14006006">
+        <designation lang="en-GB">Ethylene oxide</designation>
+        <designation lang="hu-HU">Etilén-oxid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14402002">
         <designation lang="en-GB">Wood</designation>
+        <designation lang="hu-HU">Faipari</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14423008">
         <designation lang="en-GB">Adhesive bandage</designation>
+        <designation lang="hu-HU">Leukoplaszt</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16313001">
+        <designation lang="en-GB">Tea</designation>
+        <designation lang="hu-HU">Tea</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19893005">
         <designation lang="en-GB">Potassium dichromate</designation>
+        <designation lang="hu-HU">Kálium-dikromát</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2159007">
         <designation lang="en-GB">Azorubin S stain</designation>
+        <designation lang="hu-HU">Azorubin S folt</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="21592006">
         <designation lang="en-GB">Tartrazine stain</designation>
+        <designation lang="hu-HU">Tartrazin folt</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226491003">
         <designation lang="en-GB">Apple juice</designation>
+        <designation lang="hu-HU">Almalé</designation>
     </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226760005">
-        <designation lang="en-GB">Dairy foods</designation>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226723006">
+        <designation lang="en-GB">Buckwheat - cereal</designation>
+        <designation lang="hu-HU">Hajdina - gabona</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226915003">
         <designation lang="en-GB">Red meat</designation>
+        <designation lang="hu-HU">vörös hús</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226916002">
+        <designation lang="en-GB">Beef</designation>
+        <designation lang="hu-HU">Marhahús</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226934003">
         <designation lang="en-GB">Pork</designation>
+        <designation lang="hu-HU">Sertéshús</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226942002">
+        <designation lang="en-GB">Lamb</designation>
+        <designation lang="hu-HU">Bárány</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226955001">
+        <designation lang="en-GB">Chicken - meat</designation>
+        <designation lang="hu-HU">Csirke hús</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="226967004">
+        <designation lang="en-GB">Turkey - meat</designation>
+        <designation lang="hu-HU">Pulyka - hús</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227038007">
+        <designation lang="en-GB">White fish</designation>
+        <designation lang="hu-HU">Fehér hal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227110001">
+        <designation lang="en-GB">Fatty fish</designation>
+        <designation lang="hu-HU">Zsíros hal</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227144008">
         <designation lang="en-GB">Tuna fish</designation>
+        <designation lang="hu-HU">Tonhal</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227150003">
         <designation lang="en-GB">Mussel</designation>
+        <designation lang="hu-HU">Éti kagyló</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227151004">
+        <designation lang="en-GB">Prawns</designation>
+        <designation lang="hu-HU">Garnélarák</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227219006">
+        <designation lang="en-GB">Eggplant</designation>
+        <designation lang="hu-HU">Padlizsán</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227220000">
+        <designation lang="en-GB">Beetroot</designation>
+        <designation lang="hu-HU">Cékla</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227313005">
-        <designation lang="en-GB">Pulse vegetables</designation>
+        <designation lang="en-GB">Pulse vegetable</designation>
+        <designation lang="hu-HU">Hüvelyes zöldség</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227346004">
+        <designation lang="en-GB">Chick peas</designation>
+        <designation lang="hu-HU">Csicseriborsó</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227350006">
+        <designation lang="en-GB">Lentils</designation>
+        <designation lang="hu-HU">Lencse</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227362005">
+        <designation lang="en-GB">Red kidney beans</designation>
+        <designation lang="hu-HU">vörösbab</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227374009">
         <designation lang="en-GB">Herbs and spices</designation>
+        <designation lang="hu-HU">Gyógy-és fűszernövények</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227376006">
+        <designation lang="en-GB">Anise seed</designation>
+        <designation lang="hu-HU">Ánizsmag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227379004">
+        <designation lang="en-GB">Bay leaf</designation>
+        <designation lang="hu-HU">babérlevél</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227382009">
+        <designation lang="en-GB">Cardamom</designation>
+        <designation lang="hu-HU">kardamom</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227385006">
+        <designation lang="en-GB">Chili powder</designation>
+        <designation lang="hu-HU">Csilipor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227388008">
         <designation lang="en-GB">Cinnamon</designation>
+        <designation lang="hu-HU">Fahéj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227389000">
         <designation lang="en-GB">Clove</designation>
+        <designation lang="hu-HU">Szegfűszeg</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227390009">
+        <designation lang="en-GB">Coriander leaf</designation>
+        <designation lang="hu-HU">Koriander levél</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227391008">
+        <designation lang="en-GB">Coriander seed</designation>
+        <designation lang="hu-HU">Koriandermag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227395004">
+        <designation lang="en-GB">Curry powder</designation>
+        <designation lang="hu-HU">curry por</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227396003">
+        <designation lang="en-GB">Fennel</designation>
+        <designation lang="hu-HU">Édeskömény</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227400003">
         <designation lang="en-GB">Ginger</designation>
+        <designation lang="hu-HU">Gyömbér</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227404007">
+        <designation lang="en-GB">Mace</designation>
+        <designation lang="hu-HU">Buzogány</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227405008">
+        <designation lang="en-GB">Marjoram</designation>
+        <designation lang="hu-HU">Majoránna</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227407000">
+        <designation lang="en-GB">Oregano</designation>
+        <designation lang="hu-HU">Oregano</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227408005">
         <designation lang="en-GB">Paprika</designation>
+        <designation lang="hu-HU">Paprika</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227409002">
+        <designation lang="en-GB">Poppy seed</designation>
+        <designation lang="hu-HU">Mák</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227411006">
+        <designation lang="en-GB">Sage</designation>
+        <designation lang="hu-HU">Zsálya</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227413009">
+        <designation lang="en-GB">Thyme</designation>
+        <designation lang="hu-HU">Kakukkfű</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227423000">
+        <designation lang="en-GB">Dates - food</designation>
+        <designation lang="hu-HU">Datolya - étel</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227425007">
         <designation lang="en-GB">Figs</designation>
+        <designation lang="hu-HU">ábrák</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227444000">
         <designation lang="en-GB">Raspberries</designation>
+        <designation lang="hu-HU">Málna</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227447007">
+        <designation lang="en-GB">Sharon fruit</designation>
+        <designation lang="hu-HU">Sharon gyümölcs</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227493005">
         <designation lang="en-GB">Cashew nut</designation>
+        <designation lang="hu-HU">Kesu dió</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227501001">
+        <designation lang="en-GB">Macadamia nut</designation>
+        <designation lang="hu-HU">Makadám dió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227511008">
         <designation lang="en-GB">Pine nut</designation>
+        <designation lang="hu-HU">fenyőmag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227512001">
         <designation lang="en-GB">Pistachio nut</designation>
+        <designation lang="hu-HU">Pisztácia dió</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227514000">
+        <designation lang="en-GB">Pumpkin seed</designation>
+        <designation lang="hu-HU">Tökmag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227515004">
+        <designation lang="en-GB">Quinoa</designation>
+        <designation lang="hu-HU">Kinoa</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="227598003">
+        <designation lang="en-GB">Honey</designation>
+        <designation lang="hu-HU">édesem</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22836000">
+        <designation lang="en-GB">Vegetable</designation>
+        <designation lang="hu-HU">Növényi</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="230034002">
         <designation lang="en-GB">Nuts and seeds</designation>
+        <designation lang="hu-HU">Diófélék és magvak</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2309006">
         <designation lang="en-GB">Gold</designation>
+        <designation lang="hu-HU">Arany</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="23182003">
         <designation lang="en-GB">Cereal</designation>
+        <designation lang="hu-HU">Gabona</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24515005">
+        <designation lang="en-GB">Spice</designation>
+        <designation lang="hu-HU">Fűszer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255640000">
         <designation lang="en-GB">Biocide</designation>
+        <designation lang="hu-HU">Biocid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255667006">
         <designation lang="en-GB">Paraffin</designation>
+        <designation lang="hu-HU">Paraffin</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255769001">
+        <designation lang="en-GB">Hexahydrophthalic anhydride</designation>
+        <designation lang="hu-HU">Hexahidroftálsavanhidrid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255772008">
+        <designation lang="en-GB">Diphenylmethane di-isocyanate</designation>
+        <designation lang="hu-HU">Difenil-metán-diizocianát</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255775005">
+        <designation lang="en-GB">Maleic anhydride</designation>
+        <designation lang="hu-HU">Maleinsavanhidrid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255786007">
+        <designation lang="en-GB">Toluene di-isocyanate</designation>
+        <designation lang="hu-HU">Toluol-diizocianát</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256248008">
+        <designation lang="en-GB">Plant material</designation>
+        <designation lang="hu-HU">Növényi anyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256259004">
         <designation lang="en-GB">Pollen</designation>
+        <designation lang="hu-HU">Pollen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256260009">
         <designation lang="en-GB">Tree and shrub pollen</designation>
+        <designation lang="hu-HU">Fák és cserjék pollenje</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256262001">
+        <designation lang="en-GB">Silver birch pollen</designation>
+        <designation lang="hu-HU">Ezüst nyírfa virágpor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256277009">
         <designation lang="en-GB">Grass pollen</designation>
+        <designation lang="hu-HU">Fű pollen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256292005">
         <designation lang="en-GB">Flower and weed pollen</designation>
+        <designation lang="hu-HU">Virág- és gyompollen</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256293000">
+        <designation lang="en-GB">Mugwort pollen</designation>
+        <designation lang="hu-HU">Mugwort pollen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256303006">
         <designation lang="en-GB">Ragweed pollen</designation>
+        <designation lang="hu-HU">Parlagfű pollen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256305004">
         <designation lang="en-GB">Tree resin</designation>
+        <designation lang="hu-HU">Fa gyanta</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256306003">
         <designation lang="en-GB">Orange - fruit</designation>
+        <designation lang="hu-HU">Narancs gyümölcs</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256307007">
         <designation lang="en-GB">Banana</designation>
+        <designation lang="hu-HU">Banán</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256313003">
         <designation lang="en-GB">Pineapple</designation>
+        <designation lang="hu-HU">Ananász</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256315005">
+        <designation lang="en-GB">Grapefruit</designation>
+        <designation lang="hu-HU">Grapefruit</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256316006">
+        <designation lang="en-GB">Tangerine</designation>
+        <designation lang="hu-HU">Mandarin</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256317002">
+        <designation lang="en-GB">Grapes</designation>
+        <designation lang="hu-HU">Szőlő</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256318007">
+        <designation lang="en-GB">Green bean</designation>
+        <designation lang="hu-HU">Zöldbab</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256319004">
         <designation lang="en-GB">Carrot</designation>
+        <designation lang="hu-HU">Sárgarépa</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256326004">
         <designation lang="en-GB">Celery</designation>
+        <designation lang="hu-HU">Zeller</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256329006">
+        <designation lang="en-GB">Spinach</designation>
+        <designation lang="hu-HU">Spenót</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256331002">
+        <designation lang="en-GB">Dill</designation>
+        <designation lang="hu-HU">Kapor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256350002">
         <designation lang="en-GB">Almond</designation>
+        <designation lang="hu-HU">Mandula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256351003">
+        <designation lang="en-GB">Brazil nut</designation>
+        <designation lang="hu-HU">brazil dió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256352005">
         <designation lang="en-GB">Walnut - nut</designation>
+        <designation lang="hu-HU">Dió - dió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256353000">
         <designation lang="en-GB">Hazelnut</designation>
+        <designation lang="hu-HU">Mogyoró</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256355007">
-        <designation lang="en-GB">Soya bean</designation>
+        <designation lang="en-GB">Soyabean</designation>
+        <designation lang="hu-HU">Szójabab</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256363008">
+        <designation lang="en-GB">Animal material</designation>
+        <designation lang="hu-HU">Állati eredetű anyag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256406004">
+        <designation lang="en-GB">Animal epithelium</designation>
+        <designation lang="hu-HU">Állati hám</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256417003">
         <designation lang="en-GB">Horse dander</designation>
+        <designation lang="hu-HU">Lószőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256419000">
         <designation lang="en-GB">Mouse epithelium</designation>
+        <designation lang="hu-HU">Egér hám</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256435007">
-        <designation lang="en-GB">Feathers</designation>
+        <designation lang="en-GB">Feather</designation>
+        <designation lang="hu-HU">Madártoll</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256440004">
         <designation lang="en-GB">Wasp venom</designation>
+        <designation lang="hu-HU">Darázsméreg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256443002">
         <designation lang="en-GB">Egg white</designation>
+        <designation lang="hu-HU">Tojásfehérje</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256504004">
         <designation lang="en-GB">Polycarbonate dental material</designation>
+        <designation lang="hu-HU">Polikarbonát fogászati anyag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="256506002">
+        <designation lang="en-GB">Stainless steel material</designation>
+        <designation lang="hu-HU">Rozsdamentes acél anyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260118006">
         <designation lang="en-GB">Wall pellitory pollen</designation>
+        <designation lang="hu-HU">Fali pellitory pollen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260126003">
         <designation lang="en-GB">Olive pollen</designation>
+        <designation lang="hu-HU">Olíva virágpor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260131001">
+        <designation lang="en-GB">Eucalyptus pollen</designation>
+        <designation lang="hu-HU">Eukaliptusz virágpor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260152009">
         <designation lang="en-GB">Cat dander</designation>
+        <designation lang="hu-HU">Macskaszőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260153004">
         <designation lang="en-GB">Cow dander</designation>
+        <designation lang="hu-HU">Tehén szőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260154005">
         <designation lang="en-GB">Dog dander</designation>
+        <designation lang="hu-HU">Kutya szőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260156007">
         <designation lang="en-GB">Mouse urine proteins</designation>
+        <designation lang="hu-HU">Egér vizelet fehérjék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260167008">
         <designation lang="en-GB">Sesame seed</designation>
+        <designation lang="hu-HU">szezámmag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260168003">
+        <designation lang="en-GB">White bean</designation>
+        <designation lang="hu-HU">Fehér bab</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260176001">
         <designation lang="en-GB">Kiwi fruit</designation>
+        <designation lang="hu-HU">kivi</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260177005">
         <designation lang="en-GB">Melon</designation>
+        <designation lang="hu-HU">Dinnye</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260179008">
         <designation lang="en-GB">Mango fruit</designation>
+        <designation lang="hu-HU">Mangó gyümölcs</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260184002">
+        <designation lang="en-GB">Pea</designation>
+        <designation lang="hu-HU">Borsó</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260189007">
+        <designation lang="en-GB">Pecan nut</designation>
+        <designation lang="hu-HU">Pekándió</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260204008">
+        <designation lang="en-GB">Cotton seed</designation>
+        <designation lang="hu-HU">Gyapotmag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260205009">
+        <designation lang="en-GB">Sunflower seed</designation>
+        <designation lang="hu-HU">Napraforgómag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="261243003">
         <designation lang="en-GB">Brass</designation>
+        <designation lang="hu-HU">Sárgaréz</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264287008">
         <designation lang="en-GB">Animal dander</designation>
+        <designation lang="hu-HU">Állati szőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264295007">
         <designation lang="en-GB">Cow&apos;s milk protein</designation>
+        <designation lang="hu-HU">Tehéntej fehérje</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264331002">
+        <designation lang="en-GB">Grain</designation>
+        <designation lang="hu-HU">Gabona</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264337003">
         <designation lang="en-GB">Seed</designation>
+        <designation lang="hu-HU">Mag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27119002">
+        <designation lang="en-GB">Trimellitic anhydride</designation>
+        <designation lang="hu-HU">Trimellitsavanhidrid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="276310004">
         <designation lang="en-GB">Animal hair</designation>
+        <designation lang="hu-HU">Állati szőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="278840001">
         <designation lang="en-GB">Shrimp</designation>
+        <designation lang="hu-HU">Garnélarák</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2799001">
         <designation lang="en-GB">Methylbenzethonium chloride</designation>
+        <designation lang="hu-HU">Metil-benzetónium-klorid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="280939008">
         <designation lang="en-GB">Insect venom</designation>
+        <designation lang="hu-HU">Rovarméreg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28230009">
         <designation lang="en-GB">Poultry</designation>
+        <designation lang="hu-HU">Baromfi</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28647000">
         <designation lang="en-GB">Meat</designation>
+        <designation lang="hu-HU">Hús</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="288328004">
         <designation lang="en-GB">Bee venom</designation>
+        <designation lang="hu-HU">méhméreg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="289122001">
         <designation lang="en-GB">Cosmetic material</designation>
+        <designation lang="hu-HU">Kozmetikai anyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="289949002">
         <designation lang="en-GB">Cypress pollen</designation>
+        <designation lang="hu-HU">Ciprus pollen</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="289954006">
+        <designation lang="en-GB">Fungal material</designation>
+        <designation lang="hu-HU">Gombás anyag</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="29263009">
+        <designation lang="en-GB">Coffee</designation>
+        <designation lang="hu-HU">Kávé</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="303300008">
         <designation lang="en-GB">Egg protein</designation>
+        <designation lang="hu-HU">Tojásfehérje</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="303314008">
         <designation lang="en-GB">Scorpion venom</designation>
+        <designation lang="hu-HU">Skorpió méreg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="303315009">
         <designation lang="en-GB">Spider venom</designation>
+        <designation lang="hu-HU">Pókméreg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31006001">
         <designation lang="en-GB">Kingdom Plantae</designation>
+        <designation lang="hu-HU">Kingdom Plantae</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="311846002">
         <designation lang="en-GB">Pyrethroid insecticide</designation>
+        <designation lang="hu-HU">Piretroid rovarölő szer</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33008008">
         <designation lang="en-GB">Dust</designation>
+        <designation lang="hu-HU">Por</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33396006">
         <designation lang="en-GB">Nickel</designation>
+        <designation lang="hu-HU">Nikkel</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37017009">
         <designation lang="en-GB">Helminth</designation>
+        <designation lang="hu-HU">Bélféreg</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3718001">
+        <designation lang="en-GB">Cow&apos;s milk</designation>
+        <designation lang="hu-HU">Tehéntej</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37663002">
+        <designation lang="en-GB">Venom</designation>
+        <designation lang="hu-HU">Méreg</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38271009">
+        <designation lang="en-GB">Saffron stain</designation>
+        <designation lang="hu-HU">Sáfrányfolt</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3829006">
         <designation lang="en-GB">Iron</designation>
+        <designation lang="hu-HU">Vas</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386936005">
         <designation lang="en-GB">Azelaic acid</designation>
+        <designation lang="hu-HU">Azelainsav</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="387293003">
         <designation lang="en-GB">Anthralin</designation>
+        <designation lang="hu-HU">Antralin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="387398009">
         <designation lang="en-GB">Podophyllum resin</designation>
+        <designation lang="hu-HU">Podophyllum gyanta</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="391737006">
         <designation lang="en-GB">Almond oil</designation>
+        <designation lang="hu-HU">Mandulaolaj</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="395734009">
+        <designation lang="en-GB">Guar gum</designation>
+        <designation lang="hu-HU">Guar gumi</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="396031000">
         <designation lang="en-GB">Dimethicone</designation>
-    </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406466009">
-        <designation lang="en-GB">House dust allergen</designation>
-    </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406470001">
-        <designation lang="en-GB">Insect allergen</designation>
-    </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406472009">
-        <designation lang="en-GB">Animal protein and epidermal allergen</designation>
-    </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406473004">
-        <designation lang="en-GB">Contact allergen</designation>
+        <designation lang="hu-HU">Dimetikon</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406774009">
         <designation lang="en-GB">Fish derived omega 3 fatty acid</designation>
+        <designation lang="hu-HU">Halból származó omega 3 zsírsav</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="410853002">
         <designation lang="en-GB">Perfluorochemical</designation>
+        <designation lang="hu-HU">Perfluorkémiai</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412056003">
+        <designation lang="en-GB">Lima beans</designation>
+        <designation lang="hu-HU">Lima bab</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412060000">
+        <designation lang="en-GB">Black pepper</designation>
+        <designation lang="hu-HU">Fekete bors</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412061001">
         <designation lang="en-GB">Blueberries</designation>
+        <designation lang="hu-HU">Áfonya</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412068007">
         <designation lang="en-GB">Rye</designation>
+        <designation lang="hu-HU">Rozs</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412070003">
+        <designation lang="en-GB">Vanilla</designation>
+        <designation lang="hu-HU">Vanília</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412071004">
         <designation lang="en-GB">Wheat</designation>
+        <designation lang="hu-HU">Búza</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412145001">
         <designation lang="en-GB">Hair dye</designation>
+        <designation lang="hu-HU">Hajfesték</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412150007">
         <designation lang="en-GB">Insect debris</designation>
+        <designation lang="hu-HU">Rovartörmelék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412153009">
         <designation lang="en-GB">Rabbit dander</designation>
+        <designation lang="hu-HU">Nyúlszőr</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412156001">
         <designation lang="en-GB">Silk</designation>
-    </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412160003">
-        <designation lang="en-GB">Suture allergen</designation>
+        <designation lang="hu-HU">Selyem</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412161004">
         <designation lang="en-GB">Wool</designation>
+        <designation lang="hu-HU">Gyapjú</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="412357001">
         <designation lang="en-GB">Corn</designation>
+        <designation lang="hu-HU">Kukorica</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="415710007">
         <designation lang="en-GB">Terpene</designation>
+        <designation lang="hu-HU">Terpen</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="418266005">
         <designation lang="en-GB">Yellow paraffin</designation>
+        <designation lang="hu-HU">Sárga paraffin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="418504009">
-        <designation lang="en-GB">Oats</designation>
+        <designation lang="en-GB">Oat</designation>
+        <designation lang="hu-HU">Zab</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="418785009">
         <designation lang="en-GB">Perfume</designation>
+        <designation lang="hu-HU">Parfüm</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="418920007">
         <designation lang="en-GB">Adhesive agent</designation>
+        <designation lang="hu-HU">Ragasztóanyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419420009">
         <designation lang="en-GB">Watermelon</designation>
+        <designation lang="hu-HU">Görögdinnye</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419604006">
         <designation lang="en-GB">Weed pollen</designation>
+        <designation lang="hu-HU">Gyomvirágpor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419633007">
         <designation lang="en-GB">White paraffin</designation>
+        <designation lang="hu-HU">Fehér paraffin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41967008">
         <designation lang="en-GB">Silver</designation>
+        <designation lang="hu-HU">Ezüst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="421556008">
+        <designation lang="en-GB">Capsicum - pepper</designation>
+        <designation lang="hu-HU">Paprika - bors</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42416001">
         <designation lang="en-GB">Lanolin</designation>
+        <designation lang="hu-HU">Lanolin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="425620007">
         <designation lang="en-GB">Metal</designation>
+        <designation lang="hu-HU">Fém</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="430503006">
         <designation lang="en-GB">Glutamate</designation>
+        <designation lang="hu-HU">Glutamát</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43230003">
         <designation lang="en-GB">Rubber</designation>
+        <designation lang="hu-HU">Radír</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43735007">
         <designation lang="en-GB">Sulfur</designation>
+        <designation lang="hu-HU">Kén</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="44027008">
         <designation lang="en-GB">Seafood</designation>
+        <designation lang="hu-HU">Tenger gyümölcsei</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="442571000124108">
+        <designation lang="en-GB">Tree nut</designation>
+        <designation lang="hu-HU">Fa dió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47703008">
         <designation lang="en-GB">Lactose</designation>
+        <designation lang="hu-HU">Laktóz</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50593009">
+        <designation lang="en-GB">Casein</designation>
+        <designation lang="hu-HU">Kazein</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51386004">
+        <designation lang="en-GB">Food preservative</designation>
+        <designation lang="hu-HU">Élelmiszer tartósítószer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51503008">
+        <designation lang="en-GB">Rose oil</designation>
+        <designation lang="hu-HU">Rózsa olaj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51905005">
         <designation lang="en-GB">Mustard</designation>
+        <designation lang="hu-HU">Mustár</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52454007">
         <designation lang="en-GB">Albumin</designation>
+        <designation lang="hu-HU">Albumin</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57126000">
         <designation lang="en-GB">Glue</designation>
+        <designation lang="hu-HU">Ragasztó</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59351004">
         <designation lang="en-GB">Citrate</designation>
+        <designation lang="hu-HU">Citrát</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59533004">
         <designation lang="en-GB">Food additive</designation>
+        <designation lang="hu-HU">Élelmiszer-adalék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59545008">
         <designation lang="en-GB">Pesticide</designation>
+        <designation lang="hu-HU">Peszticid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="61789006">
         <designation lang="en-GB">Dye</designation>
+        <designation lang="hu-HU">Festék</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63045006">
+        <designation lang="en-GB">Berry</designation>
+        <designation lang="hu-HU">Bogyó</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63338004">
         <designation lang="en-GB">Drug flavoring</designation>
+        <designation lang="hu-HU">Gyógyszeres ízesítő</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63995005">
+        <designation lang="en-GB">Bandage</designation>
+        <designation lang="hu-HU">Kötszer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="64601002">
+        <designation lang="en-GB">Wood dust</designation>
+        <designation lang="hu-HU">Fa por</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="66925006">
         <designation lang="en-GB">Copper</designation>
+        <designation lang="hu-HU">Réz</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="67324005">
         <designation lang="en-GB">Rice</designation>
+        <designation lang="hu-HU">Rizs</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="68524009">
+        <designation lang="en-GB">Tragacanth</designation>
+        <designation lang="hu-HU">Tragakant</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70813002">
+        <designation lang="en-GB">Milk</designation>
+        <designation lang="hu-HU">Tej</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="710179004">
         <designation lang="en-GB">Lupine seed</designation>
+        <designation lang="hu-HU">Csillagfürt mag</designation>
     </concept>
-    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="711062002">
-        <designation lang="en-GB">Animal protein and epidermal substance</designation>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="711089007">
+        <designation lang="en-GB">Mite protein</designation>
+        <designation lang="hu-HU">Atka fehérje</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72179002">
+        <designation lang="en-GB">Oxybenzone</designation>
+        <designation lang="hu-HU">Oxibenzon</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72511004">
         <designation lang="en-GB">Fruit</designation>
+        <designation lang="hu-HU">Gyümölcs</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="726759005">
         <designation lang="en-GB">Cuttlefish</designation>
+        <designation lang="hu-HU">Tintahal</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="726764009">
         <designation lang="en-GB">Broad bean</designation>
+        <designation lang="hu-HU">Lóbab</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="734881000">
         <designation lang="en-GB">Tomato</designation>
+        <designation lang="hu-HU">Paradicsom</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735004000">
+        <designation lang="en-GB">Sweet potato</designation>
+        <designation lang="hu-HU">Édesburgonya</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735006003">
         <designation lang="en-GB">Squid</designation>
+        <designation lang="hu-HU">Tintahal</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735029006">
         <designation lang="en-GB">Shellfish</designation>
+        <designation lang="hu-HU">Kagylófélék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735030001">
         <designation lang="en-GB">Garlic</designation>
+        <designation lang="hu-HU">Fokhagyma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735042006">
+        <designation lang="en-GB">Lettuce</designation>
+        <designation lang="hu-HU">Saláta</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735045008">
         <designation lang="en-GB">Mushroom</designation>
+        <designation lang="hu-HU">Gomba</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735046009">
         <designation lang="en-GB">Nutmeg</designation>
+        <designation lang="hu-HU">Szerecsendió</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735047000">
         <designation lang="en-GB">Onion</designation>
+        <designation lang="hu-HU">Hagyma</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735049002">
         <designation lang="en-GB">Peach</designation>
+        <designation lang="hu-HU">Őszibarack</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735050002">
+        <designation lang="en-GB">Pear</designation>
+        <designation lang="hu-HU">Körte</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735051003">
+        <designation lang="en-GB">Plum</designation>
+        <designation lang="hu-HU">Szilva</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735053000">
         <designation lang="en-GB">Potato</designation>
+        <designation lang="hu-HU">Burgonya</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735106000">
+        <designation lang="en-GB">Basil</designation>
+        <designation lang="hu-HU">Bazsalikom</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735108004">
+        <designation lang="en-GB">Cabbage</designation>
+        <designation lang="hu-HU">Fejes káposzta</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735123009">
+        <designation lang="en-GB">Broccoli</designation>
+        <designation lang="hu-HU">Brokkoli</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735124003">
+        <designation lang="en-GB">Barley</designation>
+        <designation lang="hu-HU">Árpa</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735211005">
         <designation lang="en-GB">Coconut</designation>
+        <designation lang="hu-HU">Kókuszdió</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735212003">
+        <designation lang="en-GB">Papaya</designation>
+        <designation lang="hu-HU">Papaya</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735213008">
+        <designation lang="en-GB">Cucumber</designation>
+        <designation lang="hu-HU">Uborka</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735214002">
+        <designation lang="en-GB">Apricot</designation>
+        <designation lang="hu-HU">Sárgabarack</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735215001">
         <designation lang="en-GB">Apple</designation>
+        <designation lang="hu-HU">alma</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735245003">
         <designation lang="en-GB">Cod</designation>
+        <designation lang="hu-HU">Tőkehal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735246002">
+        <designation lang="en-GB">Eel</designation>
+        <designation lang="hu-HU">Angolna</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735248001">
         <designation lang="en-GB">Cherry</designation>
+        <designation lang="hu-HU">Cseresznye</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735249009">
+        <designation lang="en-GB">Avocado</designation>
+        <designation lang="hu-HU">Avokádó</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735336002">
+        <designation lang="en-GB">Cauliflower</designation>
+        <designation lang="hu-HU">Karfiol</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735340006">
+        <designation lang="en-GB">Lemon</designation>
+        <designation lang="hu-HU">Citrom</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735341005">
         <designation lang="en-GB">Fish oil</designation>
+        <designation lang="hu-HU">Hal olaj</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735959004">
+        <designation lang="en-GB">Marine mollusk</designation>
+        <designation lang="hu-HU">Tengeri puhatestű</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735971005">
         <designation lang="en-GB">Fish</designation>
+        <designation lang="hu-HU">Hal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735972003">
+        <designation lang="en-GB">Crayfish</designation>
+        <designation lang="hu-HU">Folyami rák</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735977009">
         <designation lang="en-GB">Marine crustacean</designation>
+        <designation lang="hu-HU">Tengeri rákfélék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="735979007">
         <designation lang="en-GB">Octopus</designation>
+        <designation lang="hu-HU">Polip</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736027000">
+        <designation lang="en-GB">Scallop</designation>
+        <designation lang="hu-HU">Fésűkagyló</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736030007">
+        <designation lang="en-GB">Clam</designation>
+        <designation lang="hu-HU">Kagyló</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736031006">
         <designation lang="en-GB">Oyster</designation>
+        <designation lang="hu-HU">Osztriga</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736159005">
         <designation lang="en-GB">Crab</designation>
+        <designation lang="hu-HU">Rák</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736162008">
         <designation lang="en-GB">Lobster</designation>
+        <designation lang="hu-HU">Homár</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="736258006">
+        <designation lang="en-GB">Insect salivary substance</designation>
+        <designation lang="hu-HU">Rovarok nyálanyaga</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75665004">
+        <designation lang="en-GB">Monosodium glutamate</designation>
+        <designation lang="hu-HU">Nátrium-glutamát</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="762766007">
         <designation lang="en-GB">Edible substance</designation>
+        <designation lang="hu-HU">Ehető anyag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="762952008">
         <designation lang="en-GB">Peanut</designation>
+        <designation lang="hu-HU">Földimogyoró</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="767406000">
-        <designation lang="en-GB">Sulfite and sulfite derivative</designation>
+        <designation lang="en-GB">Sulfite and/or sulfite derivative</designation>
+        <designation lang="hu-HU">Szulfit és/vagy szulfitszármazék</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="772245002">
         <designation lang="en-GB">Wool alcohol</designation>
+        <designation lang="hu-HU">Gyapjú alkohol</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="77249007">
+        <designation lang="en-GB">Phthalic anhydride</designation>
+        <designation lang="hu-HU">Ftálsavanhidrid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="7791007">
-        <designation lang="en-GB">Soy protein</designation>
+        <designation lang="en-GB">Soybean protein</designation>
+        <designation lang="hu-HU">Szójabab fehérje</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="80237000">
         <designation lang="en-GB">Cocoa butter</designation>
+        <designation lang="hu-HU">Kakaóvaj</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="80259003">
+        <designation lang="en-GB">Food flavoring agent</designation>
+        <designation lang="hu-HU">Élelmiszer ízesítő szer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82566005">
+        <designation lang="en-GB">Animal feed</designation>
+        <designation lang="hu-HU">Állat eledel</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="83595008">
+        <designation lang="en-GB">Goat&apos;s milk</designation>
+        <designation lang="hu-HU">Kecsketej</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="83619009">
         <designation lang="en-GB">Polyvinyl alcohol</designation>
+        <designation lang="hu-HU">Polivinil-alkohol</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="87918000">
+        <designation lang="en-GB">Mineral</designation>
+        <designation lang="hu-HU">Ásványi</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89811004">
         <designation lang="en-GB">Gluten</designation>
+        <designation lang="hu-HU">Glutén</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89889006">
         <designation lang="en-GB">Cotton fiber</designation>
+        <designation lang="hu-HU">Pamut rost</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="9021002">
         <designation lang="en-GB">Carbaryl</designation>
+        <designation lang="hu-HU">Carbaryl</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="91598004">
         <designation lang="en-GB">Benzoyl peroxide</designation>
+        <designation lang="hu-HU">Benzoil-peroxid</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="91606004">
         <designation lang="en-GB">Cochineal stain</designation>
+        <designation lang="hu-HU">Cochineal folt</designation>
     </concept>
 </ValueSet>

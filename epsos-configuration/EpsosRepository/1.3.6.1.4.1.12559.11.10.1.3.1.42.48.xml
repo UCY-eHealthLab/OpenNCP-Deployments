@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.48" name="eHDSIAbsentOrUnknownDevices">
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.48" name="eHDSIAbsentOrUnknownDevice">
     <concept codeSystem="2.16.840.1.113883.5.1150.1" codeSystemName="IPS Absent And Unknown Data" code="no-device-info">
+        <designation lang="cs-CZ">Žádné informace o zdravotních přístrojích a implantátech</designation>
         <designation lang="en-GB">No information about devices</designation>
+        <designation lang="hu-HU">Nincs elérhető információ eszközről</designation>
+        <designation lang="fr-BE">test 15/11</designation>
+        <designation lang="es-ES">No hay información sobre dispositivo</designation>
+        <designation lang="pt-PT">Sem informação sobre dispositivos</designation>
+        <designation lang="sl-SI">Ni podatkov o vsadkih/pripomočkih</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.1150.1" codeSystemName="IPS Absent And Unknown Data" code="no-known-devices">
+        <designation lang="cs-CZ">Žádné implantáty či zdravotní přístroje</designation>
         <designation lang="en-GB">No known devices in use</designation>
+        <designation lang="hu-HU">Nincs eszköz az anamnézisben</designation>
+        <designation lang="es-ES">No hay dispositivos conocidos en uso</designation>
+        <designation lang="pt-PT">Desconhecimento de utilização de dispositivos</designation>
+        <designation lang="sl-SI">Ni znanih vsadkov/pripomočkov v uporabi</designation>
     </concept>
 </ValueSet>

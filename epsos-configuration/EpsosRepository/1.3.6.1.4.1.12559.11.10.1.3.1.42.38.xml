@@ -3,119 +3,335 @@
 <ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.38" name="eHDSIPersonalRelationship">
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="AUNT">
         <designation lang="en-GB">aunt</designation>
+        <designation lang="es-ES">tía</designation>
+        <designation lang="pt-PT">Tia</designation>
+        <designation lang="cs-CZ">teta</designation>
+        <designation lang="hu-HU">Nagynéni</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="BRO">
+        <designation lang="en-GB">Brother</designation>
+        <designation lang="hu-HU">fiú testvér</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="BROINLAW">
+        <designation lang="en-GB">brother-in-law</designation>
+        <designation lang="hu-HU">Sógor</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="CHILD">
         <designation lang="en-GB">Child</designation>
+        <designation lang="es-ES">hijo  / hija</designation>
+        <designation lang="pt-PT">Filho/filha</designation>
+        <designation lang="cs-CZ">dítě</designation>
+        <designation lang="hu-HU">Gyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="CHLDADOPT">
         <designation lang="en-GB">adopted child</designation>
+        <designation lang="es-ES">hijo o hija adoptado(a)</designation>
+        <designation lang="pt-PT">Criança adotada</designation>
+        <designation lang="cs-CZ">osvojené dítě</designation>
+        <designation lang="hu-HU">Örökbefogadott gyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="CHLDFOST">
         <designation lang="en-GB">foster child</designation>
+        <designation lang="es-ES">hijo o hija adoptivo(a)</designation>
+        <designation lang="pt-PT">Criança de acolhimento</designation>
+        <designation lang="cs-CZ">dítě v náhradní péči (kromě osvojení)</designation>
+        <designation lang="hu-HU">Nevelt gyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="CHLDINLAW">
         <designation lang="en-GB">child in-law</designation>
+        <designation lang="es-ES">yerno o nuera</designation>
+        <designation lang="pt-PT">Enteado/enteada</designation>
+        <designation lang="cs-CZ">zeť/snacha</designation>
+        <designation lang="hu-HU">Gyermek házastársa (meny vagy vő)</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="COUSN">
         <designation lang="en-GB">cousin</designation>
+        <designation lang="es-ES">primo / prima</designation>
+        <designation lang="pt-PT">Primo/prima</designation>
+        <designation lang="cs-CZ">sestřenice/bratranec</designation>
+        <designation lang="hu-HU">Unokatestvér</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DAU">
         <designation lang="en-GB">natural daughter</designation>
+        <designation lang="es-ES">hija</designation>
+        <designation lang="pt-PT">Filha biológica</designation>
+        <designation lang="cs-CZ">vlastní dcera</designation>
+        <designation lang="hu-HU">Vér szerinti leánygyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DAUADOPT">
         <designation lang="en-GB">adopted daughter</designation>
+        <designation lang="es-ES">hija adoptada</designation>
+        <designation lang="pt-PT">Filha adoptiva</designation>
+        <designation lang="cs-CZ">osvojená dcera</designation>
+        <designation lang="hu-HU">Örökbefogadott lánygyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DAUC">
         <designation lang="en-GB">Daughter</designation>
+        <designation lang="es-ES">hija (descendiente o adoptiva o por crianza)</designation>
+        <designation lang="pt-PT">Filha</designation>
+        <designation lang="cs-CZ">dcera</designation>
+        <designation lang="hu-HU">Lány</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DAUFOST">
         <designation lang="en-GB">foster daughter</designation>
+        <designation lang="es-ES">hija por crianza</designation>
+        <designation lang="pt-PT">Filha de acolhimento</designation>
+        <designation lang="cs-CZ">dcera v náhradní péči (kromě osvojení)</designation>
+        <designation lang="hu-HU">Nevelt lány</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DAUINLAW">
         <designation lang="en-GB">daughter in-law</designation>
+        <designation lang="es-ES">nuera</designation>
+        <designation lang="pt-PT">Sobrinha</designation>
+        <designation lang="cs-CZ">snacha</designation>
+        <designation lang="hu-HU">Meny</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="DOMPART">
         <designation lang="en-GB">domestic partner</designation>
+        <designation lang="es-ES">compañero o compañera de hogar</designation>
+        <designation lang="pt-PT">União de facto</designation>
+        <designation lang="cs-CZ">druh/družka</designation>
+        <designation lang="hu-HU">Élettárs</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="EXT">
+        <designation lang="en-GB">extended family member</designation>
+        <designation lang="hu-HU">kiterjesztett családtag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="FAMMEMB">
         <designation lang="en-GB">Family Member</designation>
+        <designation lang="es-ES">miembro de la familia</designation>
+        <designation lang="pt-PT">Membro da família</designation>
+        <designation lang="cs-CZ">rodinný příslušník</designation>
+        <designation lang="hu-HU">Családtag</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="FRND">
         <designation lang="en-GB">unrelated friend</designation>
+        <designation lang="es-ES">amigo o amiga sin relación de parentesco</designation>
+        <designation lang="pt-PT">Amigo</designation>
+        <designation lang="cs-CZ">přítel/přítelkyně</designation>
+        <designation lang="hu-HU">Rokoni kapcsolatban nem álló barát</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="FTH">
         <designation lang="en-GB">Father</designation>
+        <designation lang="es-ES">Padre</designation>
+        <designation lang="pt-PT">Pai</designation>
+        <designation lang="cs-CZ">otec</designation>
+        <designation lang="hu-HU">Apa</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="FTHINLAW">
         <designation lang="en-GB">father-in-law</designation>
+        <designation lang="es-ES">suegro</designation>
+        <designation lang="pt-PT">Sogro</designation>
+        <designation lang="cs-CZ">tchán</designation>
+        <designation lang="hu-HU">Após</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GGRFTH">
+        <designation lang="en-GB">great grandfather</designation>
+        <designation lang="hu-HU">dédnagyapa</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GGRMTH">
+        <designation lang="en-GB">great grandmother</designation>
+        <designation lang="hu-HU">dédnagymama</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GGRPRN">
         <designation lang="en-GB">great grandparent</designation>
+        <designation lang="es-ES">bisabuelo o bisabuela</designation>
+        <designation lang="pt-PT">Bisavô</designation>
+        <designation lang="cs-CZ">praprarodič</designation>
+        <designation lang="hu-HU">Dédszülő</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRFTH">
+        <designation lang="en-GB">Grandfather</designation>
+        <designation lang="hu-HU">Nagyapa</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRMTH">
+        <designation lang="en-GB">Grandmother</designation>
+        <designation lang="hu-HU">Nagymama</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRNDCHILD">
         <designation lang="en-GB">grandchild</designation>
+        <designation lang="es-ES">nieto o nieta</designation>
+        <designation lang="pt-PT">Neto/neta</designation>
+        <designation lang="cs-CZ">vnouče</designation>
+        <designation lang="hu-HU">Unoka</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRNDDAU">
+        <designation lang="en-GB">granddaughter</designation>
+        <designation lang="hu-HU">lány unoka</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRNDSON">
+        <designation lang="en-GB">grandson</designation>
+        <designation lang="hu-HU">unokája</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="GRPRN">
         <designation lang="en-GB">Grandparent</designation>
+        <designation lang="es-ES">abuelo o abuela</designation>
+        <designation lang="pt-PT">Avô</designation>
+        <designation lang="cs-CZ">prarodič</designation>
+        <designation lang="hu-HU">Nagyszülő</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="HUSB">
+        <designation lang="en-GB">husband</designation>
+        <designation lang="hu-HU">férj</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="MTH">
         <designation lang="en-GB">Mother</designation>
+        <designation lang="es-ES">madre</designation>
+        <designation lang="pt-PT">Mãe</designation>
+        <designation lang="cs-CZ">matka</designation>
+        <designation lang="hu-HU">Anya</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="MTHINLAW">
         <designation lang="en-GB">mother-in-law</designation>
+        <designation lang="es-ES">suegra</designation>
+        <designation lang="pt-PT">Sogra</designation>
+        <designation lang="cs-CZ">tchýně</designation>
+        <designation lang="hu-HU">Anyós</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="NBOR">
         <designation lang="en-GB">neighbor</designation>
+        <designation lang="es-ES">vecino o vecina</designation>
+        <designation lang="pt-PT">Vizinho</designation>
+        <designation lang="cs-CZ">soused/sousedka</designation>
+        <designation lang="hu-HU">Szomszéd</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="NCHILD">
         <designation lang="en-GB">natural child</designation>
+        <designation lang="es-ES">hijo (descendiente biológico)</designation>
+        <designation lang="pt-PT">Filho/filha biológica</designation>
+        <designation lang="cs-CZ">potomek</designation>
+        <designation lang="hu-HU">Vér szerinti gyermek</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="NEPHEW">
+        <designation lang="en-GB">nephew</designation>
+        <designation lang="hu-HU">unokaöcs</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="NIECE">
+        <designation lang="en-GB">niece</designation>
+        <designation lang="hu-HU">unokahúg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="NIENEPH">
         <designation lang="en-GB">niece/nephew</designation>
+        <designation lang="es-ES">sobrina / sobrino</designation>
+        <designation lang="pt-PT">Sobrinha/sobrinho</designation>
+        <designation lang="cs-CZ">neteř/synovec</designation>
+        <designation lang="hu-HU">Unokaöcs vagy unokahúg</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="PRN">
         <designation lang="en-GB">Parent</designation>
+        <designation lang="es-ES">padre o madre</designation>
+        <designation lang="pt-PT">Pai/mãe</designation>
+        <designation lang="cs-CZ">rodič</designation>
+        <designation lang="hu-HU">Szülő</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="PRNINLAW">
         <designation lang="en-GB">parent in-law</designation>
+        <designation lang="es-ES">suegro o suegra</designation>
+        <designation lang="pt-PT">Padrasto/madrasta</designation>
+        <designation lang="cs-CZ">tchyně/tchán</designation>
+        <designation lang="hu-HU">Házastárs szülei</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="ROOM">
         <designation lang="en-GB">Roommate</designation>
+        <designation lang="es-ES">compañero o compañera de habitación</designation>
+        <designation lang="pt-PT">Colega de quarto</designation>
+        <designation lang="cs-CZ">spolubydlící</designation>
+        <designation lang="hu-HU">Szobatárs</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SIB">
         <designation lang="en-GB">Sibling</designation>
+        <designation lang="es-ES">hermano o hermana</designation>
+        <designation lang="pt-PT">Irmão</designation>
+        <designation lang="cs-CZ">sourozenec</designation>
+        <designation lang="hu-HU">Testvér</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SIGOTHR">
         <designation lang="en-GB">significant other</designation>
+        <designation lang="es-ES">persona relevante</designation>
+        <designation lang="pt-PT">Outro</designation>
+        <designation lang="cs-CZ">osoba blízká</designation>
+        <designation lang="hu-HU">Partner</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SIS">
+        <designation lang="en-GB">Sister</designation>
+        <designation lang="hu-HU">nővér</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SISINLAW">
+        <designation lang="en-GB">sister-in-law</designation>
+        <designation lang="hu-HU">sógornő</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SON">
         <designation lang="en-GB">natural son</designation>
+        <designation lang="es-ES">hijo</designation>
+        <designation lang="pt-PT">Filho biológico</designation>
+        <designation lang="cs-CZ">vlastní syn</designation>
+        <designation lang="hu-HU">Vér szerinti fiúgyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SONADOPT">
         <designation lang="en-GB">adopted son</designation>
+        <designation lang="es-ES">hijo adoptivo</designation>
+        <designation lang="pt-PT">Filho adoptivo</designation>
+        <designation lang="cs-CZ">osvojený syn</designation>
+        <designation lang="hu-HU">Örökbefogadott fiúgyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SONC">
         <designation lang="en-GB">son</designation>
+        <designation lang="es-ES">hijo</designation>
+        <designation lang="pt-PT">Filho</designation>
+        <designation lang="cs-CZ">syn</designation>
+        <designation lang="hu-HU">Fiú</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SONFOST">
         <designation lang="en-GB">foster son</designation>
+        <designation lang="es-ES">hijo adoptivo</designation>
+        <designation lang="pt-PT">Filho de acolhimento</designation>
+        <designation lang="cs-CZ">syn v náhradní péči (kromě osvojení)</designation>
+        <designation lang="hu-HU">Nevelt fiú</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SONINLAW">
         <designation lang="en-GB">son in-law</designation>
+        <designation lang="es-ES">yerno</designation>
+        <designation lang="pt-PT">Genro</designation>
+        <designation lang="cs-CZ">zeť</designation>
+        <designation lang="hu-HU">Vő</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="SPS">
         <designation lang="en-GB">spouse</designation>
+        <designation lang="es-ES">cónyuge</designation>
+        <designation lang="pt-PT">Cônjuge</designation>
+        <designation lang="cs-CZ">manžel/maželka</designation>
+        <designation lang="hu-HU">Házastárs</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="STPCHLD">
         <designation lang="en-GB">step child</designation>
+        <designation lang="es-ES">hijastro o hijastra</designation>
+        <designation lang="pt-PT">Enteado/enteada</designation>
+        <designation lang="cs-CZ">nevlastní dítě</designation>
+        <designation lang="hu-HU">Mostohagyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="STPDAU">
         <designation lang="en-GB">stepdaughter</designation>
+        <designation lang="es-ES">hijastra</designation>
+        <designation lang="pt-PT">Enteada</designation>
+        <designation lang="cs-CZ">nevlastní dcera</designation>
+        <designation lang="hu-HU">Mostoha-lánygyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="STPSON">
         <designation lang="en-GB">stepson</designation>
+        <designation lang="es-ES">hijastro</designation>
+        <designation lang="pt-PT">Enteado</designation>
+        <designation lang="cs-CZ">nevlastní syn</designation>
+        <designation lang="hu-HU">Mostoha-fiúgyermek</designation>
     </concept>
     <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="UNCLE">
         <designation lang="en-GB">uncle</designation>
+        <designation lang="es-ES">tío</designation>
+        <designation lang="pt-PT">Tio</designation>
+        <designation lang="cs-CZ">strýc</designation>
+        <designation lang="hu-HU">Nagybácsi</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" code="WIFE">
+        <designation lang="en-GB">wife</designation>
+        <designation lang="hu-HU">feleség</designation>
     </concept>
 </ValueSet>
