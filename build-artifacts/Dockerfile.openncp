@@ -38,6 +38,15 @@ RUN mv openncp/openncp-gateway/openncp-gateway-backend/target/openncp-gateway-ba
 # openncp-configuration-utility
 RUN mv openncp/openncp-common-components/openncp-configuration-utility/target/openncp-configuration-utility-${OPENNCP_VERSION}.jar openncp-configuration-utility.jar
 
+# openncp-tsam-sync
+RUN mv openncp/tsam-sync/target/openncp-tsam-sync-${OPENNCP_VERSION}.jar openncp-tsam-sync.jar
+
+# openncp-tsam-exporter
+RUN mv openncp/cda-display-tool/tsamexporter/target/openncp-tsamexporter-${OPENNCP_VERSION}.jar openncp-tsam-exporter.jar
+
+# translations-and-mappings-ws
+RUN mv openncp/translations-and-mappings-ws/target/translations-and-mappings-ws-${OPENNCP_VERSION}.war translations-and-mappings-ws.war
+
 # Delete the source code
 RUN rm -rf openncp
 
@@ -78,6 +87,9 @@ COPY --from=build-openncp-maven /usr/src/openncp-trc-sts.war openncp-trc-sts.war
 COPY --from=build-openncp-maven /usr/src/openatna-web.war openatna-web.war
 COPY --from=build-openncp-maven /usr/src/openncp-gateway-backend.war openncp-gateway-backend.war
 COPY --from=build-openncp-maven /usr/src/openncp-configuration-utility.jar openncp-configuration-utility.jar
+COPY --from=build-openncp-maven /usr/src/openncp-tsam-sync.jar openncp-tsam-sync.jar
+COPY --from=build-openncp-maven /usr/src/openncp-tsam-exporter.jar openncp-tsam-exporter.jar
+COPY --from=build-openncp-maven /usr/src/translations-and-mappings-ws.war translations-and-mappings-ws.war
 
 # Copy Node artifacts
 COPY --from=build-openncp-node /usr/src/openncp-gateway openncp-gateway

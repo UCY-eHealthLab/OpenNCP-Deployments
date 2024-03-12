@@ -1,0 +1,59 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: openncp-tsam-sync
+  namespace: openncp
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: wait-for-mysql
+        image: busybox
+        command: ['sh', '-c', 'until nc -z $MYSQL_HOST $MYSQL_PORT; do echo waiting for mysql; sleep 2; done;']
+        env:
+        - name: MYSQL_HOST
+          value: mysql-service
+        - name: MYSQL_PORT
+          value: "3306"
+      containers:
+      - name: openncp-tsam-sync
+        image: ghcr.io/ucy-ehealthlab/openncp-tsam-sync:7.1.0
+        volumeMounts:
+        - name: openncp-tsam-sync-config
+          mountPath: /usr/local/openncp-tsam-sync/application.yml
+          subPath: application.yml
+        env:
+        - name: MYSQL_HOST
+          value: mysql-service
+        - name: MYSQL_PORT
+          value: "3306"
+        - name: MYSQL_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
+        - name: TSAM_SYNC_URL
+          value: https://webgate.training.ec.europa.eu/ehealth-term-server
+        - name: TSAM_SYNC_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: openncp-secret
+              key: TSAM_SYNC_USERNAME
+        - name: TSAM_SYNC_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: openncp-secret
+              key: TSAM_SYNC_PASSWORD
+      volumes:
+      - name: openncp-tsam-sync-config
+        projected:
+          sources:
+          - configMap:
+              name: openncp-tsam-sync-cm
+
+      restartPolicy: Never

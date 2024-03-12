@@ -47,6 +47,57 @@ services:
     networks:
       - openncp
 
+  # OpenNCP TSAM Sync (Must run once to synchronize the terminologies)
+  openncp-tsam-sync:
+    env_file: .env
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      TSAM_SYNC_URL: ${TSAM_SYNC_URL}
+      TSAM_SYNC_USERNAME: ${TSAM_SYNC_USERNAME}
+      TSAM_SYNC_PASSWORD: ${TSAM_SYNC_PASSWORD}
+    build:
+      context: ./openncp-tsam-sync
+      dockerfile: Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+    volumes:
+      - ./openncp-tsam-sync/application.yml:/usr/local/openncp-tsam-sync/application.yml
+    restart: "no"
+    networks:
+      - openncp
+
+  # OpenNCP TSAM Exporter (Must run once to export the terminologies to xml files)
+  openncp-tsam-exporter:
+    env_file: .env
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
+    build:
+      context: ./openncp-tsam-exporter
+      dockerfile: Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+    volumes:
+      - ./openncp-tsam-exporter/application.yml:/usr/local/openncp-tsam-exporter/application.yml
+      - ./epsos-configuration:/opt/epsos-configuration
+    restart: "no"
+    networks:
+      - openncp
+
   # OpenNCP Server (Node A)
   openncp-server:
     container_name: openncp-server
@@ -59,6 +110,12 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -98,6 +155,12 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -138,6 +201,12 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -174,7 +243,14 @@ services:
       - "9080:9080"
       - "9443:9443"
     depends_on:
-      - ehealth-portal-backend
+      mysql:
+        condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       JAVA_OPTS: "
         -Dtls_key_alias=${TLS_KEY_ALIAS}
@@ -201,6 +277,8 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -238,6 +316,8 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -275,7 +355,10 @@ services:
       - "12080:12080"
       - "12443:12443"
     depends_on:
-      - openncp-gateway-backend
+      mysql:
+        condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
     environment:
       JAVA_OPTS: "
         -Dtls_key_alias=${TLS_KEY_ALIAS}
@@ -302,6 +385,8 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      openncp-configuration-utility:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -330,7 +415,6 @@ services:
 volumes:
   persistent:
   mysql-data:
-  portainer-data:
 
 networks:
   openncp:

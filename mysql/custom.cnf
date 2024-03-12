@@ -12,3 +12,5 @@ default_authentication_plugin = mysql_native_password
 #log-error = /var/log/mysql/error.log
 lower_case_table_names=1
 bind-address=0.0.0.0
+explicit_defaults_for_timestamp = ON
+tls_version=TLSv1.2

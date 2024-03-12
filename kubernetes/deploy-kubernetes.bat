@@ -14,7 +14,6 @@ cd ..
 @REM -------- Create the mysql database --------
 kubectl create configmap custom-config-configmap --from-file=./mysql/custom.cnf --namespace=openncp
 kubectl create configmap init-scripts-configmap --from-file=./mysql/startup-scripts --namespace=openncp
-kubectl create configmap mysql-healthcheck-configmap --from-file=./mysql/liveness-probe.sh --namespace=openncp
 kubectl create configmap openncp-configuration-utility-cm --from-file=./openncp-configuration-utility/openncp-configuration.properties --namespace=openncp
 
 cd mysql/manifests
@@ -56,6 +55,30 @@ kubectl apply -f openncp-configuration-utility-job.yaml
 cd ../..
 
 SET TIMEOUT=10
+FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
+    ECHO Waiting for %%A seconds...
+    TIMEOUT /T 1 /NOBREAK >NUL
+)
+
+@REM -------- Run the OpenNCP tsam sync job --------
+cd openncp-tsam-sync/manifest
+kubectl apply -f openncp-tsam-sync-cm.yaml
+kubectl apply -f openncp-tsam-sync-job.yaml
+cd ../..
+
+SET TIMEOUT=900
+FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
+    ECHO Waiting for %%A seconds...
+    TIMEOUT /T 1 /NOBREAK >NUL
+)
+
+@REM -------- Run the OpenNCP tsam exporter job --------
+cd openncp-tsam-exporter/manifest
+kubectl apply -f openncp-tsam-exporter-cm.yaml
+kubectl apply -f openncp-tsam-exporter-job.yaml
+cd ../..
+
+SET TIMEOUT=60
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL

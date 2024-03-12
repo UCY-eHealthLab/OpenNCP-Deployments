@@ -1,0 +1,49 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: openncp-openncp-tsam-exporter
+  namespace: openncp
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: wait-for-mysql
+        image: busybox
+        command: ['sh', '-c', 'until nc -z $MYSQL_HOST $MYSQL_PORT; do echo waiting for mysql; sleep 2; done;']
+        env:
+        - name: MYSQL_HOST
+          value: mysql-service
+        - name: MYSQL_PORT
+          value: "3306"
+      containers:
+      - name: openncp-tsam-exporter
+        image: ghcr.io/ucy-ehealthlab/openncp-tsam-exporter:7.1.0
+        volumeMounts:
+        - name: openncp-tsam-exporter-config
+          mountPath: /usr/local/openncp-tsam-exporter/application.yml
+          subPath: application.yml
+        env:
+        - name: MYSQL_HOST
+          value: mysql-service
+        - name: MYSQL_PORT
+          value: "3306"
+        - name: MYSQL_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
+        - name: EPSOS_PROPS_PATH
+          value: "/opt/epsos-configuration/"
+      volumes:
+      - name: openncp-tsam-exporter-config
+        projected:
+          sources:
+          - configMap:
+              name: openncp-tsam-exporter-cm
+
+      restartPolicy: Never

@@ -1,0 +1,1 @@
+docker build -t openncp-tsam-sync:7.1.0 .

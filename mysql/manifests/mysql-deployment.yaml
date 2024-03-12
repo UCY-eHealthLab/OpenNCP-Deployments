@@ -31,20 +31,32 @@ spec:
         envFrom:
         - secretRef:
             name: mysql-secret
+        env:
+        - name: MYSQL_USER
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_PASSWORD
         readinessProbe:
           exec:
-            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+            command: ["sh", "-c", "mysqladmin ping -h localhost -u${MYSQL_USER} -p${MYSQL_PASSWORD}"]
           initialDelaySeconds: 30
           periodSeconds: 10
           timeoutSeconds: 5
-          failureThreshold: 3
         livenessProbe:
           exec:
-            command: ["/bin/sh", "./etc/mysql/healthcheck/liveness-probe.sh"]
+            command:
+              - sh
+              - -c
+              - "mysqladmin ping -h localhost -u${MYSQL_USER} -p${MYSQL_PASSWORD} || exit 1"
           initialDelaySeconds: 60
-          periodSeconds: 120
+          periodSeconds: 10
           timeoutSeconds: 5
-          failureThreshold: 3
         volumeMounts:
         - name: mysql-data
           mountPath: /var/lib/mysql
@@ -53,9 +65,6 @@ spec:
           readOnly: true
         - name: init-scripts
           mountPath: /docker-entrypoint-initdb.d
-          readOnly: true
-        - name: healhcheck
-          mountPath: /etc/mysql/healthcheck
           readOnly: true
       volumes:
       - name: mysql-data
@@ -67,6 +76,3 @@ spec:
       - name: custom-config
         configMap:
           name: custom-config-configmap
-      - name: healhcheck
-        configMap:
-          name: mysql-healthcheck-configmap
