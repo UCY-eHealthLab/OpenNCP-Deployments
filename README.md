@@ -1,6 +1,9 @@
 # OpenNCP-Deployments
 OpenNCP containerization and deployment scripts
 
+## Presentation Slides
+https://github.com/UCY-eHealthLab/OpenNCP-Deployments/blob/main/OpenNCP-containerization-presentation.pdf
+
 ## Current OpenNCP Dependent Projects
 
 | Project | Version |
