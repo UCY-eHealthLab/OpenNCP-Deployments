@@ -20,7 +20,7 @@ cd mysql/manifests
 kubectl apply -f mysql-secret.yaml
 kubectl apply -f mysql-pvc.yaml
 
-SET TIMEOUT=10
+SET TIMEOUT=100
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL
@@ -40,7 +40,7 @@ kubectl apply -f epsos-configuration-pvc.yaml
 ECHO Copying the EPSOS configuration files to the shared volume...
 kubectl apply -f copy-epsos-configuration-job.yaml
 
-SET TIMEOUT=10
+SET TIMEOUT=100
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL
@@ -61,24 +61,24 @@ FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
 )
 
 @REM -------- Run the OpenNCP tsam sync job --------
-cd openncp-tsam-sync/manifest
+cd openncp-tsam-sync/manifests
 kubectl apply -f openncp-tsam-sync-cm.yaml
 kubectl apply -f openncp-tsam-sync-job.yaml
 cd ../..
 
-SET TIMEOUT=900
+SET TIMEOUT=10
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL
 )
 
 @REM -------- Run the OpenNCP tsam exporter job --------
-cd openncp-tsam-exporter/manifest
+cd openncp-tsam-exporter/manifests
 kubectl apply -f openncp-tsam-exporter-cm.yaml
 kubectl apply -f openncp-tsam-exporter-job.yaml
 cd ../..
 
-SET TIMEOUT=60
+SET TIMEOUT=10
 FOR /L %%A IN (%TIMEOUT%,-1,1) DO (
     ECHO Waiting for %%A seconds...
     TIMEOUT /T 1 /NOBREAK >NUL

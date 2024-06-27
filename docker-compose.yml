@@ -1,4 +1,3 @@
-version: "3.9"
 services:
 
   mysql:
@@ -279,6 +278,10 @@ services:
         condition: service_healthy
       openncp-configuration-utility:
         condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
       CATALINA_OPTS: "
@@ -317,6 +320,10 @@ services:
       mysql:
         condition: service_healthy
       openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
         condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}
@@ -359,6 +366,10 @@ services:
         condition: service_healthy
       openncp-configuration-utility:
         condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
+        condition: service_completed_successfully
     environment:
       JAVA_OPTS: "
         -Dtls_key_alias=${TLS_KEY_ALIAS}
@@ -386,6 +397,10 @@ services:
       mysql:
         condition: service_healthy
       openncp-configuration-utility:
+        condition: service_completed_successfully
+      openncp-tsam-sync:
+        condition: service_completed_successfully
+      openncp-tsam-exporter:
         condition: service_completed_successfully
     environment:
       EPSOS_PROPS_PATH: ${EPSOS_PROPS_PATH}

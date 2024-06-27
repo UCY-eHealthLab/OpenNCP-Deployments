@@ -20,6 +20,7 @@ RUN git clone --branch ${PORTAL_SOURCE_BRANCH} ${PORTAL_SOURCE_REPO} portal
 # Build the OpenNCP source code (with external dynamic-discovery-client-1.11.jar)
 # There is an issue with the dynamic-discovery-client-1.11.jar file in the maven repository
 COPY libs/dynamic-discovery-client-1.11.jar .
+COPY configs/portal-frontend-pom.xml portal/ehealth-portal-frontend/pom.xml
 RUN mvn install:install-file -Dfile=dynamic-discovery-client-1.11.jar -DgroupId=eu.europa.ec.dynamic-discovery -DartifactId=dynamic-discovery-client -Dversion=1.11 -Dpackaging=jar
 RUN cd portal && mvn clean package -DskipTests
 
