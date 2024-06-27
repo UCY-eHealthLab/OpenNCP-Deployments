@@ -1,3 +1,6 @@
+@echo off
+SETLOCAL
+
 @REM --- Variables ---
 set OPENNCP_VERSION=7.1.0
 set OPENNCP_SOURCE_REPO=https://code.europa.eu/ehdsi/ehealth
@@ -21,3 +24,6 @@ docker rmi openncp-artifacts:%OPENNCP_VERSION%
 if not exist artifacts mkdir artifacts
 xcopy src\* artifacts\ /E /I /Y
 rmdir /S /Q src
+
+ENDLOCAL
+@echo on
