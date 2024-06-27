@@ -20,6 +20,4 @@ COPY context.xml /usr/local/tomcat/conf/context.xml
 
 COPY webapps/openncp-trc-sts.war /usr/local/tomcat/webapps/TRC-STS.war
 
-# RUN wget https://ec.europa.eu/digital-building-blocks/artifact/repository/eHealth/eu/europa/ec/sante/ehdsi/openncp-protocol-terminators/openncp-ncp-server/openncp-ws-server/$OPENNCP_VERSION/openncp-ws-server-$OPENNCP_VERSION.war && mv openncp-ws-server-$OPENNCP_VERSION.war openncp-ws-server.war
-
 CMD ${CATALINA_HOME}/bin/catalina.sh run

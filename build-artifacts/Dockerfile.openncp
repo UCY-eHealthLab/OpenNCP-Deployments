@@ -8,7 +8,6 @@ COPY configs/maven-settings.xml /usr/share/maven/conf/settings.xml
 
 ARG OPENNCP_VERSION
 ARG OPENNCP_SOURCE_REPO
-ARG OPENNCP_SOURCE_BRANCH
 ARG OPENNCP_SOURCE_TAG
 
 WORKDIR /usr/src
@@ -56,12 +55,12 @@ FROM node:16.20.0-buster AS build-openncp-node
 RUN apt-get update && apt-get install -y git
 
 ARG OPENNCP_SOURCE_REPO
-ARG OPENNCP_SOURCE_BRANCH
+ARG OPENNCP_SOURCE_TAG
 
 WORKDIR /usr/src
 
 # Clone the OpenNCP source code
-RUN git clone --branch ${OPENNCP_SOURCE_BRANCH} ${OPENNCP_SOURCE_REPO} openncp
+RUN git clone --branch ${OPENNCP_SOURCE_TAG} ${OPENNCP_SOURCE_REPO} openncp
 
 # Copy .env file
 COPY configs/gateway.env openncp/openncp-gateway/openncp-gateway-frontend/.env.production

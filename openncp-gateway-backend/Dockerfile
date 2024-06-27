@@ -20,6 +20,4 @@ COPY context.xml /usr/local/tomcat/conf/context.xml
 
 COPY webapps/openncp-gateway-backend.war /usr/local/tomcat/webapps/openncp-gateway-backend.war
 
-# RUN wget https://ec.europa.eu/cefdigital/artifact/repository/eHealth/eu/europa/ec/sante/ehdsi/openncp-gateway-backend/$OPENNCP_VERSION/openncp-gateway-backend-$OPENNCP_VERSION.war && mv openncp-gateway-backend-$OPENNCP_VERSION.war openncp-gateway-backend.war
-
 CMD ${CATALINA_HOME}/bin/catalina.sh run
