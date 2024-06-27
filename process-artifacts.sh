@@ -3,6 +3,7 @@
 cd /build-artifacts
 ./docker-build-openncp.sh
 ./docker-build-portal.sh
+cd ..
 
 # Check for openncp-ws-server.war
 if [ -f build-artifacts/artifacts/openncp-ws-server.war ]; then

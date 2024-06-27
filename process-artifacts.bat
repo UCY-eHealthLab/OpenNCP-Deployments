@@ -1,4 +1,4 @@
-echo off
+@echo off
 SETLOCAL
 
 cd build-artifacts
@@ -100,4 +100,4 @@ if exist build-artifacts\artifacts\translations-and-mappings-ws.war (
 )
 
 ENDLOCAL
-echo on
+@echo on
